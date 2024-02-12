@@ -1,0 +1,381 @@
+html, body {
+  height: 100%; /* 全画面を使用するように設定 */
+  margin: 0; /* デフォルトのマージンを取り除く */
+}
+
+/* Header */
+.header-container {
+  align-items: center; 
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.logo {
+  background: url(../materials/logo.png);
+  background-size: contain;
+  font-size: 0;
+  height: 100px;
+  width: 100px;
+  margin-top: 15%;
+}
+
+
+/* main */
+main, footer {
+  font-family:'メイリオ','Meiryo','ＭＳ ゴシック','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
+}
+
+main {
+  /* display: grid; */
+  /* height: 100vh; /* ビューポートの高さに合わせる */
+  /* min-height: 100vh; /* ビューポートの高さに合わせる */
+  margin: 0; /* デフォルトのマージンをリセット */
+  height: calc(95vh - 140px);
+  /* flex-direction: column; */
+  /* width: 100%; */
+  /* box-sizing:border-box; */
+  /* justify-content: center; /* 水平方向の中央揃え */
+  /* align-items: center; /* 垂直方向の中央揃え */
+  /* flex-grow: 1; */
+}
+
+#mainBlock {
+  display: flex;
+  justify-content: center; /* 水平方向の中央揃え */
+  align-items: center; /* 垂直方向の中央揃え */
+  margin: 0; /* デフォルトのマージンをリセット */
+}
+
+#Buttons {
+  top: 0ex;
+}
+
+
+.main-container {
+  /*margin-top: 60px;*/
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  margin: auto;
+}
+
+/*クイズ用に別のラッパーを準備;*/
+
+.main-wrapper {
+  display: flex;
+  font-size: 13px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.quiz_main-wrapper {
+  display: flex;
+  font-size: 13px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.twocolumns {
+  flex-direction: row;
+}
+
+.wrapper {
+  display: flex; /* Flexbox layoutを使う */
+  justify-content: space-between; /* 各カラムの間に等間隔を作る */
+  align-items: stretch; /* 各カラムを縦方向に同じ高さに伸ばす */
+  min-height: 65vh;
+}
+
+.main-wrapper > .leftcol, .main-wrapper > .rightcol {
+  flex: 1;
+}
+
+.left-column, .main-container, .right-column {
+  flex-basis: auto; /* または具体的な値（例: 33%） */
+}
+
+.left-column, .right-column {
+  padding: 10px;
+  width: 20%;
+  margin: auto;
+}
+
+.quiz {
+  margin-top: 60px;
+  padding: 10px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.all_image {
+  margin-top: 20px;
+}
+
+.width_50 {max-width: 50%;}
+.width_60 {max-width: 60%;}
+.width_70 {max-width: 70%;}
+.width_80 {max-width: 80%;}
+.width_90 {max-width: 90%;}
+.width_100 {max-width: 100%;}
+.width_110 {max-width: 110%;}
+.width_120 {max-width: 120%;}
+.width_130 {max-width: 130%;}
+
+.main-container img {
+  margin-top: 20px;
+  max-height: 100%; /* 親要素（.main-container）の高さに合わせる */
+  max-width: 90%; /* 親要素の幅を超えない */
+}
+
+.description {
+  display: flex;
+  font-size: 1.2em;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  margin: 0 auto;
+  height: 80vh;
+}
+
+.top_description, .topText {
+  font-size: 1.8em; 
+  width: 900px;
+  text-align: center;
+}
+
+.left_description, .leftText, .right_description, .rightText {
+  font-size: 1.8em; 
+  display: flex;
+  align-items: center;
+}
+
+.section { 
+  color: #000000;
+  width: 100%;
+}
+
+.tip {
+  font-size: 1.5em;
+  margin-top: 0.1em;
+  color: #000000;
+}
+
+.msgs {
+  display: flex;
+  font-size: 13px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  height: 50px;
+  margin: 0 auto;
+}
+
+.right-wrapper {
+  display: flex;
+  font-size: 13px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.center-wrapper {
+  display: flex; /* フレックスコンテナを設定 */
+  align-items: center; /* 子要素を垂直方向中央に配置 */
+}
+
+.center-wrapper > .leftText, .center-wrapper > .rightText {
+  flex: 2;
+}
+
+.center-wrapper > .image {
+  text-align: center;
+  flex: 6;
+}
+
+
+.image-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.image-container img {
+  max-width: 80%;
+  max-height: 80%;
+  opacity: 1.0;
+  cursor: pointer;
+}
+
+
+/* Button関連 */
+button {
+  background-color: #ffffff;
+  border: 2px solid #8b8989;
+  border-radius: 0.5rem; 
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 20px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  font-size: 1.3em; 
+} 
+
+.button_position_fixed{
+  position: fixed;
+}
+
+.next_button {
+  right: 10%;
+}
+
+.back_button {
+  left: 10%;
+}
+
+.save_button {
+  right: 1%;
+  top: 10%;
+}
+
+/* ボタンホバー時の変更 */
+button:hover {
+  background-color: rgb(244, 196, 172);
+  color: black;
+}
+
+.button-container {
+  position: absolute;
+  bottom: 5%; 
+  /* width: 100%;*/
+  height: 8vh;
+  display: flex;
+  align-items: center;
+}
+
+.quiz-button-container {
+  position: absolute;
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ボタン配置 - 水平 */ 
+.button-container-horizontal {
+  bottom: 5%; 
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ボタン配置 - 並行 */ 
+.button-container-vertical {
+  position: absolute;
+  right: calc(10%);
+  top: 50%;
+  transform: translateY(-50%);
+
+  justify-content: space-between; /* it will distribute the space between the buttons */
+  display: flex;
+
+  flex-direction: column;
+  gap: 50px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 1000;
+  opacity: 1;
+  transition: opacity 1s ease-out;
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+.fade-out {
+  animation: fade-out 1s forwards;
+}
+
+.fade-in {
+  animation: fade-in 1s forwards;
+}
+
+#language-switch, #show-tips {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: small;
+  color: #636363;
+  height: 50px;
+}
+
+
+/* 確認用 */
+check_count {    
+  position: absolute;
+  top: 15%;
+  left: 3%;
+}
