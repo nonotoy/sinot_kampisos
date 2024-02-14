@@ -524,171 +524,13 @@ export const sections = [
 				{ type: 'description', key: 'ACT02_home'}
 		],
 		options: [
-				{ id: 'option1', nextSection: 'ACT02a_1_quiz', descKey: 'ACT02_home_a'},
+				{ id: 'option1', nextSection: '0_home', descKey: 'ACT02_home_a'},
 				{ id: 'option2', nextSection: '0_home', descKey: 'ACT02_home_b'},
-				{ id: 'option3', nextSection: 'ACT03_000_quiz', descKey: 'ACT02_home_c'},
+				{ id: 'option3', nextSection: '0_home', descKey: 'ACT02_home_c'},
 				{ id: 'save', nextSection: 'save', descKey: 'ACT02_save'}
 		],
 		image: 	{ data: 'materials/ACT02_menu.png', width: 'width_80'},
 		verticalLayout: true,
-	},
-
-
-	{
-		id: 'ACT02a_1_quiz', // 花田佳文
-		section_class: '5_quiz',
-		texts: [
-				{ type: 'topText', key: 'ACT02a_1_quiz'}
-		],
-		options: [
-				{ id: 'option1', descKey: 'ACT02a_1_op1', answer: true},
-				{ id: 'option2', descKey: 'ACT02a_1_op2'},
-				{ id: 'option3', descKey: 'ACT02a_1_op3'}
-		],
-		next: 'ACT02_end', //'ACT02a_2_quiz',
-	},
-	{
-		id: 'ACT02a_2_quiz', // 向井彩乃
-		section_class: '5_quiz',
-		texts: [
-				{ type: 'topText',  key: 'ACT02a_2_quiz'}
-		],
-		options: [
-				{ id: 'option1', descKey: 'ACT02a_2_op1', answer: true},
-				{ id: 'option2', descKey: 'ACT02a_2_op2'},
-				{ id: 'option3', descKey: 'ACT02a_2_op3'}
-		],
-		next: 'ACT02a_3_quiz',
-	},
-	{
-		id: 'ACT02a_3_quiz', // 酒井悠奈
-		section_class: '5_quiz',
-		texts: [
-				{type: 'topText',  key: 'ACT02a_3_quiz'}
-		],
-		options: [
-				{ id: 'option1', descKey: 'ACT02a_3_op1'},
-				{ id: 'option2', descKey: 'ACT02a_3_op2'},
-				{ id: 'option3', descKey: 'ACT02a_3_op3', answer: true}
-		],
-		next: 'ACT02a_4_quiz',
-	},
-	{
-		id: 'ACT02a_4_quiz', // 米山莉央
-		section_class: '5_quiz',
-		texts: [
-				{ type: 'topText',  key: 'ACT02a_4_quiz'}
-		],
-		options: [
-				{ id: 'option1', descKey: 'ACT02a_4_op1'},
-				{ id: 'option2', descKey: 'ACT02a_4_op2', answer: true},
-				{ id: 'option3', descKey: 'ACT02a_4_op3'}
-		],
-		next: 'ACT02a_5_quiz',
-	},
-	{
-		id: 'ACT02a_5_quiz', // 
-		section_class: '5_quiz',
-		texts: [
-				{ type: 'topText',  key: 'ACT02a_5_quiz'}
-		],
-		options: [
-				{ id: 'option1', descKey: 'ACT02a_5_op1'},
-				{ id: 'option2', descKey: 'ACT02a_5_op2'},
-				{ id: 'option3', descKey: 'ACT02a_5_op3', answer: true}
-		],
-		next: 'ACT02a_6_quiz',
-	},
-	{
-		id: 'ACT02a_6_quiz', // 奈良美帆
-		section_class: '5_quiz',
-		texts: [
-				{ type: 'topText', key: 'ACT02a_6_quiz'}
-		],
-		options: [
-				{ id: 'option1', descKey: 'ACT02a_6_op1'},
-				{ id: 'option2', descKey: 'ACT02a_6_op2'},
-				{ id: 'option3', descKey: 'ACT02a_6_op3', answer: true}
-		],
-		next: 'ACT02a_7_quiz',
-	},
-	{
-		id: 'ACT02a_7_quiz', // 奈良哲哉
-		section_class: '5_quiz',
-		texts: [
-				{ type: 'topText',  key: 'ACT02a_7_quiz'}
-		],
-		options: [
-				{ id: 'option1', descKey: 'ACT02a_7_op1'},
-				{ id: 'option2', descKey: 'ACT02a_7_op2'},
-				{ id: 'option3', descKey: 'ACT02a_7_op3', answer: true}
-		],
-		next: 'ACT02a_8_quiz',
-	},
-	{
-		id: 'ACT02a_8_quiz', // 岡本智美
-		section_class: '5_quiz',
-		texts: [
-				{ type: 'topText',  key: 'ACT02a_8_quiz'}
-		],
-		options: [
-				{ id: 'option1', descKey: 'ACT02a_8_op1'},
-				{ id: 'option2', descKey: 'ACT02a_8_op2', answer: true},
-				{ id: 'option3', descKey: 'ACT02a_8_op3'}
-		],
-		next: 'ACT02a_9_quiz',
-	},
-	{
-		id: 'ACT02a_9_quiz', // 向井直美
-		section_class: '5_quiz',
-		texts: [
-				{ type: 'topText',  key: 'ACT02a_9_quiz'}
-		],
-		options: [
-				{ id: 'option1', descKey: 'ACT02a_9_op1'},
-				{ id: 'option2', descKey: 'ACT02a_9_op2'},
-				{ id: 'option3', descKey: 'ACT02a_9_op3', answer: true}
-		],
-		next: 'ACT02a_10_quiz',
-	},
-	{
-		id: 'ACT02a_10_quiz', // 岡本智美
-		section_class: '5_quiz',
-		texts: [
-				{ type: 'topText', key: 'ACT02a_10_quiz'}
-		],
-		options: [
-				{ id: 'option1', descKey: 'ACT02a_10_op1'},
-				{ id: 'option2', descKey: 'ACT02a_10_op2', answer: true},
-				{ id: 'option3', descKey: 'ACT02a_10_op3'}
-		],
-		next: 'ACT02a_11_quiz',
-	},
-	{
-		id: 'ACT02a_11_quiz', // 佐藤佳子
-		section_class: '5_quiz',
-		texts: [
-				{ type: 'topText', key: 'ACT02a_11_quiz'}
-		],
-		options: [
-				{ id: 'option1', descKey: 'ACT02a_11_op1', answer: true},
-				{ id: 'option2', descKey: 'ACT02a_11_op2'},
-				{ id: 'option3', descKey: 'ACT02a_11_op3'}
-		],
-		next: 'ACT02a_12_quiz',
-	},
-	{
-		id: 'ACT02a_12_quiz', // 石川美香穂
-		section_class: '5_quiz',
-		texts: [
-				{type: 'topText', key: 'ACT02a_12_quiz'}
-		],
-		options: [
-				{ id: 'option1', descKey: 'ACT02a_12_op1'},
-				{ id: 'option2', descKey: 'ACT02a_12_op2', answer: true},
-				{ id: 'option3', descKey: 'ACT02a_12_op3'}
-		],
-		next: 'ACT02_end',
 	},
 
 	{
@@ -702,7 +544,19 @@ export const sections = [
 		],
 		backgroundColor: 'rgba(255,255,204,1.0)',
 	},
-
+    {
+    	id: 'ACT02a_12_quiz', // 石川美香穂
+    	section_class: '5_quiz',
+    	texts: [
+    			{type: 'topText', key: 'ACT02a_12_quiz'}
+    	],
+    	options: [
+    			{ id: 'option1', descKey: 'ACT02a_12_op1'},
+    			{ id: 'option2', descKey: 'ACT02a_12_op2', answer: true},
+    			{ id: 'option3', descKey: 'ACT02a_12_op3'}
+    	],
+    	next: 'ACT02_end',
+    },
 	{
 		id: 'ACT02_result_A',
 		texts: [
@@ -778,19 +632,19 @@ export const sections = [
 		id: 'ACT03_07_konkani',
 		texts: [
 				{type: 'topText', key: 'ACT03_07'},
-                {type: 'bottomText', key: 'ACT03_07_bottom_konkani'}
+                {type: 'bottomText', key: 'ACT03_07_konkani'}
 		],
-		image: 	{ data: 'materials/ACT02_result_D.png', width: 'width_90'},
+		image: 	{ data: 'materials/ACT03_07_konkani.png', width: 'width_90'},
         next: 'ACT03_08',
 		backgroundColor: 'rgba(255,255,204,1.0)',
 	},
 	{
-		id: 'ACT03_07_bottom_sirokani',
+		id: 'ACT03_07_sirokani',
 		texts: [
 				{type: 'topText', key: 'ACT03_07'},
-                {type: 'bottomText', key: 'ACT03_07_bottom_sirokani'}
+                {type: 'bottomText', key: 'ACT03_07_sirokani'}
 		],
-		image: 	{ data: 'materials/ACT02_result_D.png', width: 'width_90'},
+		image: 	{ data: 'materials/ACT03_07_sirokani.png', width: 'width_90'},
         next: 'ACT03_08',
 		backgroundColor: 'rgba(255,255,204,1.0)',
 	},
@@ -798,7 +652,7 @@ export const sections = [
     {
 		id: 'ACT03_08',
 		texts: [],
-		image: 	{ data: 'materials/ACT02_result_D.png', width: 'width_90'},
+		image: 	{ data: 'materials/ACT03_08.png', width: 'width_90'},
         next: 'ACT03_09',
 	},
 
@@ -808,7 +662,7 @@ export const sections = [
 		texts: [
 				{type: 'topText', key: 'ACT03_09'}
 		],
-		image: 	{ data: 'materials/ACT02_result_D.png', width: 'width_90'},
+		image: 	{ data: 'materials/ACT03_09.png', width: 'width_90'},
 		options: [
             { id: 'option1', nextSection: 'ACT03_10', descKey: 'ACT03_09_op1'},
             { id: 'option2', nextSection: 'ACT03_defeated_01', descKey: 'ACT03_09_op2'}
@@ -822,7 +676,7 @@ export const sections = [
 		texts: [
 				{type: 'topText', key: 'ACT03_10'}
 		],
-		image: 	{ data: 'materials/ACT02_result_D.png', width: 'width_90'},
+		image: 	{ data: 'materials/ACT03_10.png', width: 'width_90'},
 		options: [
             { id: 'option1', nextSection: 'ACT03_defeated_01', descKey: 'ACT03_10_op1'},
             { id: 'option2', nextSection: 'dead_end', descKey: 'ACT03_10_op2'}
@@ -834,9 +688,8 @@ export const sections = [
 	{
 		id: 'ACT03_defeated_01',
 		texts: [],
-		image: 	{ data: 'materials/ACT02_result_D.png', width: 'width_90'},
+		image: 	{ data: 'materials/ACT03_defeated_01.png', width: 'width_90'},
         next: 'ACT03_defeated_02',
-		backgroundColor: 'rgba(255,255,204,1.0)',
 	},
 
 	{
@@ -845,7 +698,6 @@ export const sections = [
             {type: 'topText', key: 'ACT03_defeated_02_a'},
             {type: 'bottomText', key: 'ACT03_defeated_02_b'}
         ],
-		image: 	{ data: 'materials/ACT02_result_D.png', width: 'width_90'},
         next: 'ACT03_defeated_03',
 		backgroundColor: 'rgba(255,255,204,1.0)',
 	},
@@ -855,20 +707,11 @@ export const sections = [
 		texts: [
             {type: 'topText', key: 'ACT03_defeated_03'}
         ],
-		image: 	{ data: 'materials/ACT02_result_D.png', width: 'width_90'},
-        next: 'ACT03_defeated_04',
-		backgroundColor: 'rgba(255,255,204,1.0)',
-	},
-
-	{
-		id: 'ACT03_defeated_04',
-		texts: [],
-		image: 	{ data: 'materials/ACT02_result_D.png', width: 'width_90'},
+		image: 	{ data: 'materials/ACT03_defeated_03.png', width: 'width_90'},
 		options: [
-            { id: 'option1', nextSection: 'best_end', descKey: 'ACT03_defeated_04_op1'},
-            { id: 'option2', nextSection: 'normal_end', descKey: 'ACT03_defeated_04_op2'}
+            { id: 'option1', nextSection: 'best_end', descKey: 'ACT03_defeated_03_op1'},
+            { id: 'option2', nextSection: 'normal_end', descKey: 'ACT03_defeated_03_op2'}
         ],
-		backgroundColor: 'rgba(255,255,204,1.0)',
 	},
 
 
@@ -886,7 +729,7 @@ export const sections = [
 		texts: [
 				{type: 'topText', key: 'best_end'}
 		],
-		image: 	{ data: 'materials/ACT02_result_D.png', width: 'width_90'},
+		image: 	{ data: 'materials/best_end.png', width: 'width_90'},
 		backgroundColor: 'rgba(255,255,204,1.0)',
 		next: '0_home',
 	},
@@ -899,7 +742,7 @@ export const sections = [
 				{type: 'topText', key: 'normal_end_a'},
                 {type: 'bottomText', key: 'normal_end_b'}
 		],
-		image: 	{ data: 'materials/ACT02_result_D.png', width: 'width_90'},
+		image: 	{ data: 'materials/normal_end.png', width: 'width_90'},
 		backgroundColor: 'rgba(255,255,204,1.0)',
 		next: '0_home',
 	},
@@ -911,14 +754,14 @@ export const sections = [
 				{type: 'topText', key: 'bitter_end_01_a'},
                 {type: 'bottomText', key: 'bitter_end_01_b'}
 		],
-		image: 	{ data: 'materials/ACT02_result_D.png', width: 'width_90'},
+		image: 	{ data: 'materials/bitter_end_01.png', width: 'width_90'},
 		backgroundColor: 'rgba(255,255,204,1.0)',
 		next: 'bitter_end_02',
 	},
     {
 		id: 'bitter_end_02',
 		texts: [],
-		image: 	{ data: 'materials/ACT02_result_D.png', width: 'width_90'},
+		image: 	{ data: 'materials/bitter_end_02.png', width: 'width_90'},
 		backgroundColor: 'rgba(255,255,204,1.0)',
 		next: 'bitter_end_03',
 	},
@@ -927,7 +770,7 @@ export const sections = [
 		texts: [
 				{type: 'topText', key: 'bitter_end_03'}
 		],
-		image: 	{ data: 'materials/ACT02_result_D.png', width: 'width_90'},
+		image: 	{ data: 'materials/bitter_end_03.png', width: 'width_90'},
 		backgroundColor: 'rgba(255,255,204,1.0)',
 		next: '0_home',
 	},
@@ -944,60 +787,6 @@ export const sections = [
 		next: '0_home',
 	},
 
-	{
-		id: 'ACT03_000_quiz',
-		section_class: '5_quiz',
-		texts: [
-				{ type: 'topText', key: 'ACT03_000_quiz'}
-		],
-		options: [
-				{ id: 'option1', descKey: 'ACT03_000_op1', answer: true},
-				{ id: 'option2', descKey: 'ACT03_000_op2'},
-				{ id: 'option3', descKey: 'ACT03_000_op3'},
-				{ id: 'option4', descKey: 'ACT03_000_op4'},
-				{ id: 'option5', descKey: 'ACT03_000_op5'},
-				{ id: 'option6', descKey: 'ACT03_000_op6'},
-				{ id: 'option7', descKey: 'ACT03_000_op7'},
-				{ id: 'option8', descKey: 'ACT03_000_op8'}
-		],
-		next: 'ACT03_001_quiz',
-	},
-	{
-		id: 'ACT03_001_quiz',
-		section_class: '5_quiz',
-		texts: [
-				{ type: 'topText',key: 'ACT03_001_quiz'}
-		],
-		options: [
-				{ id: 'option1', descKey: 'ACT03_001_op1', answer: true},
-				{ id: 'option2', descKey: 'ACT03_001_op2'},
-				{ id: 'option3', descKey: 'ACT03_001_op3'},
-				{ id: 'option4', descKey: 'ACT03_001_op4'},
-				{ id: 'option5', descKey: 'ACT03_001_op5'},
-				{ id: 'option6', descKey: 'ACT03_001_op6'},
-				{ id: 'option7', descKey: 'ACT03_001_op7'},
-				{ id: 'option8', descKey: 'ACT03_001_op8'}
-		],
-		next: 'ACT03_004_quiz',
-	},
-	{
-		id: 'ACT03_004_quiz',
-		section_class: '5_quiz',
-		texts: [
-				{ type: 'topText', key: 'ACT03_004_quiz'}
-		],
-		options: [
-				{ id: 'option1', descKey: 'ACT03_004_op1', answer: true},
-				{ id: 'option2', descKey: 'ACT03_004_op2'},
-				{ id: 'option3', descKey: 'ACT03_004_op3'},
-				{ id: 'option4', descKey: 'ACT03_004_op4'},
-				{ id: 'option5', descKey: 'ACT03_004_op5'},
-				{ id: 'option6', descKey: 'ACT03_004_op6'},
-				{ id: 'option7', descKey: 'ACT03_004_op7'},
-				{ id: 'option8', descKey: 'ACT03_004_op8'}
-		],
-		next: 'ACT02_home',
-	},
 ];
 
 export default sections;
