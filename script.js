@@ -62,7 +62,7 @@ window.checkAnswer = function(sectionId, optionId) {
     }
 
     // 次のセクションを表示
-    console.log(correctCount);
+    // console.log(correctCount);
 }
 
 
@@ -157,13 +157,13 @@ function generaterandomQuizzes(baseId, totalQuizzes, numberOfQuizzes, numberOfOp
     const selectedIds = new Set();
     while (selectedIds.size < numberOfQuizzes) {
         const randomId = Math.floor(Math.random() * totalQuizzes) + 1;
-        selectedIds.add(`${baseId}_${randomId}_quiz`);
+        selectedIds.add(`${baseId}_${randomId}`);
     }
 
     return Array.from(selectedIds).map((id, index, array) => ({
         id,
         section_class: '5_quiz',
-        texts: [{ type: 'topText', key: id }],
+        texts: [{ type: 'topText', key: `${id}_quiz`}],
         options: Array.from({ length: numberOfOptions }).map((_, optionIndex) => ({
             id: `option${optionIndex + 1}`,
             descKey: `${id}_op${optionIndex + 1}`
@@ -299,14 +299,16 @@ function updateQuizSections(sectionId, firstQuizId, optionId) {
 
 function generateAndUpdateRandomQuizzes() {
     const randomQuizzes_ACT02 = generaterandomQuizzes('ACT02a', 12, 5, 3);
-    const randomQuizzes_ACT03 = generaterandomQuizzes('ACT03', 200, 5, 8);
+    //const randomQuizzes_ACT03 = generaterandomQuizzes('ACT03', 200, 5, 8);
+
+    console.log(randomQuizzes_ACT02);
 
     updateQuizSections('ACT02_home', randomQuizzes_ACT02[0].id, 'option1');
     //updateQuizSections('ACT03_09', randomQuizzes_ACT03[0].id, 'option2');
     //updateQuizSections('ACT03_10', randomQuizzes_ACT03[0].id, 'option1');
 
     renderQuizzes(randomQuizzes_ACT02);
-    renderQuizzes(randomQuizzes_ACT03);
+    //renderQuizzes(randomQuizzes_ACT03);
 
     // HTMLを生成し、最初のセクションを表示
     // renderSectionsAndShowFirst();
@@ -337,31 +339,30 @@ function renderQuizzes(quizzes) {
         
         const topTextElement = document.createElement('div');
         topTextElement.className = 'topText';
-        topTextElement.setAttribute('data-key', quiz.id);
+        topTextElement.setAttribute('data-key', `${quiz.id}_quiz`);
 
-        console.log(quiz.texts[0].key);
-        
         const questionText = commands[quiz.texts[0].key];
-
         topTextElement.innerHTML = `<p>${questionText}</p>`; 
+
         questionElement.appendChild(topTextElement);
 
         // 選択肢のコンテナを作成
         const optionsElement = document.createElement('div');
         optionsElement.className = 'options';
 
+        // 選択肢を含む要素を作成
         quiz.options.forEach(option => {
-            console.log(option);
             const button = document.createElement('button');
-            button.id = option.id;
             button.className = 'quiz-option';
+            button.id = option.id;
             button.setAttribute('onclick', `checkAnswer('${quiz.id}', '${option.id}')`);
 
             const optionTextElement = document.createElement('div');
             optionTextElement.className = 'option-text';
             optionTextElement.setAttribute('data-key', option.descKey); 
-
-            const optionText = commands[quiz.options.descKey];
+            
+            const optionText = commands[option.descKey];
+            console.log('option ' + option.descKey + ' ' + optionText);
             optionTextElement.innerHTML = `<p>${optionText}</p>`;
 
             button.appendChild(optionTextElement);
@@ -374,13 +375,6 @@ function renderQuizzes(quizzes) {
         mainBlock.appendChild(sectionElement);
     });
 }
-
-
-
-
-
-
-
 
 
 

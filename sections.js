@@ -545,7 +545,7 @@ export const sections = [
 		backgroundColor: 'rgba(255,255,204,1.0)',
 	},
     {
-    	id: 'ACT02a_12_quiz', // 石川美香穂
+    	id: 'ACT02a_12', // 石川美香穂
     	section_class: '5_quiz',
     	texts: [
     			{type: 'topText', key: 'ACT02a_12_quiz'}
