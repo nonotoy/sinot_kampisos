@@ -361,6 +361,7 @@ function renderQuizzes(quizzes) {
             optionTextElement.className = 'option-text';
             optionTextElement.setAttribute('data-key', option.descKey); 
             
+            //ここが効いていない
             const optionText = commands[option.descKey];
             console.log('option ' + option.descKey + ' ' + optionText);
             optionTextElement.innerHTML = `<p>${optionText}</p>`;
