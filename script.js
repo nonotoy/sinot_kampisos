@@ -8,6 +8,7 @@ const INCORRECT_IMAGE_PATH = "materials/esaman_incorrect.png";
 
 // 正解数のカウント
 let correctCountACT02 = 0;
+let correctCountACT03 = 0;
 
 // ランダムなクイズを生成
 function generateRandomQuizzes(baseId, totalQuizzes, numberOfQuizzes, numberOfOptions) {
@@ -37,7 +38,7 @@ function generateRandomQuizzes(baseId, totalQuizzes, numberOfQuizzes, numberOfOp
         section_class: '5_quiz',
         texts: [{ type: 'topText', key: `${id}_quiz` }],
         options,
-        next: `${endIDclass[section.id]}`,
+        next: `${endIDclass[baseId]}`,
       };
     });    
 }
@@ -45,11 +46,18 @@ function generateRandomQuizzes(baseId, totalQuizzes, numberOfQuizzes, numberOfOp
 const randomQuizzes_ACT02 = generateRandomQuizzes('ACT02a', 12, 5, 3);
 const randomQuizzes_ACT03 = generateRandomQuizzes('ACT03', 200, 5, 8);
 
-console.log(randomQuizzes_ACT03);
-
 function updateQuizSections(sectionId, firstQuizId, optionId) {
     // 指定されたセクション内で、指定されたoptionIdを持つボタンを探す
-    const optionElement = document.querySelector(`#${sectionId} .button-container-vertical #${optionId}`);
+
+    const button_container_class = {
+        'ACT02_home': '.button-container-vertical',
+        'ACT03_09': '.button-container-horizontal',
+        'ACT03_10': '.button-container-horizontal',
+    };
+
+    const optionElement = document.querySelector(`#${sectionId} ${button_container_class[sectionId]} #${optionId}`);
+    console.log(optionElement);
+
     if (optionElement) {
         // onclick属性を更新して、指定されたfirstQuizIdを使用するようにする
         optionElement.setAttribute('onclick', `showSection('${firstQuizId}')`);
@@ -73,11 +81,13 @@ function renderQuizzes(quizzes) {
         // クイズセクションのコンテナを作成
         const sectionElement = document.createElement('div');
         sectionElement.id = quiz.id;
+        console.log(quiz.id);
         sectionElement.className = 'section quiz-section';
         sectionElement.style.display = 'none';
 
         // 問題文を含む要素を作成
         const questionElement = document.createElement('div');
+
         questionElement.className = 'question';
         
         const topTextElement = document.createElement('div');
@@ -91,14 +101,25 @@ function renderQuizzes(quizzes) {
 
         // 選択肢のコンテナを作成
         const optionsElement = document.createElement('div');
-        optionsElement.className = 'options';
+
+        // quiz.idにACT03が含まれる場合
+        if (quiz.id.includes('ACT03')) {
+            optionsElement.className = 'options_8questions';
+        } else {
+            optionsElement.className = 'options';
+        }
 
         // 選択肢を含む要素を作成
         quiz.options.forEach(option => {
             const button = document.createElement('button');
-            button.className = 'quiz-option';
             button.id = option.id;
-            button.setAttribute('onclick', `checkACT02Answer('${quiz.id}', '${option.id}')`);
+            if (quiz.id.includes('ACT03')) {
+                button.className = 'quiz-option_8questions' ;
+                button.setAttribute('onclick', `checkACT03Answer('${quiz.id}', '${option.id}')`);
+            } else {
+                button.className = 'quiz-option';
+                button.setAttribute('onclick', `checkACT02Answer('${quiz.id}', '${option.id}')`);
+            };
 
             const optionTextElement = document.createElement('div');
             optionTextElement.className = 'option-text';
@@ -124,6 +145,9 @@ function renderQuizzes(quizzes) {
         mainBlock.appendChild(sectionElement);
     });
 }
+
+//ACT03のとき、1問目でdeafeated_01に飛んでしまう
+//迷走時対応
 
 function generateAndUpdateRandomQuizzes() {
 
@@ -186,6 +210,24 @@ window.checkACT02Answer = function(sectionId, optionId) {
     }
 
     console.log('Correct count:', correctCountACT02);
+}
+
+window.checkACT03Answer = function(sectionId, optionId) {
+
+    const section = randomQuizzes_ACT03.find(quiz => quiz.id === sectionId);
+    const option = section.options.find(option => option.id === optionId);
+    const answer = option.answer;
+
+    if (answer) {
+        // 正解の場合
+        displayImage(CORRECT_IMAGE_PATH, section.next, 'rgba(255, 0, 0, 0.2)');
+        correctCountACT03++;
+    } else {
+        // 不正解の場合
+        displayImage(INCORRECT_IMAGE_PATH, section.next, 'rgba(0, 123, 255, 0.2)');
+    }
+
+    console.log('Correct count:', correctCountACT03);
 }
 
 // 画像を表示し、次のセクションに移動する処理を行う関数
