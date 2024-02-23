@@ -532,6 +532,7 @@ export const sections = [
 		verticalLayout: true,
 	},
 
+	// ここ効いてない　resultAに流れてしまっている
 	{
 		id: 'ACT02_end',
 		texts: [
@@ -543,6 +544,7 @@ export const sections = [
 		],
 		backgroundColor: 'rgba(255,255,204,1.0)',
 	},
+
 	{
 		id: 'ACT02_result_A',
 		texts: [

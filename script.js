@@ -13,8 +13,15 @@ let correctCountACT02 = 0;
 function generateRandomQuizzes(baseId, totalQuizzes, numberOfQuizzes, numberOfOptions) {
     const selectedIds = new Set();
     while (selectedIds.size < numberOfQuizzes) {
-      selectedIds.add(`${baseId}_${Math.floor(Math.random() * totalQuizzes) + 1}`);
+      // 生成されたランダムな数字を3桁の文字列で0埋めする
+      const quizNumber = (Math.floor(Math.random() * totalQuizzes) + 1).toString().padStart(3, '0');
+      selectedIds.add(`${baseId}_${quizNumber}`);
     }
+
+    const endIDclass = {
+        'ACT02a': 'ACT02_end',
+        'ACT03': 'ACT03_defeated_01',
+    };
   
     return Array.from(selectedIds).map((id, index, array) => {
       const options = Array.from({ length: numberOfOptions }).map((_, optionIndex) => ({
@@ -23,21 +30,22 @@ function generateRandomQuizzes(baseId, totalQuizzes, numberOfQuizzes, numberOfOp
       }));
   
       // オプションをランダムに並び替える
-      options.sort(() => Math.random() - 0.5);
+      shuffleArray(options);
   
       return {
         id,
         section_class: '5_quiz',
         texts: [{ type: 'topText', key: `${id}_quiz` }],
         options,
-        next: index < array.length - 1 ? array[index + 1] : 'ACT02_end',
+        next: `${endIDclass[section.id]}`,
       };
-    });
-    
-  }
+    });    
+}
 
 const randomQuizzes_ACT02 = generateRandomQuizzes('ACT02a', 12, 5, 3);
 const randomQuizzes_ACT03 = generateRandomQuizzes('ACT03', 200, 5, 8);
+
+console.log(randomQuizzes_ACT03);
 
 function updateQuizSections(sectionId, firstQuizId, optionId) {
     // 指定されたセクション内で、指定されたoptionIdを持つボタンを探す
@@ -120,12 +128,12 @@ function renderQuizzes(quizzes) {
 function generateAndUpdateRandomQuizzes() {
 
     updateQuizSections('ACT02_home', randomQuizzes_ACT02[0].id, 'option1');
-    //updateQuizSections('ACT03_09', randomQuizzes_ACT03[0].id, 'option2');
-    //updateQuizSections('ACT03_10', randomQuizzes_ACT03[0].id, 'option1');
+    updateQuizSections('ACT03_09', randomQuizzes_ACT03[0].id, 'option2');
+    updateQuizSections('ACT03_10', randomQuizzes_ACT03[0].id, 'option1');
 
     // HTMLに変換してDOMに挿入する関数
     renderQuizzes(randomQuizzes_ACT02);
-    //renderQuizzes(randomQuizzes_ACT03);
+    renderQuizzes(randomQuizzes_ACT03);
 
     // HTMLを生成し、最初のセクションを表示
     // renderSectionsAndShowFirst();
@@ -207,7 +215,6 @@ function displayImage(imagePath, nextSectionId, backgroundColor) {
 }
 
 // クイズ終了後に正解数に基づいてセクションを表示する関数
-// 石川さんに再度確認
 window.displayACT02SectionBasedOnCorrectCount = function() {
     if (correctCountACT02 > 3) {
         showSection('ACT02_result_A');
