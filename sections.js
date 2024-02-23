@@ -505,7 +505,6 @@ export const sections = [
 		next: 'ACT01_epilogue',
 	},
 
-
 	{
 		id: 'ACT01_epilogue',
 	texts: [
@@ -540,29 +539,34 @@ export const sections = [
 		],
 		image: 	{ data: 'materials/ACT02_quiz_end.png', width: 'width_80'},
 		options: [
-				{ id: 'option1', nextSection: 'ACT02_result_A', descKey: 'ACT02_end_next'},
+				{ id: 'option1', nextSection: '', descKey: 'ACT02_end_next'},
 		],
 		backgroundColor: 'rgba(255,255,204,1.0)',
 	},
-    {
-    	id: 'ACT02a_12', // 石川美香穂
-    	section_class: '5_quiz',
-    	texts: [
-    			{type: 'topText', key: 'ACT02a_12_quiz'}
-    	],
-    	options: [
-    			{ id: 'option1', descKey: 'ACT02a_12_op1'},
-    			{ id: 'option2', descKey: 'ACT02a_12_op2', answer: true},
-    			{ id: 'option3', descKey: 'ACT02a_12_op3'}
-    	],
-    	next: 'ACT02_end',
-    },
 	{
 		id: 'ACT02_result_A',
 		texts: [
 				{type: 'topText', key: 'ACT02_result_A_top'}
 		],
 		image: 	{ data: 'materials/ACT02_result_A.png', width: 'width_90'},
+		next: 'ACT03_01',
+		backgroundColor: 'rgba(255,255,204,1.0)',
+	},
+	{
+		id: 'ACT02_result_B',
+		texts: [
+				{type: 'topText', key: 'ACT02_result_B_top'}
+		],
+		image: 	{ data: 'materials/ACT02_result_B.png', width: 'width_90'},
+		next: 'ACT03_01',
+		backgroundColor: 'rgba(255,255,204,1.0)',
+	},
+	{
+		id: 'ACT02_result_C',
+		texts: [
+				{type: 'topText', key: 'ACT02_result_C_top'}
+		],
+		image: 	{ data: 'materials/ACT02_result_C.png', width: 'width_90'},
 		next: 'ACT03_01',
 		backgroundColor: 'rgba(255,255,204,1.0)',
 	},
@@ -592,40 +596,39 @@ export const sections = [
 		texts: [
 				{type: 'topText', key: 'ACT03_01'}
 		],
-		image: 	{ data: 'materials/ACT02_result_D.png', width: 'width_90'},
+		image: 	{ data: 'materials/ACT03_01.png', width: 'width_90'},
 		next: 'ACT03_02',
-		backgroundColor: 'rgba(255,255,204,1.0)',
+		backgroundColor: 'rgba(204,255,255,1.0)',
 	},
 	{
 		id: 'ACT03_02',
 		texts: [
 				{type: 'topText', key: 'ACT03_02'}
 		],
-		image: 	{ data: 'materials/ACT02_result_D.png', width: 'width_90'},
+		image: 	{ data: 'materials/ACT03_02.png', width: 'width_90'},
 		next: 'ACT03_03',
-		backgroundColor: 'rgba(255,255,204,1.0)',
+		backgroundColor: 'rgba(204,255,255,1.0)',
 	},
 	{
 		id: 'ACT03_03',
 		texts: [
 				{type: 'topText', key: 'ACT03_03'}
 		],
-		image: 	{ data: 'materials/ACT02_result_D.png', width: 'width_90'},
+		image: 	{ data: 'materials/ACT03_03.png', width: 'width_90'},
 		next: 'ACT03_start',
-		backgroundColor: 'rgba(255,255,204,1.0)',
+		backgroundColor: 'rgba(204,255,255,1.0)',
 	},
 	{
 		id: 'ACT03_start',
 		texts: [
 				{type: 'topText', key: 'ACT03_start'}
 		],
-		image: 	{ data: 'materials/ACT02_result_D.png', width: 'width_90'},
 		options: [
             { id: 'option1', nextSection: 'ACT03_07_konkani', descKey: 'ACT03_start_op1'},
             { id: 'option2', nextSection: 'ACT03_07_sirokani', descKey: 'ACT03_start_op2'},
             { id: 'option3', nextSection: 'normal_end', descKey: 'ACT03_start_op3'}
         ],
-		backgroundColor: 'rgba(255,255,204,1.0)',
+		backgroundColor: 'rgba(204,255,255,1.0)',
 	},
 
 	{

@@ -72,12 +72,15 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 70vh;
   width: 85%;
   margin: 0 auto;
 }
 
-.quiz_main-wrapper {
+.main-wrapper_height_20 { height: 20vh; }
+.main-wrapper_height_70 { height: 70vh; }
+.wrapper_minheight_65 { min-height: 65vh; }
+
+.quiz_wrapper {
   display: flex;
   font-size: 13px;
   flex-direction: column;
@@ -95,10 +98,9 @@ main {
   display: flex; /* Flexbox layoutを使う */
   justify-content: space-between; /* 各カラムの間に等間隔を作る */
   align-items: stretch; /* 各カラムを縦方向に同じ高さに伸ばす */
-  min-height: 65vh;
 }
 
-.main-wrapper > .leftcol, .main-wrapper > .rightcol {
+.wrapper > .leftcol, .wrapper > .rightcol {
   flex: 1;
 }
 
@@ -121,7 +123,6 @@ main {
   justify-content: center;
   align-items: center;
 }
-
 
 .all_image {
   margin-top: 20px;
@@ -154,10 +155,31 @@ main {
   height: 80vh;
 }
 
-.top_description, .topText {
+.top_description {
   font-size: 1.8em; 
   width: 900px;
   text-align: center;
+}
+
+.topText {
+  font-size: 1.8em; 
+  text-align: center;
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.button-container-vertical-center {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin: 0 auto;
 }
 
 .left_description, .leftText, .right_description, .rightText {
