@@ -78,7 +78,33 @@ main {
 
 .main-wrapper_height_20 { height: 20vh; }
 .main-wrapper_height_70 { height: 70vh; }
+.main-wrapper_height_80 { height: 80vh; }
 .wrapper_minheight_65 { min-height: 65vh; }
+
+.home-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 90vw;
+}
+
+.home_title {
+  position: absolute; /* 要素の位置を絶対位置に設定 */
+  top: 50%; /* 上辺を画面の中央に */
+  left: 50%; /* 左辺を画面の中央に */
+  transform: translate(-50%, -50%); /* 要素の中央を計算し直して配置 */
+  font-size: 3em; /* 文字の大きさ */
+}
+
+.home_image1_float {
+  float: left;
+  margin: 0 0 0 60px;
+}
+
+.home_image2_float {
+  float: right;
+  margin: 0 60px 0 0;
+}
+
 
 .quiz_wrapper {
   display: flex;
@@ -102,6 +128,30 @@ main {
 
 .wrapper > .leftcol, .wrapper > .rightcol {
   flex: 1;
+}
+
+.right-wrapper {
+  display: flex;
+  font-size: 13px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.center-wrapper {
+  display: flex; /* フレックスコンテナを設定 */
+  align-items: center; /* 子要素を垂直方向中央に配置 */
+}
+
+.center-wrapper > .leftText, .center-wrapper > .rightText {
+  flex: 2;
+}
+
+.center-wrapper > .image {
+  text-align: center;
+  flex: 6;
 }
 
 .left-column, .main-container, .right-column {
@@ -137,6 +187,9 @@ main {
 .width_110 {max-width: 110%;}
 .width_120 {max-width: 120%;}
 .width_130 {max-width: 130%;}
+
+.max-height_30 {max-height: 30vh;}
+.max-height_90 {max-height: 90vh;}
 
 .main-container img {
   margin-top: 20px;
@@ -220,31 +273,6 @@ main {
   height: 50px;
   margin: 0 auto;
 }
-
-.right-wrapper {
-  display: flex;
-  font-size: 13px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 85%;
-  margin: 0 auto;
-}
-
-.center-wrapper {
-  display: flex; /* フレックスコンテナを設定 */
-  align-items: center; /* 子要素を垂直方向中央に配置 */
-}
-
-.center-wrapper > .leftText, .center-wrapper > .rightText {
-  flex: 2;
-}
-
-.center-wrapper > .image {
-  text-align: center;
-  flex: 6;
-}
-
 
 .image-container {
   position: fixed;

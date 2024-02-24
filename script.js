@@ -38,13 +38,13 @@ function generateRandomQuizzes(baseId, totalQuizzes, numberOfQuizzes, numberOfOp
         section_class: '5_quiz',
         texts: [{ type: 'topText', key: `${id}_quiz` }],
         options,
-        next: `${endIDclass[baseId]}`,
+        next: index < array.length - 1 ? array[index + 1] : `${endIDclass[baseId]}`,
       };
     });    
 }
 
 const randomQuizzes_ACT02 = generateRandomQuizzes('ACT02a', 12, 5, 3);
-const randomQuizzes_ACT03 = generateRandomQuizzes('ACT03', 200, 5, 8);
+const randomQuizzes_ACT03 = generateRandomQuizzes('ACT03', 199, 5, 8);
 
 function updateQuizSections(sectionId, firstQuizId, optionId) {
     // 指定されたセクション内で、指定されたoptionIdを持つボタンを探す
@@ -56,7 +56,6 @@ function updateQuizSections(sectionId, firstQuizId, optionId) {
     };
 
     const optionElement = document.querySelector(`#${sectionId} ${button_container_class[sectionId]} #${optionId}`);
-    console.log(optionElement);
 
     if (optionElement) {
         // onclick属性を更新して、指定されたfirstQuizIdを使用するようにする
@@ -81,7 +80,6 @@ function renderQuizzes(quizzes) {
         // クイズセクションのコンテナを作成
         const sectionElement = document.createElement('div');
         sectionElement.id = quiz.id;
-        console.log(quiz.id);
         sectionElement.className = 'section quiz-section';
         sectionElement.style.display = 'none';
 
@@ -146,7 +144,6 @@ function renderQuizzes(quizzes) {
     });
 }
 
-//ACT03のとき、1問目でdeafeated_01に飛んでしまう
 //迷走時対応
 
 function generateAndUpdateRandomQuizzes() {
@@ -271,9 +268,10 @@ window.displayACT02SectionBasedOnCorrectCount = function() {
 
 // クイズ終了後に正解数に基づいてセクションを表示する関数
 window.displayEndingBasedOnCorrectCount = function() {
-    if (correctCountACT02 >= 4) {
-        showSection('ACT03_defeated_01');
-    } else if (correctCountACT02 >= 1) {
+    console.log('Correct count:', correctCountACT03);
+    if (correctCountACT03 >= 4) {
+        showSection('ACT03_defeated_02');
+    } else if (correctCountACT03 >= 1) {
         showSection('bitter_end_01');
     } else {
         showSection('dead_end');
@@ -327,7 +325,7 @@ function createImageHTML(section) {
     if (section.image) {
         imageHTML = `
             <div class="image">
-                <img src="${section.image.data}" alt="${section.id}" class="${section.image.width}">
+                <img src="${section.image.data}" alt="${section.id}" class="${section.image.image_class}">
             </div>`;
     };
 
@@ -380,7 +378,18 @@ function createButtonHTML(section) {
         }
 
         buttonsLayoutHTML_tmp = "button-container-horizontal"
-        
+
+    // sectionIdがACT03_defeated_01である場合、正解数に基づいて次のセクションを表示
+    } else if (section.id === 'ACT03_defeated_01') {
+
+        // 次へ進むボタンのHTMLを作成 || 基本的に次へ進むボタンは表示
+        buttonsHTML_tmp += `
+            <button id="next" onclick="displayEndingBasedOnCorrectCount()" class="next_button button_position_fixed">
+                <div>次へ</div>
+            </button>
+        `;
+
+        buttonsLayoutHTML_tmp = "button-container-horizontal"
 
     // containerClassがquiz以外で、選択肢がある場合は選択肢分のボタンを表示
     } else if (section.options && section.options.length > 0) {
@@ -403,8 +412,6 @@ function createButtonHTML(section) {
             buttonsLayoutHTML_tmp = "button-container-horizontal"
         };
 
-
-
     // 選択肢がない場合は次へ、戻るボタンを表示
     } else {
 
@@ -424,8 +431,6 @@ function createButtonHTML(section) {
     return buttonsHTML;
 }
 
-
-
 function setupLanguageChangeListeners() {
     const languageButtons = document.getElementsByName('charACT01a_er');
     languageButtons.forEach((button) => {
@@ -438,6 +443,8 @@ function setupLanguageChangeListeners() {
 function updateAllTextContents() {
     const lang = 'kana';
     updateTextContent(document.querySelectorAll('.description'), lang, commands);
+    updateTextContent(document.querySelectorAll('.home_title'), lang, commands);
+    updateTextContent(document.querySelectorAll('.home_subtitle'), lang, commands);
     updateTextContent(document.querySelectorAll('.textHTML'), lang, commands);
     updateTextContent(document.querySelectorAll('.topText'), lang, commands);
     updateTextContent(document.querySelectorAll('.bottomText'), lang, commands);
@@ -473,10 +480,47 @@ function createSectionHTML(section) {
     let desc = '';
 
     // 0. メニュー
+    if (section.section_class === '0_menu') {
+        
+        let title = ''; // タイトル
+        let subtitle = ''; // サブタイトル
+        let imageHTML = ''; // 画像データ
 
+        // 画像
+        for (const image of section.image) {
+            imageHTML += `
+                <div class="image">
+                    <img src="${image.data}" alt="${section.id}" class="${image.image_class}">
+                </div>`;
+        }
+
+        // メッセージ
+        for (const text of section.texts) {
+            
+            if (text.type === 'title') {
+                title = `<div class="home_title" data-key="${text.key}"></div>`;
+            }
+
+            if (text.type === 'subtitle') {
+                subtitle = `<div class="home_subtitle" data-key="${text.key}"></div>`;
+            }
+        };
+
+        let buttonsHTML = createButtonHTML(section);
+          
+        sectionHTML = `
+        <div id="${section.id}" class="section">
+            <div class="home-wrapper main-wrapper_height_80">
+                ${title}
+                ${subtitle}
+                ${imageHTML}
+            </div>
+            ${buttonsHTML}
+        </div>
+        `;
 
     // 2. メッセージのみ
-    if (section.section_class === '2_onlytext') {
+    } else if (section.section_class === '2_onlytext') {
         
         if (section.texts && section.texts.length > 0) {
             for (const msg of section.texts) {
