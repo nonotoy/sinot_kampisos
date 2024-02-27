@@ -90,7 +90,7 @@ main {
 .home_title {
   position: absolute; /* 要素の位置を絶対位置に設定 */
   top: 50%; /* 上辺を画面の中央に */
-  left: 50%; /* 左辺を画面の中央に */
+  left: 30%; /* 左辺を画面の中央に */
   transform: translate(-50%, -50%); /* 要素の中央を計算し直して配置 */
   font-size: 3em; /* 文字の大きさ */
 }
@@ -100,11 +100,16 @@ main {
   margin: 0 0 0 60px;
 }
 
+.home_image1 {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+}
+
 .home_image2_float {
   float: right;
   margin: 0 60px 0 0;
 }
-
 
 .quiz_wrapper {
   display: flex;
@@ -187,6 +192,7 @@ main {
 .width_110 {max-width: 110%;}
 .width_120 {max-width: 120%;}
 .width_130 {max-width: 130%;}
+.width_150 {max-width: 150%;}
 
 .max-height_30 {max-height: 30vh;}
 .max-height_90 {max-height: 90vh;}
@@ -227,6 +233,10 @@ main {
   margin: 0 auto;
 }
 
+.quiz_options_height {
+  height: 65vh;
+}
+
 .options_8questions {
   display: flex;
   flex-wrap: wrap;
@@ -235,6 +245,11 @@ main {
 
 .quiz-option_8questions {
   flex-basis: calc(50% - 20px);
+  margin: 10px;
+}
+
+.random_quiz-option_8questions {
+  position: absolute;
   margin: 10px;
 }
 

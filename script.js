@@ -10,6 +10,11 @@ const INCORRECT_IMAGE_PATH = "materials/esaman_incorrect.png";
 let correctCountACT02 = 0;
 let correctCountACT03 = 0;
 
+
+const randomQuizzes_ACT02 = generateRandomQuizzes('ACT02a', 12, 5, 3);
+const randomQuizzes_ACT03_09 = generateRandomQuizzes('ACT03_09', 199, 5, 8);
+const randomQuizzes_ACT03_10 = generateRandomQuizzes('ACT03_10', 199, 5, 8);
+
 // ランダムなクイズを生成
 function generateRandomQuizzes(baseId, totalQuizzes, numberOfQuizzes, numberOfOptions) {
     const selectedIds = new Set();
@@ -21,7 +26,8 @@ function generateRandomQuizzes(baseId, totalQuizzes, numberOfQuizzes, numberOfOp
 
     const endIDclass = {
         'ACT02a': 'ACT02_end',
-        'ACT03': 'ACT03_defeated_01',
+        'ACT03_09': 'ACT03_defeated_01',
+        'ACT03_10': 'ACT03_defeated_01',
     };
   
     return Array.from(selectedIds).map((id, index, array) => {
@@ -43,9 +49,6 @@ function generateRandomQuizzes(baseId, totalQuizzes, numberOfQuizzes, numberOfOp
     });    
 }
 
-const randomQuizzes_ACT02 = generateRandomQuizzes('ACT02a', 12, 5, 3);
-const randomQuizzes_ACT03 = generateRandomQuizzes('ACT03', 199, 5, 8);
-
 function updateQuizSections(sectionId, firstQuizId, optionId) {
     // 指定されたセクション内で、指定されたoptionIdを持つボタンを探す
 
@@ -64,6 +67,25 @@ function updateQuizSections(sectionId, firstQuizId, optionId) {
         console.error('Option not found:', optionId, 'in section:', sectionId);
     }
 }
+
+function randomizeButtons(sectionElement) {
+    const buttons = sectionElement.querySelectorAll('button');
+    const containerRect = sectionElement.getBoundingClientRect();
+    
+    buttons.forEach(button => {
+        // ボタンのサイズを取得（ボタンが可視状態であることが前提）
+        const buttonRect = button.getBoundingClientRect();
+
+        // 親要素のサイズに基づいてランダムな位置を生成
+        const x = Math.round(Math.random() * Math.random() * 1000); // (containerRect.width - buttonRect.width);
+        const y = Math.round(Math.random() * Math.random() * 1000); // (containerRect.height - buttonRect.height);
+
+        // ボタンにスタイルを適用
+        button.style.left = `${x}px`;
+        button.style.top = `${y}px`;
+    });
+}
+
 
 // HTMLに変換してDOMに挿入する関数
 function renderQuizzes(quizzes) {
@@ -101,18 +123,23 @@ function renderQuizzes(quizzes) {
         const optionsElement = document.createElement('div');
 
         // quiz.idにACT03が含まれる場合
-        if (quiz.id.includes('ACT03')) {
-            optionsElement.className = 'options_8questions';
+        if (quiz.id.includes('ACT03_09')) {
+            optionsElement.className = 'quiz_options_height options_8questions';
+        } else if (quiz.id.includes('ACT03_10')) {
+            optionsElement.className = 'quiz_options_height';
         } else {
-            optionsElement.className = 'options';
+            optionsElement.className = 'quiz_options_height options';
         }
 
         // 選択肢を含む要素を作成
         quiz.options.forEach(option => {
             const button = document.createElement('button');
             button.id = option.id;
-            if (quiz.id.includes('ACT03')) {
+            if (quiz.id.includes('ACT03_09')) {
                 button.className = 'quiz-option_8questions' ;
+                button.setAttribute('onclick', `checkACT03Answer('${quiz.id}', '${option.id}')`);
+            } else if (quiz.id.includes('ACT03_10')) {
+                button.className = 'random_quiz-option_8questions' ;
                 button.setAttribute('onclick', `checkACT03Answer('${quiz.id}', '${option.id}')`);
             } else {
                 button.className = 'quiz-option';
@@ -141,25 +168,27 @@ function renderQuizzes(quizzes) {
         sectionElement.appendChild(questionElement);
         sectionElement.appendChild(optionsElement);
         mainBlock.appendChild(sectionElement);
+
+        if (quiz.id.includes('ACT03_10')) {
+            randomizeButtons(sectionElement);
+        }
     });
 }
-
-//迷走時対応
 
 function generateAndUpdateRandomQuizzes() {
 
     updateQuizSections('ACT02_home', randomQuizzes_ACT02[0].id, 'option1');
-    updateQuizSections('ACT03_09', randomQuizzes_ACT03[0].id, 'option2');
-    updateQuizSections('ACT03_10', randomQuizzes_ACT03[0].id, 'option1');
+    updateQuizSections('ACT03_09', randomQuizzes_ACT03_09[0].id, 'option2');
+    updateQuizSections('ACT03_10', randomQuizzes_ACT03_10[0].id, 'option1');
 
     // HTMLに変換してDOMに挿入する関数
     renderQuizzes(randomQuizzes_ACT02);
-    renderQuizzes(randomQuizzes_ACT03);
+    renderQuizzes(randomQuizzes_ACT03_09);
+    renderQuizzes(randomQuizzes_ACT03_10);
 
     // HTMLを生成し、最初のセクションを表示
     // renderSectionsAndShowFirst();
 }
-
 
 // セクションの表示・非表示を切り替える
 window.showSection = function(sectionId) {
@@ -211,7 +240,7 @@ window.checkACT02Answer = function(sectionId, optionId) {
 
 window.checkACT03Answer = function(sectionId, optionId) {
 
-    const section = randomQuizzes_ACT03.find(quiz => quiz.id === sectionId);
+    const section = randomQuizzes_ACT03_09.find(quiz => quiz.id === sectionId);
     const option = section.options.find(option => option.id === optionId);
     const answer = option.answer;
 
@@ -253,7 +282,7 @@ function displayImage(imagePath, nextSectionId, backgroundColor) {
     }, 1500); // 1.5秒
 }
 
-// クイズ終了後に正解数に基づいてセクションを表示する関数
+// 完了' クイズ終了後に正解数に基づいてセクションを表示する関数
 window.displayACT02SectionBasedOnCorrectCount = function() {
     if (correctCountACT02 > 3) {
         showSection('ACT02_result_A');
@@ -266,7 +295,7 @@ window.displayACT02SectionBasedOnCorrectCount = function() {
     }
 };
 
-// クイズ終了後に正解数に基づいてセクションを表示する関数
+// 完了' クイズ終了後に正解数に基づいてセクションを表示する関数
 window.displayEndingBasedOnCorrectCount = function() {
     console.log('Correct count:', correctCountACT03);
     if (correctCountACT03 >= 4) {
@@ -301,6 +330,7 @@ function toggleTips() {
         tips[i].style.display = tipsVisible ? "block" : "none";
     }
 }
+
 
 // Call the function immediately after defining it
 // toggleTips();
@@ -461,7 +491,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-
 function renderSectionsAndShowFirst() {
     const mainBlock = document.getElementById('mainBlock');
     sections.forEach(section => {
@@ -488,10 +517,17 @@ function createSectionHTML(section) {
 
         // 画像
         for (const image of section.image) {
-            imageHTML += `
-                <div class="image">
-                    <img src="${image.data}" alt="${section.id}" class="${image.image_class}">
-                </div>`;
+            if (image.data === 'materials/home_2.png') {
+                imageHTML += `
+                    <div class="home_image1">
+                        <img src="${image.data}" alt="${section.id}" class="${image.image_class}">
+                    </div>`;
+            } else {
+                imageHTML += `
+                    <div class="image">
+                        <img src="${image.data}" alt="${section.id}" class="${image.image_class}">
+                    </div>`;     
+            }
         }
 
         // メッセージ
@@ -608,6 +644,42 @@ function createSectionHTML(section) {
             </div>
         `;
 
+    // 6. クイズ (迷走時)
+    } else if (section.section_class === '6_quiz_parallised') {
+
+        // 問題文の設定
+        let questionText = '';
+        if (section.texts && section.texts.length > 0) {
+            section.texts.forEach(text => {
+                questionText += `<div class="${text.type}" data-key="${text.key}"></div>`;
+            });
+        }
+
+        // 選択肢のHTMLを生成
+        let optionsHTML = '';
+        if (section.options && section.options.length > 0) {
+            // 選択肢をシャッフル
+            shuffleArray(section.options);
+
+            // シャッフルされた選択肢でHTMLを生成
+            section.options.forEach(option => {
+                optionsHTML += `
+                    <button class="quiz-option" id="${option.id}" onclick="checkACT03Answer('${section.id}', '${option.id}')">
+                        <div class="option-text" data-key="${option.descKey}"></div>
+                    </button>
+                `;
+            });
+        }
+
+        // 最終的なクイズセクションのHTMLを組み立て
+        sectionHTML = `
+            <div id="${section.id}" class="section quiz-section">
+                <div class="question">${questionText}</div>
+                <div class="options">${optionsHTML}</div>
+            </div>
+        `;
+
+
     // 1. 標準: 画像 (サイズは変数で変更化) (+ 上下左右メッセージ) 
     } else {
 
@@ -690,7 +762,7 @@ function createSectionHTML(section) {
         `;
     }
 
-        // 1.7. クイズ 選択肢ランダム配置
+    // 1.7. クイズ 選択肢ランダム配置
     // 1.6. 画面全体に選択肢　(kamuyutar対戦前)
     // 1.8. ラストメッセージ (左上、右下配置)
     // 2. クイズ前

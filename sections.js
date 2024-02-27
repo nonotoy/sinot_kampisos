@@ -556,6 +556,7 @@ export const sections = [
 		],
 		image: 	{ data: 'materials/ACT02_result_A.png', image_class: 'width_90'},
 		next: 'ACT03_01',
+		back: 'ACR02_home',
 		backgroundColor: 'rgba(255,255,204,1.0)',
 	},
 	{
@@ -565,6 +566,7 @@ export const sections = [
 		],
 		image: 	{ data: 'materials/ACT02_result_B.png', image_class: 'width_90'},
 		next: 'ACT03_01',
+		back: 'ACR02_home',
 		backgroundColor: 'rgba(255,255,204,1.0)',
 	},
 	{
@@ -574,6 +576,7 @@ export const sections = [
 		],
 		image: 	{ data: 'materials/ACT02_result_C.png', image_class: 'width_90'},
 		next: 'ACT03_01',
+		back: 'ACR02_home',
 		backgroundColor: 'rgba(255,255,204,1.0)',
 	},
 	{
@@ -583,8 +586,10 @@ export const sections = [
 		],
 		image: 	{ data: 'materials/ACT02_result_D.png', image_class: 'width_90'},
 		next: 'ACT03_01',
+		back: 'ACR02_home',
 		backgroundColor: 'rgba(255,255,204,1.0)',
 	},
+	// もう一度試すボタンをつく流。
 	{
 		id: 'save',
 		texts: [
@@ -602,7 +607,7 @@ export const sections = [
 		texts: [
 				{type: 'topText', key: 'ACT03_01'}
 		],
-		image: 	{ data: 'materials/ACT03_01.png', image_class: 'width_90'},
+		image: 	{ data: 'materials/ACT03_01.png', image_class: 'width_150'},
 		next: 'ACT03_02',
 		backgroundColor: 'rgba(204,255,255,1.0)',
 	},
@@ -620,7 +625,7 @@ export const sections = [
 		texts: [
 				{type: 'topText', key: 'ACT03_03'}
 		],
-		image: 	{ data: 'materials/ACT03_03.png', image_class: 'width_90'},
+		image: 	{ data: 'materials/ACT03_03.png', image_class: 'width_120'},
 		next: 'ACT03_start',
 		backgroundColor: 'rgba(204,255,255,1.0)',
 	},
@@ -755,7 +760,7 @@ export const sections = [
     {
 		id: 'bitter_end_02',
 		texts: [],
-		image: 	{ data: 'materials/bitter_end_02.png', image_class: 'width_90'},
+		image: 	{ data: 'materials/bitter_end_02.png', image_class: 'width_30'},
 		backgroundColor: 'rgba(255,255,204,1.0)',
 		next: 'bitter_end_03',
 	},
