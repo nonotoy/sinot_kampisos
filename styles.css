@@ -220,7 +220,7 @@ main {
   text-align: center;
 }
 
-.topText {
+.topText, .bottomText {
   font-size: 1.8em; 
   text-align: center;
 }

@@ -13,14 +13,14 @@ let correctCountACT03 = 0;
 
 const randomQuizzes_ACT02 = generateRandomQuizzes('ACT02a', 12, 5, 3);
 const randomQuizzes_ACT03_09 = generateRandomQuizzes('ACT03_09', 199, 5, 8);
-const randomQuizzes_ACT03_10 = generateRandomQuizzes('ACT03_10', 199, 5, 8);
+const randomQuizzes_ACT03_10 = generateRandomQuizzes('ACT03_10', 9, 5, 8);
 
 // ランダムなクイズを生成
 function generateRandomQuizzes(baseId, totalQuizzes, numberOfQuizzes, numberOfOptions) {
     const selectedIds = new Set();
     while (selectedIds.size < numberOfQuizzes) {
       // 生成されたランダムな数字を3桁の文字列で0埋めする
-      const quizNumber = (Math.floor(Math.random() * totalQuizzes) + 1).toString().padStart(3, '0');
+      const quizNumber = (Math.floor(Math.random() * totalQuizzes)).toString().padStart(3, '0');
       selectedIds.add(`${baseId}_${quizNumber}`);
     }
 
@@ -68,22 +68,41 @@ function updateQuizSections(sectionId, firstQuizId, optionId) {
     }
 }
 
-function randomizeButtons(sectionElement) {
-    const buttons = sectionElement.querySelectorAll('button');
-    const containerRect = sectionElement.getBoundingClientRect();
-    
-    buttons.forEach(button => {
-        // ボタンのサイズを取得（ボタンが可視状態であることが前提）
-        const buttonRect = button.getBoundingClientRect();
 
-        // 親要素のサイズに基づいてランダムな位置を生成
-        const x = Math.round(Math.random() * Math.random() * 1000); // (containerRect.width - buttonRect.width);
-        const y = Math.round(Math.random() * Math.random() * 1000); // (containerRect.height - buttonRect.height);
+function randomizeButtons(sectionElement) {
+    // 一時的にセクションのvisibilityをvisibleに設定
+    const originalVisibility = sectionElement.style.visibility;
+    sectionElement.style.visibility = 'visible';
+
+    // 'target-container'クラスを持つ要素を検索
+    const targetContainer = sectionElement.querySelector('.quiz_options_height');
+    if (!targetContainer) {
+        console.error('Target container not found!');
+        return;
+    }
+
+    // targetContainerの座標とサイズを取得
+    const containerRect = targetContainer.getBoundingClientRect();
+
+    const buttons = sectionElement.querySelectorAll('button');
+
+    buttons.forEach(button => {
+        // ボタンのサイズ（ここでは仮の値を使用）
+        const buttonWidth = 0; // 仮の値
+        const buttonHeight = 0; // 仮の値
+
+        // targetContainerのサイズに基づいてランダムな位置を生成
+        const x = Math.random() * (containerRect.width - buttonWidth) ;
+        const y = Math.random() * (containerRect.height - buttonHeight);
 
         // ボタンにスタイルを適用
-        button.style.left = `${x}px`;
-        button.style.top = `${y}px`;
+        button.style.position = 'absolute';
+        button.style.left = `${x + containerRect.left}px`; // containerRect.leftを加算して親要素内の相対位置を調整
+        button.style.top = `${y + containerRect.top}px`; // containerRect.topを加算して親要素内の相対位置を調整
     });
+
+    // 元のvisibilityに戻す
+    sectionElement.style.visibility = originalVisibility;
 }
 
 
@@ -128,7 +147,7 @@ function renderQuizzes(quizzes) {
         } else if (quiz.id.includes('ACT03_10')) {
             optionsElement.className = 'quiz_options_height';
         } else {
-            optionsElement.className = 'quiz_options_height options';
+            optionsElement.className = 'options';
         }
 
         // 選択肢を含む要素を作成
@@ -770,6 +789,7 @@ function createSectionHTML(section) {
     // セクションの全体のHTMLを組み立てる
     return sectionHTML;
 }
+
 
 
 // HTMLを生成
