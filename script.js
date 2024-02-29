@@ -10,25 +10,33 @@ const INCORRECT_IMAGE_PATH = "materials/esaman_incorrect.png";
 let correctCountACT02 = 0;
 let correctCountACT03 = 0;
 
-
+// ランダムなクイズを生成
 const randomQuizzes_ACT02 = generateRandomQuizzes('ACT02a', 12, 5, 3);
 const randomQuizzes_ACT03_09 = generateRandomQuizzes('ACT03_09', 199, 5, 8);
 const randomQuizzes_ACT03_10 = generateRandomQuizzes('ACT03_10', 9, 5, 8);
 
+// 選択肢をシャッフルするための関数
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+}
+
 // ランダムなクイズを生成
 function generateRandomQuizzes(baseId, totalQuizzes, numberOfQuizzes, numberOfOptions) {
     const selectedIds = new Set();
-    while (selectedIds.size < numberOfQuizzes) {
-      // 生成されたランダムな数字を3桁の文字列で0埋めする
-      const quizNumber = (Math.floor(Math.random() * totalQuizzes)).toString().padStart(3, '0');
-      selectedIds.add(`${baseId}_${quizNumber}`);
-    }
-
     const endIDclass = {
         'ACT02a': 'ACT02_end',
         'ACT03_09': 'ACT03_defeated_01',
         'ACT03_10': 'ACT03_defeated_01',
     };
+
+    // 生成されたランダムな数字を3桁の文字列で0埋めする
+    while (selectedIds.size < numberOfQuizzes) {
+      const quizNumber = (Math.floor(Math.random() * totalQuizzes)).toString().padStart(3, '0');
+      selectedIds.add(`${baseId}_${quizNumber}`);
+    }
   
     return Array.from(selectedIds).map((id, index, array) => {
       const options = Array.from({ length: numberOfOptions }).map((_, optionIndex) => ({
@@ -49,15 +57,14 @@ function generateRandomQuizzes(baseId, totalQuizzes, numberOfQuizzes, numberOfOp
     });    
 }
 
+// 指定されたセクション内で、指定されたoptionIdを持つボタンを探す
 function updateQuizSections(sectionId, firstQuizId, optionId) {
-    // 指定されたセクション内で、指定されたoptionIdを持つボタンを探す
 
     const button_container_class = {
         'ACT02_home': '.button-container-vertical',
         'ACT03_09': '.button-container-horizontal',
         'ACT03_10': '.button-container-horizontal',
     };
-
     const optionElement = document.querySelector(`#${sectionId} ${button_container_class[sectionId]} #${optionId}`);
 
     if (optionElement) {
@@ -159,7 +166,7 @@ function renderQuizzes(quizzes) {
                 button.setAttribute('onclick', `checkACT03Answer('${quiz.id}', '${option.id}')`);
             } else if (quiz.id.includes('ACT03_10')) {
                 button.className = 'random_quiz-option_8questions' ;
-                button.setAttribute('onclick', `checkACT03Answer('${quiz.id}', '${option.id}')`);
+                button.setAttribute('onclick', `checkACT03_10Answer('${quiz.id}', '${option.id}')`);
             } else {
                 button.className = 'quiz-option';
                 button.setAttribute('onclick', `checkACT02Answer('${quiz.id}', '${option.id}')`);
@@ -204,10 +211,8 @@ function generateAndUpdateRandomQuizzes() {
     renderQuizzes(randomQuizzes_ACT02);
     renderQuizzes(randomQuizzes_ACT03_09);
     renderQuizzes(randomQuizzes_ACT03_10);
-
-    // HTMLを生成し、最初のセクションを表示
-    // renderSectionsAndShowFirst();
 }
+
 
 // セクションの表示・非表示を切り替える
 window.showSection = function(sectionId) {
@@ -239,6 +244,26 @@ window.showSection = function(sectionId) {
 }
 
 // クイズの正解・不正解を判定
+window.checkAnswer = function(sectionId, optionId) {
+
+    const quizArray = sectionId.startsWith('ACT02') ? randomQuizzes_ACT02 :
+                      sectionId.startsWith('ACT03_09') ? randomQuizzes_ACT03_09 :
+                      randomQuizzes_ACT03_10;
+                      
+    const section = quizArray.find(quiz => quiz.id === sectionId);
+    const option = section.options.find(option => option.id === optionId);
+    const answer = option.answer;
+
+    if (answer) {
+        // 正解の場合
+        displayImage(CORRECT_IMAGE_PATH, section.next, 'rgba(255, 0, 0, 0.2)');
+        window[sectionId.includes('ACT02') ? 'correctCountACT02' : 'correctCountACT03']++;
+    } else {
+        // 不正解の場合
+        displayImage(INCORRECT_IMAGE_PATH, section.next, 'rgba(0, 123, 255, 0.2)');
+    }
+}
+
 window.checkACT02Answer = function(sectionId, optionId) {
 
     const section = randomQuizzes_ACT02.find(quiz => quiz.id === sectionId);
@@ -275,6 +300,25 @@ window.checkACT03Answer = function(sectionId, optionId) {
     console.log('Correct count:', correctCountACT03);
 }
 
+window.checkACT03_10Answer = function(sectionId, optionId) {
+
+    const section = randomQuizzes_ACT03_10.find(quiz => quiz.id === sectionId);
+    const option = section.options.find(option => option.id === optionId);
+    const answer = option.answer;
+
+    if (answer) {
+        // 正解の場合
+        displayImage(CORRECT_IMAGE_PATH, section.next, 'rgba(255, 0, 0, 0.2)');
+        correctCountACT03++;
+    } else {
+        // 不正解の場合
+        displayImage(INCORRECT_IMAGE_PATH, section.next, 'rgba(0, 123, 255, 0.2)');
+    }
+
+    console.log('Correct count:', correctCountACT03);
+}
+
+
 // 画像を表示し、次のセクションに移動する処理を行う関数
 function displayImage(imagePath, nextSectionId, backgroundColor) {
 
@@ -303,20 +347,17 @@ function displayImage(imagePath, nextSectionId, backgroundColor) {
 
 // 完了' クイズ終了後に正解数に基づいてセクションを表示する関数
 window.displayACT02SectionBasedOnCorrectCount = function() {
-    if (correctCountACT02 > 3) {
-        showSection('ACT02_result_A');
-    } else if (correctCountACT02 = 3) {
-        showSection('ACT02_result_B');
-    } else if (correctCountACT02 = 2) {
-        showSection('ACT02_result_C');
-    } else if (correctCountACT02 < 2) {
-        showSection('ACT02_result_D');
-    }
+    const sectionMap = {
+        4: 'ACT02_result_A', // 4以上の場合は'A'
+        3: 'ACT02_result_B',
+        2: 'ACT02_result_C',
+    };
+    const section = sectionMap[correctCountACT02] || 'ACT02_result_D'; // マップにない場合はデフォルトで'D'
+    showSection(section);
 };
 
 // 完了' クイズ終了後に正解数に基づいてセクションを表示する関数
 window.displayEndingBasedOnCorrectCount = function() {
-    console.log('Correct count:', correctCountACT03);
     if (correctCountACT03 >= 4) {
         showSection('ACT03_defeated_02');
     } else if (correctCountACT03 >= 1) {
@@ -339,7 +380,6 @@ function updateTextContent(elements, lang, commands) {
     });
 }
 
-
 // Tipsの表示・非表示を切り替える
 function toggleTips() {
     const tips = document.getElementsByClassName("tip");
@@ -349,7 +389,6 @@ function toggleTips() {
         tips[i].style.display = tipsVisible ? "block" : "none";
     }
 }
-
 
 // Call the function immediately after defining it
 // toggleTips();
@@ -379,15 +418,6 @@ function createImageHTML(section) {
     };
 
     return imageHTML;
-}
-
-
-// 選択肢をシャッフルするための関数
-function shuffleArray(array) {
-    for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
-    }
 }
 
 // 選択肢ボタンのHTMLを作成
@@ -480,6 +510,7 @@ function createButtonHTML(section) {
     return buttonsHTML;
 }
 
+// EventListener - 言語切り替え
 function setupLanguageChangeListeners() {
     const languageButtons = document.getElementsByName('charACT01a_er');
     languageButtons.forEach((button) => {
@@ -489,6 +520,7 @@ function setupLanguageChangeListeners() {
     });
 }
 
+// EventListener - テキスト反映
 function updateAllTextContents() {
     const lang = 'kana';
     updateTextContent(document.querySelectorAll('.description'), lang, commands);
@@ -503,20 +535,14 @@ function updateAllTextContents() {
     //updateTextContent(document.querySelectorAll('.tip'), tipLang, commands);
 }
 
+
+// 画面の読み込みが完了したら実行
+// 確認 - 毎回Home画面に戻った時にクイズを生成し直すのであれば、EventListenerの登録を変更
 document.addEventListener('DOMContentLoaded', () => {
     setupLanguageChangeListeners();
     generateAndUpdateRandomQuizzes();
     updateAllTextContents();
 });
-
-
-function renderSectionsAndShowFirst() {
-    const mainBlock = document.getElementById('mainBlock');
-    sections.forEach(section => {
-        mainBlock.innerHTML += createSectionHTML(section);
-    });
-    showSection("0_home");
-}
 
 
 // HTMLコードを生成
@@ -683,7 +709,7 @@ function createSectionHTML(section) {
             // シャッフルされた選択肢でHTMLを生成
             section.options.forEach(option => {
                 optionsHTML += `
-                    <button class="quiz-option" id="${option.id}" onclick="checkACT03Answer('${section.id}', '${option.id}')">
+                    <button class="quiz-option" id="${option.id}" onclick="checkACT03_10Answer('${section.id}', '${option.id}')">
                         <div class="option-text" data-key="${option.descKey}"></div>
                     </button>
                 `;
@@ -789,8 +815,6 @@ function createSectionHTML(section) {
     // セクションの全体のHTMLを組み立てる
     return sectionHTML;
 }
-
-
 
 // HTMLを生成
 const mainBlock = document.getElementById('mainBlock');
