@@ -20,7 +20,8 @@ export const sections = [
 		options: [
 				{ id: 'option1', nextSection: '1-1_prologue1', descKey: 'opt_1a'},
 				{ id: 'option2', nextSection: 'ACT02_home', descKey: 'opt_1b'},
-				{ id: 'option3', nextSection: 'ACT03_01', descKey: 'opt_1c'}
+				{ id: 'option3', nextSection: 'ACT03_01', descKey: 'opt_1c'},
+				{ id: 'option4', nextSection: 'paskur', descKey: 'opt_1d'}
 		],
 		verticalLayout: true,
 	},
@@ -59,7 +60,8 @@ export const sections = [
 	{
 		id: 'guidance',
 		texts: [
-				{ type: 'topText', key: 'guidance'}
+				{ type: 'topText', key: 'guidance'},
+				{ type: 'topTipText', key: 'guidance'},
 		],
 		image: 	{ data: 'materials/guidance.png', image_class: 'width_80'},
 		options: [
@@ -84,6 +86,7 @@ export const sections = [
 				{ type: 'topText', key: 'ACT01a_02'},
 				{ type: 'leftText', key: 'ACT01a_02_left'},
 				{ type: 'rightText', key: 'ACT01a_02_right'},
+				{ type: 'topTipText', key: 'ACT01a_02'},
 		],
 		image: 	{ data: 'materials/ACT01a_02.png', image_class: 'width_90'},
 		back: 'ACT01a_01',
@@ -94,6 +97,7 @@ export const sections = [
 		texts: [
 				{ type: 'topText', key: 'ACT01a_03'},
 				{ type: 'leftText', key: 'ACT01a_03_left'},
+				{ type: 'topTipText', key: 'ACT01a_03'},
 		],
 		image: 	{ data: 'materials/ACT01a_03.png', image_class: 'width_90'},
 		options: [
@@ -172,7 +176,7 @@ export const sections = [
 	{
 		id: 'paskur_a01', // siyokina
 		section_class: '3_leftimg',
-		image: 	{ data: 'materials/paskur_a01.jpg', image_class: 'width_60'},
+		image: 	{ data: 'materials/paskur_a01.png', image_class: 'width_70'},
 		texts: [
 				{ type: 'description', key: 'paskur_a01'}
 		],
@@ -180,8 +184,8 @@ export const sections = [
 	},
 	{
 		id: 'paskur_a02', // siyokina
-		section_class: '3_leftimg',
-		image: 	{ data: 'materials/paskur_a02.png', image_class: 'width_60'},
+		section_class: '4_rightimg',
+		image: 	{ data: 'materials/paskur_a02.png', image_class: 'width_70'},
 		texts: [
 				{ type: 'description', key: 'paskur_a02'}
 		],
@@ -190,7 +194,7 @@ export const sections = [
 	{
 		id: 'paskur_b01', // kamuyutar
 		section_class: '3_leftimg',
-		image: 	{ data: 'materials/paskur_b01.png', image_class: 'width_60'},
+		image: 	{ data: 'materials/paskur_b01.png', image_class: 'width_70'},
 		texts: [
 				{ type: 'description', key: 'paskur_b01'}
 		],
@@ -198,8 +202,8 @@ export const sections = [
 	},
 	{
 		id: 'paskur_b02', // siyokina
-		section_class: '3_leftimg',
-		image: 	{ data: 'materials/paskur_b02.png', image_class: 'width_60'},
+		section_class: '4_rightimg',
+		image: 	{ data: 'materials/paskur_b02.png', image_class: 'width_70'},
 		texts: [
 				{ type: 'description', key: 'paskur_b02'}
 		],

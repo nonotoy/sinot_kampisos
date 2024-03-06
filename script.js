@@ -10,8 +10,43 @@ const INCORRECT_IMAGE_PATH = "materials/esaman_incorrect.png";
 let correctCountACT02 = 0;
 let correctCountACT03 = 0;
 
+// mainBlockの高さと幅を取得
+var mainBlockHeight = 0;
+var mainBlockWidth = 0;
+
+// セクションの表示・非表示を切り替える
+window.showSection = function(sectionId) {
+    const allSections = document.querySelectorAll('.section');
+    const controls = document.getElementById("controls");
+    const tips = document.querySelectorAll('.tip');
+
+    allSections.forEach(section => {
+        if (section.id === sectionId) {
+            section.style.display = 'block'; // 指定されたセクションを表示
+
+            // 背景色を設定
+            const sectionData = sections.find(s => s.id === sectionId);
+            if (sectionData && sectionData.backgroundColor) {
+                document.body.style.backgroundColor = sectionData.backgroundColor;
+            } else {
+                document.body.style.backgroundColor = ''; // デフォルト
+            }
+
+            // すべてのtipsを一度非表示にする
+            ['.topTipText', '.bottomTipText', '.leftTipText', '.rightTipText', '.button_description-tips'].forEach(className => {
+                section.querySelectorAll(className).forEach(tip => {
+                    tip.style.display = 'none';
+                });
+            });
+
+        } else {
+            section.style.display = 'none'; // 他のセクションを非表示にする
+        }
+    });
+}
+
 // ランダムなクイズを生成
-const randomQuizzes_ACT02 = generateRandomQuizzes('ACT02a', 12, 5, 3);
+const randomQuizzes_ACT02 = generateRandomQuizzes('ACT02a', 11, 5, 3);
 const randomQuizzes_ACT03_09 = generateRandomQuizzes('ACT03_09', 199, 5, 8);
 const randomQuizzes_ACT03_10 = generateRandomQuizzes('ACT03_10', 9, 5, 8);
 
@@ -75,7 +110,6 @@ function updateQuizSections(sectionId, firstQuizId, optionId) {
     }
 }
 
-
 function randomizeButtons(sectionElement) {
     // 一時的にセクションのvisibilityをvisibleに設定
     const originalVisibility = sectionElement.style.visibility;
@@ -93,14 +127,17 @@ function randomizeButtons(sectionElement) {
 
     const buttons = sectionElement.querySelectorAll('button');
 
+    console.log('containerRect.left',containerRect.left)
+
     buttons.forEach(button => {
+
         // ボタンのサイズ（ここでは仮の値を使用）
-        const buttonWidth = 0; // 仮の値
-        const buttonHeight = 0; // 仮の値
+        const buttonWidth = 200; // 仮の値
+        const buttonHeight = 100; // 仮の値
 
         // targetContainerのサイズに基づいてランダムな位置を生成
-        const x = Math.random() * (containerRect.width - buttonWidth) ;
-        const y = Math.random() * (containerRect.height - buttonHeight);
+        const x = Math.random() * (mainBlockWidth - buttonWidth);
+        const y = Math.random() * (mainBlockHeight - buttonHeight);
 
         // ボタンにスタイルを適用
         button.style.position = 'absolute';
@@ -111,7 +148,6 @@ function randomizeButtons(sectionElement) {
     // 元のvisibilityに戻す
     sectionElement.style.visibility = originalVisibility;
 }
-
 
 // HTMLに変換してDOMに挿入する関数
 function renderQuizzes(quizzes) {
@@ -213,35 +249,6 @@ function generateAndUpdateRandomQuizzes() {
     renderQuizzes(randomQuizzes_ACT03_10);
 }
 
-
-// セクションの表示・非表示を切り替える
-window.showSection = function(sectionId) {
-    const allSections = document.querySelectorAll('.section');
-    const controls = document.getElementById("controls");
-    const tips = document.querySelectorAll('.tip');
-
-    allSections.forEach(section => {
-        if (section.id === sectionId) {
-            section.style.display = 'block'; // 指定されたセクションを表示
-
-            // 背景色を設定
-            const sectionData = sections.find(s => s.id === sectionId);
-            if (sectionData && sectionData.backgroundColor) {
-                document.body.style.backgroundColor = sectionData.backgroundColor;
-            } else {
-                document.body.style.backgroundColor = ''; // デフォルト
-            }
-
-            // すべてのtipsを一度非表示にする
-            section.querySelectorAll('.tip').forEach(tip => {
-                tip.style.display = 'none';
-            });
-
-        } else {
-            section.style.display = 'none'; // 他のセクションを非表示にする
-        }
-    });
-}
 
 // クイズの正解・不正解を判定
 window.checkAnswer = function(sectionId, optionId) {
@@ -372,7 +379,9 @@ function updateTextContent(elements, lang, commands) {
     elements.forEach((element) => {
         const key = element.getAttribute('data-key');
 
-        if (element.classList.contains('button_description')) {
+        if (element.classList.contains('button_description') || element.classList.contains('button_description-tips')) {
+            element.textContent = commands[lang][key];
+        } else if (element.classList.contains('topTipText') || element.classList.contains('bottomTipText') || element.classList.contains('leftTipText') || element.classList.contains('rightTipText')) {
             element.textContent = commands[lang][key];
         } else if (commands[lang][key]){
             element.innerHTML = `<p>${commands[lang][key]}</p>`;
@@ -382,16 +391,20 @@ function updateTextContent(elements, lang, commands) {
 
 // Tipsの表示・非表示を切り替える
 function toggleTips() {
-    const tips = document.getElementsByClassName("tip");
-    const tipsVisible = document.getElementById("tips").checked;
 
-    for (let i = 0; i < tips.length; i++) {
-        tips[i].style.display = tipsVisible ? "block" : "none";
-    }
-}
+    const classNames = ['.topTipText', '.bottomTipText', '.leftTipText', '.rightTipText', '.button_description-tips'];
+    
+    classNames.forEach(className => {
+        const tips = document.querySelectorAll(className);
+        if (tips) {
+            tips.forEach(tip => {
+                tip.style.display = tip.style.display === 'none' ? 'block' : 'none';
+            });
+        };
+    });
+};
 
-// Call the function immediately after defining it
-// toggleTips();
+document.getElementById('tips_button').addEventListener('click', toggleTips);
 
 
 // ローカルストレージにデータを保存
@@ -476,7 +489,7 @@ function createButtonHTML(section) {
             buttonsHTML_tmp += `
                 <button id="${option.id}" onclick="showSection('${option.nextSection}')">
                     <div class="button_description" data-key="${option.descKey}"></div>
-                    <div class="tip" data-key="${option.tipKey}"></div>
+                    <div class="button_description-tips" data-key="${option.descKey}"></div>
                 </button>
             `;
         };
@@ -532,13 +545,53 @@ function updateAllTextContents() {
     updateTextContent(document.querySelectorAll('.leftText'), lang, commands);
     updateTextContent(document.querySelectorAll('.rightText'), lang, commands);
     updateTextContent(document.querySelectorAll('.button_description'), lang, commands);
-    //updateTextContent(document.querySelectorAll('.tip'), tipLang, commands);
+
+    const tip = 'tips';
+    updateTextContent(document.querySelectorAll('.topTipText'), tip, commands)
+    updateTextContent(document.querySelectorAll('.bottomTipText'), tip, commands);
+    updateTextContent(document.querySelectorAll('.leftTipText'), tip, commands);
+    updateTextContent(document.querySelectorAll('.rightTipText'), tip, commands);
+    updateTextContent(document.querySelectorAll('.button_description-tips'), tip, commands);
+}
+
+
+// 言語切り替え機能を初期化する関数
+function initializeLanguageSwitcher() {
+    var languageSelect = document.getElementById('languageSelect');
+    languageSelect.addEventListener('change', function() {
+        var selectedLanguage = languageSelect.value;
+        // updateLanguage(selectedLanguage);
+    });
+}
+
+// 選択された言語に基づいてページの言語を更新する関数
+function updateLanguage(lang) {
+    var greeting = document.getElementById('greeting');
+    if (lang === 'ja') {
+        greeting.textContent = 'こんにちは、世界！';
+    } else if (lang === 'en') {
+        greeting.textContent = 'Hello, World!';
+    }
 }
 
 
 // 画面の読み込みが完了したら実行
 // 確認 - 毎回Home画面に戻った時にクイズを生成し直すのであれば、EventListenerの登録を変更
 document.addEventListener('DOMContentLoaded', () => {
+
+    var myDiv = document.getElementById('mainBlock');
+    if (myDiv) { // myDivが存在するか確認
+        mainBlockHeight = myDiv.offsetHeight;
+        mainBlockWidth = myDiv.offsetWidth;
+    }
+    
+    window.addEventListener('resize', function() {
+        if (myDiv) { // myDivが存在するか確認
+            mainBlockHeight = myDiv.offsetHeight;
+            mainBlockWidth = myDiv.offsetWidth;
+        }
+    });
+
     setupLanguageChangeListeners();
     generateAndUpdateRandomQuizzes();
     updateAllTextContents();
@@ -639,17 +692,50 @@ function createSectionHTML(section) {
 
         sectionHTML = `
                 <div id="${section.id}" class="section">
-                    <div class="twocolumns">
-                        <div class="leftcol">
+                    <div class="leftimg_twocolumns">
+                        <div class="leftimg_leftcol">
                             ${imageHTML}
                         </div>
-                        <div class="rightcol">
+                        <div class="leftimg_rightcol">
                             ${textHTML}
                         </div>
                     </div>
                     ${buttonsHTML}
                 </div>
             `;
+
+    // 3. 左: 画像、右: テキスト
+} else if (section.section_class === '4_rightimg') {
+
+    // 画像
+    imageHTML = createImageHTML(section);
+    
+    if (section.texts && section.texts.length > 0) {
+        for (const msg of section.texts) {
+                desc += `<div class="${msg.type}" data-key="${msg.key}"></div>`;
+            }
+        textHTML = `<div class="description">
+                        ${desc}
+                    </div>`;
+    };
+
+    // ボタン
+    let buttonsHTML = createButtonHTML(section);
+
+    sectionHTML = `
+            <div id="${section.id}" class="section">
+                <div class="rightimg_twocolumns">
+                    <div class="rightimg_leftcol">
+                        ${textHTML}
+                    </div>
+                    <div class="rightimg_rightcol">
+                        ${imageHTML}
+                    </div>
+                </div>
+                ${buttonsHTML}
+            </div>
+        `;
+
 
     // 5. クイズ (通常)
     } else if (section.section_class === '5_quiz') {
@@ -724,7 +810,6 @@ function createSectionHTML(section) {
             </div>
         `;
 
-
     // 1. 標準: 画像 (サイズは変数で変更化) (+ 上下左右メッセージ) 
     } else {
 
@@ -739,7 +824,6 @@ function createSectionHTML(section) {
         // |                              |
         // |          bottomText          |
 
-        let tmpHTML = '';
         let imageHTML = ''; // 画像データ
         let topText = ''; // 上メッセージ
         let bottomText = ''; // 下メッセージ
@@ -750,38 +834,31 @@ function createSectionHTML(section) {
         imageHTML = createImageHTML(section)
 
         // メッセージ
-        // 最終的にはまとめられると思う
         for (const text of section.texts) {
-            if (text.type === 'topText') {
-                topText = `<div class="${text.type}" data-key="${text.key}"></div>`;
+            if (text.type.includes('top')) {
+                topText += `<div class="${text.type}" data-key="${text.key}"></div>`;
             }
 
-            if (text.type === 'bottomText') {
-                bottomText = `<div class="${text.type}" data-key="${text.key}"></div>`;
+            if (text.type.includes('bottom')) {
+                bottomText += `<div class="${text.type}" data-key="${text.key}"></div>`;
             }
 
-            if (text.type === 'rightText') {
-                rightText = `<div class="${text.type}" data-key="${text.key}"></div>`;
-            } else {
-                rightText = `<div class="rightText"></div>`
+            if (text.type.includes('right')) {
+                rightText += `<div class="${text.type}" data-key="${text.key}"></div>`;
             }
 
-            if (text.type === 'leftText') {
-                leftText = `<div class="${text.type}" data-key="${text.key}"></div>`;
-            } else {
-                leftText = `<div class="leftText"></div>`
+            if (text.type.includes('left')) {
+                leftText += `<div class="${text.type}" data-key="${text.key}"></div>`;
             }
         };
 
-        tmpHTML += topText;
-        tmpHTML += `<div class="center-wrapper">`;
-        tmpHTML += leftText;
-        tmpHTML += imageHTML;
-        tmpHTML += rightText;
-        tmpHTML += `</div>`;
-        tmpHTML += bottomText;
-        // tmpHTML += tmp_imageHTML;
-        // tmpHTML += tmp_TextHTML;
+        if (rightText === '') {
+            rightText = `<div class="rightText"></div>`;
+        }
+
+        if (leftText === '') {
+            leftText = `<div class="leftText"></div>`;
+        }
 
         let buttonsHTML = createButtonHTML(section);
 
@@ -795,15 +872,21 @@ function createSectionHTML(section) {
         const wrapperClasses = {
             'ACT03_start': 'main-wrapper main-wrapper_height_20',
             'default': 'main-wrapper main-wrapper_height_70',
-          };
+        };
           
         sectionHTML = `
-        <div id="${section.id}" class="section">
-            <div class="${wrapperClasses[section.id] || wrapperClasses['default']}">
-            ${tmpHTML}
+            <div id="${section.id}" class="section">
+                <div class="${wrapperClasses[section.id] || wrapperClasses['default']}">
+                    ${topText}
+                    <div class="center-wrapper">
+                        ${leftText}
+                        ${imageHTML}
+                        ${rightText}
+                    </div>
+                    ${bottomText}
+                </div>
+                ${buttonsHTML}
             </div>
-            ${buttonsHTML}
-        </div>
         `;
     }
 
@@ -824,3 +907,4 @@ sections.forEach(section => {
 
 // 最初のセクションを表示
 showSection("0_home");
+//toggleTips();
