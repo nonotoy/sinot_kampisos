@@ -21,7 +21,7 @@ export const sections = [
 				{ id: 'option1', nextSection: '1-1_prologue1', descKey: 'opt_1a'},
 				{ id: 'option2', nextSection: 'ACT02_home', descKey: 'opt_1b'},
 				{ id: 'option3', nextSection: 'ACT03_01', descKey: 'opt_1c'},
-				{ id: 'option4', nextSection: 'paskur', descKey: 'opt_1d'}
+				{ id: 'option4', nextSection: 'ACT02_home_asir', descKey: 'opt_1d'}
 		],
 		verticalLayout: true,
 	},
@@ -349,7 +349,8 @@ export const sections = [
 		{
 		id: 'pet', // pet
 		texts: [
-				{ type: 'topText', key: 'pet'}
+				{ type: 'leftText', key: 'pet-left'},
+				{ type: 'rightText', key: 'pet-right'}
 		],
 		image: 	{ data: 'materials/pet.png', image_class: 'width_110'},
 		next: 'ACT01b_01',
@@ -517,7 +518,10 @@ export const sections = [
 		id: 'ACT01_epilogue',
 	texts: [
 		{ type: 'topText', key: 'ACT01_epilogue'},
-		{ type: 'rightText', key: 'ACT01_epilogue_right'}
+		{ type: 'rightText', key: 'ACT01_epilogue_right'},
+		{ type: 'topTipText', key: 'ACT01_epilogue'},
+		{ type: 'rightTipText', key: 'ACT01_epilogue_right'}
+
 	],
 	image: 	{ data: 'materials/ACT01_epilogue.png', image_class: 'width_90'},
 	next: 'ACT02_home',
@@ -525,7 +529,7 @@ export const sections = [
 
 
 	// ---ACT02---
-		{
+	{
 		id: 'ACT02_home',
 		texts: [
 				{ type: 'description', key: 'ACT02_home'}
@@ -539,8 +543,61 @@ export const sections = [
 		image: 	{ data: 'materials/ACT02_menu.png', image_class: 'width_80'},
 		verticalLayout: true,
 	},
-
-	// ここ効いてない　resultAに流れてしまっている
+	{
+		id: 'ACT02_home_asir',
+		texts: [
+				{ type: 'description', key: 'ACT02_home'}
+		],
+		options: [
+				{ id: 'option1', nextSection: '', descKey: 'ACT02_home_a_asir'}, // nextSectionは動的に変更
+				{ id: 'option2', nextSection: '', descKey: 'ACT02_home_b_asir'}, // nextSectionは動的に変更
+				{ id: 'option3', nextSection: 'ACT02_library', descKey: 'ACT02_home_c_asir'},
+				{ id: 'save', nextSection: 'save', descKey: 'ACT02_save'} // save利用不可
+		],
+		image: 	{ data: 'materials/ACT02_menu_asir.png', image_class: 'width_80'},
+		verticalLayout: true,
+	},
+	{
+		id: 'ACT02_library',
+		section_class: 'library',
+		texts: [
+				{ type: 'genre1-', key: 'ACT02_library_genre1'},
+				{ type: 'genre2-', key: 'ACT02_library_genre2'},
+				{ type: 'genre3-', key: 'ACT02_library_genre3'},
+		],
+		options: [
+				{ id: 'option1-1', nextSection: 'ACT02_library_1-1', descKey: 'ACT02_library_1-1'}, 
+				{ id: 'option1-2', nextSection: 'ACT02_library_1-1', descKey: 'ACT02_library_1-2'}, 
+				{ id: 'option1-3', nextSection: 'ACT02_library_1-1', descKey: 'ACT02_library_1-3'},
+				{ id: 'option1-4', nextSection: 'ACT02_library_1-1', descKey: 'ACT02_library_1-4'}, 
+				{ id: 'option1-5', nextSection: 'ACT02_library_1-1', descKey: 'ACT02_library_1-5'}, 
+				{ id: 'option2-1', nextSection: 'ACT02_library_1-1', descKey: 'ACT02_library_2-1'},
+				{ id: 'option2-2', nextSection: 'ACT02_library_1-1', descKey: 'ACT02_library_2-2'}, 
+				{ id: 'option2-3', nextSection: 'ACT02_library_1-1', descKey: 'ACT02_library_2-3'}, 
+				{ id: 'option2-4', nextSection: 'ACT02_library_1-1', descKey: 'ACT02_library_2-4'},
+				{ id: 'option2-5', nextSection: 'ACT02_library_1-1', descKey: 'ACT02_library_2-5'}, 
+				{ id: 'option3-1', nextSection: 'ACT02_library_1-1', descKey: 'ACT02_library_3-1'}, 
+				{ id: 'option3-2', nextSection: 'ACT02_library_1-1', descKey: 'ACT02_library_3-2'},
+				{ id: 'option3-3', nextSection: 'ACT02_library_1-1', descKey: 'ACT02_library_3-3'}, 
+				{ id: 'option3-4', nextSection: 'ACT02_library_1-1', descKey: 'ACT02_library_3-4'},
+				{ id: 'option3-5', nextSection: 'ACT02_library_1-1', descKey: 'ACT02_library_3-5'}, 		
+		],
+		image: [
+			{ data: 'materials/ACT02_menu_asir.png', type: 'column1'},
+			{ data: 'materials/ACT02_menu_asir.png', type: 'column2'},
+			{ data: 'materials/ACT02_menu_asir.png', type: 'column3'},
+		]
+	},
+	{
+		id: 'ACT02_library_1-1',
+		texts: [
+				{ type: 'description', key: 'ACT02_library_1-1_main'}
+		],
+		options: [
+				{ id: 'back', nextSection: 'ACT02_library', descKey: 'ACT02_library_back'} // save利用不可
+		],
+		image: 	{ data: 'materials/ACT02_menu_asir.png', image_class: 'width_80'},
+	},
 	{
 		id: 'ACT02_end',
 		texts: [

@@ -284,7 +284,9 @@ main {
   margin: 0 auto;
 }
 
-.left_description, .leftText, .right_description, .rightText {
+/* .left_description, .leftText, .right_description, .rightText */
+
+.left-wrapper, .right-wrapper {
   font-size: 1.8em; 
   display: flex;
   align-items: center;
@@ -294,6 +296,10 @@ main {
   font-size: 1.4em; 
   display: flex;
   align-items: center;
+}
+
+.topTipText, .bottomTipText, .leftTipText, .rightTipText {
+  line-height: 1.4em;
 }
 
 .section { 
@@ -330,11 +336,24 @@ main {
   z-index: 1000;
 }
 
-.image-container img {
-  max-width: 80%;
-  max-height: 80%;
-  opacity: 1.0;
-  cursor: pointer;
+/* Default styles */
+.center-wrapper img {
+  width: 80%;
+  max-width: 100%;
+}
+
+/* Media query for screens smaller than 600px */
+@media (max-width: 600px) {
+  img {
+    max-width: 80%;
+  }
+}
+
+/* Media query for screens smaller than 400px */
+@media (max-width: 400px) {
+  img {
+    max-width: 60%;
+  }
 }
 
 
@@ -352,6 +371,18 @@ button {
   transition-duration: 0.4s;
   font-size: 1.3em; 
 } 
+
+/* Button関連 */
+libbutton {
+  background-color: #ffffff;
+  border: 0px;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  font-size: 1.3em; 
+} 
+
 
 .button_position_fixed{
   position: fixed;
@@ -482,4 +513,29 @@ check_count {
   position: absolute;
   top: 15%;
   left: 3%;
+}
+
+.library {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 100px;
+  margin: 200px;
+}
+
+.library-column {
+  display: grid;
+  grid-template-rows: auto repeat(5, 1fr);
+  gap: 50px; /* 行間のスペース */
+}
+
+.library_subtitle {
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.3em;
+}
+
+.library_row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }

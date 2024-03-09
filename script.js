@@ -22,7 +22,24 @@ window.showSection = function(sectionId) {
 
     allSections.forEach(section => {
         if (section.id === sectionId) {
-            section.style.display = 'block'; // 指定されたセクションを表示
+            if (section.id === 'ACT02_library') {
+                section.style.display = 'grid';
+            } else {
+                section.style.display = 'block'; // 指定されたセクションを表示
+            }
+
+            if (section.id.includes('ACT03_10_')) {
+
+                // Get the element with the specific class
+                const element = section.querySelector('.quiz_options_height');
+
+                // Get the bounding rectangle of the element
+                const rect = element.getBoundingClientRect();
+
+                // Get the x and y coordinates
+                mainBlockHeight = rect.top;
+                mainBlockWidth = rect.left;
+            }
 
             // 背景色を設定
             const sectionData = sections.find(s => s.id === sectionId);
@@ -48,7 +65,7 @@ window.showSection = function(sectionId) {
 // ランダムなクイズを生成
 const randomQuizzes_ACT02 = generateRandomQuizzes('ACT02a', 11, 5, 3);
 const randomQuizzes_ACT03_09 = generateRandomQuizzes('ACT03_09', 199, 5, 8);
-const randomQuizzes_ACT03_10 = generateRandomQuizzes('ACT03_10', 9, 5, 8);
+const randomQuizzes_ACT03_10 = generateRandomQuizzes('ACT03_10', 9, 5, 30);
 
 // 選択肢をシャッフルするための関数
 function shuffleArray(array) {
@@ -127,7 +144,7 @@ function randomizeButtons(sectionElement) {
 
     const buttons = sectionElement.querySelectorAll('button');
 
-    console.log('containerRect.left',containerRect.left)
+    // console.log('containerRect.left',containerRect.left)
 
     buttons.forEach(button => {
 
@@ -138,6 +155,8 @@ function randomizeButtons(sectionElement) {
         // targetContainerのサイズに基づいてランダムな位置を生成
         const x = Math.random() * (mainBlockWidth - buttonWidth);
         const y = Math.random() * (mainBlockHeight - buttonHeight);
+
+        console.log(x, y)
 
         // ボタンにスタイルを適用
         button.style.position = 'absolute';
@@ -381,8 +400,8 @@ function updateTextContent(elements, lang, commands) {
 
         if (element.classList.contains('button_description') || element.classList.contains('button_description-tips')) {
             element.textContent = commands[lang][key];
-        } else if (element.classList.contains('topTipText') || element.classList.contains('bottomTipText') || element.classList.contains('leftTipText') || element.classList.contains('rightTipText')) {
-            element.textContent = commands[lang][key];
+        //} else if (element.classList.contains('topTipText') || element.classList.contains('bottomTipText') || element.classList.contains('leftTipText') || element.classList.contains('rightTipText')) {
+        //    element.textContent = commands[lang][key];
         } else if (commands[lang][key]){
             element.innerHTML = `<p>${commands[lang][key]}</p>`;
         } 
@@ -439,6 +458,9 @@ function createButtonHTML(section) {
     let buttonsHTML = '';
     let buttonsHTML_tmp = '';
     let buttonsLayoutHTML_tmp = '';
+    let buttonsHTML_tmp_1 = '';
+    let buttonsHTML_tmp_2 = '';
+    let buttonsHTML_tmp_3 = '';
 
     // containerClassがquizの場合、クリック時に正解・不正解を判定
     if (section.section_class === '5_quiz') {
@@ -458,6 +480,8 @@ function createButtonHTML(section) {
 
         buttonsLayoutHTML_tmp = "button-container";
 
+        buttonsHTML = `<div class="${buttonsLayoutHTML_tmp}">${buttonsHTML_tmp}</div>`;
+
     // sectionIdがACT02_endである場合、正解数に基づいて次のセクションを表示
     } else if (section.id === 'ACT02_end') {
 
@@ -471,6 +495,8 @@ function createButtonHTML(section) {
 
         buttonsLayoutHTML_tmp = "button-container-horizontal"
 
+        buttonsHTML = `<div class="${buttonsLayoutHTML_tmp}">${buttonsHTML_tmp}</div>`;
+
     // sectionIdがACT03_defeated_01である場合、正解数に基づいて次のセクションを表示
     } else if (section.id === 'ACT03_defeated_01') {
 
@@ -482,6 +508,8 @@ function createButtonHTML(section) {
         `;
 
         buttonsLayoutHTML_tmp = "button-container-horizontal"
+
+        buttonsHTML = `<div class="${buttonsLayoutHTML_tmp}">${buttonsHTML_tmp}</div>`;
 
     // containerClassがquiz以外で、選択肢がある場合は選択肢分のボタンを表示
     } else if (section.options && section.options.length > 0) {
@@ -503,6 +531,7 @@ function createButtonHTML(section) {
             // Default
             buttonsLayoutHTML_tmp = "button-container-horizontal"
         };
+        buttonsHTML = `<div class="${buttonsLayoutHTML_tmp}">${buttonsHTML_tmp}</div>`;
 
     // 選択肢がない場合は次へ、戻るボタンを表示
     } else {
@@ -516,9 +545,9 @@ function createButtonHTML(section) {
         buttonsHTML_tmp += `<button id="next" onclick="showSection('${section.next}')" class="next_button button_position_fixed"><div>次へ</div></button>`
 
         buttonsLayoutHTML_tmp = "button-container";
+        buttonsHTML = `<div class="${buttonsLayoutHTML_tmp}">${buttonsHTML_tmp}</div>`;
     };
 
-    buttonsHTML = `<div class="${buttonsLayoutHTML_tmp}">${buttonsHTML_tmp}</div>`;
 
     return buttonsHTML;
 }
@@ -545,6 +574,8 @@ function updateAllTextContents() {
     updateTextContent(document.querySelectorAll('.leftText'), lang, commands);
     updateTextContent(document.querySelectorAll('.rightText'), lang, commands);
     updateTextContent(document.querySelectorAll('.button_description'), lang, commands);
+    updateTextContent(document.querySelectorAll('.library_subtitle'), lang, commands);
+    updateTextContent(document.querySelectorAll('.library_button'), lang, commands);
 
     const tip = 'tips';
     updateTextContent(document.querySelectorAll('.topTipText'), tip, commands)
@@ -605,6 +636,10 @@ function createSectionHTML(section) {
     let imageHTML = '';
     let textHTML = '';
     let desc = '';
+    let buttonsHTML_tmp_1 = ''
+    let buttonsHTML_tmp_2 = ''
+    let buttonsHTML_tmp_3 = ''
+    let img_src = '';
 
     // 0. メニュー
     if (section.section_class === '0_menu') {
@@ -809,6 +844,58 @@ function createSectionHTML(section) {
                 <div class="options">${optionsHTML}</div>
             </div>
         `;
+
+    } else if (section.section_class === 'library') {
+
+        for (const text_ of section.texts) {
+            if (text_.type.includes('genre1-')) {  
+                buttonsHTML_tmp_1 += `<div class="library_subtitle" data-key="${text_.key}"></div>`;
+            } else if (text_.type.includes('genre2-')){
+                buttonsHTML_tmp_2 += `<div class="library_subtitle" data-key="${text_.key}"></div>`;
+            } else {
+                buttonsHTML_tmp_3 += `<div class="library_subtitle" data-key="${text_.key}"></div>`;
+            };
+        }
+
+        for (const option of section.options) {
+            // if option.id contains 'option1-' 
+            if (option.id.includes('option1-')) {  
+                img_src = 'materials/ACT02_lib_green.png' 
+                buttonsHTML_tmp_1 += `
+                    <div class="library_row">
+                        <img src="${img_src}" alt="${section.id}" class="width_80">
+                        <libbutton id="${option.id}" onclick="showSection('${option.nextSection}')">
+                            <div class="library_button" data-key="${option.descKey}"></div>
+                        </libbutton>
+                    </div>`;
+            } else if (option.id.includes('option2-')){
+                img_src = 'materials/ACT02_lib_blue.png' 
+                buttonsHTML_tmp_2 += `
+                <div class="library_row">
+                    <img src="${img_src}" alt="${section.id}" class="width_80">
+                    <libbutton id="${option.id}" onclick="showSection('${option.nextSection}')">
+                        <div class="library_button" data-key="${option.descKey}"></div>
+                    </libbutton>
+                </div>`;
+            } else {
+                img_src = 'materials/ACT02_lib_red.png' 
+                buttonsHTML_tmp_3 += `
+                <div class="library_row">
+                    <img src="${img_src}" alt="${section.id}" class="width_80">
+                    <libbutton id="${option.id}" onclick="showSection('${option.nextSection}')">
+                        <div class="library_button" data-key="${option.descKey}"></div>
+                    </libbutton>
+                </div>`;
+            }
+        };
+
+        sectionHTML = `
+                <div id="${section.id}" class="library section">
+                    <div class="library-column">${buttonsHTML_tmp_1}</div>
+                    <div class="library-column">${buttonsHTML_tmp_2}</div>
+                    <div class="library-column">${buttonsHTML_tmp_3}</div>
+                </div>
+            `;
 
     // 1. 標準: 画像 (サイズは変数で変更化) (+ 上下左右メッセージ) 
     } else {
