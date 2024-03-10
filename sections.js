@@ -21,7 +21,7 @@ export const sections = [
 				{ id: 'option1', nextSection: '1-1_prologue1', descKey: 'opt_1a'},
 				{ id: 'option2', nextSection: 'ACT02_home', descKey: 'opt_1b'},
 				{ id: 'option3', nextSection: 'ACT03_01', descKey: 'opt_1c'},
-				{ id: 'option4', nextSection: 'ACT02_home_asir', descKey: 'opt_1d'}
+				{ id: 'option4', nextSection: 'ACT03_10', descKey: 'opt_1d'}
 		],
 		verticalLayout: true,
 	},
@@ -536,22 +536,8 @@ export const sections = [
 		],
 		options: [
 				{ id: 'option1', nextSection: '', descKey: 'ACT02_home_a'}, // nextSectionは動的に変更
-				{ id: 'option2', nextSection: 'ACT02_home', descKey: 'ACT02_home_b'},
-				{ id: 'option3', nextSection: 'ACT02_home', descKey: 'ACT02_home_c'},
-				{ id: 'save', nextSection: 'save', descKey: 'ACT02_save'} // save利用不可
-		],
-		image: 	{ data: 'materials/ACT02_menu.png', image_class: 'width_80'},
-		verticalLayout: true,
-	},
-	{
-		id: 'ACT02_home_asir',
-		texts: [
-				{ type: 'description', key: 'ACT02_home'}
-		],
-		options: [
-				{ id: 'option1', nextSection: '', descKey: 'ACT02_home_a_asir'}, // nextSectionは動的に変更
-				{ id: 'option2', nextSection: '', descKey: 'ACT02_home_b_asir'}, // nextSectionは動的に変更
-				{ id: 'option3', nextSection: 'ACT02_library', descKey: 'ACT02_home_c_asir'},
+				{ id: 'option2', nextSection: '', descKey: 'ACT02_home_b'}, // nextSectionは動的に変更
+				{ id: 'option3', nextSection: 'ACT02_library', descKey: 'ACT02_home_c'},
 				{ id: 'save', nextSection: 'save', descKey: 'ACT02_save'} // save利用不可
 		],
 		image: 	{ data: 'materials/ACT02_menu_asir.png', image_class: 'width_80'},
@@ -581,11 +567,6 @@ export const sections = [
 				{ id: 'option3-3', nextSection: 'ACT02_library_1-1', descKey: 'ACT02_library_3-3'}, 
 				{ id: 'option3-4', nextSection: 'ACT02_library_1-1', descKey: 'ACT02_library_3-4'},
 				{ id: 'option3-5', nextSection: 'ACT02_library_1-1', descKey: 'ACT02_library_3-5'}, 		
-		],
-		image: [
-			{ data: 'materials/ACT02_menu_asir.png', type: 'column1'},
-			{ data: 'materials/ACT02_menu_asir.png', type: 'column2'},
-			{ data: 'materials/ACT02_menu_asir.png', type: 'column3'},
 		]
 	},
 	{

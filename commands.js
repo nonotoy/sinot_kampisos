@@ -2660,12 +2660,9 @@ export const commands = {
 		'ACT01_epilogue_right':'ソンノ!',
 
 		'ACT02_home': '指令２ 武器を集めよう',
-		'ACT02_home_a': '単語を勉強しよう',
-		'ACT02_home_b': '文法を勉強しよう (開発中)',
-		'ACT02_home_c': 'シヨキナを倒すには (開発中)',
-		'ACT02_home_a_asir': 'かんたん',
-		'ACT02_home_b_asir': 'むずかしい',
-		'ACT02_home_c_asir': 'しらべる',
+		'ACT02_home_a': 'かんたん',
+		'ACT02_home_b': 'むずかしい',
+		'ACT02_home_c': 'しらべる',
 		'ACT02_save': '休む',
 
 		'ACT02_library_genre1' : '指令1 カムイウタㇻに相談せよ',

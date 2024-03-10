@@ -14,6 +14,9 @@ let correctCountACT03 = 0;
 var mainBlockHeight = 0;
 var mainBlockWidth = 0;
 
+// 文字表記_初期値
+let char_type = 'kana';
+
 // セクションの表示・非表示を切り替える
 window.showSection = function(sectionId) {
     const allSections = document.querySelectorAll('.section');
@@ -426,6 +429,19 @@ function toggleTips() {
 document.getElementById('tips_button').addEventListener('click', toggleTips);
 
 
+// 文字表記を切り替える
+function toggleChars() {
+    let char_type_cur = char_type;
+
+    char_type = char_type === 'kana' ? 'roman' : 'kana';
+    updateAllTextContents(char_type)
+
+    console.log(char_type_cur, char_type);
+};
+
+document.getElementById('char_button').addEventListener('click', toggleChars);
+
+
 // ローカルストレージにデータを保存
 window.saveToLocal = function(data) {
     try {
@@ -443,14 +459,25 @@ function createImageHTML(section) {
 
     // 画像
     if (section.image) {
-        imageHTML = `
-            <div class="image">
-                <img src="${section.image.data}" alt="${section.id}" class="${section.image.image_class}">
-            </div>`;
+        if (section.id === 'ACT02_home') {
+            imageHTML = `
+                <div class="image">
+                    <img src="${section.image.data}" alt="${section.id}" usemap="#ImageMap" class="${section.image.image_class}">
+                    <map name="ImageMap">
+                        <area shape="poly" coords="918,526,999,589,1002,679,939,767,893,758,833,679,836,590,836,590" id="area1" href="#" alt=""/>
+                    </map>
+                </div>`;
+        } else {
+            imageHTML = `
+                <div class="image">
+                    <img src="${section.image.data}" alt="${section.id}" class="${section.image.image_class}">
+                </div>`;
+        }
     };
 
     return imageHTML;
 }
+
 
 // 選択肢ボタンのHTMLを作成
 function createButtonHTML(section) {
@@ -458,9 +485,6 @@ function createButtonHTML(section) {
     let buttonsHTML = '';
     let buttonsHTML_tmp = '';
     let buttonsLayoutHTML_tmp = '';
-    let buttonsHTML_tmp_1 = '';
-    let buttonsHTML_tmp_2 = '';
-    let buttonsHTML_tmp_3 = '';
 
     // containerClassがquizの場合、クリック時に正解・不正解を判定
     if (section.section_class === '5_quiz') {
@@ -563,8 +587,7 @@ function setupLanguageChangeListeners() {
 }
 
 // EventListener - テキスト反映
-function updateAllTextContents() {
-    const lang = 'kana';
+function updateAllTextContents(lang) {
     updateTextContent(document.querySelectorAll('.description'), lang, commands);
     updateTextContent(document.querySelectorAll('.home_title'), lang, commands);
     updateTextContent(document.querySelectorAll('.home_subtitle'), lang, commands);
@@ -625,7 +648,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     setupLanguageChangeListeners();
     generateAndUpdateRandomQuizzes();
-    updateAllTextContents();
+    updateAllTextContents(char_type);
+
+    const area1 = document.querySelector('#area1');
+    if (area1) {
+        area1.addEventListener('click', function(event) {
+            event.preventDefault(); // デフォルトの動作を防ぐ
+            showSection('0_home');
+        });
+    }
 });
 
 
@@ -863,7 +894,7 @@ function createSectionHTML(section) {
                 img_src = 'materials/ACT02_lib_green.png' 
                 buttonsHTML_tmp_1 += `
                     <div class="library_row">
-                        <img src="${img_src}" alt="${section.id}" class="width_80">
+                        <img src="${img_src}" alt="${section.id}" class="width_60">
                         <libbutton id="${option.id}" onclick="showSection('${option.nextSection}')">
                             <div class="library_button" data-key="${option.descKey}"></div>
                         </libbutton>
@@ -872,7 +903,7 @@ function createSectionHTML(section) {
                 img_src = 'materials/ACT02_lib_blue.png' 
                 buttonsHTML_tmp_2 += `
                 <div class="library_row">
-                    <img src="${img_src}" alt="${section.id}" class="width_80">
+                    <img src="${img_src}" alt="${section.id}" class="width_60">
                     <libbutton id="${option.id}" onclick="showSection('${option.nextSection}')">
                         <div class="library_button" data-key="${option.descKey}"></div>
                     </libbutton>
@@ -881,7 +912,7 @@ function createSectionHTML(section) {
                 img_src = 'materials/ACT02_lib_red.png' 
                 buttonsHTML_tmp_3 += `
                 <div class="library_row">
-                    <img src="${img_src}" alt="${section.id}" class="width_80">
+                    <img src="${img_src}" alt="${section.id}" class="width_60">
                     <libbutton id="${option.id}" onclick="showSection('${option.nextSection}')">
                         <div class="library_button" data-key="${option.descKey}"></div>
                     </libbutton>

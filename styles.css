@@ -12,6 +12,12 @@ html, body {
   padding: 20px;
 }
 
+.header-buttons {
+  display: flex; /* Flexboxレイアウトを使用 */
+  justify-content: center; /* 水平方向の中央揃え */
+  align-items: center; /* 垂直方向の中央揃え */
+}
+
 .logo {
   background: url(../materials/logo.png);
   background-size: contain;
@@ -517,14 +523,14 @@ check_count {
 
 .library {
   grid-template-columns: repeat(3, 1fr);
-  gap: 100px;
-  margin: 200px;
+  gap: 50px;
+  margin: 30px;
 }
 
 .library-column {
   display: grid;
   grid-template-rows: auto repeat(5, 1fr);
-  gap: 50px; /* 行間のスペース */
+  gap: 30px; /* 行間のスペース */
 }
 
 .library_subtitle {
@@ -538,4 +544,32 @@ check_count {
   justify-content: center;
   align-items: center;
   gap: 20px;
+}
+
+#tips_button {
+  /* button width */
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  padding: 10px 20px;
+}
+
+#char_button {
+  /* button width */
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  padding: 10px 20px;
+}
+
+.buttonIcon {
+  width: 30px; /* 画像の幅 */
+  height: 30px; /* 画像の高さ */
+  margin-right: 10px; /* 画像とテキストの間の余白 */
+}
+
+.buttonIcon_char {
+  width: 24px; /* 画像の幅 */
+  height: px; /* 画像の高さ */
+  margin-right: 10px; /* 画像とテキストの間の余白 */
 }
