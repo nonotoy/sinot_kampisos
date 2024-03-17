@@ -139,14 +139,28 @@ main {
 
 .leftimg_rightcol {
   width: 40%;
+  text-align: left;
 }
 
 .rightimg_leftcol {
   width: 40%;
+  text-align: left;
 }
 
 .rightimg_rightcol {
   width: 60%;
+}
+
+.background-image_class .background-image {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center center;
+  z-index: -1;
+  background-repeat: no-repeat;
 }
 
 .wrapper {
@@ -244,9 +258,12 @@ main {
   text-align: center;
 }
 
-.topText, .bottomText {
+.topText, .bottomText, .leftText, .rightText {
   font-size: 1.8em; 
-  text-align: center;
+}
+
+.topText, .bottomText {
+text-align: center;
 }
 
 .topTipText, .bottomTipText {
@@ -277,9 +294,10 @@ main {
   margin: 10px;
 }
 
-.random_quiz-option_8questions {
+.random_quiz-option {
   position: absolute;
   margin: 10px;
+  height: 60px;
 }
 
 .button-container-vertical-center {
@@ -572,4 +590,14 @@ check_count {
   width: 24px; /* 画像の幅 */
   height: px; /* 画像の高さ */
   margin-right: 10px; /* 画像とテキストの間の余白 */
+}
+
+.p_no_margin {
+  margin-top: 0;
+}
+.centered_img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

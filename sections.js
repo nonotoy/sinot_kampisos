@@ -2,7 +2,7 @@ export const sections = [
 	// id: セクションのID
 	// section_class: Containerのスタイル
 	// texts: 表示される文章 (type: description, tip)
-	// image: 画像のパス
+	// images: 画像のパス
 	// options: 選択肢ボタンの情報 (id: ボタンのID, nextSection: 次のセクションのID, descKey: ボタンの説明文のキー, tipKey: ボタンのヒントのキー)
 	// verticalLayout: true
 
@@ -13,7 +13,7 @@ export const sections = [
 				{ type: 'title', key: '0_home' },
 				{ type: 'subtitle', key: '0_sub' }
 		],
-		image: 	[
+		images: [
 			{ data: 'materials/home_1.png', image_class: 'max-height_30 home_image1_float'},
 			{ data: 'materials/home_2.png', image_class: 'max-height_30 home_image2_float'},
 		],
@@ -31,12 +31,13 @@ export const sections = [
 		texts: [
 				{ type: 'description', key: '1-1_prologue1'}
 		],
+		images: [],
 		back: '0_home',
 		next: '1-2_prologue2',
 	},
 	{ 
 		id: '1-2_prologue2',
-		image: 	{ data: 'materials/esaman_1.png', image_class: 'width_60'},
+		images: [{ data: 'materials/esaman_1.png', image_class: 'width_60'}],
 		texts: [
 				{ type: 'topText', key: '1-2_prologue2'}
 		],
@@ -45,14 +46,14 @@ export const sections = [
 	},
 	{
 		id: 'missions',
-		image: 	{ data: 'materials/missions.png', image_class: 'width_60'},
+		images: [{ data: 'materials/missions.png', image_class: 'width_60'}],
 		texts: [],
 		back: '1-2_prologue2',
 		next: 'map',
 	},
 	{
 		id: 'map',
-		image: 	{ data: 'materials/map.png', image_class: 'width_60'},
+		images: [{ data: 'materials/map.png', image_class: 'width_60'}],
 		texts: [],
 		back: 'missions',
 		next: 'guidance',
@@ -63,7 +64,7 @@ export const sections = [
 				{ type: 'topText', key: 'guidance'},
 				{ type: 'topTipText', key: 'guidance'},
 		],
-		image: 	{ data: 'materials/guidance.png', image_class: 'width_80'},
+		images: [{ data: 'materials/guidance.png', image_class: 'width_80'}],
 		options: [
 				{ id: 'option1', nextSection: 'ACT01a_11', descKey: 'guidance_a'},
 				{ id: 'option2', nextSection: 'ACT01a_01', descKey: 'guidance_b'}
@@ -76,7 +77,7 @@ export const sections = [
 		texts: [
 				{ type: 'topText', key: 'ACT01a_01'}
 		],
-		image: 	{ data: 'materials/ACT01a_01.png', image_class: 'width_90'},
+		images: [{ data: 'materials/ACT01a_01.png', image_class: 'width_90'}],
 		back: 'guidance',
 		next: 'ACT01a_02',
 	},
@@ -88,7 +89,7 @@ export const sections = [
 				{ type: 'rightText', key: 'ACT01a_02_right'},
 				{ type: 'topTipText', key: 'ACT01a_02'},
 		],
-		image: 	{ data: 'materials/ACT01a_02.png', image_class: 'width_90'},
+		images: [{ data: 'materials/ACT01a_02.png', image_class: 'width_90'}],
 		back: 'ACT01a_01',
 		next: 'ACT01a_03',
 	},
@@ -99,7 +100,7 @@ export const sections = [
 				{ type: 'leftText', key: 'ACT01a_03_left'},
 				{ type: 'topTipText', key: 'ACT01a_03'},
 		],
-		image: 	{ data: 'materials/ACT01a_03.png', image_class: 'width_90'},
+		images: [{ data: 'materials/ACT01a_03.png', image_class: 'width_90'}],
 		options: [
 				{ id: 'option1', nextSection: 'ACT01a_04', descKey: 'ACT01a_03a'}
 		],
@@ -109,7 +110,7 @@ export const sections = [
 		texts: [
 				{ type: 'topText', key: 'ACT01a_04'}
 		],
-		image: 	{ data: 'materials/ACT01a_04.png', image_class: 'width_90'},
+		images: [{ data: 'materials/ACT01a_04.png', image_class: 'width_90'}],
 		back: 'ACT01a_03',
 		next: 'ACT01a_05',
 	},
@@ -119,14 +120,14 @@ export const sections = [
 				{ type: 'topText', key: 'ACT01a_05'},
 				{ type: 'leftText', key: 'ACT01a_05_left'},
 		],
-		image: 	{ data: 'materials/ACT01a_05.png', image_class: 'width_90'},
+		images: [{ data: 'materials/ACT01a_05.png', image_class: 'width_90'}],
 		back: 'ACT01a_04',
 		next: 'ACT01a_06',
 	},
 	{
 		id: 'ACT01a_06',
 		texts: [],
-		image: 	{ data: 'materials/ACT01a_06.png', image_class: 'width_60'},
+		images: [{ data: 'materials/ACT01a_06.png', image_class: 'width_60'}],
 		options: [
 				{ id: 'option1', nextSection: 'ACT01a_07', descKey: 'ACT01a_06a'}
 		],
@@ -136,7 +137,7 @@ export const sections = [
 		texts: [
 				{ type: 'topText', key: 'ACT01a_07'}
 		],
-		image: 	{ data: 'materials/ACT01a_07.png', image_class: 'width_90'},
+		images: [{ data: 'materials/ACT01a_07.png', image_class: 'width_90'}],
 		back: 'ACT01a_06',
 		next: 'ACT01a_08',
 	},
@@ -146,7 +147,7 @@ export const sections = [
 				{ type: 'topText', key: 'ACT01a_08'},
 				{ type: 'leftText', key: 'ACT01a_08_left'},
 		],
-		image: 	{ data: 'materials/ACT01a_08.png', image_class: 'width_90'},
+		images: [{ data: 'materials/ACT01a_08.png', image_class: 'width_90'}],
 		options: [
 				{ id: 'option1', nextSection: 'ACT01a_09', descKey: 'ACT01a_08a'}
 		],
@@ -157,7 +158,7 @@ export const sections = [
 				{ type: 'topText', key: 'ACT01a_09'},
 				{ type: 'leftText', key: 'ACT01a_09_left'},
 		],
-		image: 	{ data: 'materials/ACT01a_09.png', image_class: 'width_90'},
+		images: [{ data: 'materials/ACT01a_09.png', image_class: 'width_90'}],
 		back: 'ACT01a_08',
 		next: 'paskur',
 	},
@@ -167,7 +168,7 @@ export const sections = [
 				{ type: 'topText', key: 'paskur'},
 				{ type: 'leftText', key: 'paskur_left'},
 		],
-		image: 	{ data: 'materials/paskur.png', image_class: 'width_110'},
+		images: [{ data: 'materials/paskur.png', image_class: 'width_110'}],
 		options: [
 				{ id: 'option1', nextSection: 'paskur_a01', descKey: 'paskur_a'},
 				{ id: 'option2', nextSection: 'paskur_b01', descKey: 'paskur_b'}
@@ -176,7 +177,7 @@ export const sections = [
 	{
 		id: 'paskur_a01', // siyokina
 		section_class: '3_leftimg',
-		image: 	{ data: 'materials/paskur_a01.png', image_class: 'width_70'},
+		images: [{ data: 'materials/paskur_a01.png', image_class: 'width_70'}],
 		texts: [
 				{ type: 'description', key: 'paskur_a01'}
 		],
@@ -185,7 +186,7 @@ export const sections = [
 	{
 		id: 'paskur_a02', // siyokina
 		section_class: '4_rightimg',
-		image: 	{ data: 'materials/paskur_a02.png', image_class: 'width_70'},
+		images: [{ data: 'materials/paskur_a02.png', image_class: 'width_70'}],
 		texts: [
 				{ type: 'description', key: 'paskur_a02'}
 		],
@@ -194,7 +195,7 @@ export const sections = [
 	{
 		id: 'paskur_b01', // kamuyutar
 		section_class: '3_leftimg',
-		image: 	{ data: 'materials/paskur_b01.png', image_class: 'width_70'},
+		images: [{ data: 'materials/paskur_b01.png', image_class: 'width_70'}],
 		texts: [
 				{ type: 'description', key: 'paskur_b01'}
 		],
@@ -203,7 +204,7 @@ export const sections = [
 	{
 		id: 'paskur_b02', // siyokina
 		section_class: '4_rightimg',
-		image: 	{ data: 'materials/paskur_b02.png', image_class: 'width_70'},
+		images: [{ data: 'materials/paskur_b02.png', image_class: 'width_70'}],
 		texts: [
 				{ type: 'description', key: 'paskur_b02'}
 		],
@@ -214,7 +215,7 @@ export const sections = [
 		texts: [
 				{ type: 'topText', key: 'ACT01a_10'}
 		],
-		image: 	{ data: 'materials/ACT01a_10.png', image_class: 'width_90'},
+		images: [{ data: 'materials/ACT01a_10.png', image_class: 'width_90'}],
 		options: [
 				{ id: 'option1', nextSection: 'pet', descKey: 'ACT01a_10a'}
 		],
@@ -227,7 +228,7 @@ export const sections = [
 				{ type: 'topText', key: 'ACT01a_11'},
 				{ type: 'leftText', key: 'ACT01a_11_left'},
 		],
-		image: 	{ data: 'materials/ACT01a_11.png', image_class: 'width_90'},
+		images: [{ data: 'materials/ACT01a_11.png', image_class: 'width_90'}],
 		options: [
 				{ id: 'option1', nextSection: 'ACT01a_12', descKey: 'ACT01a_11a'},
 				{ id: 'option2', nextSection: 'guidance', descKey: 'ACT01a_11b'},
@@ -238,7 +239,7 @@ export const sections = [
 		texts: [
 				{ type: 'topText', key: 'ACT01a_12'}
 		],
-		image: 	{ data: 'materials/ACT01a_12.png', image_class: 'width_90'},
+		images: [{ data: 'materials/ACT01a_12.png', image_class: 'width_90'}],
 		options: [
 				{ id: 'option1', nextSection: 'ACT01a_13', descKey: 'ACT01a_12a'}
 		],
@@ -248,7 +249,7 @@ export const sections = [
 		texts: [
 				{ type: 'topText', key: 'ACT01a_13'}
 		],
-		image: 	{ data: 'materials/ACT01a_13.png', image_class: 'width_90'},
+		images: [{ data: 'materials/ACT01a_13.png', image_class: 'width_90'}],
 		options: [
 				{ id: 'option1', nextSection: 'ACT01a_14', descKey: 'ACT01a_13a'},
 				{ id: 'option2', nextSection: 'ACT01a_20', descKey: 'ACT01a_13b'}
@@ -259,7 +260,7 @@ export const sections = [
 		texts: [
 				{ type: 'topText', key: 'ACT01a_14'}
 		],
-		image: 	{ data: 'materials/ACT01a_14.png', image_class: 'width_90'},
+		images: [{ data: 'materials/ACT01a_14.png', image_class: 'width_90'}],
 		next: 'ACT01a_15',
 	},
 	{
@@ -267,7 +268,7 @@ export const sections = [
 		texts: [
 				{ type: 'topText', key: 'ACT01a_15'}
 		],
-		image: 	{ data: 'materials/ACT01a_15.jpg', image_class: 'width_90'},
+		images: [{ data: 'materials/ACT01a_15.jpg', image_class: 'width_90'}],
 		next: 'ACT01a_16',
 	},
 	{
@@ -275,7 +276,7 @@ export const sections = [
 		texts: [
 				{ type: 'topText', key: 'ACT01a_16'}
 		],
-		image: 	{ data: 'materials/ACT01a_16.png', image_class: 'width_90'},
+		images: [{ data: 'materials/ACT01a_16.png', image_class: 'width_90'}],
 		options: [
 				{ id: 'option1', nextSection: 'ACT01a_17', descKey: 'ACT01a_16a'},
 				{ id: 'option2', nextSection: 'ACT01a_18', descKey: 'ACT01a_16b'}
@@ -286,7 +287,7 @@ export const sections = [
 		texts: [
 				{ type: 'topText', key: 'ACT01a_17'}
 		],
-		image: 	{ data: 'materials/ACT01a_17.png', image_class: 'width_90'},
+		images: [{ data: 'materials/ACT01a_17.png', image_class: 'width_90'}],
 		next: 'pet',
 	},
 	// poknamosir  ここはかなり変わる可能性がある
@@ -295,7 +296,7 @@ export const sections = [
 		texts: [
 				{ type: 'topText', key: 'ACT01a_18'}
 		],
-		image: 	{ data: 'materials/ACT01a_18_01.png', image_class: 'width_90'},
+		images: [{ data: 'materials/ACT01a_18_01.png', image_class: 'width_90'}],
 		next: 'ACT01a_19',
 	},
 	{
@@ -303,7 +304,7 @@ export const sections = [
 		texts: [
 				{ type: 'topText', key: 'ACT01a_19'}
 		],
-		image: 	{ data: 'materials/ACT01a_19.png', image_class: 'width_90'},
+		images: [{ data: 'materials/ACT01a_19.png', image_class: 'width_90'}],
 		options: [
 				{ id: 'option1', nextSection: 'poknamosir', descKey: 'ACT01a_19a'}, // poknamosirができたら接続
 				{ id: 'option2', nextSection: 'ACT01a_16', descKey: 'ACT01a_19b'}
@@ -314,9 +315,9 @@ export const sections = [
 		texts: [
 				{ type: 'topText', key: 'poknamosir'}
 		],
-		image: 	{ data: 'materials/poknamosir.png', image_class: 'width_90'},
+		images: [{ data: 'materials/poknamosir.png', image_class: 'width_90'}],
 		options: [
-				{ id: 'option1', nextSection: '0_home', descKey: 'tentative'} // poknamosirができたら接続
+				{ id: 'option1', nextSection: 'ACT01a_17', descKey: 'tentative'} // poknamosirができたら接続
 		],
 	},
 	{
@@ -324,6 +325,7 @@ export const sections = [
 		texts: [
 				{ type: 'topText', key: 'ACT01a_20'}
 		],
+		images: [],
 		options: [
 				{ id: 'option1', nextSection: 'ACT01a_21', descKey: 'ACT01a_20a'}
 		],
@@ -333,6 +335,7 @@ export const sections = [
 		texts: [
 				{ type: 'topText', key: 'ACT01a_21'}
 		],
+		images: [],
 		options: [
 				{ id: 'option1', nextSection: 'ACT01a_22', descKey: 'ACT01a_21a'}
 		],
@@ -342,6 +345,7 @@ export const sections = [
 		texts: [
 				{ type: 'topText', key: 'ACT01a_22'}
 		],
+		images: [],
 		next: 'pet',
 	},
 
@@ -352,7 +356,7 @@ export const sections = [
 				{ type: 'leftText', key: 'pet-left'},
 				{ type: 'rightText', key: 'pet-right'}
 		],
-		image: 	{ data: 'materials/pet.png', image_class: 'width_110'},
+		images: [{ data: 'materials/pet.png', image_class: 'width_110'}],
 		next: 'ACT01b_01',
 	},
 
@@ -362,7 +366,7 @@ export const sections = [
 		texts: [
 				{ type: 'topText', key: 'ACT01b_01'}
 		],
-		image: 	{ data: 'materials/ACT01b_01.png', image_class: 'width_90'},
+		images: [{ data: 'materials/ACT01b_01.png', image_class: 'width_90'}],
 		options: [
 				{ id: 'option1', nextSection: 'ACT01b_02', descKey: 'ACT01b_01a'},
 				{ id: 'option2', nextSection: 'ACT01b_08', descKey: 'ACT01b_01b'},
@@ -373,7 +377,7 @@ export const sections = [
 		texts: [
 				{ type: 'topText', key: 'ACT01b_02'}
 		],
-		image: 	{ data: 'materials/ACT01b_02.png', image_class: 'width_90'},
+		images: [{ data: 'materials/ACT01b_02.png', image_class: 'width_90'}],
 		back: 'ACT01b_01',
 		next: 'ACT01b_03',
 	},
@@ -382,7 +386,7 @@ export const sections = [
 		texts: [
 				{ type: 'topText', key: 'ACT01b_03'}
 		],
-		image: 	{ data: 'materials/ACT01b_02_2.png', image_class: 'width_90'},
+		images: [{ data: 'materials/ACT01b_02_2.png', image_class: 'width_90'}],
 		back: 'ACT01b_02',
 		next: 'ACT01b_04',
 	},
@@ -391,7 +395,7 @@ export const sections = [
 		texts: [
 				{ type: 'topText', key: 'ACT01b_04'}
 		],
-		image: 	{ data: 'materials/ACT01b_03.png', image_class: 'width_90'},
+		images: [{ data: 'materials/ACT01b_03.png', image_class: 'width_90'}],
 		back: 'ACT01b_03',
 		next: 'ACT01b_05',
 	},
@@ -400,7 +404,7 @@ export const sections = [
 		texts: [
 				{ type: 'topText', key: 'ACT01b_05'}
 		],
-		image: 	{ data: 'materials/ACT01b_05.png', image_class: 'width_90'},
+		images: [{ data: 'materials/ACT01b_05.png', image_class: 'width_90'}],
 		options: [
 				{ id: 'option1', nextSection: 'ACT01b_06', descKey: 'ACT01b_05a'},
 		],
@@ -410,7 +414,7 @@ export const sections = [
 		texts: [
 				{ type: 'topText', key: 'ACT01b_06'}
 		],
-		image: 	{ data: 'materials/ACT01b_06.png', image_class: 'width_90'},
+		images: [{ data: 'materials/ACT01b_06.png', image_class: 'width_90'}],
 		back: 'ACT01b_05',
 		next: 'ACT01b_07',
 	},
@@ -420,7 +424,7 @@ export const sections = [
 				{ type: 'topText', key: 'ACT01b_07'},
 				{ type: 'leftText', key: 'ACT01b_07_left'}
 		],
-		image: 	{ data: 'materials/ACT01b_07.png', image_class: 'width_90'},
+		images: [{ data: 'materials/ACT01b_07.png', image_class: 'width_90'}],
 		back: 'ACT01b_06',
 		next: 'kim_3',
 	},
@@ -430,7 +434,7 @@ export const sections = [
 		texts: [
 				{ type: 'topText', key: 'ACT01b_08'}
 		],
-		image: 	{ data: 'materials/ACT01b_08.png', image_class: 'width_90'},
+		images: [{ data: 'materials/ACT01b_08.png', image_class: 'width_90'}],
 		back: 'ACT01b_01',
 		next: 'ACT01b_09',
 	},
@@ -439,7 +443,7 @@ export const sections = [
 		texts: [
 				{ type: 'topText', key: 'ACT01b_09'}
 		],
-		image: 	{ data: 'materials/ACT01b_08_4.png', image_class: 'width_90'},
+		images: [{ data: 'materials/ACT01b_08_4.png', image_class: 'width_90'}],
 		back: 'ACT01b_08',
 		next: 'ACT01b_10',
 	},
@@ -448,7 +452,7 @@ export const sections = [
 		texts: [
 				{ type: 'topText', key: 'ACT01b_10'}
 		],
-		image: 	{ data: 'materials/ACT01b_10.png', image_class: 'width_90'},
+		images: [{ data: 'materials/ACT01b_10.png', image_class: 'width_90'}],
 		options: [
 				{ id: 'option1', nextSection: 'ACT01b_11', descKey: 'ACT01b_10a'},
 				{ id: 'option2', nextSection: 'ACT01b_12', descKey: 'ACT01b_10b'},
@@ -459,7 +463,7 @@ export const sections = [
 		texts: [
 				{ type: 'topText', key: 'ACT01b_11'}
 		],
-		image: 	{ data: 'materials/ACT01b_11.png', image_class: 'width_60'},
+		images: [{ data: 'materials/ACT01b_11.png', image_class: 'width_60'}],
 		next: 'kim_1',
 	},
 	{
@@ -467,7 +471,7 @@ export const sections = [
 		texts: [
 				{ type: 'topText', key: 'ACT01b_12'}
 		],
-		image: 	{ data: 'materials/ACT01b_12.png', image_class: 'width_90'},
+		images: [{ data: 'materials/ACT01b_12.png', image_class: 'width_90'}],
 		back: 'ACT01b_11',
 		next: 'ACT01b_13',
 	},
@@ -476,7 +480,7 @@ export const sections = [
 		texts: [
 				{ type: 'topText', key: 'ACT01b_13'}
 		],
-		image: 	{ data: 'materials/ACT01b_13.png', image_class: 'width_90'},
+		images: [{ data: 'materials/ACT01b_13.png', image_class: 'width_90'}],
 		options: [
 				{ id: 'option1', nextSection: 'kim_2', descKey: 'ACT01b_13a'},
 		],
@@ -486,7 +490,7 @@ export const sections = [
 		texts: [
 				{ type: 'topText', key: 'ACT01b_14'}
 		],
-		image: 	{ data: 'materials/ACT01b_14.png', image_class: 'width_90'},
+		images: [{ data: 'materials/ACT01b_14.png', image_class: 'width_90'}],
 		next: 'kim_2',
 	},
 
@@ -494,13 +498,13 @@ export const sections = [
 	{
 		id: 'kim_1', // kim - sinnay inoka
 		texts: [],
-		image: 	{ data: 'materials/kim_01.png', image_class: 'width_90'},
+		images: [{ data: 'materials/kim_01.png', image_class: 'width_90'}],
 		next: 'ACT01_epilogue',
 	},
 
 	{
 		id: 'kim_2', // kim - sinnay inoka
-	image: 	{ data: 'materials/kim_02.png', image_class: 'width_90'},
+		images: [{ data: 'materials/kim_02.png', image_class: 'width_90'}],
 		texts: [
 				{ type: 'topText', key: 'kim_2'}
 		],
@@ -510,21 +514,21 @@ export const sections = [
 	{
 		id: 'kim_3', // kim - sinnay inoka
 		texts: [],
-		image: 	{ data: 'materials/kim_03.png', image_class: 'width_90'},
+		images: [{ data: 'materials/kim_03.png', image_class: 'width_90'}],
 		next: 'ACT01_epilogue',
 	},
 
 	{
 		id: 'ACT01_epilogue',
-	texts: [
-		{ type: 'topText', key: 'ACT01_epilogue'},
-		{ type: 'rightText', key: 'ACT01_epilogue_right'},
-		{ type: 'topTipText', key: 'ACT01_epilogue'},
-		{ type: 'rightTipText', key: 'ACT01_epilogue_right'}
+		texts: [
+			{ type: 'topText', key: 'ACT01_epilogue'},
+			{ type: 'rightText', key: 'ACT01_epilogue_right'},
+			{ type: 'topTipText', key: 'ACT01_epilogue'},
+			{ type: 'rightTipText', key: 'ACT01_epilogue_right'}
 
-	],
-	image: 	{ data: 'materials/ACT01_epilogue.png', image_class: 'width_90'},
-	next: 'ACT02_home',
+		],
+		images: [{ data: 'materials/ACT01_epilogue.png', image_class: 'width_90'}],
+		next: 'ACT02_home',
 	},
 
 
@@ -540,7 +544,7 @@ export const sections = [
 				{ id: 'option3', nextSection: 'ACT02_library', descKey: 'ACT02_home_c'},
 				{ id: 'save', nextSection: 'save', descKey: 'ACT02_save'} // save利用不可
 		],
-		image: 	{ data: 'materials/ACT02_menu_asir.png', image_class: 'width_80'},
+		images: [{ data: 'materials/ACT02_menu_asir.png', image_class: 'width_80'}],
 		verticalLayout: true,
 	},
 	{
@@ -567,7 +571,8 @@ export const sections = [
 				{ id: 'option3-3', nextSection: 'ACT02_library_1-1', descKey: 'ACT02_library_3-3'}, 
 				{ id: 'option3-4', nextSection: 'ACT02_library_1-1', descKey: 'ACT02_library_3-4'},
 				{ id: 'option3-5', nextSection: 'ACT02_library_1-1', descKey: 'ACT02_library_3-5'}, 		
-		]
+		],
+		images: [],
 	},
 	{
 		id: 'ACT02_library_1-1',
@@ -577,14 +582,14 @@ export const sections = [
 		options: [
 				{ id: 'back', nextSection: 'ACT02_library', descKey: 'ACT02_library_back'} // save利用不可
 		],
-		image: 	{ data: 'materials/ACT02_menu_asir.png', image_class: 'width_80'},
+		images: [{ data: 'materials/ACT02_menu_asir.png', image_class: 'width_80'}],
 	},
 	{
 		id: 'ACT02_end',
 		texts: [
 				{type: 'topText', key: 'ACT02_end'}
 		],
-		image: 	{ data: 'materials/ACT02_quiz_end.png', image_class: 'width_80'},
+		images: [{ data: 'materials/ACT02_quiz_end.png', image_class: 'width_80'}],
 		options: [
 				{ id: 'option1', nextSection: '', descKey: 'ACT02_end_next'},
 		],
@@ -596,7 +601,7 @@ export const sections = [
 		texts: [
 				{type: 'topText', key: 'ACT02_result_A_top'}
 		],
-		image: 	{ data: 'materials/ACT02_result_A.png', image_class: 'width_90'},
+		images: [{ data: 'materials/ACT02_result_A.png', image_class: 'width_90'}],
 		next: 'ACT03_01',
 		back: 'ACR02_home',
 		backgroundColor: 'rgba(255,255,204,1.0)',
@@ -606,7 +611,7 @@ export const sections = [
 		texts: [
 				{type: 'topText', key: 'ACT02_result_B_top'}
 		],
-		image: 	{ data: 'materials/ACT02_result_B.png', image_class: 'width_90'},
+		images: [{ data: 'materials/ACT02_result_B.png', image_class: 'width_90'}],
 		next: 'ACT03_01',
 		back: 'ACR02_home',
 		backgroundColor: 'rgba(255,255,204,1.0)',
@@ -616,7 +621,7 @@ export const sections = [
 		texts: [
 				{type: 'topText', key: 'ACT02_result_C_top'}
 		],
-		image: 	{ data: 'materials/ACT02_result_C.png', image_class: 'width_90'},
+		images: [{ data: 'materials/ACT02_result_C.png', image_class: 'width_90'}],
 		next: 'ACT03_01',
 		back: 'ACR02_home',
 		backgroundColor: 'rgba(255,255,204,1.0)',
@@ -626,7 +631,7 @@ export const sections = [
 		texts: [
 				{type: 'topText', key: 'ACT02_result_D_top'}
 		],
-		image: 	{ data: 'materials/ACT02_result_D.png', image_class: 'width_90'},
+		images: [{ data: 'materials/ACT02_result_D.png', image_class: 'width_90'}],
 		next: 'ACT03_01',
 		back: 'ACR02_home',
 		backgroundColor: 'rgba(255,255,204,1.0)',
@@ -640,7 +645,7 @@ export const sections = [
 		options: [
 				{ id: 'option1', nextSection: 'ACT02_home', descKey: 'save_a'},
 		],
-		image: 	{ data: 'materials/save.png', image_class: 'width_80'},
+		images: [{ data: 'materials/save.png', image_class: 'width_80'}],
 	},
 
 	// ---ACT03---
@@ -649,7 +654,7 @@ export const sections = [
 		texts: [
 				{type: 'topText', key: 'ACT03_01'}
 		],
-		image: 	{ data: 'materials/ACT03_01.png', image_class: 'width_150'},
+		images: [{ data: 'materials/ACT03_01.png', image_class: 'width_150'}],
 		next: 'ACT03_02',
 		backgroundColor: 'rgba(204,255,255,1.0)',
 	},
@@ -658,7 +663,7 @@ export const sections = [
 		texts: [
 				{type: 'topText', key: 'ACT03_02'}
 		],
-		image: 	{ data: 'materials/ACT03_02.png', image_class: 'width_90'},
+		images: [{ data: 'materials/ACT03_02.png', image_class: 'width_90'}],
 		next: 'ACT03_03',
 		backgroundColor: 'rgba(204,255,255,1.0)',
 	},
@@ -667,7 +672,7 @@ export const sections = [
 		texts: [
 				{type: 'topText', key: 'ACT03_03'}
 		],
-		image: 	{ data: 'materials/ACT03_03.png', image_class: 'width_120'},
+		images: [{ data: 'materials/ACT03_03.png', image_class: 'width_120'}],
 		next: 'ACT03_start',
 		backgroundColor: 'rgba(204,255,255,1.0)',
 	},
@@ -681,6 +686,7 @@ export const sections = [
             { id: 'option2', nextSection: 'ACT03_07_sirokani', descKey: 'ACT03_start_op2'},
             { id: 'option3', nextSection: 'normal_end', descKey: 'ACT03_start_op3'}
         ],
+		images: [],
 		backgroundColor: 'rgba(204,255,255,1.0)',
 	},
 
@@ -690,7 +696,7 @@ export const sections = [
 				{type: 'topText', key: 'ACT03_07'},
                 {type: 'bottomText', key: 'ACT03_07_konkani'}
 		],
-		image: 	{ data: 'materials/ACT03_07_konkani.png', image_class: 'width_90'},
+		images: [{ data: 'materials/ACT03_07_konkani.png', image_class: 'width_90'}],
         next: 'ACT03_08',
 		backgroundColor: 'rgba(255,255,204,1.0)',
 	},
@@ -700,7 +706,7 @@ export const sections = [
 				{type: 'topText', key: 'ACT03_07'},
                 {type: 'bottomText', key: 'ACT03_07_sirokani'}
 		],
-		image: 	{ data: 'materials/ACT03_07_sirokani.png', image_class: 'width_90'},
+		images: [{ data: 'materials/ACT03_07_sirokani.png', image_class: 'width_90'}],
         next: 'ACT03_08',
 		backgroundColor: 'rgba(255,255,204,1.0)',
 	},
@@ -708,7 +714,7 @@ export const sections = [
     {
 		id: 'ACT03_08',
 		texts: [],
-		image: 	{ data: 'materials/ACT03_08.png', image_class: 'width_90'},
+		images: [{ data: 'materials/ACT03_08.png', image_class: 'width_90'}],
         next: 'ACT03_09',
 	},
 	{
@@ -716,7 +722,7 @@ export const sections = [
 		texts: [
 				{type: 'topText', key: 'ACT03_09'}
 		],
-		image: 	{ data: 'materials/ACT03_09.png', image_class: 'width_90'},
+		images: [{ data: 'materials/ACT03_09.png', image_class: 'width_90'}],
 		options: [
             { id: 'option1', nextSection: 'ACT03_10', descKey: 'ACT03_09_op1'},
             { id: 'option2', nextSection: '', descKey: 'ACT03_09_op2'} // nextSectionは動的に変更
@@ -728,7 +734,7 @@ export const sections = [
 		texts: [
 				{type: 'topText', key: 'ACT03_10'}
 		],
-		image: 	{ data: 'materials/ACT03_10.png', image_class: 'width_90'},
+		images: [{ data: 'materials/ACT03_10.png', image_class: 'width_90'}],
 		options: [
             { id: 'option1', nextSection: '', descKey: 'ACT03_10_op1'}, // nextSectionは動的に変更
             { id: 'option2', nextSection: 'dead_end', descKey: 'ACT03_10_op2'}
@@ -738,7 +744,9 @@ export const sections = [
 	{
 		id: 'ACT03_defeated_01',
 		texts: [],
-		image: 	{ data: 'materials/ACT03_defeated_01.png', image_class: 'width_90'},
+		images: [
+			{ data: 'materials/ACT03_defeated_01.png', image_class: 'centered_img'},
+			{ data: 'materials/dead_end_bg.jpg', image_class: 'background-image'}],
         next: 'ACT03_defeated_02',
 	},
 
@@ -748,6 +756,7 @@ export const sections = [
             {type: 'topText', key: 'ACT03_defeated_02_a'},
             {type: 'bottomText', key: 'ACT03_defeated_02_b'}
         ],
+		images: [],
         next: 'ACT03_defeated_03',
 		backgroundColor: 'rgba(255,255,204,1.0)',
 	},
@@ -757,7 +766,7 @@ export const sections = [
 		texts: [
             {type: 'topText', key: 'ACT03_defeated_03'}
         ],
-		image: 	{ data: 'materials/ACT03_defeated_03.png', image_class: 'width_90'},
+		images: [{ data: 'materials/ACT03_defeated_03.png', image_class: 'width_90'}],
 		options: [
             { id: 'option1', nextSection: 'best_end', descKey: 'ACT03_defeated_03_op1'},
             { id: 'option2', nextSection: 'normal_end', descKey: 'ACT03_defeated_03_op2'}
@@ -770,7 +779,7 @@ export const sections = [
 		texts: [
 				{type: 'topText', key: 'best_end'}
 		],
-		image: 	{ data: 'materials/best_end.png', image_class: 'width_90'},
+		images: [{ data: 'materials/best_end.png', image_class: 'width_90'}],
 		backgroundColor: 'rgba(255,255,204,1.0)',
 		next: '0_home',
 	},
@@ -783,7 +792,7 @@ export const sections = [
 				{type: 'topText', key: 'normal_end_a'},
                 {type: 'bottomText', key: 'normal_end_b'}
 		],
-		image: 	{ data: 'materials/normal_end.png', image_class: 'width_90'},
+		images: [{ data: 'materials/normal_end.png', image_class: 'width_90'}],
 		backgroundColor: 'rgba(255,255,204,1.0)',
 		next: '0_home',
 	},
@@ -795,14 +804,15 @@ export const sections = [
 				{type: 'topText', key: 'bitter_end_01_a'},
                 {type: 'bottomText', key: 'bitter_end_01_b'}
 		],
-		image: 	{ data: 'materials/bitter_end_01.png', image_class: 'width_90'},
+		images: [{ data: 'materials/bitter_end_01.png', image_class: 'width_90'},
+				 { data: 'materials/bitter_end_bg.png', image_class: 'background-image'}],
 		backgroundColor: 'rgba(255,255,204,1.0)',
 		next: 'bitter_end_02',
 	},
     {
 		id: 'bitter_end_02',
 		texts: [],
-		image: 	{ data: 'materials/bitter_end_02.png', image_class: 'width_30'},
+		images: [{ data: 'materials/bitter_end_02.png', image_class: 'width_30'}],
 		backgroundColor: 'rgba(255,255,204,1.0)',
 		next: 'bitter_end_03',
 	},
@@ -811,7 +821,7 @@ export const sections = [
 		texts: [
 				{type: 'topText', key: 'bitter_end_03'}
 		],
-		image: 	{ data: 'materials/bitter_end_03.png', image_class: 'width_90'},
+		images: [{ data: 'materials/bitter_end_03.png', image_class: 'width_90'}],
 		backgroundColor: 'rgba(255,255,204,1.0)',
 		next: '0_home',
 	},
@@ -823,8 +833,10 @@ export const sections = [
 				{type: 'topText', key: 'dead_end_a'},
                 {type: 'bottomText', key: 'dead_end_b'}
 		],
-		image: 	{ data: 'materials/ACT02_result_D.png', image_class: 'width_90'},
-		backgroundColor: 'rgba(255,255,204,1.0)',
+		images: [
+			{ data: 'materials/ACT02_result_D.png', image_class: 'width_90'},
+			{ data: 'materials/dead_end_bg.jpg', image_class: 'background-image'}
+		],
 		next: '0_home',
 	},
 ];

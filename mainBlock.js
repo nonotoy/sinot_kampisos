@@ -152,14 +152,12 @@ function randomizeButtons(sectionElement) {
     buttons.forEach(button => {
 
         // ボタンのサイズ（ここでは仮の値を使用）
-        const buttonWidth = 200; // 仮の値
+        const buttonWidth = 100; // 仮の値
         const buttonHeight = 100; // 仮の値
 
         // targetContainerのサイズに基づいてランダムな位置を生成
         const x = Math.random() * (mainBlockWidth - buttonWidth);
         const y = Math.random() * (mainBlockHeight - buttonHeight);
-
-        console.log(x, y)
 
         // ボタンにスタイルを適用
         button.style.position = 'absolute';
@@ -219,26 +217,30 @@ function renderQuizzes(quizzes) {
         quiz.options.forEach(option => {
             const button = document.createElement('button');
             button.id = option.id;
-            if (quiz.id.includes('ACT03_09')) {
-                button.className = 'quiz-option_8questions' ;
-                button.setAttribute('onclick', `checkACT03Answer('${quiz.id}', '${option.id}')`);
-            } else if (quiz.id.includes('ACT03_10')) {
-                button.className = 'random_quiz-option_8questions' ;
-                button.setAttribute('onclick', `checkACT03_10Answer('${quiz.id}', '${option.id}')`);
-            } else {
-                button.className = 'quiz-option';
-                button.setAttribute('onclick', `checkACT02Answer('${quiz.id}', '${option.id}')`);
-            };
 
             const optionTextElement = document.createElement('div');
             optionTextElement.className = 'option-text';
             optionTextElement.setAttribute('data-key', option.descKey); 
             
             const optionText = commands['kana'][String(option.descKey)];
-            optionTextElement.innerHTML = `<p>${optionText}</p>`;
+
+
+            if (quiz.id.includes('ACT03_09')) {
+                button.className = 'quiz-option_8questions' ;
+                button.setAttribute('onclick', `checkACT03Answer('${quiz.id}', '${option.id}')`);
+                optionTextElement.innerHTML = `<p>${optionText}</p>`;
+            } else if (quiz.id.includes('ACT03_10')) {
+                button.className = 'random_quiz-option' ;
+                button.setAttribute('onclick', `checkACT03_10Answer('${quiz.id}', '${option.id}')`);
+                optionTextElement.innerHTML = `<p class='p_no_margin'>${optionText}</p>`;
+            } else {
+                button.className = 'quiz-option';
+                button.setAttribute('onclick', `checkACT02Answer('${quiz.id}', '${option.id}')`);
+                optionTextElement.innerHTML = `<p>${optionText}</p>`;
+            };
 
             // if button.descKey contains op1, add answer: true
-            if (option.descKey.includes('op1')) {
+            if (option.descKey.endsWith('op1')) {
                 option.answer = true;
             } else {
                 option.answer = false;
@@ -403,8 +405,8 @@ function updateTextContent(elements, lang, commands) {
 
         if (element.classList.contains('button_description') || element.classList.contains('button_description-tips')) {
             element.textContent = commands[lang][key];
-        //} else if (element.classList.contains('topTipText') || element.classList.contains('bottomTipText') || element.classList.contains('leftTipText') || element.classList.contains('rightTipText')) {
-        //    element.textContent = commands[lang][key];
+        } else if (element.classList.contains('topTipText') || element.classList.contains('bottomTipText') || element.classList.contains('leftTipText') || element.classList.contains('rightTipText')) {
+            element.innerHTML = `<p class='p_no_margin'>${commands[lang][key]}</p>`;
         } else if (commands[lang][key]){
             element.innerHTML = `<p>${commands[lang][key]}</p>`;
         } 
@@ -426,21 +428,49 @@ function toggleTips() {
     });
 };
 
-document.getElementById('tips_button').addEventListener('click', toggleTips);
-
-
 // 文字表記を切り替える
 function toggleChars() {
     let char_type_cur = char_type;
 
     char_type = char_type === 'kana' ? 'roman' : 'kana';
     updateAllTextContents(char_type)
-
-    console.log(char_type_cur, char_type);
 };
 
+document.getElementById('tips_button').addEventListener('click', toggleTips);
 document.getElementById('char_button').addEventListener('click', toggleChars);
 
+
+function doesButtonExist(buttonId) {
+    const button = document.getElementById(buttonId);
+    return button !== null; // ボタンが存在する場合は true、そうでない場合は false を返す
+}
+
+function setupTipsButton() {
+
+    if (doesButtonExist('tips_button')) {
+        const button = document.getElementById('tips_button');
+        // イベントリスナーを追加する前に、以前に追加されたイベントリスナーを削除する
+        button.removeEventListener('click', toggleTips);
+        button.addEventListener('click', toggleTips);
+    }
+
+    if (doesButtonExist('char_button')) {
+        const button = document.getElementById('char_button');
+        // イベントリスナーを追加する前に、以前に追加されたイベントリスナーを削除する
+        button.removeEventListener('click', toggleTips);
+        button.addEventListener('click', toggleTips);
+    }
+}
+
+document.addEventListener('click', function(e) {
+
+    // クリックされた要素がセクション切り替えボタンかどうかをチェック
+    if (e.target.closest('.section-switch')) {
+
+        setupTipsButton();
+        // ここにその他のセクション切り替えに関連する処理を追加
+    }
+});
 
 // ローカルストレージにデータを保存
 window.saveToLocal = function(data) {
@@ -458,20 +488,27 @@ function createImageHTML(section) {
     let imageHTML = '';
 
     // 画像
-    if (section.image) {
-        if (section.id === 'ACT02_home') {
-            imageHTML = `
-                <div class="image">
-                    <img src="${section.image.data}" alt="${section.id}" usemap="#ImageMap" class="${section.image.image_class}">
-                    <map name="ImageMap">
-                        <area shape="poly" coords="918,526,999,589,1002,679,939,767,893,758,833,679,836,590,836,590" id="area1" href="#" alt=""/>
-                    </map>
-                </div>`;
-        } else {
-            imageHTML = `
-                <div class="image">
-                    <img src="${section.image.data}" alt="${section.id}" class="${section.image.image_class}">
-                </div>`;
+    for (const image of section.images) {
+        if (image) {
+            if (section.id === 'ACT02_home') {
+                imageHTML += `
+                    <div class="image">
+                        <img src="${image.data}" alt="${section.id}" usemap="#ImageMap" class="${image.image_class}">
+                        <map name="ImageMap">
+                            <area shape="poly" coords="918,526,999,589,1002,679,939,767,893,758,833,679,836,590,836,590" id="area1" href="#" alt=""/>
+                        </map>
+                    </div>`;
+            } else if (image.image_class.includes('background')) {
+                imageHTML += `
+                    <div class="background-image_class">
+                        <img src="${image.data}" alt="${section.id}" class="${image.image_class}">
+                    </div>`;
+            } else {
+                imageHTML += `
+                    <div class="image">
+                        <img src="${image.data}" alt="${section.id}" class="${image.image_class}">
+                    </div>`;
+            };
         }
     };
 
@@ -539,7 +576,7 @@ function createButtonHTML(section) {
     } else if (section.options && section.options.length > 0) {
         for (const option of section.options) {
             buttonsHTML_tmp += `
-                <button id="${option.id}" onclick="showSection('${option.nextSection}')">
+                <button id="${option.id}" class="section-switch" onclick="showSection('${option.nextSection}')">
                     <div class="button_description" data-key="${option.descKey}"></div>
                     <div class="button_description-tips" data-key="${option.descKey}"></div>
                 </button>
@@ -562,11 +599,11 @@ function createButtonHTML(section) {
 
         // 戻るボタンのHTMLを作成 || 一つ前に戻らせないフローの場合は戻るボタンを表示しない
         if (section.back) {
-            buttonsHTML_tmp += `<button id="back" onclick="showSection('${section.back}')" class="back_button button_position_fixed"><div>戻る</div></button>`
+            buttonsHTML_tmp += `<button id="back" onclick="showSection('${section.back}')" class="back_button button_position_fixed section-switch"><div>戻る</div></button>`
         };
 
         // 次へ進むボタンのHTMLを作成 || 基本的に次へ進むボタンは表示
-        buttonsHTML_tmp += `<button id="next" onclick="showSection('${section.next}')" class="next_button button_position_fixed"><div>次へ</div></button>`
+        buttonsHTML_tmp += `<button id="next" onclick="showSection('${section.next}')" class="next_button button_position_fixed section-switch"><div>次へ</div></button>`
 
         buttonsLayoutHTML_tmp = "button-container";
         buttonsHTML = `<div class="${buttonsLayoutHTML_tmp}">${buttonsHTML_tmp}</div>`;
@@ -657,6 +694,7 @@ document.addEventListener('DOMContentLoaded', () => {
             showSection('0_home');
         });
     }
+    setupTipsButton();
 });
 
 
@@ -680,7 +718,7 @@ function createSectionHTML(section) {
         let imageHTML = ''; // 画像データ
 
         // 画像
-        for (const image of section.image) {
+        for (const image of section.images) {
             if (image.data === 'materials/home_2.png') {
                 imageHTML += `
                     <div class="home_image1">

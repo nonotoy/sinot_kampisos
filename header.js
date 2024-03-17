@@ -1,15 +1,15 @@
-// 外部ファイルの読み込み
-import sections from './sections.js';
-import commands from './commands.js';
-
 // headerHTML
-let headerHTML = '';
-
 // セクションの表示・非表示を切り替える
 window.showSection = function(sectionId) {
     const allSections = document.querySelectorAll('.section');
+    let headerHTML = '';
 
     allSections.forEach(section => {
+        section.style.display = 'none';
+        if (section.id === sectionId) {
+            section.style.display = '';
+        }
+
         if (section.id.includes('ACT01') || section.id.includes('ACT03')) {
 
             headerHTML = `
@@ -39,12 +39,11 @@ window.showSection = function(sectionId) {
         }
     });
 
+    // HTMLを生成して適用
+    const headerBlock = document.getElementById('headerBlock');
+    headerBlock.innerHTML = headerHTML;
+
 }
 
-// HTMLを生成
-const headerBlock = document.getElementById('header-container');
-headerBlock.innerHTML += headerHTML;
-
 // 最初のセクションを表示
-//showSection("0_home");
-//toggleTips();
+showSection("0_home");

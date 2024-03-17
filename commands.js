@@ -300,7 +300,7 @@ export const commands = {
 		'save_a':'はい、ゲームを中断します',
 
 		'poknamosir': 'poknamosir',
-		'tentative': '開発中のため戻る',
+		'tentative': '進めないので、穴の外に出る',
 
 		'ACT03_01': `Esamanが村に着く頃にはすっかり夜になっていた<br>
 					この村で勇敢だった者はSiyokinaに<br>
@@ -2771,8 +2771,8 @@ export const commands = {
 		'save':'カムイウタㇻにセーブを頼みますか？',
 		'save_a':'はい、ゲームを中断します',
 
-		'poknamosir': 'poknamosir',
-		'tentative': '開発中のため戻る',
+		'poknamosir': 'ポㇰナモシㇼ',
+		'tentative': '進めないので、穴の外に出る',
 
 		'ACT03_01': `エサマンが村に着く頃にはすっかり夜になっていた<br>
 					この村で勇敢だった者はシヨキナに<br>
@@ -5285,6 +5285,9 @@ export const commands = {
 		'ACT01b_13a':'食べる',
 
 		'ACT01b_14':'戦う',
+
+		'poknamosir': '地底',
+		'tentative': '開発中',
 
 		'kim_2':'エサマーン! やーい おそいぞー!',
 
