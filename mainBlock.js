@@ -432,6 +432,8 @@ function toggleTips() {
     });
 };
 
+document.getElementById('tips_button').addEventListener('click', toggleTips);
+
 // 文字表記を切り替える
 function toggleChars() {
     let char_type_cur = char_type;
@@ -440,7 +442,6 @@ function toggleChars() {
     updateAllTextContents(char_type)
 };
 
-document.getElementById('tips_button').addEventListener('click', toggleTips);
 document.getElementById('char_button').addEventListener('click', toggleChars);
 
 
@@ -461,8 +462,8 @@ function setupTipsButton() {
     if (doesButtonExist('char_button')) {
         const button = document.getElementById('char_button');
         // イベントリスナーを追加する前に、以前に追加されたイベントリスナーを削除する
-        button.removeEventListener('click', toggleTips);
-        button.addEventListener('click', toggleTips);
+        button.removeEventListener('click', toggleChars);
+        button.addEventListener('click', toggleChars);
     }
 }
 

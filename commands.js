@@ -34,8 +34,8 @@ export const commands = {
 		'0_sub': `Nupurpet<br>登別の伝承`,
 		'opt_1a': '冒険する (ACT01)',
 		'opt_1b': '図書館 (ACT02)',
-		'opt_1c': '開発用 / ACT03',
-		'opt_1d': '開発用 / ACT02-Asir',
+		'opt_1c': '最終対決 (ACT03)',
+		'opt_1d': '開発用 / Level',
 
 		'1-1_prologue1': `
 						昔、太平洋の海中に、Siyokinaという鯨（Humpe）に似た巨大な怪物が住んでいた。<br>
@@ -213,12 +213,9 @@ export const commands = {
 		'ACT01_epilogue_right':'sonno!',
 
 		'ACT02_home': '指令２ 武器を集めよう',
-		'ACT02_home_a': '単語を勉強しよう',
-		'ACT02_home_b': '文法を勉強しよう (開発中)',
-		'ACT02_home_c': 'Siyokinaを倒すには (開発中)',
-		'ACT02_home_a_asir': 'かんたん',
-		'ACT02_home_b_asir': 'むずかしい',
-		'ACT02_home_c_asir': 'しらべる',
+		'ACT02_home_a': 'かんたん',
+		'ACT02_home_b': 'むずかしい (開発中)',
+		'ACT02_home_c': 'しらべる (開発中)',
 		'ACT02_save': '休む',
 
 		'ACT02a_001_quiz': 'タヌキをアイヌ語で言うと？',
@@ -2489,7 +2486,7 @@ export const commands = {
 		'0_sub': `ヌプㇽ・ペッ<br>登別の伝承`,
 		'opt_1a': '冒険する (ACT01)',
 		'opt_1b': '図書館 (ACT02)',
-		'opt_1c': '開発用 / ACT03',
+		'opt_1c': '最終対決 (ACT03)',
 		'opt_1d': '開発用 / ACT02-Asir',
 
 		'1-1_prologue1': `
@@ -2669,8 +2666,8 @@ export const commands = {
 
 		'ACT02_home': '指令２ 武器を集めよう',
 		'ACT02_home_a': 'かんたん',
-		'ACT02_home_b': 'むずかしい',
-		'ACT02_home_c': 'しらべる',
+		'ACT02_home_b': 'むずかしい (開発中)',
+		'ACT02_home_c': 'しらべる (開発中)',
 		'ACT02_save': '休む',
 
 		'ACT02_library_genre1' : '指令1 カムイウタㇻに相談せよ',

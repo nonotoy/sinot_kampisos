@@ -33,8 +33,7 @@ export const sections = [
 		options: [
 				{ id: 'option1', nextSection: '1-1_prologue1', descKey: 'opt_1a'},
 				{ id: 'option2', nextSection: 'ACT02_home', descKey: 'opt_1b'},
-				{ id: 'option3', nextSection: 'ACT03_01', descKey: 'opt_1c'},
-				{ id: 'option4', nextSection: 'level', descKey: 'opt_1d'}
+				{ id: 'option3', nextSection: 'ACT03_01', descKey: 'opt_1c'}
 		],
 		verticalLayout: true,
 	},
@@ -553,7 +552,7 @@ export const sections = [
 		],
 		options: [
 				{ id: 'option1', nextSection: '', descKey: 'ACT02_home_a'}, // nextSectionは動的に変更
-				{ id: 'option2', nextSection: '', descKey: 'ACT02_home_b'}, // nextSectionは動的に変更
+				{ id: 'option2', nextSection: 'ACT02_home', descKey: 'ACT02_home_b'}, // nextSectionは動的に変更 -> 今開発中なので、homeに戻す
 				{ id: 'option3', nextSection: 'ACT02_library', descKey: 'ACT02_home_c'},
 				{ id: 'save', nextSection: 'save', descKey: 'ACT02_save'} // save利用不可
 		],
