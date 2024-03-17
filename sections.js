@@ -7,6 +7,19 @@ export const sections = [
 	// verticalLayout: true
 
 	{
+		id: 'level',
+		section_class: 'level',
+		texts: [
+				{ type: 'topText', key: 'ask_level' }
+		],
+		images: [],
+		options: [
+				{ id: 'adult', nextSection: '0_home', descKey: 'opt_level_a'},
+				{ id: 'child', nextSection: '0_home', descKey: 'opt_level_b'},
+		],
+		verticalLayout: true,
+	},
+	{
 		id: '0_home',
 		section_class: '0_menu',
 		texts: [
@@ -21,7 +34,7 @@ export const sections = [
 				{ id: 'option1', nextSection: '1-1_prologue1', descKey: 'opt_1a'},
 				{ id: 'option2', nextSection: 'ACT02_home', descKey: 'opt_1b'},
 				{ id: 'option3', nextSection: 'ACT03_01', descKey: 'opt_1c'},
-				{ id: 'option4', nextSection: 'ACT03_10', descKey: 'opt_1d'}
+				{ id: 'option4', nextSection: 'level', descKey: 'opt_1d'}
 		],
 		verticalLayout: true,
 	},

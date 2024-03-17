@@ -65,6 +65,10 @@ window.showSection = function(sectionId) {
     });
 }
 
+window.defineLevel = function(level) {
+    console.log('Level:', level);
+}
+
 // ランダムなクイズを生成
 const randomQuizzes_ACT02 = generateRandomQuizzes('ACT02a', 11, 5, 3);
 const randomQuizzes_ACT03_09 = generateRandomQuizzes('ACT03_09', 199, 5, 8);
@@ -572,8 +576,24 @@ function createButtonHTML(section) {
 
         buttonsHTML = `<div class="${buttonsLayoutHTML_tmp}">${buttonsHTML_tmp}</div>`;
 
+
+    } else if (section.id === 'level') {
+
+        for (const option of section.options) {
+            buttonsHTML_tmp += `
+                <button id="${option.id}" onclick="showSection('${option.nextSection}'); defineLevel('${option.id}')" class="section-switch">
+                    <div class="button_description" data-key="${option.descKey}"></div>
+                </button>
+            `;
+        };
+        buttonsLayoutHTML_tmp = "level-button-container"
+
+        buttonsHTML = `<div class="${buttonsLayoutHTML_tmp}">${buttonsHTML_tmp}</div>`;
+
+
     // containerClassがquiz以外で、選択肢がある場合は選択肢分のボタンを表示
     } else if (section.options && section.options.length > 0) {
+
         for (const option of section.options) {
             buttonsHTML_tmp += `
                 <button id="${option.id}" class="section-switch" onclick="showSection('${option.nextSection}')">
@@ -731,6 +751,7 @@ function createSectionHTML(section) {
                     </div>`;     
             }
         }
+
 
         // メッセージ
         for (const text of section.texts) {
@@ -966,6 +987,25 @@ function createSectionHTML(section) {
                 </div>
             `;
 
+    // Level
+    } else if (section.section_class === 'level') {
+        
+        if (section.texts && section.texts.length > 0) {
+            for (const msg of section.texts) {
+                    desc += `<div class="${msg.type}" data-key="${msg.key}"></div>`;
+                }
+            textHTML = `<div class="main-wrapper">${desc}</div>`;
+        };
+
+        let buttonsHTML = createButtonHTML(section);
+
+        sectionHTML = `
+                <div id="${section.id}" class="section">
+                    ${textHTML}
+                    ${buttonsHTML}
+                </div>
+            `;
+            
     // 1. 標準: 画像 (サイズは変数で変更化) (+ 上下左右メッセージ) 
     } else {
 
@@ -1062,5 +1102,5 @@ sections.forEach(section => {
 });
 
 // 最初のセクションを表示
-showSection("0_home");
+showSection("level");
 //toggleTips();
