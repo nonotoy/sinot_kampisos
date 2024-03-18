@@ -66,7 +66,10 @@ window.showSection = function(sectionId) {
 }
 
 window.defineLevel = function(level) {
-    console.log('Level:', level);
+    if (level === 'child') {
+        char_type = 'child';
+        toggleChars();
+    }
 }
 
 // ランダムなクイズを生成
@@ -436,9 +439,17 @@ document.getElementById('tips_button').addEventListener('click', toggleTips);
 
 // 文字表記を切り替える
 function toggleChars() {
-    let char_type_cur = char_type;
 
-    char_type = char_type === 'kana' ? 'roman' : 'kana';
+    if (char_type === 'child') {
+        char_type = 'child';
+    } else if (char_type === 'kana') {
+        char_type = 'roman';
+    } else {
+        char_type = 'kana';
+    }
+
+    console.log(char_type);
+
     updateAllTextContents(char_type)
 };
 
@@ -607,6 +618,8 @@ function createButtonHTML(section) {
         // 選択肢ボタンのレイアウトを決定
         if (section.id === 'ACT03_start') {
             buttonsLayoutHTML_tmp = "button-container-vertical-center"
+        } else if (section.id.includes('ACT02_result_')) {
+            buttonsLayoutHTML_tmp = "ACT02_10-button-container"
         } else if (section.verticalLayout === true) {
             buttonsLayoutHTML_tmp = "button-container-vertical"
         } else {

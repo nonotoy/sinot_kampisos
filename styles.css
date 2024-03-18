@@ -462,6 +462,14 @@ button:hover {
     justify-content: center;
 }
 
+.ACT02_10-button-container {
+    bottom: 5%;
+    display: inline-grid;
+    justify-content: center;
+    position: fixed;
+    right: 5%;
+}
+
 /* ボタン配置 - 水平 */ 
 .button-container-horizontal {
   bottom: 5%; 

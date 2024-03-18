@@ -614,8 +614,10 @@ export const sections = [
 				{type: 'topText', key: 'ACT02_result_A_top'}
 		],
 		images: [{ data: 'materials/ACT02_result_A.png', image_class: 'width_90'}],
-		next: 'ACT03_01',
-		back: 'ACR02_home',
+		options: [
+			{ id: 'option1', nextSection: '', descKey: 'ACT02_result_again'}, // nextSectionは動的に変更
+			{ id: 'option2', nextSection: 'ACT03_01', descKey: 'ACT02_result_done'},
+		],
 		backgroundColor: 'rgba(255,255,204,1.0)',
 	},
 	{
@@ -624,8 +626,10 @@ export const sections = [
 				{type: 'topText', key: 'ACT02_result_B_top'}
 		],
 		images: [{ data: 'materials/ACT02_result_B.png', image_class: 'width_90'}],
-		next: 'ACT03_01',
-		back: 'ACR02_home',
+		options: [
+			{ id: 'option1', nextSection: '', descKey: 'ACT02_result_again'}, // nextSectionは動的に変更
+			{ id: 'option2', nextSection: 'ACT03_01', descKey: 'ACT02_result_done'},
+		],
 		backgroundColor: 'rgba(255,255,204,1.0)',
 	},
 	{
@@ -634,8 +638,10 @@ export const sections = [
 				{type: 'topText', key: 'ACT02_result_C_top'}
 		],
 		images: [{ data: 'materials/ACT02_result_C.png', image_class: 'width_90'}],
-		next: 'ACT03_01',
-		back: 'ACR02_home',
+		options: [
+			{ id: 'option1', nextSection: '', descKey: 'ACT02_result_again'}, // nextSectionは動的に変更
+			{ id: 'option2', nextSection: 'ACT03_01', descKey: 'ACT02_result_done'},
+		],
 		backgroundColor: 'rgba(255,255,204,1.0)',
 	},
 	{
@@ -644,11 +650,13 @@ export const sections = [
 				{type: 'topText', key: 'ACT02_result_D_top'}
 		],
 		images: [{ data: 'materials/ACT02_result_D.png', image_class: 'width_90'}],
-		next: 'ACT03_01',
-		back: 'ACR02_home',
+		options: [
+			{ id: 'option1', nextSection: '', descKey: 'ACT02_result_again'}, // nextSectionは動的に変更
+			{ id: 'option2', nextSection: 'ACT03_01', descKey: 'ACT02_result_done'},
+		],
 		backgroundColor: 'rgba(255,255,204,1.0)',
 	},
-	// もう一度試すボタンをつく流。
+	// もう一度試すボタンをつくる。
 	{
 		id: 'save',
 		texts: [
@@ -751,7 +759,7 @@ export const sections = [
             { id: 'option1', nextSection: '', descKey: 'ACT03_10_op1'}, // nextSectionは動的に変更
             { id: 'option2', nextSection: 'dead_end', descKey: 'ACT03_10_op2'}
         ],
-		backgroundColor: 'rgba(255,255,204,1.0)',
+		backgroundColor: 'rgba(217,217,217,1.0)',
 	},
 	{
 		id: 'ACT03_defeated_01',
@@ -804,8 +812,9 @@ export const sections = [
 				{type: 'topText', key: 'normal_end_a'},
                 {type: 'bottomText', key: 'normal_end_b'}
 		],
-		images: [{ data: 'materials/normal_end.png', image_class: 'width_90'}],
-		backgroundColor: 'rgba(255,255,204,1.0)',
+		images: [
+			{ data: 'materials/normal_end.png', image_class: 'width_90'},
+			{ data: 'materials/normal_end_bg.png', image_class: 'background-image'}],
 		next: '0_home',
 	},
 
@@ -846,7 +855,6 @@ export const sections = [
                 {type: 'bottomText', key: 'dead_end_b'}
 		],
 		images: [
-			{ data: 'materials/ACT02_result_D.png', image_class: 'width_90'},
 			{ data: 'materials/dead_end_bg.jpg', image_class: 'background-image'}
 		],
 		next: '0_home',
