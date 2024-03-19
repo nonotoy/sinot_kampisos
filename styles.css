@@ -78,6 +78,14 @@ main {
   margin: 0 auto;
 }
 
+.main-missions-wrapper {
+  top: 15vw;
+  left: 28vw;
+  position: absolute;
+  font-size: 2.1vw;
+  display: grid;
+}
+
 .main-wrapper_height_20 { height: 20vh; }
 .main-wrapper_height_70 { height: 70vh; }
 .main-wrapper_height_80 { height: 80vh; }
@@ -153,6 +161,19 @@ main {
   position: fixed;
   top: 0;
   left: 0;
+  background-size: cover;
+  background-position: center center;
+  z-index: -1;
+  background-repeat: no-repeat;
+}
+
+.mission-image_class {
+  display: flex;
+  justify-content: center;
+}
+
+.mission_background {
+  position: fixed;
   background-size: cover;
   background-position: center center;
   z-index: -1;

@@ -58,14 +58,20 @@ export const sections = [
 	},
 	{
 		id: 'missions',
-		images: [{ data: 'materials/missions.png', image_class: 'width_60'}],
-		texts: [],
+		section_class: 'missions',
+		images: [{ data: 'materials/missions.png', image_class: 'width_50 mission_background'}],
+		texts: [
+				{ type: 'mission', key: 'missions_1'},
+				{ type: 'mission', key: 'missions_2'},
+				{ type: 'mission', key: 'missions_3'},
+		],
 		back: '1-2_prologue2',
 		next: 'map',
 	},
 	{
 		id: 'map',
-		images: [{ data: 'materials/map.png', image_class: 'width_60'}],
+		section_class: 'missions',
+		images: [{ data: 'materials/map.png', image_class: 'width_50 mission_background'}],
 		texts: [],
 		back: 'missions',
 		next: 'guidance',

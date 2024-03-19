@@ -514,11 +514,16 @@ function createImageHTML(section) {
                             <area shape="poly" coords="918,526,999,589,1002,679,939,767,893,758,833,679,836,590,836,590" id="area1" href="#" alt=""/>
                         </map>
                     </div>`;
+            } else if (image.image_class.includes('mission')) {
+                    imageHTML += `
+                        <div class="mission-image_class">
+                            <img src="${image.data}" alt="${section.id}" class="${image.image_class}">
+                        </div>`;
             } else if (image.image_class.includes('background')) {
                 imageHTML += `
                     <div class="background-image_class">
                         <img src="${image.data}" alt="${section.id}" class="${image.image_class}">
-                    </div>`;
+                    </div>`;  
             } else {
                 imageHTML += `
                     <div class="image">
@@ -660,6 +665,7 @@ function setupLanguageChangeListeners() {
 // EventListener - テキスト反映
 function updateAllTextContents(lang) {
     updateTextContent(document.querySelectorAll('.description'), lang, commands);
+    updateTextContent(document.querySelectorAll('.mission'), lang, commands);
     updateTextContent(document.querySelectorAll('.home_title'), lang, commands);
     updateTextContent(document.querySelectorAll('.home_subtitle'), lang, commands);
     updateTextContent(document.querySelectorAll('.textHTML'), lang, commands);
@@ -1015,6 +1021,29 @@ function createSectionHTML(section) {
 
         sectionHTML = `
                 <div id="${section.id}" class="section">
+                    ${textHTML}
+                    ${buttonsHTML}
+                </div>
+            `;
+
+    // Missions
+    } else if (section.section_class === 'missions') {
+
+        // 画像
+        imageHTML = createImageHTML(section);
+            
+        if (section.texts && section.texts.length > 0) {
+            for (const msg of section.texts) {
+                    desc += `<div class="${msg.type}" data-key="${msg.key}"></div>`;
+                }
+            textHTML = `<div class="main-missions-wrapper">${desc}</div>`;
+        };
+
+        let buttonsHTML = createButtonHTML(section);
+
+        sectionHTML = `
+                <div id="${section.id}" class="section">
+                    ${imageHTML}
                     ${textHTML}
                     ${buttonsHTML}
                 </div>
