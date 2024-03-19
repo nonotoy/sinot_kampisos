@@ -1,6 +1,6 @@
 html, body {
-  height: 100%; /* 全画面を使用するように設定 */
-  margin: 0; /* デフォルトのマージンを取り除く */
+  height: 100%;
+  margin: 0;
 }
 
 /* Header */
@@ -20,8 +20,8 @@ html, body {
 
 .logo {
   background-size: contain;
-  height: 80px;
-  width: 80px;
+  height: 7.2vh;
+  width: 7vw;
 }
 
 /* main */
@@ -30,17 +30,8 @@ main, footer {
 }
 
 main {
-  /* display: grid; */
-  /* height: 100vh; /* ビューポートの高さに合わせる */
-  /* min-height: 100vh; /* ビューポートの高さに合わせる */
   margin: 0; /* デフォルトのマージンをリセット */
   height: calc(95vh - 140px);
-  /* flex-direction: column; */
-  /* width: 100%; */
-  /* box-sizing:border-box; */
-  /* justify-content: center; /* 水平方向の中央揃え */
-  /* align-items: center; /* 垂直方向の中央揃え */
-  /* flex-grow: 1; */
 }
 
 #mainBlock {
@@ -54,7 +45,6 @@ main {
   top: 0ex;
 }
 
-
 .main-container {
   /*margin-top: 60px;*/
   padding: 10px;
@@ -65,8 +55,6 @@ main {
   width: 60%;
   margin: auto;
 }
-
-/*クイズ用に別のラッパーを準備;*/
 
 .main-wrapper {
   display: flex;
@@ -260,7 +248,7 @@ main {
 
 .description {
   display: flex;
-  font-size: 1.2em;
+  font-size: 2.0vw;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -275,8 +263,12 @@ main {
   text-align: center;
 }
 
-.topText, .bottomText, .leftText, .rightText {
-  font-size: 1.8em; 
+.topText, .bottomText {
+  font-size: 2.0vw;
+}
+
+.leftText, .rightText {
+  font-size: 1.8vw;
 }
 
 .topText, .bottomText {
@@ -325,9 +317,11 @@ text-align: center;
   margin: 0 auto;
 }
 
-
-
-/* .left_description, .leftText, .right_description, .rightText */
+.leftimg_rightcol > .description > .bottomText {
+  position: absolute;
+  left: 25%;
+  bottom: 10%;
+}
 
 .left-wrapper, .right-wrapper {
   font-size: 1.8em; 
@@ -412,7 +406,7 @@ button {
   margin: 4px 20px;
   cursor: pointer;
   transition-duration: 0.4s;
-  font-size: 1.3em; 
+  font-size: 1.7vw; 
 } 
 
 /* Button関連 */
@@ -425,7 +419,6 @@ libbutton {
   transition-duration: 0.4s;
   font-size: 1.3em; 
 } 
-
 
 .button_position_fixed{
   position: fixed;
@@ -503,10 +496,8 @@ button:hover {
   right: calc(10%);
   top: 50%;
   transform: translateY(-50%);
-
   justify-content: space-between; /* it will distribute the space between the buttons */
   display: flex;
-
   flex-direction: column;
   gap: 50px;
 }
@@ -540,7 +531,6 @@ button:hover {
     opacity: 1;
   }
 }
-
 
 .fade-out {
   animation: fade-out 1s forwards;
@@ -633,6 +623,7 @@ check_count {
 .p_no_margin {
   margin-top: 0;
 }
+
 .centered_img {
   position: absolute;
   top: 50%;

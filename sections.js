@@ -303,7 +303,8 @@ export const sections = [
 	{
 		id: 'ACT01a_17', // kinasar
 		texts: [
-				{ type: 'topText', key: 'ACT01a_17'}
+				{ type: 'topText', key: 'ACT01a_17'},
+				{ type: 'leftText', key: 'ACT01a_17_left'}
 		],
 		images: [{ data: 'materials/ACT01a_17.png', image_class: 'width_90'}],
 		next: 'pet',
@@ -538,11 +539,12 @@ export const sections = [
 
 	{
 		id: 'ACT01_epilogue',
+		section_class: '3_leftimg',
 		texts: [
 			{ type: 'topText', key: 'ACT01_epilogue'},
-			{ type: 'rightText', key: 'ACT01_epilogue_right'},
+			{ type: 'bottomText', key: 'ACT01_epilogue_bottom'},
 			{ type: 'topTipText', key: 'ACT01_epilogue'},
-			{ type: 'rightTipText', key: 'ACT01_epilogue_right'}
+			{ type: 'bottomTipText', key: 'ACT01_epilogue_bottom'}
 
 		],
 		images: [{ data: 'materials/ACT01_epilogue.png', image_class: 'width_90'}],

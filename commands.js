@@ -209,7 +209,7 @@ export const commands = {
 
 		'ACT01_epilogue':`Siyokina eytasa yupuke p nekusu sinen ka apunno hosipi ka somo ki... <br>
 						Esaman, oman! E=kattaro yakun cep poronno e=kore=as`,
-		'ACT01_epilogue_right':'sonno!',
+		'ACT01_epilogue_bottom':'sonno!',
 
 		'ACT02_home': '指令２ 武器を集めよう',
 		'ACT02_home_a': 'かんたん',
@@ -2662,6 +2662,8 @@ export const commands = {
 		'ACT01b_13_right':'イテキ アフン',
 		'ACT01b_13a':'エ',
 
+
+
 		'ACT01b_14':'トゥミコㇿ',
 
 		'kim_2':'エサマーン! やーい おそいぞー!',
@@ -2669,7 +2671,7 @@ export const commands = {
 		'ACT01_epilogue':`
 						シヨキナ エイタサ ユプケ ㇷ゚ ネクス シネン カ アプンノ ホシピ カ ソモ キ…<br>
 						エサマン オマン! エ=カッタロ ヤクン チェㇷ゚ ポロンノ エ=コレ=アㇱ`,
-		'ACT01_epilogue_right':'ソンノ!',
+		'ACT01_epilogue_bottom':'ソンノ!',
 
 		'ACT02_home': '指令２ 武器を集めよう',
 		'ACT02_home_a': 'かんたん',
@@ -5367,7 +5369,7 @@ export const commands = {
 		'ACT01_epilogue':`
 						シヨキナ エイタサ ユプケ ㇷ゚ ネクス シネン カ アプンノ ホシピ カ ソモ キ…<br>
 						エサマン オマン! エ=カッタロ ヤクン チェㇷ゚ ポロンノ エ=コレ=アㇱ`,
-		'ACT01_epilogue_right':'ソンノ!',
+		'ACT01_epilogue_bottom':'ソンノ!',
 
 		'ACT02_home': 'さくせん２ ぶきをあつめよう',
 		'ACT02_mission_detail': `こたえを あつめて カムイウタㇻから<br>
@@ -8010,7 +8012,7 @@ export const commands = {
 		'ACT01_epilogue':`
 						シヨキナはあまりにも強いので一人も無事に戻ってこない…<br>
 						おまえが行け、エサマン!たっぷり魚のごほうびをやろう`,
-		'ACT01_epilogue_right':'ほんとうですか!',
+		'ACT01_epilogue_bottom':'ほんとうですか!',
 	
 		'ACT02_end': 'エサマンはすべての修行を終えてかしこくなった!!',
 		'ACT02_end_next': '結果発表',
