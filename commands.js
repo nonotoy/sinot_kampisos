@@ -53,7 +53,6 @@ export const commands = {
 
 		'ACT01a_02': 'kinasar',
 		'ACT01a_02_left': 'simoy sam un e=oman akusu kinasar an',
-		'ACT01a_02_right':'',
 
 		'ACT01a_03': 'nonnotoy',
 		'ACT01a_03_left': 'kinasar orpeka e=oman akusu nonnotoy an',
@@ -213,7 +212,7 @@ export const commands = {
 
 		'ACT02_home': '指令２ 武器を集めよう',
 		'ACT02_home_a': 'かんたん',
-		'ACT02_home_b': 'むずかしい (開発中)',
+		'ACT02_home_b': 'むずかしい',
 		'ACT02_home_c': 'しらべる (開発中)',
 		'ACT02_save': '休む',
 
@@ -2513,7 +2512,6 @@ export const commands = {
 
 		'ACT01a_02': 'キナサㇻ',
 		'ACT01a_02_left': 'シモイサムン エ=オマン アクス キナサㇻ アン',
-		'ACT01a_02_right':'',
 
 		'ACT01a_03': 'ノンノ－トイ',
 		'ACT01a_03_left': 'キナサㇻ オㇿペカ エ=オマン アクス ノンノ－トイ アン',
@@ -2524,7 +2522,6 @@ export const commands = {
 		'ACT01a_05': 'ポン ニタイ',
 		'ACT01a_05_left': 'ノンノ－トイ オㇿペカ エ＝オマン アクス ポン ニタイ アン',
 
-		// 'ACT01a_06': 'ACT01a_06',
 		'ACT01a_06a': 'ヘリカシ ウン',
 
 		'ACT01a_07': 'ヘリカシ ウン',
@@ -2540,9 +2537,9 @@ export const commands = {
 
 		'paskur': 'ネㇷ゚ エ=コウェペケンヌ ルスイ ヤ？',
 		'paskur_left': 'オホンノ ソモ ウヌカㇻ=アン ナ',
-		
 		'paskur_a' : 'シヨキナ エ＝エラマン ヤ？',
 		'paskur_b' : 'カムイウタㇻ ソモ エ=ヌカㇻ ヤ？',
+
 		'paskur_a01' : `シヨキナは あまりに大きいので<br>
 						口をひらけば 上顎が天に届き<br>
 						下顎が 海の底に届くほどで<br>
@@ -2648,21 +2645,23 @@ export const commands = {
 
 		'ACT01b_10':'イウォロ オッタ',
 		'ACT01b_10_left':'エサマン チㇷ゚ ヤンケ ワ ヤ タ アン',
+
 		'ACT01b_10a':'カムイ エワㇰ シロロ',
-		'ACT01b_10b':'イウォロ',
+		'ACT01b_10b':'イウォロ オッタ',
 
 		'ACT01b_11':'カムイ エワㇰ シロロ',
 		'ACT01b_11_left':'エサマン ヌプリトゥラㇱ ヘメス',
 
 		'ACT01b_12':'イウォロ オッタ',
 		'ACT01b_12_left':'ヤ タ ヤン ワ クワンノ エ=アㇷ゚カㇱ アクス ポル アン',
+		'ACT01b_12a':'ポル オルン',
+
+		'ACT01b_12b':'ポル オルン',
 
 		'ACT01b_13':'トゥミコㇿ',
 		'ACT01b_13_left':'キナポソインカㇻ アン',
 		'ACT01b_13_right':'イテキ アフン',
 		'ACT01b_13a':'エ',
-
-
 
 		'ACT01b_14':'トゥミコㇿ',
 
@@ -2675,9 +2674,28 @@ export const commands = {
 
 		'ACT02_home': '指令２ 武器を集めよう',
 		'ACT02_home_a': 'かんたん',
-		'ACT02_home_b': 'むずかしい (開発中)',
+		'ACT02_home_b': 'むずかしい',
 		'ACT02_home_c': 'しらべる (開発中)',
 		'ACT02_save': '休む',
+
+		'ACT02_genre': 'どのジャンルを練習する？',
+		'ACT02_genre_1-1': '生物',
+		'ACT02_genre_1-2': '植物',
+		'ACT02_genre_1-3': '自然',
+		'ACT02_genre_1-4': '場所',
+		'ACT02_genre_2-1': '人',
+		'ACT02_genre_2-2': '体',
+		'ACT02_genre_2-3': '動き',
+		'ACT02_genre_2-4': '姿',
+		'ACT02_genre_3-1': '道具',
+		'ACT02_genre_3-2': '食べ物',
+		'ACT02_genre_3-3': '時間',
+		'ACT02_genre_3-4': '数',
+		'ACT02_genre_4-1': '空間',
+		'ACT02_genre_4-2': '親子の教室',
+		'ACT02_genre_4-3': '上級講座',
+		'ACT02_genre_4-4': '？？？',
+		'ACT02_genre_at_random': 'ヘアシレ',
 
 		'ACT02_library_genre1' : '指令1 カムイウタㇻに相談せよ',
 		'ACT02_library_genre2' : '指令2 武器を調達せよ',
@@ -2689,17 +2707,17 @@ export const commands = {
 		'ACT02_library_1-1_ain': 'ネユン エ＝オマン ？',
 		'ACT02_library_1-1_jpn': 'どこへ 行きますか（単）',
 
-		'ACT02_library_1-2' : '方言について',
-		'ACT02_library_1-3' : '方言について',
-		'ACT02_library_1-4' : '方言について',
-		'ACT02_library_2-1' : '方言について',
-		'ACT02_library_2-2' : '方言について',
-		'ACT02_library_2-3' : '方言について',
-		'ACT02_library_2-4' : '方言について',
-		'ACT02_library_3-1' : '方言について',
-		'ACT02_library_3-2' : '方言について',
-		'ACT02_library_3-3' : '方言について',
-		'ACT02_library_3-4' : '方言について',
+		'ACT02_library_1-2' : '位置名詞',
+		'ACT02_library_1-3' : '準備中',
+		'ACT02_library_1-4' : '準備中',
+		'ACT02_library_2-1' : '基本的な語順',
+		'ACT02_library_2-2' : '否定文 ソモ',
+		'ACT02_library_2-3' : '準備中',
+		'ACT02_library_2-4' : '準備中',
+		'ACT02_library_3-1' : 'カワウソの伝承/知里真志保',
+		'ACT02_library_3-2' : '準備中',
+		'ACT02_library_3-3' : '準備中',
+		'ACT02_library_3-4' : '準備中',
 
 		'ACT02_library_back': '本をとじる',
 
@@ -2766,21 +2784,27 @@ export const commands = {
 		'ACT02_end': 'エサマン シアリキキ ヤイラムㇱカ オケレ クス サパ ピㇼカレ!',
 		'ACT02_end_next': 'カムイウタㇻ イェ ㇷ゚ アヌ',
 
-		'ACT02_result_A_top': `エサマン キロㇿ アナㇰネ “イヨッタ-ピㇼカ“!<br>シノ エサマン エ＝ネ ルウェ ネ。イランマカカ アン!`,
-		'ACT02_result_A_comment': '夢じゃないのかな',
+		'ACT02_result_A_top': `エサマン キロㇿ アナㇰネ “イヨッタ-ピㇼカ“!<br>
+								シノ エサマン エ＝ネ ルウェ ネ。イランマカカ アン!`,
+		'ACT02_result_A_comment': 'オハインカㇻ ソモ ネ',
 		'ACT02_result_A_bottom': `エサマン オピッタ エイキㇷ゚ エウンケライ ヒネ アシンノ オマナン`,
 
-		'ACT02_result_B_top': `Esaman!おまえのレベルは3…だ<br>努力の成果が出ているぞ!自らを誉めたたえよ!!`,
-		'ACT02_result_B_comment': '魚がいいのになー',
-		'ACT02_result_B_bottom': `Esamanは必要な道具をもらってふたたび旅に出た`,
+		'ACT02_result_B_top': `エサマン キロㇿ アナㇰネ “レ – キロㇿアン“<br>
+								ウウェエパㇰタ エ＝ピㇼカ ノイネ シラン ヤイヌカンヌカㇻ ヤン!!`,
+		'ACT02_result_B_comment': 'チェㇷ゚ エン=コレ',
+		'ACT02_result_B_bottom': `エサマン アエイシラㇺネ エイキㇷ゚ エウンケライ ヒネ アシンノ オマナン`,
 
-		'ACT02_result_C_top': `Esaman!おまえのレベルは2… だ<br>所詮はカワウソだからな!よい よい!!<br>自分の運命に忠実であればよいのだ…`,
-		'ACT02_result_C_comment': 'やったぜ!',
-		'ACT02_result_C_bottom': `Esamanはほとんど何も持たずにふたたび旅に出た`,
+		'ACT02_result_C_top': `エサマン キロㇿ アナㇰネ “トゥ – キロㇿアン“<br>
+								エアニ アナㇰネ ヤヤン エサマン!! ヤイシニレ!!<br>
+								アンコラチ シㇰヌ ワ アン ヤッカ ピㇼカ`,
+		'ACT02_result_C_comment': 'オノンノ!',
+		'ACT02_result_C_bottom': `エサマン エイキㇷ゚ サㇰ ヒネ アシンノ オマナン`,
 
-		'ACT02_result_D_top': `エサマン!おまえのレベルは1だ…<br>何もかも忘れてしまうとは!哀れなやつ…<br>カムイウタㇻはいつでもおまえを見守っているぞ!!`,
-		'ACT02_result_D_comment': 'そうなの?',
-		'ACT02_result_D_bottom': `エサマンは持ってきた刀も忘れてふたたび旅に出た`,
+		'ACT02_result_D_top': `エサマン キロㇿ アナㇰネ “シネ－キロㇿアン“<br>
+								ネㇷ゚ ネ ヤッカ エ＝オイラ ワ オケレ イヌヌカㇱキ<br>
+								ランマ カ チオカイ エチ=コプンキネ クス イテキ オイラ`,
+		'ACT02_result_D_comment': 'ソンノ ヘ?',
+		'ACT02_result_D_bottom': `エサマン マキリ カ オイラ ヒネ アシンノ オマナン`,
 
 		'ACT02_result_again': `もう一度`,
 		'ACT02_result_done': 'おわり',
@@ -5207,7 +5231,6 @@ export const commands = {
 
 		'ACT01a_02': 'キナサㇻ',
 		'ACT01a_02_left': 'シモイサムン エ=オマン アクス キナサㇻ アン',
-		'ACT01a_02_right':'',
 
 		'ACT01a_03': 'ノンノ－トイ',
 		'ACT01a_03_left': 'キナサㇻ オㇿペカ エ=オマン アクス ノンノ－トイ アン',
@@ -5375,7 +5398,7 @@ export const commands = {
 		'ACT02_mission_detail': `こたえを あつめて カムイウタㇻから<br>
 								べんりな どうぐを もらおう！`,
 		'ACT02_home_a': 'かんたん',
-		'ACT02_home_b': 'むずかしい (開発中)',
+		'ACT02_home_b': 'むずかしい',
 		'ACT02_home_c': 'しらべる (開発中)',
 		'ACT02_save': '休む',
 
@@ -7865,13 +7888,11 @@ export const commands = {
 	},
 	'tips': {
 
-		'ACT01a_03': `石があるところ<br>ここには石がある`,
-
 		'guidance': 'どこへ向かいますか？',
 		'guidance_a': '左のほう',
 		'guidance_b': '右のほう',
 
-		'ACT01a_01': 'シモイサムン',
+		'ACT01a_01': '右のほう',
 
 		'ACT01a_02': `草が広がるところ`,
 		'ACT01a_02_left': '右のほうへ行くと草原があった',
@@ -7887,6 +7908,8 @@ export const commands = {
 
 		'ACT01a_06a': '上の方',
 
+		'ACT01a_07': '上の方',
+
 		'ACT01a_08': '木',
 		'ACT01a_08_left': 'ランコの木が立っていて長いはしごがかかっている',
 		'ACT01a_08_right': '登ってみようかな',
@@ -7897,62 +7920,63 @@ export const commands = {
 
 		'paskur': 'なにを聞きますか？',
 		'paskur_left': '長いこと会ってなかったね',
-		
 		'paskur_a' : 'シヨキナ知ってる？',
 		'paskur_b' : 'カムイウタㇻ 見なかった？',
 
 		'ACT01a_10': '木の枝のうえ',
 		'ACT01a_10_left': '友達から乗車券をもらった',
 		'ACT01a_10_right': 'またね',
-		'ACT01a_10a': '降りる*',
+		'ACT01a_10a': '降りる',
 
-		'ACT01a_11': 'ハㇻキサムン',
-		'ACT01a_11_left': 'ハㇻキサムン エ=オマン アクス スマ ロㇱキ',
-		'ACT01a_11a': 'スマ オカリ',
-		'ACT01a_11b': 'ホシピ',
+		'ACT01a_11': '左のほう',
+		'ACT01a_11_left': '左のほうへ行くと石があった',
+		'ACT01a_11a': '石の回りへ',
+		'ACT01a_11b': 'もどる',
 
-		'ACT01a_12': 'スマ オカリ',
-		'ACT01a_12_left': 'スマ オカリ エ=オマン アクス シンナ ル アン',
-		'ACT01a_12_right': 'オヨ!',
-		'ACT01a_12a': 'マㇰタ',
+		'ACT01a_12': '石をぐるりとよける',
+		'ACT01a_12_right': 'あれ!',
 
-		'ACT01a_13': 'マㇰタ',
-		'ACT01a_13_left': 'エサマン コㇿ トゥレシ ノイネ メノコ アン',
-		'ACT01a_13a': 'ホユプ',
-		'ACT01a_13b': 'トゥミコㇿ',
+		'ACT01a_12_left': '石の回りを行くと別の道があった',
+		'ACT01a_12a': '奥へ',
 
-		'ACT01a_14': 'ホユプ',
-		'ACT01a_14_right': 'ク=トゥレシー!',
+		'ACT01a_13': '奥へ',
+		'ACT01a_13_left': 'エサマンの妹（恋人）のような女がいる',
+		'ACT01a_13a': '走る',
+		'ACT01a_13b': '戦う',
 
-		'ACT01a_15': 'ホユプ',
-		'ACT01a_15_left': 'エサマン スイ オルン トゥㇽセ',
+		'ACT01a_14': '走る',
+		'ACT01a_14_right': '',
 
-		'ACT01a_16': 'トゥㇽセ',
-		'ACT01a_16_left': 'エサマン スイ パルㇽ オㇿワ ラチッケ',
-		'ACT01a_16a': 'ソイネ',
-		'ACT01a_16b': 'ラウン',
+		'ACT01a_15': '走る',
+		'ACT01a_15_left': 'エサマンは穴に落ちた',
+
+		'ACT01a_16': 'ストンと落ちる',
+		'ACT01a_16_left': 'エサマンは穴のふちに引っかかった',
+		'ACT01a_16a': '外へ',
+		'ACT01a_16b': '底へ',
 
 		'ACT01a_17': '外へ',
 		'ACT01a_17_left': 'エサマンは穴から外に出た',
 
-		'ACT01a_18': 'ラウン',
-		'ACT01a_18_left': 'ネㇷ゚ ク＝ヌカㇻ フミ カ イサㇺ',
+		'ACT01a_18': '底へ',
+		'ACT01a_18_left': '何も見えない',
 
-		'ACT01a_19': 'ルクンネ マチヤ オルン',
-		'ACT01a_19a': 'オマン',
-		'ACT01a_19b': 'ホシピ',
+		'ACT01a_19': '灰色の町へ',
+		'ACT01a_19a': '行く',
+		'ACT01a_19b': '戻る',
 
-		'ACT01a_20': 'トゥミコㇿ',
-		'ACT01a_20a': 'トゥイパ',
+		'ACT01a_20': '戦う',
+		'ACT01a_20_left': 'うそつき！おまえは山の魔物だろう',
+		'ACT01a_20a': '何度も切る',
 
-		'ACT01a_21': 'トゥイパ',
-		'ACT01a_21a': 'エムシ アニ タウキ',
-		'ACT01a_21_left': '「アヨ」 エサマン コㇿ エムシ カトゥフ ウェン',
-		'ACT01a_21_right': 'ソンノ エヌカㇻ',
+		'ACT01a_21': '何度も切る',
+		'ACT01a_21a': '刀を使ってたたき切る',
+		'ACT01a_21_left': '「あれっ」エサマンのエムシはひどい様子だった',
+		'ACT01a_21_right': 'さびてボロボロだ',
 
-		'ACT01a_22': 'タウキ',
-		'ACT01a_22_left': 'エサマン イワ－コシンプ タウキ',
-		'ACT01a_22_right': 'コシンプ イサㇺ',
+		'ACT01a_22': 'たたき切る',
+		'ACT01a_22_left': 'エサマンは山の魔物に切りつけた',
+		'ACT01a_22_right': '魔物は消えた',
 
 		'pet-left': 'エサマンは広い所に来た',
 		'pet-right': 'はらへった',
@@ -7965,8 +7989,10 @@ export const commands = {
 		'ACT01b_02_left':'エサマンは水面に舟を下ろした',
 
 		'ACT01b_03':'外へ',
-		'ACT01b_03_left':'違う所に着いたようだ',
-		'ACT01b_03_right':'シヨキナってどんなやつなんだろう',
+		'ACT01b_03a_left':'エサマンは穴から外に出た',
+
+		'ACT01b_03c_left':'違う所に着いたようだ',
+		'ACT01b_03c_right':'シヨキナってどんなやつなんだろう',
 
 		'ACT01b_04':'海岸',
 		'ACT01b_04a':'上のほうを見る',
@@ -7981,14 +8007,14 @@ export const commands = {
 		'ACT01b_07':'沖から',
 		'ACT01b_07_left':'沖から大きなワシが来た',
 
-		'ACT01b_08':'ペッ トモトゥイェ',
-		'ACT01b_08_left':'エサマン ウォロ オㇱマ',
+		'ACT01b_08':'川を横切る',
+		'ACT01b_08_left':'エサマンは水のなかに飛びこんだ',
 
 		'ACT01b_10':'山奥',
 		'ACT01b_10_left':'エサマンは舟を上げて岸におりた',
 		
 		'ACT01b_10a':'カムイの住まい',
-		'ACT01b_10b':'イウォロ',
+		'ACT01b_10b':'山の奥',
 
 		'ACT01b_11':'カムイの住まい',
 		'ACT01b_11_left':'エサマンは山を登った',
@@ -7996,6 +8022,8 @@ export const commands = {
 		'ACT01b_12':'山の奥',
 		'ACT01b_12_left':'岸に上がってまっすぐ歩いて行くと洞穴があった',
 		'ACT01b_12a':'洞窟へ',
+
+		'ACT01b_12b':'洞窟へ',
 
 		'ACT01b_13':'戦う',
 		'ACT01b_13_left':'草の化け物が現れた',
@@ -8006,8 +8034,6 @@ export const commands = {
 
 		'poknamosir': '地底',
 		'tentative': '開発中',
-
-		'kim_2':'エサマーン! やーい おそいぞー!',
 
 		'ACT01_epilogue':`
 						シヨキナはあまりにも強いので一人も無事に戻ってこない…<br>

@@ -80,7 +80,6 @@ export const sections = [
 		id: 'guidance',
 		texts: [
 				{ type: 'topText', key: 'guidance'},
-				{ type: 'topTipText', key: 'guidance'},
 		],
 		images: [{ data: 'materials/guidance.png', image_class: 'width_80'}],
 		options: [
@@ -105,7 +104,6 @@ export const sections = [
 				{ type: 'topText', key: 'ACT01a_02'},
 				{ type: 'leftText', key: 'ACT01a_02_left'},
 				{ type: 'rightText', key: 'ACT01a_02_right'},
-				{ type: 'topTipText', key: 'ACT01a_02'},
 		],
 		images: [{ data: 'materials/ACT01a_02.png', image_class: 'width_90'}],
 		back: 'ACT01a_01',
@@ -116,7 +114,6 @@ export const sections = [
 		texts: [
 				{ type: 'topText', key: 'ACT01a_03'},
 				{ type: 'leftText', key: 'ACT01a_03_left'},
-				{ type: 'topTipText', key: 'ACT01a_03'},
 		],
 		images: [{ data: 'materials/ACT01a_03.png', image_class: 'width_90'}],
 		options: [
@@ -543,9 +540,6 @@ export const sections = [
 		texts: [
 			{ type: 'topText', key: 'ACT01_epilogue'},
 			{ type: 'bottomText', key: 'ACT01_epilogue_bottom'},
-			{ type: 'topTipText', key: 'ACT01_epilogue'},
-			{ type: 'bottomTipText', key: 'ACT01_epilogue_bottom'}
-
 		],
 		images: [{ data: 'materials/ACT01_epilogue.png', image_class: 'width_90'}],
 		next: 'ACT02_home',
@@ -559,13 +553,45 @@ export const sections = [
 				{ type: 'description', key: 'ACT02_home'}
 		],
 		options: [
-				{ id: 'option1', nextSection: '', descKey: 'ACT02_home_a'}, // nextSectionは動的に変更
-				{ id: 'option2', nextSection: 'ACT02_home', descKey: 'ACT02_home_b'}, // nextSectionは動的に変更 -> 今開発中なので、homeに戻す
+				{ id: 'option1', nextSection: 'ACT02_genre', descKey: 'ACT02_home_a'}, // nextSectionは動的に変更
+				{ id: 'option2', nextSection: 'ACT02_genre', descKey: 'ACT02_home_b'}, // nextSectionは動的に変更 -> 今開発中なので、homeに戻す
 				{ id: 'option3', nextSection: 'ACT02_library', descKey: 'ACT02_home_c'},
 				{ id: 'save', nextSection: 'save', descKey: 'ACT02_save'} // save利用不可
 		],
 		images: [{ data: 'materials/ACT02_menu_asir.png', image_class: 'width_80'}],
+		backgroundColor: 'rgba(253,241,202,1.0)',
 		verticalLayout: true,
+	},
+	{
+		id: 'ACT02_genre',
+		section_class: 'quiz_genre',
+		texts: [
+				{ type: 'description', key: 'ACT02_genre'}
+		],
+		options: [
+				{ id: 'option1-1', nextSection: '', descKey: 'ACT02_genre_1-1'}, 
+				{ id: 'option2-1', nextSection: '', descKey: 'ACT02_genre_2-1'}, 
+				{ id: 'option3-1', nextSection: '', descKey: 'ACT02_genre_3-1'},
+				{ id: 'option4-1', nextSection: '', descKey: 'ACT02_genre_4-1'}, 
+
+				{ id: 'option1-2', nextSection: '', descKey: 'ACT02_genre_1-2'},
+				{ id: 'option2-2', nextSection: '', descKey: 'ACT02_genre_2-2'},
+				{ id: 'option3-2', nextSection: '', descKey: 'ACT02_genre_3-2'}, 
+				{ id: 'option4-2', nextSection: '', descKey: 'ACT02_genre_4-2'}, 
+
+				{ id: 'option1-3', nextSection: '', descKey: 'ACT02_genre_1-3'},
+				{ id: 'option2-3', nextSection: '', descKey: 'ACT02_genre_2-3'}, 
+				{ id: 'option3-3', nextSection: '', descKey: 'ACT02_genre_3-3'}, 	
+				{ id: 'option4-3', nextSection: '', descKey: 'ACT02_genre_4-3'},
+
+				{ id: 'option1-4', nextSection: '', descKey: 'ACT02_genre_1-4'}, 
+				{ id: 'option2-4', nextSection: '', descKey: 'ACT02_genre_2-4'},
+				{ id: 'option3-4', nextSection: '', descKey: 'ACT02_genre_3-4'},
+				{ id: 'option4-4', nextSection: '', descKey: 'ACT02_genre_4-4'},
+				{ id: 'at_random', nextSection: '', descKey: 'ACT02_genre_at_random'}, // nextSectionは動的に変更
+		],
+		images: [],
+		backgroundColor: 'rgba(253,241,202,1.0)',
 	},
 	{
 		id: 'ACT02_library',
@@ -593,6 +619,7 @@ export const sections = [
 				{ id: 'option3-5', nextSection: 'ACT02_library_1-1', descKey: 'ACT02_library_3-5'}, 		
 		],
 		images: [],
+		backgroundColor: 'rgba(253,241,202,1.0)',
 	},
 	{
 		id: 'ACT02_library_1-1',

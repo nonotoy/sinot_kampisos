@@ -20,8 +20,8 @@ html, body {
 
 .logo {
   background-size: contain;
-  height: 7.2vh;
-  width: 7vw;
+  height: 80px;
+  width: 90px;
 }
 
 /* main */
@@ -90,7 +90,7 @@ main {
   top: 50%; /* 上辺を画面の中央に */
   left: 30%; /* 左辺を画面の中央に */
   transform: translate(-50%, -50%); /* 要素の中央を計算し直して配置 */
-  font-size: 3em; /* 文字の大きさ */
+  font-size: 3.5vw; /* 文字の大きさ */
 }
 
 .home_image1_float {
@@ -193,7 +193,7 @@ main {
   align-items: center; /* 子要素を垂直方向中央に配置 */
 }
 
-.center-wrapper > .leftText, .center-wrapper > .rightText {
+.center-wrapper > .rightText-wrapper, .center-wrapper > .leftText-wrapper {
   flex: 2;
 }
 
@@ -248,7 +248,7 @@ main {
 
 .description {
   display: flex;
-  font-size: 2.0vw;
+  font-size: 1.8vw;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -264,7 +264,7 @@ main {
 }
 
 .topText, .bottomText {
-  font-size: 2.0vw;
+  font-size: 1.8vw;
 }
 
 .leftText, .rightText {
@@ -373,6 +373,21 @@ text-align: center;
   z-index: 1000;
 }
 
+.button-container-20grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 30px;
+  margin: 50px;
+}
+
+.elements_centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 /* Default styles */
 .center-wrapper img {
   width: 80%;
@@ -406,7 +421,7 @@ button {
   margin: 4px 20px;
   cursor: pointer;
   transition-duration: 0.4s;
-  font-size: 1.7vw; 
+  font-size: 1.5vw; 
 } 
 
 /* Button関連 */

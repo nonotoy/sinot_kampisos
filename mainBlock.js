@@ -123,7 +123,7 @@ function generateRandomQuizzes(baseId, totalQuizzes, numberOfQuizzes, numberOfOp
 function updateQuizSections(sectionId, firstQuizId, optionId) {
 
     const button_container_class = {
-        'ACT02_home': '.button-container-vertical',
+        'ACT02_genre': '.button_atrandom',
         'ACT03_09': '.button-container-horizontal',
         'ACT03_10': '.button-container-horizontal',
     };
@@ -270,7 +270,7 @@ function renderQuizzes(quizzes) {
 
 function generateAndUpdateRandomQuizzes() {
 
-    updateQuizSections('ACT02_home', randomQuizzes_ACT02[0].id, 'option1');
+    updateQuizSections('ACT02_genre', randomQuizzes_ACT02[0].id, 'at_random');
     updateQuizSections('ACT03_09', randomQuizzes_ACT03_09[0].id, 'option2');
     updateQuizSections('ACT03_10', randomQuizzes_ACT03_10[0].id, 'option1');
 
@@ -593,7 +593,6 @@ function createButtonHTML(section) {
 
         buttonsHTML = `<div class="${buttonsLayoutHTML_tmp}">${buttonsHTML_tmp}</div>`;
 
-
     } else if (section.id === 'level') {
 
         for (const option of section.options) {
@@ -607,6 +606,42 @@ function createButtonHTML(section) {
 
         buttonsHTML = `<div class="${buttonsLayoutHTML_tmp}">${buttonsHTML_tmp}</div>`;
 
+
+    // ACT02_genre
+    } else if (section.id === 'ACT02_genre') {
+
+        let buttonsHTML_atrandom = '';
+
+        for (const option of section.options) {
+            if (option.id != 'at_random') {
+                buttonsHTML_tmp += `
+                    <button disabled id="${option.id}" class="section-switch" onclick="showSection('${option.nextSection}')">
+                        <div class="button_description" data-key="${option.descKey}"></div>
+                        <div class="button_description-tips" data-key="${option.descKey}"></div>
+                    </button>
+                `;
+            
+            } else {
+                buttonsHTML_atrandom = `
+                    <button id="${option.id}" class="section-switch" onclick="showSection('${option.nextSection}')">
+                        <div class="button_description" data-key="${option.descKey}"></div>
+                    </button>
+                `;
+            }
+        };
+
+        let emptyButton = `
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+        `;
+ 
+        buttonsHTML = `
+            <div class="button-container-20grid button_atrandom">
+                ${buttonsHTML_tmp}
+                ${emptyButton}
+                ${buttonsHTML_atrandom}
+            </div>`;
 
     // containerClassがquiz以外で、選択肢がある場合は選択肢分のボタンを表示
     } else if (section.options && section.options.length > 0) {
@@ -683,26 +718,6 @@ function updateAllTextContents(lang) {
     updateTextContent(document.querySelectorAll('.leftTipText'), tip, commands);
     updateTextContent(document.querySelectorAll('.rightTipText'), tip, commands);
     updateTextContent(document.querySelectorAll('.button_description-tips'), tip, commands);
-}
-
-
-// 言語切り替え機能を初期化する関数
-function initializeLanguageSwitcher() {
-    var languageSelect = document.getElementById('languageSelect');
-    languageSelect.addEventListener('change', function() {
-        var selectedLanguage = languageSelect.value;
-        // updateLanguage(selectedLanguage);
-    });
-}
-
-// 選択された言語に基づいてページの言語を更新する関数
-function updateLanguage(lang) {
-    var greeting = document.getElementById('greeting');
-    if (lang === 'ja') {
-        greeting.textContent = 'こんにちは、世界！';
-    } else if (lang === 'en') {
-        greeting.textContent = 'Hello, World!';
-    }
 }
 
 
@@ -850,37 +865,36 @@ function createSectionHTML(section) {
             `;
 
     // 3. 左: 画像、右: テキスト
-} else if (section.section_class === '4_rightimg') {
+    } else if (section.section_class === '4_rightimg') {
 
-    // 画像
-    imageHTML = createImageHTML(section);
-    
-    if (section.texts && section.texts.length > 0) {
-        for (const msg of section.texts) {
-                desc += `<div class="${msg.type}" data-key="${msg.key}"></div>`;
-            }
-        textHTML = `<div class="description">
-                        ${desc}
-                    </div>`;
-    };
+        // 画像
+        imageHTML = createImageHTML(section);
+        
+        if (section.texts && section.texts.length > 0) {
+            for (const msg of section.texts) {
+                    desc += `<div class="${msg.type}" data-key="${msg.key}"></div>`;
+                }
+            textHTML = `<div class="description">
+                            ${desc}
+                        </div>`;
+        };
 
-    // ボタン
-    let buttonsHTML = createButtonHTML(section);
+        // ボタン
+        let buttonsHTML = createButtonHTML(section);
 
-    sectionHTML = `
-            <div id="${section.id}" class="section">
-                <div class="rightimg_twocolumns">
-                    <div class="rightimg_leftcol">
-                        ${textHTML}
+        sectionHTML = `
+                <div id="${section.id}" class="section">
+                    <div class="rightimg_twocolumns">
+                        <div class="rightimg_leftcol">
+                            ${textHTML}
+                        </div>
+                        <div class="rightimg_rightcol">
+                            ${imageHTML}
+                        </div>
                     </div>
-                    <div class="rightimg_rightcol">
-                        ${imageHTML}
-                    </div>
+                    ${buttonsHTML}
                 </div>
-                ${buttonsHTML}
-            </div>
-        `;
-
+            `;
 
     // 5. クイズ (通常)
     } else if (section.section_class === '5_quiz') {
@@ -1026,6 +1040,25 @@ function createSectionHTML(section) {
                 </div>
             `;
 
+    // Genre
+    } else if (section.section_class === 'quiz_genre') {
+            
+        for (const msg of section.texts) {
+                desc += `
+                    <div class="topText" data-key="${msg.key}"></div>
+                    <div class="topipText" data-key="${msg.key}"></div>`;
+            }
+        textHTML = `<div class="genre_title">${desc}</div>`;
+
+        let buttonsHTML = createButtonHTML(section);
+
+        sectionHTML = `
+                <div id="${section.id}" class="section elements_centered">
+                    ${textHTML}
+                    ${buttonsHTML}
+                </div>
+            `;
+
     // Missions
     } else if (section.section_class === 'missions') {
 
@@ -1075,19 +1108,31 @@ function createSectionHTML(section) {
         // メッセージ
         for (const text of section.texts) {
             if (text.type.includes('top')) {
-                topText += `<div class="${text.type}" data-key="${text.key}"></div>`;
+                topText += `
+                    <div class="topText" data-key="${text.key}"></div>
+                    <div class="topTipText" data-key="${text.key}"></div>
+                    `;
             }
 
             if (text.type.includes('bottom')) {
-                bottomText += `<div class="${text.type}" data-key="${text.key}"></div>`;
+                bottomText += `
+                    <div class="bottomText" data-key="${text.key}"></div>
+                    <div class="bottomTipText" data-key="${text.key}"></div>
+                    `;
             }
 
             if (text.type.includes('right')) {
-                rightText += `<div class="${text.type}" data-key="${text.key}"></div>`;
+                rightText += `
+                    <div class="rightText" data-key="${text.key}"></div>
+                    <div class="rightTipText" data-key="${text.key}"></div>
+                    `;
             }
 
             if (text.type.includes('left')) {
-                leftText += `<div class="${text.type}" data-key="${text.key}"></div>`;
+                leftText += `
+                    <div class="leftText" data-key="${text.key}"></div>
+                    <div class="leftTipText" data-key="${text.key}"></div>
+                    `;
             }
         };
 
@@ -1101,13 +1146,6 @@ function createSectionHTML(section) {
 
         let buttonsHTML = createButtonHTML(section);
 
-        // セーブボタンのHTMLを作成
-        let savebuttonsHTML = "";
-
-        const saveButton = document.getElementById('saveButton');
-        //saveButton.innerHTML += `<button id="save" onclick="saveToLocal({score:${correctCountACT02}} class="save_button")">Save</button>`;
-        //${savebuttonsHTML}
-
         const wrapperClasses = {
             'ACT03_start': 'main-wrapper main-wrapper_height_20',
             'default': 'main-wrapper main-wrapper_height_70',
@@ -1116,11 +1154,17 @@ function createSectionHTML(section) {
         sectionHTML = `
             <div id="${section.id}" class="section">
                 <div class="${wrapperClasses[section.id] || wrapperClasses['default']}">
-                    ${topText}
+                    <div>
+                        ${topText}
+                    </div>
                     <div class="center-wrapper">
-                        ${leftText}
+                        <div class="rightText-wrapper">
+                            ${leftText}
+                        </div>
                         ${imageHTML}
-                        ${rightText}
+                        <div class="leftText-wrapper">
+                            ${rightText}
+                        </div>
                     </div>
                     ${bottomText}
                 </div>
@@ -1128,11 +1172,6 @@ function createSectionHTML(section) {
             </div>
         `;
     }
-
-    // 1.7. クイズ 選択肢ランダム配置
-    // 1.6. 画面全体に選択肢　(kamuyutar対戦前)
-    // 1.8. ラストメッセージ (左上、右下配置)
-    // 2. クイズ前
 
     // セクションの全体のHTMLを組み立てる
     return sectionHTML;
@@ -1146,4 +1185,3 @@ sections.forEach(section => {
 
 // 最初のセクションを表示
 showSection("level");
-//toggleTips();
