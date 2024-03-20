@@ -750,6 +750,18 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
     setupTipsButton();
+
+    /*
+    // 奥付
+    var footer = document.getElementById('footer');
+    var modal = document.getElementById('modal');
+  
+    if (footer && modal) {
+      footer.onclick = function() {
+        modal.style.display = "block";
+      };
+    }
+    */
 });
 
 
@@ -1176,6 +1188,7 @@ function createSectionHTML(section) {
     // セクションの全体のHTMLを組み立てる
     return sectionHTML;
 }
+
 
 // HTMLを生成
 const mainBlock = document.getElementById('mainBlock');
