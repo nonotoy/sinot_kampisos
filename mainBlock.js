@@ -20,9 +20,6 @@ let char_type = 'kana';
 // セクションの表示・非表示を切り替える
 window.showSection = function(sectionId) {
     const allSections = document.querySelectorAll('.section');
-    const controls = document.getElementById("controls");
-    const tips = document.querySelectorAll('.tip');
-
     allSections.forEach(section => {
         if (section.id === sectionId) {
             if (section.id === 'ACT02_library') {
@@ -159,12 +156,12 @@ function randomizeButtons(sectionElement) {
     buttons.forEach(button => {
 
         // ボタンのサイズ（ここでは仮の値を使用）
-        const buttonWidth = 100; // 仮の値
-        const buttonHeight = 100; // 仮の値
+        const buttonWidth = 30; // 仮の値
+        const buttonHeight = 50; // 仮の値
 
         // targetContainerのサイズに基づいてランダムな位置を生成
         const x = Math.random() * (mainBlockWidth - buttonWidth);
-        const y = Math.random() * (mainBlockHeight - buttonHeight);
+        const y = Math.random() * (mainBlockHeight *10 - buttonHeight); //突然正しく取れなくなった。何が起きた？
 
         // ボタンにスタイルを適用
         button.style.position = 'absolute';
