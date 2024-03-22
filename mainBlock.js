@@ -17,6 +17,43 @@ var mainBlockWidth = 0;
 // 文字表記_初期値
 let char_type = 'kana';
 
+// ランダムなクイズを生成
+const randomQuizzes_ACT02_action_easy = generateRandomQuizzes('ACT02a_action_easy', 58, 5, 3)
+const randomQuizzes_ACT02_action_hard = generateRandomQuizzes('ACT02a_action_hard', 63, 5, 3)
+const randomQuizzes_ACT02_advanced_easy = generateRandomQuizzes('ACT02a_advanced_easy', 12, 5, 3)
+//const randomQuizzes_ACT02_advanced_hard = generateRandomQuizzes('ACT02a_advanced_hard', 3, 5, 3)
+const randomQuizzes_ACT02_animals_easy = generateRandomQuizzes('ACT02a_animals_easy', 24, 5, 3)
+const randomQuizzes_ACT02_animals_hard = generateRandomQuizzes('ACT02a_animals_hard', 27, 5, 3)
+const randomQuizzes_ACT02_beginner_easy = generateRandomQuizzes('ACT02a_beginner_easy', 8, 5, 3)
+const randomQuizzes_ACT02_beginner_hard = generateRandomQuizzes('ACT02a_beginner_hard', 14, 5, 3)
+const randomQuizzes_ACT02_body_easy = generateRandomQuizzes('ACT02a_body_easy', 25, 5, 3)
+const randomQuizzes_ACT02_body_hard = generateRandomQuizzes('ACT02a_body_hard', 27, 5, 3)
+const randomQuizzes_ACT02_food_easy = generateRandomQuizzes('ACT02a_food_easy', 13, 5, 3)
+const randomQuizzes_ACT02_food_hard = generateRandomQuizzes('ACT02a_food_hard', 10, 5, 3)
+const randomQuizzes_ACT02_human_easy = generateRandomQuizzes('ACT02a_human_easy', 21, 5, 3)
+const randomQuizzes_ACT02_human_hard = generateRandomQuizzes('ACT02a_human_hard', 26, 5, 3)
+const randomQuizzes_ACT02_nature_easy = generateRandomQuizzes('ACT02a_nature_easy', 19, 5, 3)
+const randomQuizzes_ACT02_nature_hard = generateRandomQuizzes('ACT02a_nature_hard', 25, 5, 3)
+const randomQuizzes_ACT02_number_easy = generateRandomQuizzes('ACT02a_number_easy', 32, 5, 3)
+const randomQuizzes_ACT02_number_hard = generateRandomQuizzes('ACT02a_number_hard', 19, 5, 3)
+const randomQuizzes_ACT02_places_easy = generateRandomQuizzes('ACT02a_places_hard', 7, 5, 3)
+const randomQuizzes_ACT02_places_hard = generateRandomQuizzes('ACT02a_places_hard', 10, 5, 3)
+const randomQuizzes_ACT02_plants_easy = generateRandomQuizzes('ACT02a_plants_easy', 15, 5, 3)
+const randomQuizzes_ACT02_plants_hard = generateRandomQuizzes('ACT02a_plants_hard', 26, 5, 3)
+const randomQuizzes_ACT02_property_easy = generateRandomQuizzes('ACT02a_property_easy', 30, 5, 3)
+const randomQuizzes_ACT02_property_hard = generateRandomQuizzes('ACT02a_property_hard', 35, 5, 3)
+const randomQuizzes_ACT02_space_hard = generateRandomQuizzes('ACT02a_space_hard', 30, 5, 3)
+const randomQuizzes_ACT02_time_easy = generateRandomQuizzes('ACT02a_time_easy', 20, 5, 3)
+const randomQuizzes_ACT02_time_hard = generateRandomQuizzes('ACT02a_time_hard', 13, 5, 3)
+const randomQuizzes_ACT02_tool_easy = generateRandomQuizzes('ACT02a_tool_easy', 23, 5, 3)
+const randomQuizzes_ACT02_tool_hard = generateRandomQuizzes('ACT02a_tool_hard', 20, 5, 3)
+const randomQuizzes_ACT03_09 = generateRandomQuizzes('ACT03_09', 199, 5, 8);
+const randomQuizzes_ACT03_10 = generateRandomQuizzes('ACT03_10', 9, 5, 30);
+
+//const randomQuizzes_ACT02_all_easy = generateRandomQuizzes('ACT02a', 11, 5, 3); // randomQuizzes_ACT02_***_easyを統合
+//const randomQuizzes_ACT02_all_hard = generateRandomQuizzes('ACT02a', 11, 5, 3); // randomQuizzes_ACT02_***_hardを統合
+
+
 // セクションの表示・非表示を切り替える
 window.showSection = function(sectionId) {
     const allSections = document.querySelectorAll('.section');
@@ -69,11 +106,6 @@ window.defineLevel = function(level) {
     }
 }
 
-// ランダムなクイズを生成
-const randomQuizzes_ACT02 = generateRandomQuizzes('ACT02a', 11, 5, 3);
-const randomQuizzes_ACT03_09 = generateRandomQuizzes('ACT03_09', 199, 5, 8);
-const randomQuizzes_ACT03_10 = generateRandomQuizzes('ACT03_10', 9, 5, 30);
-
 // 選択肢をシャッフルするための関数
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
@@ -86,7 +118,35 @@ function shuffleArray(array) {
 function generateRandomQuizzes(baseId, totalQuizzes, numberOfQuizzes, numberOfOptions) {
     const selectedIds = new Set();
     const endIDclass = {
-        'ACT02a': 'ACT02_end',
+        'ACT02a_action_easy': 'ACT02_end',
+        'ACT02a_action_hard': 'ACT02_end',
+        'ACT02a_advanced_easy': 'ACT02_end',
+        'ACT02a_advanced_hard': 'ACT02_end',
+        'ACT02a_animals_easy': 'ACT02_end',
+        'ACT02a_animals_hard': 'ACT02_end',
+        'ACT02a_beginner_easy': 'ACT02_end',
+        'ACT02a_beginner_hard': 'ACT02_end',
+        'ACT02a_body_easy': 'ACT02_end',
+        'ACT02a_body_hard': 'ACT02_end',
+        'ACT02a_food_easy': 'ACT02_end',
+        'ACT02a_food_hard': 'ACT02_end',
+        'ACT02a_human_easy': 'ACT02_end',
+        'ACT02a_human_hard': 'ACT02_end',
+        'ACT02a_nature_easy': 'ACT02_end',
+        'ACT02a_nature_hard': 'ACT02_end',
+        'ACT02a_number_easy': 'ACT02_end',
+        'ACT02a_number_hard': 'ACT02_end',
+        'ACT02a_places_easy': 'ACT02_end',
+        'ACT02a_places_hard': 'ACT02_end',
+        'ACT02a_plants_easy': 'ACT02_end',
+        'ACT02a_plants_hard': 'ACT02_end',
+        'ACT02a_property_easy': 'ACT02_end',
+        'ACT02a_property_hard': 'ACT02_end',
+        'ACT02a_space_hard': 'ACT02_end',
+        'ACT02a_time_easy': 'ACT02_end',
+        'ACT02a_time_hard': 'ACT02_end',
+        'ACT02a_tool_easy': 'ACT02_end',
+        'ACT02a_tool_hard': 'ACT02_end',
         'ACT03_09': 'ACT03_defeated_01',
         'ACT03_10': 'ACT03_defeated_01',
     };
@@ -114,23 +174,27 @@ function generateRandomQuizzes(baseId, totalQuizzes, numberOfQuizzes, numberOfOp
         next: index < array.length - 1 ? array[index + 1] : `${endIDclass[baseId]}`,
       };
     });    
+
 }
 
 // 指定されたセクション内で、指定されたoptionIdを持つボタンを探す
 function updateQuizSections(sectionId, firstQuizId, optionId) {
 
-    const button_container_class = {
-        'ACT02_genre': '.button_atrandom',
-        'ACT03_09': '.button-container-horizontal',
-        'ACT03_10': '.button-container-horizontal',
-    };
-    const optionElement = document.querySelector(`#${sectionId} ${button_container_class[sectionId]} #${optionId}`);
+    const button_container = '.' + optionId
+    
+    let optionElement = ''
+
+    if (sectionId.includes('ACT02')) {
+        optionElement = document.querySelector(`#${sectionId} ${button_container} #${optionId}`)
+    } else {
+        optionElement = document.querySelector(`#${sectionId} .button-container-horizontal #${optionId}`)
+    }
 
     if (optionElement) {
         // onclick属性を更新して、指定されたfirstQuizIdを使用するようにする
         optionElement.setAttribute('onclick', `showSection('${firstQuizId}')`);
     } else {
-        console.error('Option not found:', optionId, 'in section:', sectionId);
+        console.error('Option not found:', optionElement);
     }
 }
 
@@ -175,11 +239,12 @@ function randomizeButtons(sectionElement) {
 
 // HTMLに変換してDOMに挿入する関数
 function renderQuizzes(quizzes) {
+
     // mainBlock要素を選択
     const mainBlock = document.getElementById('mainBlock');
     if (!mainBlock) {
         console.error('mainBlock element not found!');
-        return; // mainBlock要素が見つからない場合はここで処理を停止
+        return;
     }
 
     // クイズデータを基にHTMLを組み立てる
@@ -228,7 +293,6 @@ function renderQuizzes(quizzes) {
             
             const optionText = commands['kana'][String(option.descKey)];
 
-
             if (quiz.id.includes('ACT03_09')) {
                 button.className = 'quiz-option_8questions' ;
                 button.setAttribute('onclick', `checkACT03Answer('${quiz.id}', '${option.id}')`);
@@ -239,7 +303,7 @@ function renderQuizzes(quizzes) {
                 optionTextElement.innerHTML = `<p class='p_no_margin'>${optionText}</p>`;
             } else {
                 button.className = 'quiz-option';
-                button.setAttribute('onclick', `checkACT02Answer('${quiz.id}', '${option.id}')`);
+                button.setAttribute('onclick', `checkAnswer('${quiz.id}', '${option.id}')`);
                 optionTextElement.innerHTML = `<p>${optionText}</p>`;
             };
 
@@ -267,12 +331,75 @@ function renderQuizzes(quizzes) {
 
 function generateAndUpdateRandomQuizzes() {
 
-    updateQuizSections('ACT02_genre', randomQuizzes_ACT02[0].id, 'at_random');
+    updateQuizSections('ACT02_genre_easy', randomQuizzes_ACT02_animals_easy[0].id, 'option1-1');
+    updateQuizSections('ACT02_genre_easy', randomQuizzes_ACT02_plants_easy[0].id, 'option1-2');
+    updateQuizSections('ACT02_genre_easy', randomQuizzes_ACT02_nature_easy[0].id, 'option1-3');
+    // updateQuizSections('ACT02_genre_easy', randomQuizzes_ACT02_space_easy[0].id, 'option1-4');
+    updateQuizSections('ACT02_genre_easy', randomQuizzes_ACT02_human_easy[0].id, 'option2-1');
+    updateQuizSections('ACT02_genre_easy', randomQuizzes_ACT02_body_easy[0].id, 'option2-2');
+    updateQuizSections('ACT02_genre_easy', randomQuizzes_ACT02_action_easy[0].id, 'option2-3');
+    updateQuizSections('ACT02_genre_easy', randomQuizzes_ACT02_property_easy[0].id, 'option2-4');
+    updateQuizSections('ACT02_genre_easy', randomQuizzes_ACT02_tool_easy[0].id, 'option3-1');
+    updateQuizSections('ACT02_genre_easy', randomQuizzes_ACT02_food_easy[0].id, 'option3-2');
+    updateQuizSections('ACT02_genre_easy', randomQuizzes_ACT02_time_easy[0].id, 'option3-3');
+    updateQuizSections('ACT02_genre_easy', randomQuizzes_ACT02_number_easy[0].id, 'option3-4');
+    updateQuizSections('ACT02_genre_easy', randomQuizzes_ACT02_places_easy[0].id, 'option4-1');
+    updateQuizSections('ACT02_genre_easy', randomQuizzes_ACT02_beginner_easy[0].id, 'option4-2');
+    updateQuizSections('ACT02_genre_easy', randomQuizzes_ACT02_advanced_easy[0].id, 'option4-3');
+    // updateQuizSections('ACT02_genre_easy', randomQuizzes_ACT02[0].id, 'at_random');
+
+    updateQuizSections('ACT02_genre_hard', randomQuizzes_ACT02_animals_hard[0].id, 'option1-1');
+    updateQuizSections('ACT02_genre_hard', randomQuizzes_ACT02_plants_hard[0].id, 'option1-2');
+    updateQuizSections('ACT02_genre_hard', randomQuizzes_ACT02_nature_hard[0].id, 'option1-3');
+    updateQuizSections('ACT02_genre_hard', randomQuizzes_ACT02_space_hard[0].id, 'option1-4');
+    updateQuizSections('ACT02_genre_hard', randomQuizzes_ACT02_human_hard[0].id, 'option2-1');
+    updateQuizSections('ACT02_genre_hard', randomQuizzes_ACT02_body_hard[0].id, 'option2-2');
+    updateQuizSections('ACT02_genre_hard', randomQuizzes_ACT02_action_hard[0].id, 'option2-3');
+    updateQuizSections('ACT02_genre_hard', randomQuizzes_ACT02_property_hard[0].id, 'option2-4');
+    updateQuizSections('ACT02_genre_hard', randomQuizzes_ACT02_tool_hard[0].id, 'option3-1');
+    updateQuizSections('ACT02_genre_hard', randomQuizzes_ACT02_food_hard[0].id, 'option3-2');
+    updateQuizSections('ACT02_genre_hard', randomQuizzes_ACT02_time_hard[0].id, 'option3-3');
+    updateQuizSections('ACT02_genre_hard', randomQuizzes_ACT02_number_hard[0].id, 'option3-4');
+    updateQuizSections('ACT02_genre_hard', randomQuizzes_ACT02_places_hard[0].id, 'option4-1');
+    updateQuizSections('ACT02_genre_hard', randomQuizzes_ACT02_beginner_hard[0].id, 'option4-2');
+    //updateQuizSections('ACT02_genre_hard', randomQuizzes_ACT02_advanced_hard[0].id, 'option4-3');
+    // updateQuizSections('ACT02_genre_hard', randomQuizzes_ACT02[0].id, 'at_random');
+
     updateQuizSections('ACT03_09', randomQuizzes_ACT03_09[0].id, 'option2');
     updateQuizSections('ACT03_10', randomQuizzes_ACT03_10[0].id, 'option1');
 
     // HTMLに変換してDOMに挿入する関数
-    renderQuizzes(randomQuizzes_ACT02);
+    // renderQuizzes(randomQuizzes_ACT02);
+    renderQuizzes(randomQuizzes_ACT02_action_easy);
+    renderQuizzes(randomQuizzes_ACT02_action_hard);
+    renderQuizzes(randomQuizzes_ACT02_advanced_easy);
+    //renderQuizzes(randomQuizzes_ACT02_advanced_hard);
+    renderQuizzes(randomQuizzes_ACT02_animals_easy);
+    renderQuizzes(randomQuizzes_ACT02_animals_hard);
+    renderQuizzes(randomQuizzes_ACT02_beginner_easy);
+    renderQuizzes(randomQuizzes_ACT02_beginner_hard);
+    renderQuizzes(randomQuizzes_ACT02_body_easy);
+    renderQuizzes(randomQuizzes_ACT02_body_hard);
+    renderQuizzes(randomQuizzes_ACT02_food_easy);
+    renderQuizzes(randomQuizzes_ACT02_food_hard);
+    renderQuizzes(randomQuizzes_ACT02_human_easy);
+    renderQuizzes(randomQuizzes_ACT02_human_hard);
+    renderQuizzes(randomQuizzes_ACT02_nature_easy);
+    renderQuizzes(randomQuizzes_ACT02_nature_hard);
+    renderQuizzes(randomQuizzes_ACT02_number_easy);
+    renderQuizzes(randomQuizzes_ACT02_number_hard);
+    renderQuizzes(randomQuizzes_ACT02_places_easy);
+    renderQuizzes(randomQuizzes_ACT02_places_hard);
+    renderQuizzes(randomQuizzes_ACT02_plants_easy);
+    renderQuizzes(randomQuizzes_ACT02_plants_hard);
+    renderQuizzes(randomQuizzes_ACT02_property_easy);
+    renderQuizzes(randomQuizzes_ACT02_property_hard);
+    renderQuizzes(randomQuizzes_ACT02_space_hard);
+    renderQuizzes(randomQuizzes_ACT02_time_easy);
+    renderQuizzes(randomQuizzes_ACT02_time_hard);
+    renderQuizzes(randomQuizzes_ACT02_tool_easy);
+    renderQuizzes(randomQuizzes_ACT02_tool_hard);
+
     renderQuizzes(randomQuizzes_ACT03_09);
     renderQuizzes(randomQuizzes_ACT03_10);
 }
@@ -281,9 +408,38 @@ function generateAndUpdateRandomQuizzes() {
 // クイズの正解・不正解を判定
 window.checkAnswer = function(sectionId, optionId) {
 
-    const quizArray = sectionId.startsWith('ACT02') ? randomQuizzes_ACT02 :
-                      sectionId.startsWith('ACT03_09') ? randomQuizzes_ACT03_09 :
-                      randomQuizzes_ACT03_10;
+    const quizArray = 
+        //sectionId.startsWith('ACT02a') ? randomQuizzes_ACT02 :
+        sectionId.startsWith('ACT02a_action_easy') ? randomQuizzes_ACT02_action_easy :
+        sectionId.startsWith('ACT02a_action_hard') ? randomQuizzes_ACT02_action_hard :
+        sectionId.startsWith('ACT02a_advanced_easy') ? randomQuizzes_ACT02_advanced_easy :
+        //sectionId.startsWith('ACT02a_advanced_hard') ? randomQuizzes_ACT02_advanced_hard :
+        sectionId.startsWith('ACT02a_animals_easy') ? randomQuizzes_ACT02_animals_easy :
+        sectionId.startsWith('ACT02a_animals_hard') ? randomQuizzes_ACT02_animals_hard :
+        sectionId.startsWith('ACT02a_beginner_easy') ? randomQuizzes_ACT02_beginner_easy :
+        sectionId.startsWith('ACT02a_beginner_hard') ? randomQuizzes_ACT02_beginner_hard :
+        sectionId.startsWith('ACT02a_body_easy') ? randomQuizzes_ACT02_body_easy :
+        sectionId.startsWith('ACT02a_body_hard') ? randomQuizzes_ACT02_body_hard :
+        sectionId.startsWith('ACT02a_food_easy') ? randomQuizzes_ACT02_food_easy :
+        sectionId.startsWith('ACT02a_food_hard') ? randomQuizzes_ACT02_food_hard :
+        sectionId.startsWith('ACT02a_human_easy') ? randomQuizzes_ACT02_human_easy :
+        sectionId.startsWith('ACT02a_human_hard') ? randomQuizzes_ACT02_human_hard :
+        sectionId.startsWith('ACT02a_nature_easy') ? randomQuizzes_ACT02_nature_easy :
+        sectionId.startsWith('ACT02a_nature_hard') ? randomQuizzes_ACT02_nature_hard :
+        sectionId.startsWith('ACT02a_number_easy') ? randomQuizzes_ACT02_number_easy :
+        sectionId.startsWith('ACT02a_number_hard') ? randomQuizzes_ACT02_number_hard :
+        sectionId.startsWith('ACT02a_places_easy') ? randomQuizzes_ACT02_places_easy :
+        sectionId.startsWith('ACT02a_places_hard') ? randomQuizzes_ACT02_places_hard :
+        sectionId.startsWith('ACT02a_plants_easy') ? randomQuizzes_ACT02_plants_easy :
+        sectionId.startsWith('ACT02a_plants_hard') ? randomQuizzes_ACT02_plants_hard :
+        sectionId.startsWith('ACT02a_property_easy') ? randomQuizzes_ACT02_property_easy :
+        sectionId.startsWith('ACT02a_property_hard') ? randomQuizzes_ACT02_property_hard :
+        sectionId.startsWith('ACT02a_space_hard') ? randomQuizzes_ACT02_space_hard :
+        sectionId.startsWith('ACT02a_time_easy') ? randomQuizzes_ACT02_time_easy :
+        sectionId.startsWith('ACT02a_time_hard') ? randomQuizzes_ACT02_time_hard :
+        sectionId.startsWith('ACT02a_tool_easy') ? randomQuizzes_ACT02_tool_easy :
+        sectionId.startsWith('ACT03_09') ? randomQuizzes_ACT03_09 :
+        randomQuizzes_ACT03_10;
                       
     const section = quizArray.find(quiz => quiz.id === sectionId);
     const option = section.options.find(option => option.id === optionId);
@@ -292,11 +448,20 @@ window.checkAnswer = function(sectionId, optionId) {
     if (answer) {
         // 正解の場合
         displayImage(CORRECT_IMAGE_PATH, section.next, 'rgba(255, 0, 0, 0.2)');
-        window[sectionId.includes('ACT02') ? 'correctCountACT02' : 'correctCountACT03']++;
+        if (sectionId.startsWith('ACT02a')) {
+            correctCountACT02++;
+        } else {
+            correctCountACT03++;
+        }
+
+        // window[sectionId.startsWith('ACT02a') ? 'correctCountACT02' : 'correctCountACT03']++;
     } else {
         // 不正解の場合
         displayImage(INCORRECT_IMAGE_PATH, section.next, 'rgba(0, 123, 255, 0.2)');
     }
+
+    console.log('Correct count:', correctCountACT02);
+    console.log('Correct count:', correctCountACT03);
 }
 
 window.checkACT02Answer = function(sectionId, optionId) {
@@ -550,7 +715,7 @@ function createButtonHTML(section) {
 
         for (const option of optionsArray) { // シャッフルされた配列を使用
             buttonsHTML_tmp += `
-                <button id="${option.id}" onclick="checkACT02Answer('${section.id}', '${option.id}')">
+                <button id="${option.id}" onclick="checkAnswer('${section.id}', '${option.id}')">
                     <div class="button_description" data-key="${option.descKey}"></div>
                     <div class="tip" data-key="${option.tipKey}"></div>
                 </button>
@@ -605,24 +770,38 @@ function createButtonHTML(section) {
 
 
     // ACT02_genre
-    } else if (section.id === 'ACT02_genre') {
+    } else if (section.id.includes('ACT02_genre')) {
 
         let buttonsHTML_atrandom = '';
 
         for (const option of section.options) {
-            if (option.id != 'at_random') {
+            if ((section.id === 'ACT02_genre_easy' && option.id === 'option1-4') || (section.id === 'ACT02_genre_hard' && option.id === 'option4-2') || (option.id === 'option4-4') ) {
                 buttonsHTML_tmp += `
-                    <button disabled id="${option.id}" class="section-switch" onclick="showSection('${option.nextSection}')">
-                        <div class="button_description" data-key="${option.descKey}"></div>
-                        <div class="button_description-tips" data-key="${option.descKey}"></div>
-                    </button>
+                    <div class="${option.id}">
+                        <button disabled id="${option.id}" class="section-switch grid_button" onclick="showSection('${option.nextSection}')">
+                            <div class="button_description" data-key="${option.descKey}"></div>
+                            <div class="button_description-tips" data-key="${option.descKey}"></div>
+                        </button>
+                    </div>
+                `;     
+            
+            } else if (option.id != 'at_random') {
+                buttonsHTML_tmp += `
+                    <div class="${option.id}">
+                        <button id="${option.id}" class="section-switch grid_button" onclick="showSection('${option.nextSection}')">
+                            <div class="button_description" data-key="${option.descKey}"></div>
+                            <div class="button_description-tips" data-key="${option.descKey}"></div>
+                        </button>
+                    </div>
                 `;
             
             } else {
                 buttonsHTML_atrandom = `
-                    <button id="${option.id}" class="section-switch" onclick="showSection('${option.nextSection}')">
-                        <div class="button_description" data-key="${option.descKey}"></div>
-                    </button>
+                    <div class="${option.id}">
+                        <button disabled id="${option.id}" class="section-switch grid_button" onclick="showSection('${option.nextSection}')">
+                            <div class="button_description" data-key="${option.descKey}"></div>
+                        </button>
+                    </div>
                 `;
             }
         };
@@ -634,7 +813,7 @@ function createButtonHTML(section) {
         `;
  
         buttonsHTML = `
-            <div class="button-container-20grid button_atrandom">
+            <div class="button-container-20grid">
                 ${buttonsHTML_tmp}
                 ${emptyButton}
                 ${buttonsHTML_atrandom}
@@ -928,7 +1107,7 @@ function createSectionHTML(section) {
             // シャッフルされた選択肢でHTMLを生成
             section.options.forEach(option => {
                 optionsHTML += `
-                    <button class="quiz-option" id="${option.id}" onclick="checkACT02Answer('${section.id}', '${option.id}')">
+                    <button class="quiz-option" id="${option.id}" onclick="checkAnswer('${section.id}', '${option.id}')">
                         <div class="option-text" data-key="${option.descKey}"></div>
                     </button>
                 `;
@@ -1144,14 +1323,6 @@ function createSectionHTML(section) {
                     `;
             }
         };
-
-        if (rightText === '') {
-            rightText = `<div class="rightText"></div>`;
-        }
-
-        if (leftText === '') {
-            leftText = `<div class="leftText"></div>`;
-        }
 
         let buttonsHTML = createButtonHTML(section);
 

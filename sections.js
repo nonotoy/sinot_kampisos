@@ -553,8 +553,8 @@ export const sections = [
 				{ type: 'description', key: 'ACT02_home'}
 		],
 		options: [
-				{ id: 'option1', nextSection: 'ACT02_genre', descKey: 'ACT02_home_a'}, // nextSectionは動的に変更
-				{ id: 'option2', nextSection: 'ACT02_genre', descKey: 'ACT02_home_b'}, // nextSectionは動的に変更 -> 今開発中なので、homeに戻す
+				{ id: 'option1', nextSection: 'ACT02_genre_easy', descKey: 'ACT02_home_a'}, // nextSectionは動的に変更
+				{ id: 'option2', nextSection: 'ACT02_genre_hard', descKey: 'ACT02_home_b'}, // nextSectionは動的に変更 -> 今開発中なので、homeに戻す
 				{ id: 'option3', nextSection: 'ACT02_library', descKey: 'ACT02_home_c'},
 				{ id: 'save', nextSection: 'save', descKey: 'ACT02_save'} // save利用不可
 		],
@@ -563,7 +563,38 @@ export const sections = [
 		verticalLayout: true,
 	},
 	{
-		id: 'ACT02_genre',
+		id: 'ACT02_genre_easy',
+		section_class: 'quiz_genre',
+		texts: [
+				{ type: 'description', key: 'ACT02_genre'}
+		],
+		options: [
+				{ id: 'option1-1', nextSection: '', descKey: 'ACT02_genre_1-1'}, 
+				{ id: 'option2-1', nextSection: '', descKey: 'ACT02_genre_2-1'}, 
+				{ id: 'option3-1', nextSection: '', descKey: 'ACT02_genre_3-1'},
+				{ id: 'option4-1', nextSection: '', descKey: 'ACT02_genre_4-1'}, 
+
+				{ id: 'option1-2', nextSection: '', descKey: 'ACT02_genre_1-2'},
+				{ id: 'option2-2', nextSection: '', descKey: 'ACT02_genre_2-2'},
+				{ id: 'option3-2', nextSection: '', descKey: 'ACT02_genre_3-2'}, 
+				{ id: 'option4-2', nextSection: '', descKey: 'ACT02_genre_4-2'}, 
+
+				{ id: 'option1-3', nextSection: '', descKey: 'ACT02_genre_1-3'},
+				{ id: 'option2-3', nextSection: '', descKey: 'ACT02_genre_2-3'}, 
+				{ id: 'option3-3', nextSection: '', descKey: 'ACT02_genre_3-3'}, 	
+				{ id: 'option4-3', nextSection: '', descKey: 'ACT02_genre_4-3'},
+
+				{ id: 'option1-4', nextSection: '', descKey: 'ACT02_genre_1-4'}, 
+				{ id: 'option2-4', nextSection: '', descKey: 'ACT02_genre_2-4'},
+				{ id: 'option3-4', nextSection: '', descKey: 'ACT02_genre_3-4'},
+				{ id: 'option4-4', nextSection: '', descKey: 'ACT02_genre_4-4'},
+				{ id: 'at_random', nextSection: '', descKey: 'ACT02_genre_at_random'}, // nextSectionは動的に変更
+		],
+		images: [],
+		backgroundColor: 'rgba(253,241,202,1.0)',
+	},
+	{
+		id: 'ACT02_genre_hard',
 		section_class: 'quiz_genre',
 		texts: [
 				{ type: 'description', key: 'ACT02_genre'}
@@ -650,7 +681,7 @@ export const sections = [
 		],
 		images: [{ data: 'materials/ACT02_result_A.png', image_class: 'width_90'}],
 		options: [
-			{ id: 'option1', nextSection: '', descKey: 'ACT02_result_again'}, // nextSectionは動的に変更
+			{ id: 'option1', nextSection: 'ACT02_home', descKey: 'ACT02_result_again'},
 			{ id: 'option2', nextSection: 'ACT03_01', descKey: 'ACT02_result_done'},
 		],
 		backgroundColor: 'rgba(255,255,204,1.0)',
@@ -662,7 +693,7 @@ export const sections = [
 		],
 		images: [{ data: 'materials/ACT02_result_B.png', image_class: 'width_90'}],
 		options: [
-			{ id: 'option1', nextSection: '', descKey: 'ACT02_result_again'}, // nextSectionは動的に変更
+			{ id: 'option1', nextSection: 'ACT02_home', descKey: 'ACT02_result_again'}, 
 			{ id: 'option2', nextSection: 'ACT03_01', descKey: 'ACT02_result_done'},
 		],
 		backgroundColor: 'rgba(255,255,204,1.0)',
@@ -674,7 +705,7 @@ export const sections = [
 		],
 		images: [{ data: 'materials/ACT02_result_C.png', image_class: 'width_90'}],
 		options: [
-			{ id: 'option1', nextSection: '', descKey: 'ACT02_result_again'}, // nextSectionは動的に変更
+			{ id: 'option1', nextSection: 'ACT02_home', descKey: 'ACT02_result_again'}, 
 			{ id: 'option2', nextSection: 'ACT03_01', descKey: 'ACT02_result_done'},
 		],
 		backgroundColor: 'rgba(255,255,204,1.0)',
@@ -686,7 +717,7 @@ export const sections = [
 		],
 		images: [{ data: 'materials/ACT02_result_D.png', image_class: 'width_90'}],
 		options: [
-			{ id: 'option1', nextSection: '', descKey: 'ACT02_result_again'}, // nextSectionは動的に変更
+			{ id: 'option1', nextSection: 'ACT02_home', descKey: 'ACT02_result_again'},
 			{ id: 'option2', nextSection: 'ACT03_01', descKey: 'ACT02_result_done'},
 		],
 		backgroundColor: 'rgba(255,255,204,1.0)',

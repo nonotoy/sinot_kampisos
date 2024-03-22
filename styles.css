@@ -574,6 +574,10 @@ footer {
   height: 50px;
 }
 
+.grid_button {
+  width: 90%;
+}
+
 
 /* 確認用 */
 check_count {    
