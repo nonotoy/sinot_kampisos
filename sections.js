@@ -421,9 +421,8 @@ export const sections = [
 				{ type: 'topText', key: 'ACT01b_05'}
 		],
 		images: [{ data: 'materials/ACT01b_05.png', image_class: 'width_90'}],
-		options: [
-				{ id: 'option1', nextSection: 'ACT01b_06', descKey: 'ACT01b_05a'},
-		],
+		back: 'ACT01b_04',
+		next: 'ACT01b_06',
 	},
 	{
 		id: 'ACT01b_06', // simoisamta
