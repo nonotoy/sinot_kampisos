@@ -341,7 +341,7 @@ export const sections = [
 		texts: [
 				{ type: 'topText', key: 'ACT01a_20'}
 		],
-		images: [],
+		images: [{ data: 'materials/ACT01a_20.png', image_class: 'width_90'}],
 		options: [
 				{ id: 'option1', nextSection: 'ACT01a_21', descKey: 'ACT01a_20a'}
 		],
@@ -351,7 +351,7 @@ export const sections = [
 		texts: [
 				{ type: 'topText', key: 'ACT01a_21'}
 		],
-		images: [],
+		images: [{ data: 'materials/ACT01a_21.png', image_class: 'width_90'}],
 		options: [
 				{ id: 'option1', nextSection: 'ACT01a_22', descKey: 'ACT01a_21a'}
 		],
@@ -361,7 +361,7 @@ export const sections = [
 		texts: [
 				{ type: 'topText', key: 'ACT01a_22'}
 		],
-		images: [],
+		images: [{ data: 'materials/ACT01a_22.png', image_class: 'width_90'}],
 		next: 'pet',
 	},
 
