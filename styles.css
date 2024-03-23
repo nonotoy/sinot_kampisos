@@ -29,6 +29,11 @@ main, footer {
   font-family:'メイリオ','Meiryo','ＭＳ ゴシック','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
 }
 
+.footer-container {
+  font-size: 0.8em;
+
+}
+
 main {
   margin: 0; /* デフォルトのマージンをリセット */
   height: calc(95vh - 140px);

@@ -244,7 +244,7 @@ export const commands = {
 		
 		'ACT02a_human_easy_005_quiz': '「おじさん」はどれ？',
 		'ACT02a_human_easy_005_op1': 'アチャポ',
-		'ACT02a_human_easy_005_op2': 'ウナㇻペ　',
+		'ACT02a_human_easy_005_op2': 'ウナㇻペ',
 		'ACT02a_human_easy_005_op3': 'カㇻク',
 		
 		'ACT02a_human_easy_006_quiz': '「青年」はどれ？',
@@ -468,7 +468,7 @@ export const commands = {
 		'ACT02a_advanced_easy_002_op3': 'アペ',
 		
 		'ACT02a_advanced_easy_003_quiz': 'キサラ　タンネ ワ レタㇻペ　ネㇷ゚タ　アン？　耳が長くて白いもの何？',
-		'ACT02a_advanced_easy_003_op1': 'イセポ　',
+		'ACT02a_advanced_easy_003_op1': 'イセポ',
 		'ACT02a_advanced_easy_003_op2': 'ウパㇱ',
 		'ACT02a_advanced_easy_003_op3': 'ユㇰ',
 		
@@ -1076,7 +1076,7 @@ export const commands = {
 		'ACT02a_action_easy_057_op3': 'アン',
 		
 		'ACT02a_action_hard_000_quiz': '「待つ」はどれ？',
-		'ACT02a_action_hard_000_op1': 'テレ　',
+		'ACT02a_action_hard_000_op1': 'テレ',
 		'ACT02a_action_hard_000_op2': 'ホシピ',
 		'ACT02a_action_hard_000_op3': 'オマン',
 		
@@ -1102,7 +1102,7 @@ export const commands = {
 		
 		'ACT02a_action_hard_005_quiz': '「来る（みんなで）」は？',
 		'ACT02a_action_hard_005_op1': 'アㇻキ',
-		'ACT02a_action_hard_005_op2': 'エㇰ　',
+		'ACT02a_action_hard_005_op2': 'エㇰ',
 		'ACT02a_action_hard_005_op3': 'オマン',
 		
 		'ACT02a_action_hard_006_quiz': '「考える」はどれ？',
@@ -1122,7 +1122,7 @@ export const commands = {
 		
 		'ACT02a_action_hard_009_quiz': '「削る」はどれ？',
 		'ACT02a_action_hard_009_op1': 'ケウレ',
-		'ACT02a_action_hard_009_op2': 'ソソ　',
+		'ACT02a_action_hard_009_op2': 'ソソ',
 		'ACT02a_action_hard_009_op3': 'ノイェ',
 		
 		'ACT02a_action_hard_010_quiz': '「まちがう」はどれ？',
@@ -1163,7 +1163,7 @@ export const commands = {
 		'ACT02a_action_hard_017_quiz': '「にくむ」はどれ？',
 		'ACT02a_action_hard_017_op1': 'エポッパ',
 		'ACT02a_action_hard_017_op2': 'シトマ',
-		'ACT02a_action_hard_017_op3': 'エウンケㇱケ　',
+		'ACT02a_action_hard_017_op3': 'エウンケㇱケ',
 		
 		'ACT02a_action_hard_018_quiz': '「摘み取る」はどれ？',
 		'ACT02a_action_hard_018_op1': 'チャ',
@@ -2118,7 +2118,7 @@ export const commands = {
 		'ACT02a_time_hard_002_quiz': '「はじめに」の言い方は？',
 		'ACT02a_time_hard_002_op1': 'アッパケタ',
 		'ACT02a_time_hard_002_op2': 'オトゥタヌ',
-		'ACT02a_time_hard_002_op3': 'オカケ　',
+		'ACT02a_time_hard_002_op3': 'オカケ',
 		
 		'ACT02a_time_hard_003_quiz': '「最初に」はどれ？',
 		'ACT02a_time_hard_003_op1': 'ホㇱキノ',
@@ -2797,7 +2797,7 @@ export const commands = {
 		
 		'ACT02a_nature_easy_003_quiz': '「森・林」はどれ？',
 		'ACT02a_nature_easy_003_op1': 'ニタイ',
-		'ACT02a_nature_easy_003_op2': 'ソ　',
+		'ACT02a_nature_easy_003_op2': 'ソ',
 		'ACT02a_nature_easy_003_op3': 'ヌプリ',
 		
 		'ACT02a_nature_easy_004_quiz': '「太陽」はどれ？',
@@ -2822,22 +2822,22 @@ export const commands = {
 		
 		'ACT02a_nature_easy_008_quiz': '「雨」はどれ？',
 		'ACT02a_nature_easy_008_op1': 'アㇷ゚ト',
-		'ACT02a_nature_easy_008_op2': 'ウパㇱ　　',
+		'ACT02a_nature_easy_008_op2': 'ウパㇱ',
 		'ACT02a_nature_easy_008_op3': 'ウプン',
 		
 		'ACT02a_nature_easy_009_quiz': '「海」はどれ？',
 		'ACT02a_nature_easy_009_op1': 'アトゥイ',
 		'ACT02a_nature_easy_009_op2': 'ニタイ',
-		'ACT02a_nature_easy_009_op3': 'ト　',
+		'ACT02a_nature_easy_009_op3': 'ト',
 		
 		'ACT02a_nature_easy_010_quiz': '「川」はどれ？',
 		'ACT02a_nature_easy_010_op1': 'ペッ',
-		'ACT02a_nature_easy_010_op2': 'ト　',
+		'ACT02a_nature_easy_010_op2': 'ト',
 		'ACT02a_nature_easy_010_op3': 'シンプイ',
 		
 		'ACT02a_nature_easy_011_quiz': '「島」はどれ？',
 		'ACT02a_nature_easy_011_op1': 'モシㇼ',
-		'ACT02a_nature_easy_011_op2': 'ムンサㇻ　',
+		'ACT02a_nature_easy_011_op2': 'ムンサㇻ',
 		'ACT02a_nature_easy_011_op3': 'ピㇱ',
 		
 		'ACT02a_nature_easy_012_quiz': '「山」はどれ？',
@@ -2846,7 +2846,7 @@ export const commands = {
 		'ACT02a_nature_easy_012_op3': 'パラコッ',
 		
 		'ACT02a_nature_easy_013_quiz': '「湖・沼・池」はどれ？',
-		'ACT02a_nature_easy_013_op1': 'ト　',
+		'ACT02a_nature_easy_013_op1': 'ト',
 		'ACT02a_nature_easy_013_op2': 'ペッ',
 		'ACT02a_nature_easy_013_op3': 'アトゥイ',
 		
@@ -2866,13 +2866,13 @@ export const commands = {
 		'ACT02a_nature_easy_016_op3': 'クンネチュㇷ゚',
 		
 		'ACT02a_nature_easy_017_quiz': '「風」はどれ？',
-		'ACT02a_nature_easy_017_op1': 'レラ　',
+		'ACT02a_nature_easy_017_op1': 'レラ',
 		'ACT02a_nature_easy_017_op2': 'ルヤンペ',
-		'ACT02a_nature_easy_017_op3': 'ウラㇻ　',
+		'ACT02a_nature_easy_017_op3': 'ウラㇻ',
 		
 		'ACT02a_nature_easy_018_quiz': '「雨」はどれ？',
 		'ACT02a_nature_easy_018_op1': 'アㇷ゚ト',
-		'ACT02a_nature_easy_018_op2': 'レラ　',
+		'ACT02a_nature_easy_018_op2': 'レラ',
 		'ACT02a_nature_easy_018_op3': 'カムイフㇺ',
 		
 		'ACT02a_nature_hard_000_quiz': '「外が明るい」はどれ？',
@@ -2898,7 +2898,7 @@ export const commands = {
 		'ACT02a_nature_hard_004_quiz': '「外が暑い」はどれ？',
 		'ACT02a_nature_hard_004_op1': 'シㇼセセㇰ',
 		'ACT02a_nature_hard_004_op2': 'シㇼメマン',
-		'ACT02a_nature_hard_004_op3': 'シㇼポㇷ゚ケ　',
+		'ACT02a_nature_hard_004_op3': 'シㇼポㇷ゚ケ',
 		
 		'ACT02a_nature_hard_005_quiz': '「あられ」はどれ？',
 		'ACT02a_nature_hard_005_op1': 'カウカウ',
@@ -3441,24 +3441,24 @@ export const commands = {
 		'ACT02a_food_hard_009_op2': 'ルイペ',
 		'ACT02a_food_hard_009_op3': 'ラタㇱケㇷ゚',
 	
-		'ACT02_end': 'Esaman siarikiki yayramuska okere kusu sapa pirkare!',
-		'ACT02_end_next': 'kamuyutar ye p a=nu',
+		'ACT02_end': 'エサマンはすべての修行を終えてかしこくなった!!',
+		'ACT02_end_next': '結果発表',
 
-		'ACT02_result_A_top': `Esaman!おまえのレベルは最高…だ<br>立派な賢者と言ってよいだろう!すごいぞ!!`,
+		'ACT02_result_A_top': `エサマン!おまえのレベルは 最高… だ<br>立派な賢者と言ってよいだろう!すごいぞ!!`,
 		'ACT02_result_A_comment': '夢じゃないのかな',
-		'ACT02_result_A_bottom': `Esamanはすべての武器をもらってふたたび旅に出た`,
+		'ACT02_result_A_bottom': `エサマンはすべての武器をもらってふたたび旅に出た`,
 
-		'ACT02_result_B_top': `Esaman!おまえのレベルは3…だ<br>努力の成果が出ているぞ!自らを誉めたたえよ!!`,
+		'ACT02_result_B_top': `エサマン!おまえのレベルは3…だ<br>努力の成果が出ているぞ!自らを誉めたたえよ!!`,
 		'ACT02_result_B_comment': '魚がいいのになー',
-		'ACT02_result_B_bottom': `Esamanは必要な道具をもらってふたたび旅に出た`,
+		'ACT02_result_B_bottom': `エサマンは必要な道具をもらってふたたび旅に出た`,
 
-		'ACT02_result_C_top': `Esaman!おまえのレベルは2… だ<br>所詮はカワウソだからな!よい よい!!<br>自分の運命に忠実であればよいのだ…`,
+		'ACT02_result_C_top': `エサマン!おまえのレベルは2…だ<br>所詮はカワウソだからな!よい よい!!<br>自分の運命に忠実であればよいのだ…`,
 		'ACT02_result_C_comment': 'やったぜ!',
-		'ACT02_result_C_bottom': `Esamanはほとんど何も持たずにふたたび旅に出た`,
+		'ACT02_result_C_bottom': `エサマンはほとんど何も持たずにふたたび旅に出た`,
 
-		'ACT02_result_D_top': `Esaman!おまえのレベルは1だ…<br>何もかも忘れてしまうとは!哀れなやつ…<br>kamuyutarはいつでもおまえを見守っているぞ!!`,
-		'ACT02_result_D_comment': 'そうなの？',
-		'ACT02_result_D_bottom': `Esamanは持ってきた刀も忘れてふたたび旅に出た`,
+		'ACT02_result_D_top': `エサマン!おまえのレベルは1だ…<br>何もかも忘れてしまうとは!哀れなやつ…<br>カムイウタㇻはいつでもおまえを見守っているぞ!!`,
+		'ACT02_result_D_comment': 'そうなの?',
+		'ACT02_result_D_bottom': `エサマンは持ってきた刀も忘れてふたたび旅に出た`,
 
 		'ACT02_result_again': `もう一度`,
 		'ACT02_result_done': 'おわり',
@@ -5694,7 +5694,7 @@ export const commands = {
 
 		'ACT01a_08': 'チクニ',
 		'ACT01a_08_left': 'ランコ チクニ アㇱ ワ タンネ ニカㇻ アエコパㇱテ ワ アン',
-		'ACT01a_08_right': 'ク=ヘメス ソ',
+		'ACT01a_08_right': '登ってみようかな',
 		'ACT01a_08a': 'ニテㇰ カ タ',
 
 		'ACT01a_09': 'ニテㇰ カ タ',
@@ -5912,7 +5912,7 @@ export const commands = {
 		
 		'ACT02a_human_easy_005_quiz': '「おじさん」はどれ？',
 		'ACT02a_human_easy_005_op1': 'アチャポ',
-		'ACT02a_human_easy_005_op2': 'ウナㇻペ　',
+		'ACT02a_human_easy_005_op2': 'ウナㇻペ',
 		'ACT02a_human_easy_005_op3': 'カㇻク',
 		
 		'ACT02a_human_easy_006_quiz': '「青年」はどれ？',
@@ -6136,7 +6136,7 @@ export const commands = {
 		'ACT02a_advanced_easy_002_op3': 'アペ',
 		
 		'ACT02a_advanced_easy_003_quiz': 'キサラ　タンネ ワ レタㇻペ　ネㇷ゚タ　アン？　耳が長くて白いもの何？',
-		'ACT02a_advanced_easy_003_op1': 'イセポ　',
+		'ACT02a_advanced_easy_003_op1': 'イセポ',
 		'ACT02a_advanced_easy_003_op2': 'ウパㇱ',
 		'ACT02a_advanced_easy_003_op3': 'ユㇰ',
 		
@@ -6744,7 +6744,7 @@ export const commands = {
 		'ACT02a_action_easy_057_op3': 'アン',
 		
 		'ACT02a_action_hard_000_quiz': '「待つ」はどれ？',
-		'ACT02a_action_hard_000_op1': 'テレ　',
+		'ACT02a_action_hard_000_op1': 'テレ',
 		'ACT02a_action_hard_000_op2': 'ホシピ',
 		'ACT02a_action_hard_000_op3': 'オマン',
 		
@@ -6770,7 +6770,7 @@ export const commands = {
 		
 		'ACT02a_action_hard_005_quiz': '「来る（みんなで）」は？',
 		'ACT02a_action_hard_005_op1': 'アㇻキ',
-		'ACT02a_action_hard_005_op2': 'エㇰ　',
+		'ACT02a_action_hard_005_op2': 'エㇰ',
 		'ACT02a_action_hard_005_op3': 'オマン',
 		
 		'ACT02a_action_hard_006_quiz': '「考える」はどれ？',
@@ -6790,7 +6790,7 @@ export const commands = {
 		
 		'ACT02a_action_hard_009_quiz': '「削る」はどれ？',
 		'ACT02a_action_hard_009_op1': 'ケウレ',
-		'ACT02a_action_hard_009_op2': 'ソソ　',
+		'ACT02a_action_hard_009_op2': 'ソソ',
 		'ACT02a_action_hard_009_op3': 'ノイェ',
 		
 		'ACT02a_action_hard_010_quiz': '「まちがう」はどれ？',
@@ -6831,7 +6831,7 @@ export const commands = {
 		'ACT02a_action_hard_017_quiz': '「にくむ」はどれ？',
 		'ACT02a_action_hard_017_op1': 'エポッパ',
 		'ACT02a_action_hard_017_op2': 'シトマ',
-		'ACT02a_action_hard_017_op3': 'エウンケㇱケ　',
+		'ACT02a_action_hard_017_op3': 'エウンケㇱケ',
 		
 		'ACT02a_action_hard_018_quiz': '「摘み取る」はどれ？',
 		'ACT02a_action_hard_018_op1': 'チャ',
@@ -7786,7 +7786,7 @@ export const commands = {
 		'ACT02a_time_hard_002_quiz': '「はじめに」の言い方は？',
 		'ACT02a_time_hard_002_op1': 'アッパケタ',
 		'ACT02a_time_hard_002_op2': 'オトゥタヌ',
-		'ACT02a_time_hard_002_op3': 'オカケ　',
+		'ACT02a_time_hard_002_op3': 'オカケ',
 		
 		'ACT02a_time_hard_003_quiz': '「最初に」はどれ？',
 		'ACT02a_time_hard_003_op1': 'ホㇱキノ',
@@ -8465,7 +8465,7 @@ export const commands = {
 		
 		'ACT02a_nature_easy_003_quiz': '「森・林」はどれ？',
 		'ACT02a_nature_easy_003_op1': 'ニタイ',
-		'ACT02a_nature_easy_003_op2': 'ソ　',
+		'ACT02a_nature_easy_003_op2': 'ソ',
 		'ACT02a_nature_easy_003_op3': 'ヌプリ',
 		
 		'ACT02a_nature_easy_004_quiz': '「太陽」はどれ？',
@@ -8490,22 +8490,22 @@ export const commands = {
 		
 		'ACT02a_nature_easy_008_quiz': '「雨」はどれ？',
 		'ACT02a_nature_easy_008_op1': 'アㇷ゚ト',
-		'ACT02a_nature_easy_008_op2': 'ウパㇱ　　',
+		'ACT02a_nature_easy_008_op2': 'ウパㇱ',
 		'ACT02a_nature_easy_008_op3': 'ウプン',
 		
 		'ACT02a_nature_easy_009_quiz': '「海」はどれ？',
 		'ACT02a_nature_easy_009_op1': 'アトゥイ',
 		'ACT02a_nature_easy_009_op2': 'ニタイ',
-		'ACT02a_nature_easy_009_op3': 'ト　',
+		'ACT02a_nature_easy_009_op3': 'ト',
 		
 		'ACT02a_nature_easy_010_quiz': '「川」はどれ？',
 		'ACT02a_nature_easy_010_op1': 'ペッ',
-		'ACT02a_nature_easy_010_op2': 'ト　',
+		'ACT02a_nature_easy_010_op2': 'ト',
 		'ACT02a_nature_easy_010_op3': 'シンプイ',
 		
 		'ACT02a_nature_easy_011_quiz': '「島」はどれ？',
 		'ACT02a_nature_easy_011_op1': 'モシㇼ',
-		'ACT02a_nature_easy_011_op2': 'ムンサㇻ　',
+		'ACT02a_nature_easy_011_op2': 'ムンサㇻ',
 		'ACT02a_nature_easy_011_op3': 'ピㇱ',
 		
 		'ACT02a_nature_easy_012_quiz': '「山」はどれ？',
@@ -8514,7 +8514,7 @@ export const commands = {
 		'ACT02a_nature_easy_012_op3': 'パラコッ',
 		
 		'ACT02a_nature_easy_013_quiz': '「湖・沼・池」はどれ？',
-		'ACT02a_nature_easy_013_op1': 'ト　',
+		'ACT02a_nature_easy_013_op1': 'ト',
 		'ACT02a_nature_easy_013_op2': 'ペッ',
 		'ACT02a_nature_easy_013_op3': 'アトゥイ',
 		
@@ -8534,13 +8534,13 @@ export const commands = {
 		'ACT02a_nature_easy_016_op3': 'クンネチュㇷ゚',
 		
 		'ACT02a_nature_easy_017_quiz': '「風」はどれ？',
-		'ACT02a_nature_easy_017_op1': 'レラ　',
+		'ACT02a_nature_easy_017_op1': 'レラ',
 		'ACT02a_nature_easy_017_op2': 'ルヤンペ',
-		'ACT02a_nature_easy_017_op3': 'ウラㇻ　',
+		'ACT02a_nature_easy_017_op3': 'ウラㇻ',
 		
 		'ACT02a_nature_easy_018_quiz': '「雨」はどれ？',
 		'ACT02a_nature_easy_018_op1': 'アㇷ゚ト',
-		'ACT02a_nature_easy_018_op2': 'レラ　',
+		'ACT02a_nature_easy_018_op2': 'レラ',
 		'ACT02a_nature_easy_018_op3': 'カムイフㇺ',
 		
 		'ACT02a_nature_hard_000_quiz': '「外が明るい」はどれ？',
@@ -8566,7 +8566,7 @@ export const commands = {
 		'ACT02a_nature_hard_004_quiz': '「外が暑い」はどれ？',
 		'ACT02a_nature_hard_004_op1': 'シㇼセセㇰ',
 		'ACT02a_nature_hard_004_op2': 'シㇼメマン',
-		'ACT02a_nature_hard_004_op3': 'シㇼポㇷ゚ケ　',
+		'ACT02a_nature_hard_004_op3': 'シㇼポㇷ゚ケ',
 		
 		'ACT02a_nature_hard_005_quiz': '「あられ」はどれ？',
 		'ACT02a_nature_hard_005_op1': 'カウカウ',
@@ -9108,31 +9108,25 @@ export const commands = {
 		'ACT02a_food_hard_009_op1': 'チマカㇺ',
 		'ACT02a_food_hard_009_op2': 'ルイペ',
 		'ACT02a_food_hard_009_op3': 'ラタㇱケㇷ゚',
-	
-		'ACT02_end': 'エサマン シアリキキ ヤイラムㇱカ オケレ クス サパ ピㇼカレ!',
-		'ACT02_end_next': 'カムイウタㇻ イェ ㇷ゚ アヌ',
 
-		'ACT02_result_A_top': `エサマン キロㇿ アナㇰネ “イヨッタ-ピㇼカ“!<br>
-								シノ エサマン エ＝ネ ルウェ ネ。イランマカカ アン!`,
-		'ACT02_result_A_comment': 'オハインカㇻ ソモ ネ',
-		'ACT02_result_A_bottom': `エサマン オピッタ エイキㇷ゚ エウンケライ ヒネ アシンノ オマナン`,
+		'ACT02_end': 'エサマンはすべての修行を終えてかしこくなった!!',
+		'ACT02_end_next': '結果発表',
 
-		'ACT02_result_B_top': `エサマン キロㇿ アナㇰネ “レ – キロㇿアン“<br>
-								ウウェエパㇰタ エ＝ピㇼカ ノイネ シラン ヤイヌカンヌカㇻ ヤン!!`,
-		'ACT02_result_B_comment': 'チェㇷ゚ エン=コレ',
-		'ACT02_result_B_bottom': `エサマン アエイシラㇺネ エイキㇷ゚ エウンケライ ヒネ アシンノ オマナン`,
+		'ACT02_result_A_top': `エサマン!おまえのレベルは 最高… だ<br>立派な賢者と言ってよいだろう!すごいぞ!!`,
+		'ACT02_result_A_comment': '夢じゃないのかな',
+		'ACT02_result_A_bottom': `エサマンはすべての武器をもらってふたたび旅に出た`,
 
-		'ACT02_result_C_top': `エサマン キロㇿ アナㇰネ “トゥ – キロㇿアン“<br>
-								エアニ アナㇰネ ヤヤン エサマン!! ヤイシニレ!!<br>
-								アンコラチ シㇰヌ ワ アン ヤッカ ピㇼカ`,
-		'ACT02_result_C_comment': 'オノンノ!',
-		'ACT02_result_C_bottom': `エサマン エイキㇷ゚ サㇰ ヒネ アシンノ オマナン`,
+		'ACT02_result_B_top': `エサマン!おまえのレベルは3…だ<br>努力の成果が出ているぞ!自らを誉めたたえよ!!`,
+		'ACT02_result_B_comment': '魚がいいのになー',
+		'ACT02_result_B_bottom': `エサマンは必要な道具をもらってふたたび旅に出た`,
 
-		'ACT02_result_D_top': `エサマン キロㇿ アナㇰネ “シネ－キロㇿアン“<br>
-								ネㇷ゚ ネ ヤッカ エ＝オイラ ワ オケレ イヌヌカㇱキ<br>
-								ランマ カ チオカイ エチ=コプンキネ クス イテキ オイラ`,
-		'ACT02_result_D_comment': 'ソンノ ヘ?',
-		'ACT02_result_D_bottom': `エサマン マキリ カ オイラ ヒネ アシンノ オマナン`,
+		'ACT02_result_C_top': `エサマン!おまえのレベルは2…だ<br>所詮はカワウソだからな!よい よい!!<br>自分の運命に忠実であればよいのだ…`,
+		'ACT02_result_C_comment': 'やったぜ!',
+		'ACT02_result_C_bottom': `エサマンはほとんど何も持たずにふたたび旅に出た`,
+
+		'ACT02_result_D_top': `エサマン!おまえのレベルは1だ…<br>何もかも忘れてしまうとは!哀れなやつ…<br>カムイウタㇻはいつでもおまえを見守っているぞ!!`,
+		'ACT02_result_D_comment': 'そうなの?',
+		'ACT02_result_D_bottom': `エサマンは持ってきた刀も忘れてふたたび旅に出た`,
 
 		'ACT02_result_again': `もう一度`,
 		'ACT02_result_done': 'おわり',
@@ -11536,16 +11530,15 @@ export const commands = {
 			なんでも たべてしまうので、のぼりべつのアイヌは こまって、カムイたちに そうだんした。<br>
 			カムイたちは、さかなをとるのが じょうずな カワウソ に たのむことにした。<br>
 			カワウソ は シヨキナ のいる うみへ、でかけていった！<br>
-			でも、かたなを わすれたので、シヨキナを きることができない。 すると、のぼりべつのカムイが<br>
-			「おい、じぶんをよくみてみろ！ かたなをもっているぞ！」と、おしえてくれた。<br>
+			でも、かたなを わすれたので、シヨキナを きることができない。 すると、のぼりべつのカムイ
+			「おい、じぶんをよくみてみろ！ かたなをもっているぞ！」と、おしえてくれた。
 			カワウソ は わすれっぽいので、さいしょから もってきていたのに、わすれていたのだ。<br>
 			そこで、じぶんのかたなで、シヨキナのからだを、えいっと、はんぶんにした。<br>
-			あたまのほうを、のぼりべつのカムイにあげて、からだのほうを、すなはまに おいていった。<br>
+			あたまのほうを、のぼりべつのカムイにあげて、からだのほうを、すなはまに おいていった。
 			だから、のぼりべつには 「フンペサパ」という なまえの、すなはまが あるんだよ。<br>
 		`,
 
 		'1-2_prologue2': 'そんなわけで、なにをするんだっけ？',
-		'1-2_prologue2': 'ネワネ クス ネコン クイキ？',
 
 		'missions_1': 'さくせん１ カムイウタㇻをさがせ',
 		'missions_2': 'さくせん２ ぶきをあつめよう',
@@ -11577,14 +11570,14 @@ export const commands = {
 
 		'ACT01a_08': 'チクニ',
 		'ACT01a_08_left': 'ランコ チクニ アㇱ ワ タンネ ニカㇻ アエコパㇱテ ワ アン',
-		'ACT01a_08_right': 'ク=ヘメス ソ',
+		'ACT01a_08_right': 'のぼってみようかな',
 		'ACT01a_08a': 'ニテㇰ カ タ',
 
 		'ACT01a_09': 'ニテㇰ カ タ',
 		'ACT01a_09_left': 'ニテㇰ カ タ エ=オマン アクス エ＝トクイェヘ アン',
 
 		'paskur': 'ネㇷ゚ エ=コウェペケンヌ ルスイ ヤ？',
-		'paskur_left': 'オホンノ ソモ ウヌカㇻ=アン ナ',
+		'paskur_left': 'ながいこと　あってなかったね',
 		
 		'paskur_a' : 'シヨキナ エ＝エラマン ヤ？',
 		'paskur_b' : 'カムイウタㇻ ソモ エ=ヌカㇻ ヤ？',
@@ -11616,7 +11609,7 @@ export const commands = {
 
 		'ACT01a_10': 'ニテㇰ カ タ',
 		'ACT01a_10_left': 'エ＝トクイェヘ オㇿワ ア＝エルラ カンピ エウンケライ',
-		'ACT01a_10_right': 'サランパ',
+		'ACT01a_10_right': 'またね',
 		'ACT01a_10a': 'ラ タ ラン',
 
 		'ACT01a_11': 'ハㇻキサムン',
@@ -11667,8 +11660,9 @@ export const commands = {
 		'ACT01a_22_left': 'エサマン イワ－コシンプ タウキ',
 		'ACT01a_22_right': 'コシンプ イサㇺ',
 
+		'pet': 'シリセㇷ゚',
 		'pet-left': 'エサマン シリセㇷ゚ ウシタ エㇰ',
-		'pet-right': 'ク=イペ ルスイ',
+		'pet-right': 'はらへった',
 
 		'ACT01b_01': 'ポロ ペッ',
 		'ACT01b_01a':'ペッ トゥラシ',
@@ -11728,7 +11722,26 @@ export const commands = {
 		'ACT02_home_a': 'かんたん',
 		'ACT02_home_b': 'むずかしい',
 		'ACT02_home_c': 'しらべる (開発中)',
-		'ACT02_save': '休む',
+		'ACT02_save': 'セーブ',
+
+		'ACT02_genre': 'どのジャンルをれんしゅうする？',
+		'ACT02_genre_1-1': 'いきもの',
+		'ACT02_genre_1-2': 'しょくぶつ',
+		'ACT02_genre_1-3': 'しぜん',
+		'ACT02_genre_1-4': 'ばしょ',
+		'ACT02_genre_2-1': 'ひと',
+		'ACT02_genre_2-2': 'からだ',
+		'ACT02_genre_2-3': 'うごき',
+		'ACT02_genre_2-4': 'すがた',
+		'ACT02_genre_3-1': 'どうぐ',
+		'ACT02_genre_3-2': 'たべもの',
+		'ACT02_genre_3-3': 'じかん',
+		'ACT02_genre_3-4': 'かず',
+		'ACT02_genre_4-1': 'くうかん',
+		'ACT02_genre_4-2': 'おやこのきょうしつ',
+		'ACT02_genre_4-3': 'じょうきゅうこうざ',
+		'ACT02_genre_4-4': '？？？',
+		'ACT02_genre_at_random': 'ヘアシレ',
 
 		'ACT02_library_genre1' : '指令1 カムイウタㇻに相談せよ',
 		'ACT02_library_genre2' : '指令2 武器を調達せよ',
@@ -11754,84 +11767,3024 @@ export const commands = {
 
 		'ACT02_library_back': '本をとじる',
 
-		'ACT02a_001_quiz': 'タヌキをアイヌ語で言うと？',
-		'ACT02a_001_op1': 'モユㇰ',
-		'ACT02a_001_op2': 'ユㇰ',
-		'ACT02a_001_op3': 'キムンカムイ',
+		'ACT02a_animals_easy_000_quiz': '「しか」は？',
+		'ACT02a_animals_easy_000_op1': 'ユㇰ',
+		'ACT02a_animals_easy_000_op2': 'チャペ',
+		'ACT02a_animals_easy_000_op3': 'モユㇰ',
+		
+		'ACT02a_animals_easy_001_quiz': '「クマ」は？',
+		'ACT02a_animals_easy_001_op1': 'キムンカムイ',
+		'ACT02a_animals_easy_001_op2': 'チロンヌㇷ゚',
+		'ACT02a_animals_easy_001_op3': 'ユㇰ',
+		
+		'ACT02a_animals_easy_002_quiz': '「クジラ」は？',
+		'ACT02a_animals_easy_002_op1': 'フンペ',
+		'ACT02a_animals_easy_002_op2': 'キナポ',
+		'ACT02a_animals_easy_002_op3': 'シペ',
+		
+		'ACT02a_animals_easy_003_quiz': '「シャチ」は？',
+		'ACT02a_animals_easy_003_op1': 'レプンカムイ',
+		'ACT02a_animals_easy_003_op2': 'シㇼカㇷ゚',
+		'ACT02a_animals_easy_003_op3': 'エレクㇱ',
+		
+		'ACT02a_animals_easy_004_quiz': '「からす」は？',
+		'ACT02a_animals_easy_004_op1': 'パㇱクㇽ',
+		'ACT02a_animals_easy_004_op2': 'カムイチカㇷ゚',
+		'ACT02a_animals_easy_004_op3': 'カピウ',
+		
+		'ACT02a_animals_easy_005_quiz': '「ふくろう」は？',
+		'ACT02a_animals_easy_005_op1': 'カムイチカㇷ゚',
+		'ACT02a_animals_easy_005_op2': 'オンネウ',
+		'ACT02a_animals_easy_005_op3': 'サロルイ',
+		
+		'ACT02a_animals_easy_006_quiz': '「かもめ」は？',
+		'ACT02a_animals_easy_006_op1': 'カピウ',
+		'ACT02a_animals_easy_006_op2': 'クスイェㇷ゚',
+		'ACT02a_animals_easy_006_op3': 'レタッチㇼ',
+		
+		'ACT02a_animals_easy_007_quiz': '「イヌ」は？',
+		'ACT02a_animals_easy_007_op1': 'セタ',
+		'ACT02a_animals_easy_007_op2': 'エサマン',
+		'ACT02a_animals_easy_007_op3': 'チャペ',
+		
+		'ACT02a_animals_easy_008_quiz': '「ウマ」は？',
+		'ACT02a_animals_easy_008_op1': 'ウンマ',
+		'ACT02a_animals_easy_008_op2': 'ニワトリ',
+		'ACT02a_animals_easy_008_op3': 'プタ',
+		
+		'ACT02a_animals_easy_009_quiz': '「カワウソ」は？',
+		'ACT02a_animals_easy_009_op1': 'エサマン',
+		'ACT02a_animals_easy_009_op2': 'エルㇺ',
+		'ACT02a_animals_easy_009_op3': 'メンヨ',
+		
+		'ACT02a_animals_easy_010_quiz': '「オオカミ」は？',
+		'ACT02a_animals_easy_010_op1': 'ホㇿケウ',
+		'ACT02a_animals_easy_010_op2': 'モユㇰ',
+		'ACT02a_animals_easy_010_op3': 'チロンヌㇷ゚',
+		
+		'ACT02a_animals_easy_011_quiz': '「うさぎ」は？',
+		'ACT02a_animals_easy_011_op1': 'イセポ',
+		'ACT02a_animals_easy_011_op2': 'トゥスニンケ',
+		'ACT02a_animals_easy_011_op3': 'エルㇺ',
+		
+		'ACT02a_animals_easy_012_quiz': '「ウシ」は？',
+		'ACT02a_animals_easy_012_op1': 'ペコ',
+		'ACT02a_animals_easy_012_op2': 'サロ',
+		'ACT02a_animals_easy_012_op3': 'プタ',
+		
+		'ACT02a_animals_easy_013_quiz': '「バッタ」は？',
+		'ACT02a_animals_easy_013_op1': 'パッタキ',
+		'ACT02a_animals_easy_013_op2': 'ヤオㇱケㇷ゚',
+		'ACT02a_animals_easy_013_op3': 'ハンクチョッチャ',
+		
+		'ACT02a_animals_easy_014_quiz': '「くも」は？',
+		'ACT02a_animals_easy_014_op1': 'ヤオㇱケㇷ゚',
+		'ACT02a_animals_easy_014_op2': 'イコンパㇷ゚',
+		'ACT02a_animals_easy_014_op3': 'タイキ',
+		
+		'ACT02a_animals_easy_015_quiz': '「さかな」は？',
+		'ACT02a_animals_easy_015_op1': 'チェㇷ゚',
+		'ACT02a_animals_easy_015_op2': 'キキㇼ',
+		'ACT02a_animals_easy_015_op3': 'チカㇷ゚',
+		
+		'ACT02a_animals_easy_016_quiz': '「とり」は？',
+		'ACT02a_animals_easy_016_op1': 'チカㇷ゚',
+		'ACT02a_animals_easy_016_op2': 'セイ',
+		'ACT02a_animals_easy_016_op3': 'チェッポ',
+		
+		'ACT02a_animals_easy_017_quiz': '「こんぶ」は？',
+		'ACT02a_animals_easy_017_op1': 'コンプ',
+		'ACT02a_animals_easy_017_op2': 'モコリㇼ',
+		'ACT02a_animals_easy_017_op3': 'ニノ',
+		
+		'ACT02a_animals_easy_018_quiz': '「サケ」は？',
+		'ACT02a_animals_easy_018_op1': 'カムイチェㇷ゚',
+		'ACT02a_animals_easy_018_op2': 'セイ',
+		'ACT02a_animals_easy_018_op3': 'スサㇺ',
+		
+		'ACT02a_animals_easy_019_quiz': 'キツネのなきごえは？',
+		'ACT02a_animals_easy_019_op1': 'パウパウ',
+		'ACT02a_animals_easy_019_op2': 'フウェーフウェー',
+		'ACT02a_animals_easy_019_op3': 'ワㇰワㇰ',
+		
+		'ACT02a_animals_easy_020_quiz': 'オオカミのなきごえは？',
+		'ACT02a_animals_easy_020_op1': 'ウォウォ',
+		'ACT02a_animals_easy_020_op2': 'カッコㇰカッコㇰ',
+		'ACT02a_animals_easy_020_op3': 'ペウレㇷ゚チコイキ',
+		
+		'ACT02a_animals_easy_021_quiz': '「クジラ」は？',
+		'ACT02a_animals_easy_021_op1': 'フンペ',
+		'ACT02a_animals_easy_021_op2': 'タンヌ',
+		'ACT02a_animals_easy_021_op3': 'シㇼカㇷ゚',
+		
+		'ACT02a_animals_easy_022_quiz': '「ラッコ」は？',
+		'ACT02a_animals_easy_022_op1': 'ラッコ',
+		'ACT02a_animals_easy_022_op2': 'フンペ',
+		'ACT02a_animals_easy_022_op3': 'トゥカㇻ',
+		
+		'ACT02a_animals_easy_023_quiz': '「かわうそ」は？',
+		'ACT02a_animals_easy_023_op1': 'エサマン',
+		'ACT02a_animals_easy_023_op2': 'エタㇱペ',
+		'ACT02a_animals_easy_023_op3': 'ホイヌ',
+		
+		'ACT02a_animals_hard_000_quiz': '「こうもり」は？',
+		'ACT02a_animals_hard_000_op1': 'カパㇷ゚',
+		'ACT02a_animals_hard_000_op2': 'ペコ',
+		'ACT02a_animals_hard_000_op3': 'エチンケ',
+		
+		'ACT02a_animals_hard_001_quiz': '「サケ」は？',
+		'ACT02a_animals_hard_001_op1': 'シペ',
+		'ACT02a_animals_hard_001_op2': 'シㇼカㇷ゚チェッポ',
+		'ACT02a_animals_hard_001_op3': 'ホントンパロ',
+		
+		'ACT02a_animals_hard_002_quiz': '「こざかな」は？',
+		'ACT02a_animals_hard_002_op1': 'チェッポ',
+		'ACT02a_animals_hard_002_op2': 'チカッポ',
+		'ACT02a_animals_hard_002_op3': 'チェㇷ゚',
+		
+		'ACT02a_animals_hard_003_quiz': '「すずめ」は？',
+		'ACT02a_animals_hard_003_op1': 'アマメチカッポ',
+		'ACT02a_animals_hard_003_op2': 'ノクヤㇰ',
+		'ACT02a_animals_hard_003_op3': 'チㇷ゚タチㇼ',
+		
+		'ACT02a_animals_hard_004_quiz': '「ワシ」は？',
+		'ACT02a_animals_hard_004_op1': 'カパチㇼ',
+		'ACT02a_animals_hard_004_op2': 'クイトㇷ゚',
+		'ACT02a_animals_hard_004_op3': 'チャランケチカㇷ゚',
+		
+		'ACT02a_animals_hard_005_quiz': '「トンビ」は？',
+		'ACT02a_animals_hard_005_op1': 'ヤトッタ',
+		'ACT02a_animals_hard_005_op2': 'アマメチカッポ',
+		'ACT02a_animals_hard_005_op3': 'クイトㇷ゚',
+		
+		'ACT02a_animals_hard_006_quiz': '「ホタル」は？',
+		'ACT02a_animals_hard_006_op1': 'ニンニンケㇷ゚',
+		'ACT02a_animals_hard_006_op2': 'トゥニン',
+		'ACT02a_animals_hard_006_op3': 'パラキ',
+		
+		'ACT02a_animals_hard_007_quiz': '「ニシン」は？',
+		'ACT02a_animals_hard_007_op1': 'ヘロキ',
+		'ACT02a_animals_hard_007_op2': 'ホントンパロ',
+		'ACT02a_animals_hard_007_op3': 'イチャニウ',
+		
+		'ACT02a_animals_hard_008_quiz': '「サメ」は？',
+		'ACT02a_animals_hard_008_op1': 'コンカネシコ',
+		'ACT02a_animals_hard_008_op2': 'エレクㇱ',
+		'ACT02a_animals_hard_008_op3': 'サマンペ',
+		
+		'ACT02a_animals_hard_009_quiz': '「うみのいきもの」は？',
+		'ACT02a_animals_hard_009_op1': 'レプンチコイキㇷ゚',
+		'ACT02a_animals_hard_009_op2': 'チコイキㇷ゚',
+		'ACT02a_animals_hard_009_op3': 'シクㇷ゚',
+		
+		'ACT02a_animals_hard_010_quiz': '「タコ」は？',
+		'ACT02a_animals_hard_010_op1': 'アトゥインネ',
+		'ACT02a_animals_hard_010_op2': 'アウ',
+		'ACT02a_animals_hard_010_op3': 'アンパヤヤ',
+		
+		'ACT02a_animals_hard_011_quiz': '「エビ」は？',
+		'ACT02a_animals_hard_011_op1': 'ホㇿカテㇾケㇷ゚',
+		'ACT02a_animals_hard_011_op2': 'アトゥインネ',
+		'ACT02a_animals_hard_011_op3': 'フンペエトㇿ',
+		
+		'ACT02a_animals_hard_012_quiz': '「アオバト」は？',
+		'ACT02a_animals_hard_012_op1': 'ワウォ',
+		'ACT02a_animals_hard_012_op2': 'エソㇰソキ',
+		'ACT02a_animals_hard_012_op3': 'チㇷ゚タチㇼ',
+		
+		'ACT02a_animals_hard_013_quiz': '「カッコウ」は？',
+		'ACT02a_animals_hard_013_op1': 'カッコㇰ',
+		'ACT02a_animals_hard_013_op2': 'エヤミ',
+		'ACT02a_animals_hard_013_op3': 'トキット',
+		
+		'ACT02a_animals_hard_014_quiz': '「アオバト」は？',
+		'ACT02a_animals_hard_014_op1': 'ワウォ',
+		'ACT02a_animals_hard_014_op2': 'トゥレㇷ゚タチㇼ',
+		'ACT02a_animals_hard_014_op3': 'チピヤㇰ',
+		
+		'ACT02a_animals_hard_015_quiz': '「キバ」は？',
+		'ACT02a_animals_hard_015_op1': 'シキテ',
+		'ACT02a_animals_hard_015_op2': 'アㇺ',
+		'ACT02a_animals_hard_015_op3': 'ラㇷ゚',
+		
+		'ACT02a_animals_hard_016_quiz': '「しっぽ」は？',
+		'ACT02a_animals_hard_016_op1': 'サㇻ',
+		'ACT02a_animals_hard_016_op2': 'キラウ',
+		'ACT02a_animals_hard_016_op3': 'エトゥ',
+		
+		'ACT02a_animals_hard_017_quiz': '「うろこ」は？',
+		'ACT02a_animals_hard_017_op1': 'ラㇺラㇺ',
+		'ACT02a_animals_hard_017_op2': 'モㇰラㇷ゚',
+		'ACT02a_animals_hard_017_op3': 'クㇽキ',
+		
+		'ACT02a_animals_hard_018_quiz': '「カ」は？',
+		'ACT02a_animals_hard_018_op1': 'エトゥタンネ',
+		'ACT02a_animals_hard_018_op2': 'ヤキ',
+		'ACT02a_animals_hard_018_op3': 'モㇱ',
+		
+		'ACT02a_animals_hard_019_quiz': '「ちょうちょう」は？',
+		'ACT02a_animals_hard_019_op1': 'カマカタ',
+		'ACT02a_animals_hard_019_op2': 'イトゥンナㇷ゚',
+		'ACT02a_animals_hard_019_op3': 'パッタキ',
+		
+		'ACT02a_animals_hard_020_quiz': '「ハチ」は？',
+		'ACT02a_animals_hard_020_op1': 'ソヤイ',
+		'ACT02a_animals_hard_020_op2': 'シラウ',
+		'ACT02a_animals_hard_020_op3': 'ヤキ',
+		
+		'ACT02a_animals_hard_021_quiz': '「ハエ」は？',
+		'ACT02a_animals_hard_021_op1': 'モㇱ',
+		'ACT02a_animals_hard_021_op2': 'パッタキ',
+		'ACT02a_animals_hard_021_op3': 'ウㇽキ',
+		
+		'ACT02a_animals_hard_022_quiz': '「みみず」は？',
+		'ACT02a_animals_hard_022_op1': 'トゥニン',
+		'ACT02a_animals_hard_022_op2': 'ウㇽキ',
+		'ACT02a_animals_hard_022_op3': 'アペトゥンペ',
+		
+		'ACT02a_animals_hard_023_quiz': '「のみ」は？',
+		'ACT02a_animals_hard_023_op1': 'タイキ',
+		'ACT02a_animals_hard_023_op2': 'モソㇱペ',
+		'ACT02a_animals_hard_023_op3': 'エトゥタンネ',
+		
+		'ACT02a_animals_hard_024_quiz': 'カムイ じゃないものは？',
+		'ACT02a_animals_hard_024_op1': 'ユㇰ',
+		'ACT02a_animals_hard_024_op2': 'ヘペㇾ',
+		'ACT02a_animals_hard_024_op3': 'パㇱクㇽ',
+		
+		'ACT02a_animals_hard_025_quiz': 'カムイ じゃないものは？',
+		'ACT02a_animals_hard_025_op1': 'ユㇰ',
+		'ACT02a_animals_hard_025_op2': 'イセポ',
+		'ACT02a_animals_hard_025_op3': 'エサマン',
+		
+		'ACT02a_animals_hard_026_quiz': 'イヌのなきごえは？',
+		'ACT02a_animals_hard_026_op1': 'ミㇰミㇰ',
+		'ACT02a_animals_hard_026_op2': 'ヤウヤウ',
+		'ACT02a_animals_hard_026_op3': 'パウパウ',
+		
+		'ACT02a_action_easy_000_quiz': '「あるく」は？',
+		'ACT02a_action_easy_000_op1': 'アㇷ゚カㇱ',
+		'ACT02a_action_easy_000_op2': 'シニ',
+		'ACT02a_action_easy_000_op3': 'ホユプ',
+		
+		'ACT02a_action_easy_001_quiz': '「すわる」は？',
+		'ACT02a_action_easy_001_op1': 'ア',
+		'ACT02a_action_easy_001_op2': 'ホッケ',
+		'ACT02a_action_easy_001_op3': 'アㇱ',
+		
+		'ACT02a_action_easy_002_quiz': '「つかれる」は？',
+		'ACT02a_action_easy_002_op1': 'シンキ',
+		'ACT02a_action_easy_002_op2': 'ライ',
+		'ACT02a_action_easy_002_op3': 'アリキキ',
+		
+		'ACT02a_action_easy_003_quiz': '「しぬ」は？',
+		'ACT02a_action_easy_003_op1': 'ライ',
+		'ACT02a_action_easy_003_op2': 'オンネ',
+		'ACT02a_action_easy_003_op3': 'タスㇺ',
+		
+		'ACT02a_action_easy_004_quiz': '「たつ」は？',
+		'ACT02a_action_easy_004_op1': 'アㇱ',
+		'ACT02a_action_easy_004_op2': 'テㇾケ',
+		'ACT02a_action_easy_004_op3': 'モコㇿ',
+		
+		'ACT02a_action_easy_005_quiz': '「はしる」は？',
+		'ACT02a_action_easy_005_op1': 'ホユプ',
+		'ACT02a_action_easy_005_op2': 'アㇷ゚カㇱ',
+		'ACT02a_action_easy_005_op3': 'テㇾケ',
+		
+		'ACT02a_action_easy_006_quiz': '「おきる」は？',
+		'ACT02a_action_easy_006_op1': 'ホプニ',
+		'ACT02a_action_easy_006_op2': 'ホッケ',
+		'ACT02a_action_easy_006_op3': 'モコㇿ',
+		
+		'ACT02a_action_easy_007_quiz': '「はなす」は？',
+		'ACT02a_action_easy_007_op1': 'イタㇰ',
+		'ACT02a_action_easy_007_op2': 'ヌ',
+		'ACT02a_action_easy_007_op3': 'ヌカㇻ',
+		
+		'ACT02a_action_easy_008_quiz': '「きく」は？',
+		'ACT02a_action_easy_008_op1': 'ヌ',
+		'ACT02a_action_easy_008_op2': 'ヌイェ',
+		'ACT02a_action_easy_008_op3': 'ヌレ',
+		
+		'ACT02a_action_easy_009_quiz': '「みる」は？',
+		'ACT02a_action_easy_009_op1': 'ヌカㇻ',
+		'ACT02a_action_easy_009_op2': 'ヌ',
+		'ACT02a_action_easy_009_op3': 'ヌイェ',
+		
+		'ACT02a_action_easy_010_quiz': '「みせる」は？',
+		'ACT02a_action_easy_010_op1': 'ヌカレ',
+		'ACT02a_action_easy_010_op2': 'ヌレ',
+		'ACT02a_action_easy_010_op3': 'ヌカㇻ',
+		
+		'ACT02a_action_easy_011_quiz': '「じをよむ」は？',
+		'ACT02a_action_easy_011_op1': 'カンピヌカㇻ',
+		'ACT02a_action_easy_011_op2': 'ヌイェ',
+		'ACT02a_action_easy_011_op3': 'ヌカㇻ',
+		
+		'ACT02a_action_easy_012_quiz': '「わかる」は？',
+		'ACT02a_action_easy_012_op1': 'エラマン',
+		'ACT02a_action_easy_012_op2': 'エランペテㇰ',
+		'ACT02a_action_easy_012_op3': 'ヤイヌ',
+		
+		'ACT02a_action_easy_013_quiz': '「りょうりする」は？',
+		'ACT02a_action_easy_013_op1': 'スケ',
+		'ACT02a_action_easy_013_op2': 'ホㇰ',
+		'ACT02a_action_easy_013_op3': 'イペ',
+		
+		'ACT02a_action_easy_014_quiz': '「やすむ」は？',
+		'ACT02a_action_easy_014_op1': 'シニ',
+		'ACT02a_action_easy_014_op2': 'シノッ',
+		'ACT02a_action_easy_014_op3': 'モンライケ',
+		
+		'ACT02a_action_easy_015_quiz': '「はたらく」は？',
+		'ACT02a_action_easy_015_op1': 'モンライケ',
+		'ACT02a_action_easy_015_op2': 'ホッケ',
+		'ACT02a_action_easy_015_op3': 'シノッ',
+		
+		'ACT02a_action_easy_016_quiz': '「しょくじする」は？',
+		'ACT02a_action_easy_016_op1': 'イペ',
+		'ACT02a_action_easy_016_op2': 'モコㇿ',
+		'ACT02a_action_easy_016_op3': 'イタㇰ',
+		
+		'ACT02a_action_easy_017_quiz': '「たべる」は？',
+		'ACT02a_action_easy_017_op1': 'エ',
+		'ACT02a_action_easy_017_op2': 'ヌ',
+		'ACT02a_action_easy_017_op3': 'ミ',
+		
+		'ACT02a_action_easy_018_quiz': '「あそぶ」は？',
+		'ACT02a_action_easy_018_op1': 'シノッ',
+		'ACT02a_action_easy_018_op2': 'イタㇰ',
+		'ACT02a_action_easy_018_op3': 'モコㇿ',
+		
+		'ACT02a_action_easy_019_quiz': '「トイレにいく」は？',
+		'ACT02a_action_easy_019_op1': 'ヤユテㇰ',
+		'ACT02a_action_easy_019_op2': 'スㇱ',
+		'ACT02a_action_easy_019_op3': 'イフライェ',
+		
+		'ACT02a_action_easy_020_quiz': '「とまる」は？',
+		'ACT02a_action_easy_020_op1': 'レウシ',
+		'ACT02a_action_easy_020_op2': 'シウレ',
+		'ACT02a_action_easy_020_op3': 'オシロマ',
+		
+		'ACT02a_action_easy_021_quiz': '「おこる」は？',
+		'ACT02a_action_easy_021_op1': 'イルㇱカ',
+		'ACT02a_action_easy_021_op2': 'ミナ',
+		'ACT02a_action_easy_021_op3': 'チㇱ',
+		
+		'ACT02a_action_easy_022_quiz': '「たのしむ」は？',
+		'ACT02a_action_easy_022_op1': 'ヌペッネ',
+		'ACT02a_action_easy_022_op2': 'ホマトゥ',
+		'ACT02a_action_easy_022_op3': 'ミナ',
+		
+		'ACT02a_action_easy_023_quiz': '「なく」は？',
+		'ACT02a_action_easy_023_op1': 'チㇱ',
+		'ACT02a_action_easy_023_op2': 'ヤイシトマ',
+		'ACT02a_action_easy_023_op3': 'ホマトゥ',
+		
+		'ACT02a_action_easy_024_quiz': '「わらう」は？',
+		'ACT02a_action_easy_024_op1': 'ミナ',
+		'ACT02a_action_easy_024_op2': 'ヌペッネ',
+		'ACT02a_action_easy_024_op3': 'エラヤㇷ゚',
+		
+		'ACT02a_action_easy_025_quiz': '「おどろく」は？',
+		'ACT02a_action_easy_025_op1': 'ホマトゥ',
+		'ACT02a_action_easy_025_op2': 'ヤイシトマ',
+		'ACT02a_action_easy_025_op3': 'シトマ',
+		
+		'ACT02a_action_easy_026_quiz': '「おもう」は？',
+		'ACT02a_action_easy_026_op1': 'ヤイヌ',
+		'ACT02a_action_easy_026_op2': 'オイラ',
+		'ACT02a_action_easy_026_op3': 'エラマン',
+		
+		'ACT02a_action_easy_027_quiz': '「ねむる」は？',
+		'ACT02a_action_easy_027_op1': 'モコㇿ',
+		'ACT02a_action_easy_027_op2': 'シニ',
+		'ACT02a_action_easy_027_op3': 'オイラ',
+		
+		'ACT02a_action_easy_028_quiz': '「おもいだす」は？',
+		'ACT02a_action_easy_028_op1': 'エシカルン',
+		'ACT02a_action_easy_028_op2': 'エランペテㇰ',
+		'ACT02a_action_easy_028_op3': 'ヤイヌ',
+		
+		'ACT02a_action_easy_029_quiz': '「しんじる」は？',
+		'ACT02a_action_easy_029_op1': 'エイソコㇿ',
+		'ACT02a_action_easy_029_op2': 'エラマン',
+		'ACT02a_action_easy_029_op3': 'エランペテㇰ',
+		
+		'ACT02a_action_easy_030_quiz': '「おぼえる」は？',
+		'ACT02a_action_easy_030_op1': 'エラマン',
+		'ACT02a_action_easy_030_op2': 'オイラ',
+		'ACT02a_action_easy_030_op3': 'エシカルン',
+		
+		'ACT02a_action_easy_031_quiz': '「なまける」は？',
+		'ACT02a_action_easy_031_op1': 'トランネ',
+		'ACT02a_action_easy_031_op2': 'シンキ',
+		'ACT02a_action_easy_031_op3': 'オイラ',
+		
+		'ACT02a_action_easy_032_quiz': '「はねる」は？',
+		'ACT02a_action_easy_032_op1': 'テㇾケ',
+		'ACT02a_action_easy_032_op2': 'キラ',
+		'ACT02a_action_easy_032_op3': 'ホユプ',
+		
+		'ACT02a_action_easy_033_quiz': '「とぶ」は？',
+		'ACT02a_action_easy_033_op1': 'ホプニ',
+		'ACT02a_action_easy_033_op2': 'ホユプ',
+		'ACT02a_action_easy_033_op3': 'アㇱ',
+		
+		'ACT02a_action_easy_034_quiz': '「ふむ」は？',
+		'ACT02a_action_easy_034_op1': 'オテㇾケ',
+		'ACT02a_action_easy_034_op2': 'アㇱ',
+		'ACT02a_action_easy_034_op3': 'アㇷ゚カㇱ',
+		
+		'ACT02a_action_easy_035_quiz': '「さがす」は？',
+		'ACT02a_action_easy_035_op1': 'フナラ',
+		'ACT02a_action_easy_035_op2': 'パ',
+		'ACT02a_action_easy_035_op3': 'ヌイナ',
+		
+		'ACT02a_action_easy_036_quiz': '「みつける」は？',
+		'ACT02a_action_easy_036_op1': 'パ',
+		'ACT02a_action_easy_036_op2': 'オスラ',
+		'ACT02a_action_easy_036_op3': 'アヌ',
+		
+		'ACT02a_action_easy_037_quiz': '「おく」は？',
+		'ACT02a_action_easy_037_op1': 'アヌ',
+		'ACT02a_action_easy_037_op2': 'ウオマレ',
+		'ACT02a_action_easy_037_op3': 'チャリ',
+		
+		'ACT02a_action_easy_038_quiz': '「とる」は？',
+		'ACT02a_action_easy_038_op1': 'ウㇰ',
+		'ACT02a_action_easy_038_op2': 'キㇱマ',
+		'ACT02a_action_easy_038_op3': 'アヌ',
+		
+		'ACT02a_action_easy_039_quiz': '「さわる」は？',
+		'ACT02a_action_easy_039_op1': 'ケレ',
+		'ACT02a_action_easy_039_op2': 'アニ',
+		'ACT02a_action_easy_039_op3': 'ヌヤヌヤ',
+		
+		'ACT02a_action_easy_040_quiz': '「たたく」は？',
+		'ACT02a_action_easy_040_op1': 'キㇰ',
+		'ACT02a_action_easy_040_op2': 'チウ',
+		'ACT02a_action_easy_040_op3': 'ケレ',
+		
+		'ACT02a_action_easy_041_quiz': '「つくる」は？',
+		'ACT02a_action_easy_041_op1': 'カㇻ',
+		'ACT02a_action_easy_041_op2': 'ルラ',
+		'ACT02a_action_easy_041_op3': 'オスラ',
+		
+		'ACT02a_action_easy_042_quiz': '「つかむ」は？',
+		'ACT02a_action_easy_042_op1': 'キㇱマ',
+		'ACT02a_action_easy_042_op2': 'ケレ',
+		'ACT02a_action_easy_042_op3': 'シル',
+		
+		'ACT02a_action_easy_043_quiz': '「ころがす」は？',
+		'ACT02a_action_easy_043_op1': 'カㇻカㇻセ',
+		'ACT02a_action_easy_043_op2': 'オプトゥイェ',
+		'ACT02a_action_easy_043_op3': 'ルトゥ',
+		
+		'ACT02a_action_easy_044_quiz': '「やく」は？',
+		'ACT02a_action_easy_044_op1': 'マ',
+		'ACT02a_action_easy_044_op2': 'チレ',
+		'ACT02a_action_easy_044_op3': 'サッケ',
+		
+		'ACT02a_action_easy_045_quiz': '「はいる」は？',
+		'ACT02a_action_easy_045_op1': 'アフン',
+		'ACT02a_action_easy_045_op2': 'ソイネ',
+		'ACT02a_action_easy_045_op3': 'アン',
+		
+		'ACT02a_action_easy_046_quiz': '「でる」は？',
+		'ACT02a_action_easy_046_op1': 'サン',
+		'ACT02a_action_easy_046_op2': 'ランケ',
+		'ACT02a_action_easy_046_op3': 'ラン',
+		
+		'ACT02a_action_easy_047_quiz': '「きる」は？',
+		'ACT02a_action_easy_047_op1': 'ミ',
+		'ACT02a_action_easy_047_op2': 'ウㇱ',
+		'ACT02a_action_easy_047_op3': 'アンテ',
+		
+		'ACT02a_action_easy_048_quiz': '「はく」は？',
+		'ACT02a_action_easy_048_op1': 'ウㇱ',
+		'ACT02a_action_easy_048_op2': 'ヘウシ',
+		'ACT02a_action_easy_048_op3': 'クッコㇿ',
+		
+		'ACT02a_action_easy_049_quiz': '「せんたくする」は？',
+		'ACT02a_action_easy_049_op1': 'イフライェ',
+		'ACT02a_action_easy_049_op2': 'サッケ',
+		'ACT02a_action_easy_049_op3': 'ピラサ',
+		
+		'ACT02a_action_easy_050_quiz': '「ほす」は？',
+		'ACT02a_action_easy_050_op1': 'サッケ',
+		'ACT02a_action_easy_050_op2': 'リカン',
+		'ACT02a_action_easy_050_op3': 'アッテ',
+		
+		'ACT02a_action_easy_051_quiz': '「みずあびする」は？',
+		'ACT02a_action_easy_051_op1': 'スㇱ',
+		'ACT02a_action_easy_051_op2': 'エウォンネ',
+		'ACT02a_action_easy_051_op3': 'ヤㇱケ',
+		
+		'ACT02a_action_easy_052_quiz': '「くる」は？',
+		'ACT02a_action_easy_052_op1': 'エㇰ',
+		'ACT02a_action_easy_052_op2': 'オマナン',
+		'ACT02a_action_easy_052_op3': 'ホシピ',
+		
+		'ACT02a_action_easy_053_quiz': '「いく」は？',
+		'ACT02a_action_easy_053_op1': 'オマン',
+		'ACT02a_action_easy_053_op2': 'ホシピ',
+		'ACT02a_action_easy_053_op3': 'オマナン',
+		
+		'ACT02a_action_easy_054_quiz': '「かえる」は？',
+		'ACT02a_action_easy_054_op1': 'ホシピ',
+		'ACT02a_action_easy_054_op2': 'アㇱ',
+		'ACT02a_action_easy_054_op3': 'ホユプ',
+		
+		'ACT02a_action_easy_055_quiz': '「わすれる」は？',
+		'ACT02a_action_easy_055_op1': 'オイラ',
+		'ACT02a_action_easy_055_op2': 'エラマン',
+		'ACT02a_action_easy_055_op3': 'ヤイヌ',
+		
+		'ACT02a_action_easy_056_quiz': '「かおをあらう」は？',
+		'ACT02a_action_easy_056_op1': 'エウォンネ',
+		'ACT02a_action_easy_056_op2': 'ピル',
+		'ACT02a_action_easy_056_op3': 'イフライェ',
+		
+		'ACT02a_action_easy_057_quiz': '「おはなし」は？',
+		'ACT02a_action_easy_057_op1': 'ウウェペケㇾ',
+		'ACT02a_action_easy_057_op2': 'ウポポ',
+		'ACT02a_action_easy_057_op3': 'シノッチャ',
+		
+		'ACT02a_action_hard_000_quiz': '「なげる」は？',
+		'ACT02a_action_hard_000_op1': 'エヤㇷ゚キㇼ',
+		'ACT02a_action_hard_000_op2': 'ニンパ',
+		'ACT02a_action_hard_000_op3': 'カㇻカㇻセ',
+		
+		'ACT02a_action_hard_001_quiz': '「そうじする」は？',
+		'ACT02a_action_hard_001_op1': 'チャㇱヌレ',
+		'ACT02a_action_hard_001_op2': 'イフライェ',
+		'ACT02a_action_hard_001_op3': 'ホㇰ',
+		
+		'ACT02a_action_hard_002_quiz': '「ぶらさがる」は？',
+		'ACT02a_action_hard_002_op1': 'ラチッケ',
+		'ACT02a_action_hard_002_op2': 'キㇱマ',
+		'ACT02a_action_hard_002_op3': 'オピチ',
+		
+		'ACT02a_action_hard_003_quiz': '「あじわう」は？',
+		'ACT02a_action_hard_003_op1': 'ラㇰ',
+		'ACT02a_action_hard_003_op2': 'ケㇺ',
+		'ACT02a_action_hard_003_op3': 'サㇷ゚ケ',
+		
+		'ACT02a_action_hard_004_quiz': '「はっこうさせる」は？',
+		'ACT02a_action_hard_004_op1': 'オンカ',
+		'ACT02a_action_hard_004_op2': 'サッケ',
+		'ACT02a_action_hard_004_op3': 'アヌ',
+		
+		'ACT02a_action_hard_005_quiz': '「たたいてこまかくする」は？',
+		'ACT02a_action_hard_005_op1': 'タタ',
+		'ACT02a_action_hard_005_op2': 'コネレ',
+		'ACT02a_action_hard_005_op3': 'フンパ',
+		
+		'ACT02a_action_hard_006_quiz': '「もむ」は？',
+		'ACT02a_action_hard_006_op1': 'ヌヤヌヤ',
+		'ACT02a_action_hard_006_op2': 'ニナニナ',
+		'ACT02a_action_hard_006_op3': 'ペネレ',
+		
+		'ACT02a_action_hard_007_quiz': '「きる」は？',
+		'ACT02a_action_hard_007_op1': 'トゥイェ',
+		'ACT02a_action_hard_007_op2': 'ヤサ',
+		'ACT02a_action_hard_007_op3': 'ソソ',
+		
+		'ACT02a_action_hard_008_quiz': '「おる」は？',
+		'ACT02a_action_hard_008_op1': 'カイェ',
+		'ACT02a_action_hard_008_op2': 'レウェ',
+		'ACT02a_action_hard_008_op3': 'ペレ',
+		
+		'ACT02a_action_hard_009_quiz': '「さく」は？',
+		'ACT02a_action_hard_009_op1': 'ヤサ',
+		'ACT02a_action_hard_009_op2': 'ケウレ',
+		'ACT02a_action_hard_009_op3': 'トゥイェ',
+		
+		'ACT02a_action_hard_010_quiz': '「けずる」は？',
+		'ACT02a_action_hard_010_op1': 'ケウレ',
+		'ACT02a_action_hard_010_op2': 'ソソ',
+		'ACT02a_action_hard_010_op3': 'ノイェ',
+		
+		'ACT02a_action_hard_011_quiz': '「まぜる」は？',
+		'ACT02a_action_hard_011_op1': 'ウコポイェ',
+		'ACT02a_action_hard_011_op2': 'オロオ',
+		'ACT02a_action_hard_011_op3': 'イヌンパ',
+		
+		'ACT02a_action_hard_012_quiz': '「のばす」は？',
+		'ACT02a_action_hard_012_op1': 'トゥリ',
+		'ACT02a_action_hard_012_op2': 'エタイェ',
+		'ACT02a_action_hard_012_op3': 'ノイェ',
+		
+		'ACT02a_action_hard_013_quiz': '「ならべる」は？',
+		'ACT02a_action_hard_013_op1': 'ウペカレ',
+		'ACT02a_action_hard_013_op2': 'ウカオ',
+		'ACT02a_action_hard_013_op3': 'ウオマレ',
+		
+		'ACT02a_action_hard_014_quiz': '「こぼす」は？',
+		'ACT02a_action_hard_014_op1': 'クタ',
+		'ACT02a_action_hard_014_op2': 'チャリ',
+		'ACT02a_action_hard_014_op3': 'ニセ',
+		
+		'ACT02a_action_hard_015_quiz': '「くむ」は？',
+		'ACT02a_action_hard_015_op1': 'ニセ',
+		'ACT02a_action_hard_015_op2': 'ウオロ',
+		'ACT02a_action_hard_015_op3': 'ヌム',
+		
+		'ACT02a_action_hard_016_quiz': '「あらわれる」は？',
+		'ACT02a_action_hard_016_op1': 'ヘトゥク',
+		'ACT02a_action_hard_016_op2': 'ヌイナㇰ',
+		'ACT02a_action_hard_016_op3': 'ウㇱ',
+		
+		'ACT02a_action_hard_017_quiz': '「よそおう」は？',
+		'ACT02a_action_hard_017_op1': 'シユㇰ',
+		'ACT02a_action_hard_017_op2': 'アンテ',
+		'ACT02a_action_hard_017_op3': 'ウタㇷ゚ケ',
+		
+		'ACT02a_action_hard_018_quiz': '「あう」は？',
+		'ACT02a_action_hard_018_op1': 'ウヌカㇻ',
+		'ACT02a_action_hard_018_op2': 'ルラ',
+		'ACT02a_action_hard_018_op3': 'ウウェランカラㇷ゚',
+		
+		'ACT02a_action_hard_019_quiz': '「あいさつする」は？',
+		'ACT02a_action_hard_019_op1': 'ウウェランカラㇷ゚',
+		'ACT02a_action_hard_019_op2': 'ヘポキ',
+		'ACT02a_action_hard_019_op3': 'エカノㇰ',
+		
+		'ACT02a_action_hard_020_quiz': '「わかれる」は？',
+		'ACT02a_action_hard_020_op1': 'ウウェコッパ',
+		'ACT02a_action_hard_020_op2': 'テレ',
+		'ACT02a_action_hard_020_op3': 'ルラ',
+		
+		'ACT02a_action_hard_021_quiz': '「ぬらす」は？',
+		'ACT02a_action_hard_021_op1': 'テイネレ',
+		'ACT02a_action_hard_021_op2': 'レンカ',
+		'ACT02a_action_hard_021_op3': 'モㇺカ',
+		
+		'ACT02a_action_hard_022_quiz': '「ぬれる」は？',
+		'ACT02a_action_hard_022_op1': 'テイネ',
+		'ACT02a_action_hard_022_op2': 'モㇺカ',
+		'ACT02a_action_hard_022_op3': 'ウオロ',
+		
+		'ACT02a_action_hard_023_quiz': '「みんなですわる」は？',
+		'ACT02a_action_hard_023_op1': 'ロㇰ',
+		'ACT02a_action_hard_023_op2': 'ア',
+		'ACT02a_action_hard_023_op3': 'アㇱ',
+		
+		'ACT02a_action_hard_024_quiz': '「みんなでかえる」は？',
+		'ACT02a_action_hard_024_op1': 'ホシッパ',
+		'ACT02a_action_hard_024_op2': 'ホシピ',
+		'ACT02a_action_hard_024_op3': 'オマン',
+		
+		'ACT02a_action_hard_025_quiz': '「みんなで いく」は？',
+		'ACT02a_action_hard_025_op1': 'パイェ',
+		'ACT02a_action_hard_025_op2': 'オマン',
+		'ACT02a_action_hard_025_op3': 'ホシピ',
+		
+		'ACT02a_action_hard_026_quiz': '「みんなでくる」は？',
+		'ACT02a_action_hard_026_op1': 'アㇻキ',
+		'ACT02a_action_hard_026_op2': 'エㇰ',
+		'ACT02a_action_hard_026_op3': 'オマン',
+		
+		'ACT02a_action_hard_027_quiz': '「さいほうする」は？',
+		'ACT02a_action_hard_027_op1': 'ケメイキ',
+		'ACT02a_action_hard_027_op2': 'イシタイキ',
+		'ACT02a_action_hard_027_op3': 'イテセ',
+		
+		'ACT02a_action_hard_028_quiz': '「いろをそめる」は？',
+		'ACT02a_action_hard_028_op1': 'イシメ',
+		'ACT02a_action_hard_028_op2': 'ウタㇷ゚ケ',
+		'ACT02a_action_hard_028_op3': 'ミ',
+		
+		'ACT02a_action_hard_029_quiz': '「かんがえる」は？',
+		'ACT02a_action_hard_029_op1': 'ヤイコシラㇺセ',
+		'ACT02a_action_hard_029_op2': 'ヤイヌ',
+		'ACT02a_action_hard_029_op3': 'エラマン',
+		
+		'ACT02a_action_hard_030_quiz': '「ならう」は？',
+		'ACT02a_action_hard_030_op1': 'エハノッカㇻ',
+		'ACT02a_action_hard_030_op2': 'ヤイラムㇱカ',
+		'ACT02a_action_hard_030_op3': 'エパカㇱヌ',
+		
+		'ACT02a_action_hard_031_quiz': '「いたむ」は？',
+		'ACT02a_action_hard_031_op1': 'イユニン',
+		'ACT02a_action_hard_031_op2': 'トゥクンネ',
+		'ACT02a_action_hard_031_op3': 'マヤイケ',
+		
+		'ACT02a_action_hard_032_quiz': '「かゆい」は？',
+		'ACT02a_action_hard_032_op1': 'マヤイケ',
+		'ACT02a_action_hard_032_op2': 'ウユイケ',
+		'ACT02a_action_hard_032_op3': 'イユニン',
+		
+		'ACT02a_action_hard_033_quiz': '「やせる」は？',
+		'ACT02a_action_hard_033_op1': 'サッテㇰ',
+		'ACT02a_action_hard_033_op2': 'ミムㇱ',
+		'ACT02a_action_hard_033_op3': 'トゥㇺコㇿ',
+		
+		'ACT02a_action_hard_034_quiz': '「あおぐ」は？',
+		'ACT02a_action_hard_034_op1': 'パルパル',
+		'ACT02a_action_hard_034_op2': 'アニ',
+		'ACT02a_action_hard_034_op3': 'スイェ',
+		
+		'ACT02a_action_hard_035_quiz': '「さわる」は？',
+		'ACT02a_action_hard_035_op1': 'ケレ',
+		'ACT02a_action_hard_035_op2': 'ラライパ',
+		'ACT02a_action_hard_035_op3': 'ヘピタレ',
+		
+		'ACT02a_action_hard_036_quiz': '「ほる」は？',
+		'ACT02a_action_hard_036_op1': 'オホリ',
+		'ACT02a_action_hard_036_op2': 'トイタ',
+		'ACT02a_action_hard_036_op3': 'エトイポイェ',
+		
+		'ACT02a_action_hard_037_quiz': '「せおう」は？',
+		'ACT02a_action_hard_037_op1': 'セ',
+		'ACT02a_action_hard_037_op2': 'モセ',
+		'ACT02a_action_hard_037_op3': 'ルラ',
+		
+		'ACT02a_action_hard_038_quiz': '「つみとる」は？',
+		'ACT02a_action_hard_038_op1': 'チャ',
+		'ACT02a_action_hard_038_op2': 'タ',
+		'ACT02a_action_hard_038_op3': 'キナカㇻ',
+		
+		'ACT02a_action_hard_039_quiz': '「ほる」は？',
+		'ACT02a_action_hard_039_op1': 'オホリ',
+		'ACT02a_action_hard_039_op2': 'トイタ',
+		'ACT02a_action_hard_039_op3': 'セ',
+		
+		'ACT02a_action_hard_040_quiz': '「すむ」は？',
+		'ACT02a_action_hard_040_op1': 'オシロマ',
+		'ACT02a_action_hard_040_op2': 'チセカㇻ',
+		'ACT02a_action_hard_040_op3': 'オハシㇼ',
+		
+		'ACT02a_action_hard_041_quiz': '「あつまる」は？',
+		'ACT02a_action_hard_041_op1': 'ウエカリ',
+		'ACT02a_action_hard_041_op2': 'レウシ',
+		'ACT02a_action_hard_041_op3': 'ウウェコッパ',
+		
+		'ACT02a_action_hard_042_quiz': '「ござをあむ」は？',
+		'ACT02a_action_hard_042_op1': 'イテセ',
+		'ACT02a_action_hard_042_op2': 'イユタ',
+		'ACT02a_action_hard_042_op3': 'イレス',
+		
+		'ACT02a_action_hard_043_quiz': '「ほりものをする」は？',
+		'ACT02a_action_hard_043_op1': 'イヌイェ',
+		'ACT02a_action_hard_043_op2': 'イルイケ',
+		'ACT02a_action_hard_043_op3': 'イノミ',
+		
+		'ACT02a_action_hard_044_quiz': '「かりをする」は？',
+		'ACT02a_action_hard_044_op1': 'イラマンテ',
+		'ACT02a_action_hard_044_op2': 'ペライ',
+		'ACT02a_action_hard_044_op3': 'イヨㇱケ',
+		
+		'ACT02a_action_hard_045_quiz': '「くちごたえをする」は？',
+		'ACT02a_action_hard_045_op1': 'イサㇱタサ',
+		'ACT02a_action_hard_045_op2': 'コヤイトゥナㇷ゚',
+		'ACT02a_action_hard_045_op3': 'エトランネ',
+		
+		'ACT02a_action_hard_046_quiz': '「じゃまだ！」は？',
+		'ACT02a_action_hard_046_op1': 'イサイカコ',
+		'ACT02a_action_hard_046_op2': 'オハイカㇻ',
+		'ACT02a_action_hard_046_op3': 'イセイセ',
+		
+		'ACT02a_action_hard_047_quiz': '「しまう」は？',
+		'ACT02a_action_hard_047_op1': 'ウマㇱヌ',
+		'ACT02a_action_hard_047_op2': 'ウペカレ',
+		'ACT02a_action_hard_047_op3': 'ウカオ',
+		
+		'ACT02a_action_hard_048_quiz': '「つつむ」は？',
+		'ACT02a_action_hard_048_op1': 'カㇻカリ',
+		'ACT02a_action_hard_048_op2': 'カムレ',
+		'ACT02a_action_hard_048_op3': 'トㇺテ',
+		
+		'ACT02a_action_hard_049_quiz': '「ちらかす」は？',
+		'ACT02a_action_hard_049_op1': 'エホチャリ',
+		'ACT02a_action_hard_049_op2': 'チャㇱヌレ',
+		'ACT02a_action_hard_049_op3': 'ウマㇱヌ',
+		
+		'ACT02a_action_hard_050_quiz': '「ゆうきのある」は？',
+		'ACT02a_action_hard_050_op1': 'ラメトッコㇿ',
+		'ACT02a_action_hard_050_op2': 'パウェトッコㇿ',
+		'ACT02a_action_hard_050_op3': 'シレトッコㇿ',
+		
+		'ACT02a_action_hard_051_quiz': '「こころやさしい」は？',
+		'ACT02a_action_hard_051_op1': 'ラムリテン',
+		'ACT02a_action_hard_051_op2': 'ニウェン',
+		'ACT02a_action_hard_051_op3': 'トゥラㇺコㇿ',
+		
+		'ACT02a_action_hard_052_quiz': '「あたまがいい」は？',
+		'ACT02a_action_hard_052_op1': 'ラムアン',
+		'ACT02a_action_hard_052_op2': 'ハイタ',
+		'ACT02a_action_hard_052_op3': 'ラムリテン',
+		
+		'ACT02a_action_hard_053_quiz': '「ひきかえす」は？',
+		'ACT02a_action_hard_053_op1': 'ホシピ',
+		'ACT02a_action_hard_053_op2': 'オマン',
+		'ACT02a_action_hard_053_op3': 'ソイネ',
+		
+		'ACT02a_action_hard_054_quiz': '「つく」は？',
+		'ACT02a_action_hard_054_op1': 'シレパ',
+		'ACT02a_action_hard_054_op2': 'シットゥライヌ',
+		'ACT02a_action_hard_054_op3': 'トゥㇷ゚',
+		
+		'ACT02a_action_hard_055_quiz': '「まつ」は？',
+		'ACT02a_action_hard_055_op1': 'テレ',
+		'ACT02a_action_hard_055_op2': 'ホシピ',
+		'ACT02a_action_hard_055_op3': 'オマン',
+		
+		'ACT02a_action_hard_056_quiz': '「カムイをまつる」は？',
+		'ACT02a_action_hard_056_op1': 'ノミ',
+		'ACT02a_action_hard_056_op2': 'オンカミ',
+		'ACT02a_action_hard_056_op3': 'イタㇰ',
+		
+		'ACT02a_action_hard_057_quiz': '「みずをくむ」は？',
+		'ACT02a_action_hard_057_op1': 'ワッカタ',
+		'ACT02a_action_hard_057_op2': 'スケ',
+		'ACT02a_action_hard_057_op3': 'ニナ',
+		
+		'ACT02a_action_hard_058_quiz': '「まちがう」は？',
+		'ACT02a_action_hard_058_op1': 'ウハイタ',
+		'ACT02a_action_hard_058_op2': 'ウパㇰテ',
+		'ACT02a_action_hard_058_op3': 'エトゥイェ',
+		
+		'ACT02a_action_hard_059_quiz': '「なまける」は？',
+		'ACT02a_action_hard_059_op1': 'トランネ',
+		'ACT02a_action_hard_059_op2': 'エカㇱテㇰ',
+		'ACT02a_action_hard_059_op3': 'エヤイラムキッカㇻ',
+		
+		'ACT02a_action_hard_060_quiz': '「きめる」は？',
+		'ACT02a_action_hard_060_op1': 'ウレンカレ',
+		'ACT02a_action_hard_060_op2': 'エラナㇰ',
+		'ACT02a_action_hard_060_op3': 'ヌㇺケ',
+		
+		'ACT02a_action_hard_061_quiz': '「すきになる」は？',
+		'ACT02a_action_hard_061_op1': 'ラムオㇱマ',
+		'ACT02a_action_hard_061_op2': 'オマㇷ゚',
+		'ACT02a_action_hard_061_op3': 'エオリパㇰ',
+		
+		'ACT02a_action_hard_062_quiz': '「にくむ」は？',
+		'ACT02a_action_hard_062_op1': 'エポッパ',
+		'ACT02a_action_hard_062_op2': 'シトマ',
+		'ACT02a_action_hard_062_op3': 'エウンケㇱケ',
+		
+		'ACT02a_number_easy_000_quiz': '「１つの」は？',
+		'ACT02a_number_easy_000_op1': 'シネ',
+		'ACT02a_number_easy_000_op2': 'トゥ',
+		'ACT02a_number_easy_000_op3': 'イサㇺ',
+		
+		'ACT02a_number_easy_001_quiz': '「２つの」は？',
+		'ACT02a_number_easy_001_op1': 'トゥ',
+		'ACT02a_number_easy_001_op2': 'シネ',
+		'ACT02a_number_easy_001_op3': 'レ',
+		
+		'ACT02a_number_easy_002_quiz': '「３つの」は？',
+		'ACT02a_number_easy_002_op1': 'レ',
+		'ACT02a_number_easy_002_op2': 'トゥ',
+		'ACT02a_number_easy_002_op3': 'シネ',
+		
+		'ACT02a_number_easy_003_quiz': '「４つの」は？',
+		'ACT02a_number_easy_003_op1': 'イネ',
+		'ACT02a_number_easy_003_op2': 'アシㇰネ',
+		'ACT02a_number_easy_003_op3': 'イワン',
+		
+		'ACT02a_number_easy_004_quiz': '「５つの」は？',
+		'ACT02a_number_easy_004_op1': 'アシㇰネ',
+		'ACT02a_number_easy_004_op2': 'アㇻワン',
+		'ACT02a_number_easy_004_op3': 'イワン',
+		
+		'ACT02a_number_easy_005_quiz': '「６つの」は？',
+		'ACT02a_number_easy_005_op1': 'イワン',
+		'ACT02a_number_easy_005_op2': 'トゥペサン',
+		'ACT02a_number_easy_005_op3': 'アㇻワン',
+		
+		'ACT02a_number_easy_006_quiz': '「７つの」は？',
+		'ACT02a_number_easy_006_op1': 'アㇻワン',
+		'ACT02a_number_easy_006_op2': 'イワン',
+		'ACT02a_number_easy_006_op3': 'シネペサン',
+		
+		'ACT02a_number_easy_007_quiz': '「８つの」は？',
+		'ACT02a_number_easy_007_op1': 'トゥペサン',
+		'ACT02a_number_easy_007_op2': 'シネペサン',
+		'ACT02a_number_easy_007_op3': 'ワン',
+		
+		'ACT02a_number_easy_008_quiz': '「９つの」は？',
+		'ACT02a_number_easy_008_op1': 'シネペサン',
+		'ACT02a_number_easy_008_op2': 'ワン',
+		'ACT02a_number_easy_008_op3': 'トゥペサン',
+		
+		'ACT02a_number_easy_009_quiz': '「10この」は？',
+		'ACT02a_number_easy_009_op1': 'ワン',
+		'ACT02a_number_easy_009_op2': 'シネ',
+		'ACT02a_number_easy_009_op3': 'イワン',
+		
+		'ACT02a_number_easy_010_quiz': '「１つ」は？',
+		'ACT02a_number_easy_010_op1': 'シネㇷ゚',
+		'ACT02a_number_easy_010_op2': 'レㇷ゚',
+		'ACT02a_number_easy_010_op3': 'トゥㇷ゚',
+		
+		'ACT02a_number_easy_011_quiz': '「２つ」は？',
+		'ACT02a_number_easy_011_op1': 'トゥㇷ゚',
+		'ACT02a_number_easy_011_op2': 'イサㇺ',
+		'ACT02a_number_easy_011_op3': 'シネㇷ゚',
+		
+		'ACT02a_number_easy_012_quiz': '「３つ」は？',
+		'ACT02a_number_easy_012_op1': 'レㇷ゚',
+		'ACT02a_number_easy_012_op2': 'トゥㇷ゚',
+		'ACT02a_number_easy_012_op3': 'シネㇷ゚',
+		
+		'ACT02a_number_easy_013_quiz': '「４つ」は？',
+		'ACT02a_number_easy_013_op1': 'イネㇷ゚',
+		'ACT02a_number_easy_013_op2': 'イワンペ',
+		'ACT02a_number_easy_013_op3': 'アシㇰネㇷ゚',
+		
+		'ACT02a_number_easy_014_quiz': '「５つ」は？',
+		'ACT02a_number_easy_014_op1': 'アシㇰネㇷ゚',
+		'ACT02a_number_easy_014_op2': 'イネㇷ゚',
+		'ACT02a_number_easy_014_op3': 'イワンペ',
+		
+		'ACT02a_number_easy_015_quiz': '「６つ」は？',
+		'ACT02a_number_easy_015_op1': 'イワンペ',
+		'ACT02a_number_easy_015_op2': 'アシㇰネㇷ゚',
+		'ACT02a_number_easy_015_op3': 'イネㇷ゚',
+		
+		'ACT02a_number_easy_016_quiz': '「７つ」は？',
+		'ACT02a_number_easy_016_op1': 'アㇻワンぺ',
+		'ACT02a_number_easy_016_op2': 'トゥペサンペ',
+		'ACT02a_number_easy_016_op3': 'シネペサンペ',
+		
+		'ACT02a_number_easy_017_quiz': '「８つ」は？',
+		'ACT02a_number_easy_017_op1': 'トゥペサンペ',
+		'ACT02a_number_easy_017_op2': 'シネペサンペ',
+		'ACT02a_number_easy_017_op3': 'アㇻワンぺ',
+		
+		'ACT02a_number_easy_018_quiz': '「９つ」は？',
+		'ACT02a_number_easy_018_op1': 'シネペサンペ',
+		'ACT02a_number_easy_018_op2': 'アㇻワンぺ',
+		'ACT02a_number_easy_018_op3': 'トゥペサンペ',
+		
+		'ACT02a_number_easy_019_quiz': '「10こ」は？',
+		'ACT02a_number_easy_019_op1': 'ワンペ',
+		'ACT02a_number_easy_019_op2': 'シネㇷ゚',
+		'ACT02a_number_easy_019_op3': 'イワンペ',
+		
+		'ACT02a_number_easy_020_quiz': '「ひとり」は？',
+		'ACT02a_number_easy_020_op1': 'シネン',
+		'ACT02a_number_easy_020_op2': 'トゥン',
+		'ACT02a_number_easy_020_op3': 'レン',
+		
+		'ACT02a_number_easy_021_quiz': '「ふたり」は？',
+		'ACT02a_number_easy_021_op1': 'トゥン',
+		'ACT02a_number_easy_021_op2': 'レン',
+		'ACT02a_number_easy_021_op3': 'シネン',
+		
+		'ACT02a_number_easy_022_quiz': '「３にん」は？',
+		'ACT02a_number_easy_022_op1': 'レン',
+		'ACT02a_number_easy_022_op2': 'トゥン',
+		'ACT02a_number_easy_022_op3': 'シネン',
+		
+		'ACT02a_number_easy_023_quiz': '「４にん」は？',
+		'ACT02a_number_easy_023_op1': 'イネン',
+		'ACT02a_number_easy_023_op2': 'アシㇰネン',
+		'ACT02a_number_easy_023_op3': 'イワニウ',
+		
+		'ACT02a_number_easy_024_quiz': '「５にん」は？',
+		'ACT02a_number_easy_024_op1': 'アシㇰネン',
+		'ACT02a_number_easy_024_op2': 'イワニウ',
+		'ACT02a_number_easy_024_op3': 'イネン',
+		
+		'ACT02a_number_easy_025_quiz': '「６にん」は？',
+		'ACT02a_number_easy_025_op1': 'イワニウ',
+		'ACT02a_number_easy_025_op2': 'アㇻワニウ',
+		'ACT02a_number_easy_025_op3': 'アシㇰネン',
+		
+		'ACT02a_number_easy_026_quiz': '「７人」は？',
+		'ACT02a_number_easy_026_op1': 'アㇻワニウ',
+		'ACT02a_number_easy_026_op2': 'トゥペサニウ',
+		'ACT02a_number_easy_026_op3': 'シネペサニウ',
+		
+		'ACT02a_number_easy_027_quiz': '「８人」は？',
+		'ACT02a_number_easy_027_op1': 'トゥペサニウ',
+		'ACT02a_number_easy_027_op2': 'イワニウ',
+		'ACT02a_number_easy_027_op3': 'アㇻワニウ',
+		
+		'ACT02a_number_easy_028_quiz': '「９人」は？',
+		'ACT02a_number_easy_028_op1': 'シネペサニウ',
+		'ACT02a_number_easy_028_op2': 'ワニウ',
+		'ACT02a_number_easy_028_op3': 'トゥペサニウ',
+		
+		'ACT02a_number_easy_029_quiz': '「10にん」は？',
+		'ACT02a_number_easy_029_op1': 'ワニウ',
+		'ACT02a_number_easy_029_op2': 'イワニウ',
+		'ACT02a_number_easy_029_op3': 'シネン',
+		
+		'ACT02a_number_easy_030_quiz': '「１さい」は？',
+		'ACT02a_number_easy_030_op1': 'シネパ',
+		'ACT02a_number_easy_030_op2': 'シネト',
+		'ACT02a_number_easy_030_op3': 'シネソㇱ',
+		
+		'ACT02a_number_easy_031_quiz': '「１かい」は？',
+		'ACT02a_number_easy_031_op1': 'シネスイ',
+		'ACT02a_number_easy_031_op2': 'シネン',
+		'ACT02a_number_easy_031_op3': 'シネㇷ゚',
+		
+		'ACT02a_number_hard_000_quiz': '「10」は？',
+		'ACT02a_number_hard_000_op1': 'ワンペ',
+		'ACT02a_number_hard_000_op2': 'ホッ',
+		'ACT02a_number_hard_000_op3': 'トゥホッ',
+		
+		'ACT02a_number_hard_001_quiz': '「20」は？',
+		'ACT02a_number_hard_001_op1': 'ホッ',
+		'ACT02a_number_hard_001_op2': 'トゥホッ',
+		'ACT02a_number_hard_001_op3': 'レホッ',
+		
+		'ACT02a_number_hard_002_quiz': '「30」は？',
+		'ACT02a_number_hard_002_op1': 'ワンペエトゥホッ',
+		'ACT02a_number_hard_002_op2': 'ワンペエレホッ',
+		'ACT02a_number_hard_002_op3': 'ワンペイネホッ',
+		
+		'ACT02a_number_hard_003_quiz': '「100」は？',
+		'ACT02a_number_hard_003_op1': 'アシㇰネホッ',
+		'ACT02a_number_hard_003_op2': 'イネホッ',
+		'ACT02a_number_hard_003_op3': 'ワンペエアㇱクネホッ',
+		
+		'ACT02a_number_hard_004_quiz': '「200」は？',
+		'ACT02a_number_hard_004_op1': 'ワンホッ',
+		'ACT02a_number_hard_004_op2': 'シネイㇰ',
+		'ACT02a_number_hard_004_op3': 'トゥイㇰ',
+		
+		'ACT02a_number_hard_005_quiz': '「1000」は？',
+		'ACT02a_number_hard_005_op1': 'シネイㇰ',
+		'ACT02a_number_hard_005_op2': 'トゥイㇰ',
+		'ACT02a_number_hard_005_op3': 'レイㇰ',
+		
+		'ACT02a_number_hard_006_quiz': '「はんぶんのかず」は？',
+		'ACT02a_number_hard_006_op1': 'ニマㇻ',
+		'ACT02a_number_hard_006_op2': 'オピッタ',
+		'ACT02a_number_hard_006_op3': 'ポンエㇺコ',
+		
+		'ACT02a_number_hard_007_quiz': '「りょうほう」は？',
+		'ACT02a_number_hard_007_op1': 'ウレン',
+		'ACT02a_number_hard_007_op2': 'ウウェトゥレン',
+		'ACT02a_number_hard_007_op3': 'オアㇻ',
+		
+		'ACT02a_number_hard_008_quiz': '「あまる」は？',
+		'ACT02a_number_hard_008_op1': 'イカㇱマ',
+		'ACT02a_number_hard_008_op2': 'ハイタ',
+		'ACT02a_number_hard_008_op3': 'オピッタ',
+		
+		'ACT02a_body_easy_000_quiz': '「め」は？',
+		'ACT02a_body_easy_000_op1': 'シキ',
+		'ACT02a_body_easy_000_op2': 'パロ',
+		'ACT02a_body_easy_000_op3': 'ナヌ',
+		
+		'ACT02a_body_easy_001_quiz': '「あたま」は？',
+		'ACT02a_body_easy_001_op1': 'サパ',
+		'ACT02a_body_easy_001_op2': 'キサラ',
+		'ACT02a_body_easy_001_op3': 'エトゥ',
+		
+		'ACT02a_body_easy_002_quiz': '「かお」は？',
+		'ACT02a_body_easy_002_op1': 'ナヌ',
+		'ACT02a_body_easy_002_op2': 'テケ',
+		'ACT02a_body_easy_002_op3': 'ケマ',
+		
+		'ACT02a_body_easy_003_quiz': '「はな」は？',
+		'ACT02a_body_easy_003_op1': 'エトゥ',
+		'ACT02a_body_easy_003_op2': 'オトピ',
+		'ACT02a_body_easy_003_op3': 'シキ',
+		
+		'ACT02a_body_easy_004_quiz': '「みみ」は？',
+		'ACT02a_body_easy_004_op1': 'キサラ',
+		'ACT02a_body_easy_004_op2': 'ナヌ',
+		'ACT02a_body_easy_004_op3': 'レクチ',
+		
+		'ACT02a_body_easy_005_quiz': '「あご」は？',
+		'ACT02a_body_easy_005_op1': 'ノッキリ',
+		'ACT02a_body_easy_005_op2': 'シキ',
+		'ACT02a_body_easy_005_op3': 'パロ',
+		
+		'ACT02a_body_easy_006_quiz': '「のど」は？',
+		'ACT02a_body_easy_006_op1': 'レクチ',
+		'ACT02a_body_easy_006_op2': 'パロ',
+		'ACT02a_body_easy_006_op3': 'サパ',
+		
+		'ACT02a_body_easy_007_quiz': '「て」は？',
+		'ACT02a_body_easy_007_op1': 'テケ',
+		'ACT02a_body_easy_007_op2': 'ケマ',
+		'ACT02a_body_easy_007_op3': 'ホニ',
+		
+		'ACT02a_body_easy_008_quiz': '「あし」は？',
+		'ACT02a_body_easy_008_op1': 'ケマ',
+		'ACT02a_body_easy_008_op2': 'オソロ',
+		'ACT02a_body_easy_008_op3': 'オミ',
+		
+		'ACT02a_body_easy_009_quiz': '「からだ」は？',
+		'ACT02a_body_easy_009_op1': 'ネトパ',
+		'ACT02a_body_easy_009_op2': 'セトゥル',
+		'ACT02a_body_easy_009_op3': 'ホニ',
+		
+		'ACT02a_body_easy_010_quiz': '「おなか」は？',
+		'ACT02a_body_easy_010_op1': 'ホニ',
+		'ACT02a_body_easy_010_op2': 'イッケウェ',
+		'ACT02a_body_easy_010_op3': 'ハンク',
+		
+		'ACT02a_body_easy_011_quiz': '「せなか」は？',
+		'ACT02a_body_easy_011_op1': 'セトゥル',
+		'ACT02a_body_easy_011_op2': 'ホニ',
+		'ACT02a_body_easy_011_op3': 'テケ',
+		
+		'ACT02a_body_easy_012_quiz': '「おしり」は？',
+		'ACT02a_body_easy_012_op1': 'オソロ',
+		'ACT02a_body_easy_012_op2': 'オミ',
+		'ACT02a_body_easy_012_op3': 'イッケウェ',
+		
+		'ACT02a_body_easy_013_quiz': '「むね」は？',
+		'ACT02a_body_easy_013_op1': 'ペンラム',
+		'ACT02a_body_easy_013_op2': 'ホニ',
+		'ACT02a_body_easy_013_op3': 'レクチ',
+		
+		'ACT02a_body_easy_014_quiz': '「かみ」は？',
+		'ACT02a_body_easy_014_op1': 'オトピ',
+		'ACT02a_body_easy_014_op2': 'レクチ',
+		'ACT02a_body_easy_014_op3': 'キサラ',
+		
+		'ACT02a_body_easy_015_quiz': '「は」は？',
+		'ACT02a_body_easy_015_op1': 'ニマキ',
+		'ACT02a_body_easy_015_op2': 'パロ',
+		'ACT02a_body_easy_015_op3': 'パルンペ',
+		
+		'ACT02a_body_easy_016_quiz': '「ひげ」は？',
+		'ACT02a_body_easy_016_op1': 'レキ',
+		'ACT02a_body_easy_016_op2': 'レクチ',
+		'ACT02a_body_easy_016_op3': 'ノッキリ',
+		
+		'ACT02a_body_easy_017_quiz': '「うんこ」は？',
+		'ACT02a_body_easy_017_op1': 'オソマ',
+		'ACT02a_body_easy_017_op2': 'オクイマ',
+		'ACT02a_body_easy_017_op3': 'オㇷ゚ケ',
+		
+		'ACT02a_body_easy_018_quiz': '「おしっこ」は？',
+		'ACT02a_body_easy_018_op1': 'オクイマ',
+		'ACT02a_body_easy_018_op2': 'チイェ',
+		'ACT02a_body_easy_018_op3': 'オソロ',
+		
+		'ACT02a_body_easy_019_quiz': '「なみだ」は？',
+		'ACT02a_body_easy_019_op1': 'ヌペ',
+		'ACT02a_body_easy_019_op2': 'シキ',
+		'ACT02a_body_easy_019_op3': 'ラル',
+		
+		'ACT02a_body_easy_020_quiz': '「つめ」は？',
+		'ACT02a_body_easy_020_op1': 'アミ',
+		'ACT02a_body_easy_020_op2': 'ケミ',
+		'ACT02a_body_easy_020_op3': 'カプ',
+		
+		'ACT02a_body_easy_021_quiz': '「ち」は？',
+		'ACT02a_body_easy_021_op1': 'ケミ',
+		'ACT02a_body_easy_021_op2': 'ヌマ',
+		'ACT02a_body_easy_021_op3': 'カミ',
+		
+		'ACT02a_body_easy_022_quiz': '「ほね」は？',
+		'ACT02a_body_easy_022_op1': 'ポネ',
+		'ACT02a_body_easy_022_op2': 'カプ',
+		'ACT02a_body_easy_022_op3': 'ヌマ',
+		
+		'ACT02a_body_easy_023_quiz': '「にく」は？',
+		'ACT02a_body_easy_023_op1': 'カミ',
+		'ACT02a_body_easy_023_op2': 'ポネ',
+		'ACT02a_body_easy_023_op3': 'ケミ',
+		
+		'ACT02a_body_easy_024_quiz': '「ゆび」は？',
+		'ACT02a_body_easy_024_op1': 'アㇱケペチ',
+		'ACT02a_body_easy_024_op2': 'テケ',
+		'ACT02a_body_easy_024_op3': 'アミ',
+		
+		'ACT02a_body_hard_000_quiz': '「へそ」は？',
+		'ACT02a_body_hard_000_op1': 'ハンク',
+		'ACT02a_body_hard_000_op2': 'レラリ',
+		'ACT02a_body_hard_000_op3': 'ホニ',
+		
+		'ACT02a_body_hard_001_quiz': '「ほっぺた」は？',
+		'ACT02a_body_hard_001_op1': 'ノタ',
+		'ACT02a_body_hard_001_op2': 'ナヌ',
+		'ACT02a_body_hard_001_op3': 'ノイポロ',
+		
+		'ACT02a_body_hard_002_quiz': '「かた」は？',
+		'ACT02a_body_hard_002_op1': 'タㇷ゚ストゥ',
+		'ACT02a_body_hard_002_op2': 'アムニン',
+		'ACT02a_body_hard_002_op3': 'パラテケ',
+		
+		'ACT02a_body_hard_003_quiz': '「おでこ」は？',
+		'ACT02a_body_hard_003_op1': 'ノイポロ',
+		'ACT02a_body_hard_003_op2': 'ノイペ',
+		'ACT02a_body_hard_003_op3': 'サパ',
+		
+		'ACT02a_body_hard_004_quiz': '「ひじ」は？',
+		'ACT02a_body_hard_004_op1': 'シットキ',
+		'ACT02a_body_hard_004_op2': 'パラテケ',
+		'ACT02a_body_hard_004_op3': 'アムニン',
+		
+		'ACT02a_body_hard_005_quiz': '「ひざ」は？',
+		'ACT02a_body_hard_005_op1': 'コッカサパ',
+		'ACT02a_body_hard_005_op2': 'オミ',
+		'ACT02a_body_hard_005_op3': 'ニサピ',
+		
+		'ACT02a_body_hard_006_quiz': '「つば」は？',
+		'ACT02a_body_hard_006_op1': 'ノニ',
+		'ACT02a_body_hard_006_op2': 'ヌペ',
+		'ACT02a_body_hard_006_op3': 'トット',
+		
+		'ACT02a_body_hard_007_quiz': '「ひふ」は？',
+		'ACT02a_body_hard_007_op1': 'カプ',
+		'ACT02a_body_hard_007_op2': 'トゥリ',
+		'ACT02a_body_hard_007_op3': 'ポネ',
+		
+		'ACT02a_body_hard_008_quiz': '「くしゃみする」は？',
+		'ACT02a_body_hard_008_op1': 'エㇱナ',
+		'ACT02a_body_hard_008_op2': 'ヨンコㇿ',
+		'ACT02a_body_hard_008_op3': 'マウソㇰ',
+		
+		'ACT02a_body_hard_009_quiz': '「いきをする」は？',
+		'ACT02a_body_hard_009_op1': 'ヘセ',
+		'ACT02a_body_hard_009_op2': 'エワㇻ',
+		'ACT02a_body_hard_009_op3': 'イㇰマウレ',
+		
+		'ACT02a_body_hard_010_quiz': '「だまる」は？',
+		'ACT02a_body_hard_010_op1': 'モㇱマ',
+		'ACT02a_body_hard_010_op2': 'マウソロ',
+		'ACT02a_body_hard_010_op3': 'ヘセ',
+		
+		'ACT02a_body_hard_011_quiz': '「せきする」は？',
+		'ACT02a_body_hard_011_op1': 'オㇺケ',
+		'ACT02a_body_hard_011_op2': 'マウソㇰ',
+		'ACT02a_body_hard_011_op3': 'エㇱナ',
+		
+		'ACT02a_body_hard_012_quiz': '「のみこむ」は？',
+		'ACT02a_body_hard_012_op1': 'ルキ',
+		'ACT02a_body_hard_012_op2': 'クイ',
+		'ACT02a_body_hard_012_op3': 'ラㇰ',
+		
+		'ACT02a_body_hard_013_quiz': '「かむ」は？',
+		'ACT02a_body_hard_013_op1': 'クイ',
+		'ACT02a_body_hard_013_op2': 'ケㇺ',
+		'ACT02a_body_hard_013_op3': 'ニ',
+		
+		'ACT02a_body_hard_014_quiz': '「はなみず」は？',
+		'ACT02a_body_hard_014_op1': 'エトゥペ',
+		'ACT02a_body_hard_014_op2': 'ヌペ',
+		'ACT02a_body_hard_014_op3': 'ポッペ',
+		
+		'ACT02a_body_hard_015_quiz': '「まつげ」は？',
+		'ACT02a_body_hard_015_op1': 'シㇰラㇷ゚',
+		'ACT02a_body_hard_015_op2': 'シキ',
+		'ACT02a_body_hard_015_op3': 'シッカプ',
+		
+		'ACT02a_body_hard_016_quiz': '「ケガをする」は？',
+		'ACT02a_body_hard_016_op1': 'イユニン',
+		'ACT02a_body_hard_016_op2': 'トゥサ',
+		'ACT02a_body_hard_016_op3': 'タスㇺ',
+		
+		'ACT02a_body_hard_017_quiz': '「きず」は？',
+		'ACT02a_body_hard_017_op1': 'ピㇼ',
+		'ACT02a_body_hard_017_op2': 'ヨモㇺケ',
+		'ACT02a_body_hard_017_op3': 'セセㇰ',
+		
+		'ACT02a_body_hard_018_quiz': '「やけど」は？',
+		'ACT02a_body_hard_018_op1': 'ヨモㇺケ',
+		'ACT02a_body_hard_018_op2': 'ウウェチ',
+		'ACT02a_body_hard_018_op3': 'フㇷ゚',
+		
+		'ACT02a_body_hard_019_quiz': '「あか(からだのよごれ)」は？',
+		'ACT02a_body_hard_019_op1': 'トゥリ',
+		'ACT02a_body_hard_019_op2': 'レタットゥㇽ',
+		'ACT02a_body_hard_019_op3': 'イェ',
+		
+		'ACT02a_body_hard_020_quiz': '「しんぞう」は？',
+		'ACT02a_body_hard_020_op1': 'サンペ',
+		'ACT02a_body_hard_020_op2': 'ユㇰラミ',
+		'ACT02a_body_hard_020_op3': 'ヨㇱペ',
+		
+		'ACT02a_body_hard_021_quiz': '「かんぞう」は？',
+		'ACT02a_body_hard_021_op1': 'キノピ',
+		'ACT02a_body_hard_021_op2': 'アネカンカン',
+		'ACT02a_body_hard_021_op3': 'ルウェカンカン',
+		
+		'ACT02a_body_hard_022_quiz': '「こつずい」は？',
+		'ACT02a_body_hard_022_op1': 'キㇼ',
+		'ACT02a_body_hard_022_op2': 'ポネ',
+		'ACT02a_body_hard_022_op3': 'ケㇺリチ',
+		
+		'ACT02a_body_hard_023_quiz': '「ひとさしゆび」は？',
+		'ACT02a_body_hard_023_op1': 'イタンキケㇺアㇱケペチ',
+		'ACT02a_body_hard_023_op2': 'ルウェアㇱケペチ',
+		'ACT02a_body_hard_023_op3': 'クスリアㇱケペチ',
+		
+		'ACT02a_body_hard_024_quiz': '「おやゆび」は？',
+		'ACT02a_body_hard_024_op1': 'ルウェアㇱケペチ',
+		'ACT02a_body_hard_024_op2': 'シンノㇱキアㇱケペチ',
+		'ACT02a_body_hard_024_op3': 'ポンナㇱケペチ',
+		
+		'ACT02a_body_hard_025_quiz': '「てのひら」は？',
+		'ACT02a_body_hard_025_op1': 'テッコトロ',
+		'ACT02a_body_hard_025_op2': 'テㇰヌミ',
+		'ACT02a_body_hard_025_op3': 'テㇰサンペ',
+		
+		'ACT02a_space_hard_000_quiz': '「ここ」は？',
+		'ACT02a_space_hard_000_op1': 'テオㇿ',
+		'ACT02a_space_hard_000_op2': 'タアニ',
+		'ACT02a_space_hard_000_op3': 'トアニ',
+		
+		'ACT02a_space_hard_001_quiz': '「あれ」は？',
+		'ACT02a_space_hard_001_op1': 'トアンペ',
+		'ACT02a_space_hard_001_op2': 'トオンペ',
+		'ACT02a_space_hard_001_op3': 'トアヌン',
+		
+		'ACT02a_space_hard_002_quiz': '「ここ」は？',
+		'ACT02a_space_hard_002_op1': 'テオㇿ',
+		'ACT02a_space_hard_002_op2': 'タン',
+		'ACT02a_space_hard_002_op3': 'エネアン',
+		
+		'ACT02a_space_hard_003_quiz': '「くっついた うえ」は？',
+		'ACT02a_space_hard_003_op1': 'カ',
+		'ACT02a_space_hard_003_op2': 'エンカ',
+		'ACT02a_space_hard_003_op3': 'チョロポㇰ',
+		
+		'ACT02a_space_hard_004_quiz': '「みぎの」は？',
+		'ACT02a_space_hard_004_op1': 'シモン',
+		'ACT02a_space_hard_004_op2': 'ハㇻキ',
+		'ACT02a_space_hard_004_op3': 'ピㇱカニ',
+		
+		'ACT02a_space_hard_005_quiz': '「そば」は？',
+		'ACT02a_space_hard_005_op1': 'サㇺ',
+		'ACT02a_space_hard_005_op2': 'ウトゥㇽ',
+		'ACT02a_space_hard_005_op3': 'オㇱマㇰ',
+		
+		'ACT02a_space_hard_006_quiz': '「うえの はじ」は？',
+		'ACT02a_space_hard_006_op1': 'パ',
+		'ACT02a_space_hard_006_op2': 'リㇰ',
+		'ACT02a_space_hard_006_op3': 'ラ',
+		
+		'ACT02a_space_hard_007_quiz': '「したの はじ」は？',
+		'ACT02a_space_hard_007_op1': 'ケㇱ',
+		'ACT02a_space_hard_007_op2': 'ラ',
+		'ACT02a_space_hard_007_op3': 'パ',
+		
+		'ACT02a_space_hard_008_quiz': '「おく」は？',
+		'ACT02a_space_hard_008_op1': 'マㇰ',
+		'ACT02a_space_hard_008_op2': 'アウ',
+		'ACT02a_space_hard_008_op3': 'サ',
+		
+		'ACT02a_space_hard_009_quiz': '「そと」は？',
+		'ACT02a_space_hard_009_op1': 'ソイ',
+		'ACT02a_space_hard_009_op2': 'ウトゥㇽ',
+		'ACT02a_space_hard_009_op3': 'アウ',
+		
+		'ACT02a_space_hard_010_quiz': '「ひろがった うえ」は？',
+		'ACT02a_space_hard_010_op1': 'クㇽカ',
+		'ACT02a_space_hard_010_op2': 'エンカ',
+		'ACT02a_space_hard_010_op3': 'カ',
+		
+		'ACT02a_space_hard_011_quiz': '「からっぽの なか」は？',
+		'ACT02a_space_hard_011_op1': 'オンナイ',
+		'ACT02a_space_hard_011_op2': 'トゥㇺ',
+		'ACT02a_space_hard_011_op3': 'ニコㇿ',
+		
+		'ACT02a_space_hard_012_quiz': '「した」は？',
+		'ACT02a_space_hard_012_op1': 'チョロポㇰ',
+		'ACT02a_space_hard_012_op2': 'ケセ',
+		'ACT02a_space_hard_012_op3': 'カ',
+		
+		'ACT02a_space_hard_013_quiz': '「むこうがわ」は？',
+		'ACT02a_space_hard_013_op1': 'クㇱケ',
+		'ACT02a_space_hard_013_op2': 'テワノ',
+		'ACT02a_space_hard_013_op3': 'ウトゥㇽ',
+		
+		'ACT02a_space_hard_014_quiz': '「べつ」は？',
+		'ACT02a_space_hard_014_op1': 'ウシンナイ',
+		'ACT02a_space_hard_014_op2': 'シルトゥル',
+		'ACT02a_space_hard_014_op3': 'ウサㇺタ',
+		
+		'ACT02a_space_hard_015_quiz': '「まんなか」は？',
+		'ACT02a_space_hard_015_op1': 'ノㇱキ',
+		'ACT02a_space_hard_015_op2': 'シッケウ',
+		'ACT02a_space_hard_015_op3': 'サㇺ',
+		
+		'ACT02a_space_hard_016_quiz': '「おもて」は？',
+		'ACT02a_space_hard_016_op1': 'シㇼカ',
+		'ACT02a_space_hard_016_op2': 'シㇼポㇰ',
+		'ACT02a_space_hard_016_op3': 'ウシンナイ',
+		
+		'ACT02a_space_hard_017_quiz': '「とまったものの まえ」は？',
+		'ACT02a_space_hard_017_op1': 'コッチャ',
+		'ACT02a_space_hard_017_op2': 'エトㇰ',
+		'ACT02a_space_hard_017_op3': 'オㇱマㇰ',
+		
+		'ACT02a_space_hard_018_quiz': '「に そって うえに」は？',
+		'ACT02a_space_hard_018_op1': 'トゥラシ',
+		'ACT02a_space_hard_018_op2': 'ペㇱ',
+		'ACT02a_space_hard_018_op3': 'ペカ',
+		
+		'ACT02a_space_hard_019_quiz': '「おき の」は？',
+		'ACT02a_space_hard_019_op1': 'レㇷ゚ン',
+		'ACT02a_space_hard_019_op2': 'ヤウン',
+		'ACT02a_space_hard_019_op3': 'ソユン',
+		
+		'ACT02a_space_hard_020_quiz': '「まえ の」は？',
+		'ACT02a_space_hard_020_op1': 'サウン',
+		'ACT02a_space_hard_020_op2': 'マクン',
+		'ACT02a_space_hard_020_op3': 'ラウン',
+		
+		'ACT02a_space_hard_021_quiz': '「おく の」は？',
+		'ACT02a_space_hard_021_op1': 'マクン',
+		'ACT02a_space_hard_021_op2': 'ソユン',
+		'ACT02a_space_hard_021_op3': 'アウン',
+		
+		'ACT02a_space_hard_022_quiz': '「ひがし へ」は？',
+		'ACT02a_space_hard_022_op1': 'エチュㇷ゚カウン',
+		'ACT02a_space_hard_022_op2': 'エチュッポクン',
+		'ACT02a_space_hard_022_op3': 'エコイポクン',
+		
+		'ACT02a_space_hard_023_quiz': '「きた へ」は？',
+		'ACT02a_space_hard_023_op1': 'エコイカウン',
+		'ACT02a_space_hard_023_op2': 'エコイポクン',
+		'ACT02a_space_hard_023_op3': 'エチュッポクン',
+		
+		'ACT02a_space_hard_024_quiz': '「にし から」は？',
+		'ACT02a_space_hard_024_op1': 'オチュッポクン',
+		'ACT02a_space_hard_024_op2': 'オコイカウン',
+		'ACT02a_space_hard_024_op3': 'オコイポクン',
+		
+		'ACT02a_space_hard_025_quiz': '「とおる」は？',
+		'ACT02a_space_hard_025_op1': 'クㇱ',
+		'ACT02a_space_hard_025_op2': 'オイカ',
+		'ACT02a_space_hard_025_op3': 'トモトゥイェ',
+		
+		'ACT02a_space_hard_026_quiz': '「を すぎて」は？',
+		'ACT02a_space_hard_026_op1': 'アッカリ',
+		'ACT02a_space_hard_026_op2': 'ペカ',
+		'ACT02a_space_hard_026_op3': 'エカリ',
+		
+		'ACT02a_space_hard_027_quiz': '「だけでも」は？',
+		'ACT02a_space_hard_027_op1': 'ポカ',
+		'ACT02a_space_hard_027_op2': 'カスノ',
+		'ACT02a_space_hard_027_op3': 'トゥラ',
+		
+		'ACT02a_space_hard_028_quiz': '「ばかり」は？',
+		'ACT02a_space_hard_028_op1': 'パテㇰ',
+		'ACT02a_space_hard_028_op2': 'サㇰノ',
+		'ACT02a_space_hard_028_op3': 'コエカリ',
+		
+		'ACT02a_space_hard_029_quiz': '「の ために」は？',
+		'ACT02a_space_hard_029_op1': 'クㇱ',
+		'ACT02a_space_hard_029_op2': 'ネノ',
+		'ACT02a_space_hard_029_op3': 'モㇱマ',
+		
+		'ACT02a_nature_easy_000_quiz': '「うみ」は？',
+		'ACT02a_nature_easy_000_op1': 'アトゥイ',
+		'ACT02a_nature_easy_000_op2': 'ニタイ',
+		'ACT02a_nature_easy_000_op3': 'ト',
+		
+		'ACT02a_nature_easy_001_quiz': '「はやし・もり」は？',
+		'ACT02a_nature_easy_001_op1': 'ニタイ',
+		'ACT02a_nature_easy_001_op2': 'ソ',
+		'ACT02a_nature_easy_001_op3': 'ヌプリ',
+		
+		'ACT02a_nature_easy_002_quiz': '「かわ」は？',
+		'ACT02a_nature_easy_002_op1': 'ペッ',
+		'ACT02a_nature_easy_002_op2': 'ト',
+		'ACT02a_nature_easy_002_op3': 'シンプイ',
+		
+		'ACT02a_nature_easy_003_quiz': '「みずうみ・ぬま・いけ」は？',
+		'ACT02a_nature_easy_003_op1': 'ト',
+		'ACT02a_nature_easy_003_op2': 'ペッ',
+		'ACT02a_nature_easy_003_op3': 'アトゥイ',
+		
+		'ACT02a_nature_easy_004_quiz': '「やま」は？',
+		'ACT02a_nature_easy_004_op1': 'ヌプリ',
+		'ACT02a_nature_easy_004_op2': 'ナイ',
+		'ACT02a_nature_easy_004_op3': 'パラコッ',
+		
+		'ACT02a_nature_easy_005_quiz': '「しま」は？',
+		'ACT02a_nature_easy_005_op1': 'モシㇼ',
+		'ACT02a_nature_easy_005_op2': 'ムンサㇻ',
+		'ACT02a_nature_easy_005_op3': 'ピㇱ',
+		
+		'ACT02a_nature_easy_006_quiz': '「ひ」は？',
+		'ACT02a_nature_easy_006_op1': 'アペ',
+		'ACT02a_nature_easy_006_op2': 'ワッカ',
+		'ACT02a_nature_easy_006_op3': 'ニ',
+		
+		'ACT02a_nature_easy_007_quiz': '「みず」は？',
+		'ACT02a_nature_easy_007_op1': 'ワッカ',
+		'ACT02a_nature_easy_007_op2': 'カネ',
+		'ACT02a_nature_easy_007_op3': 'トイ',
+		
+		'ACT02a_nature_easy_008_quiz': '「ぎん」は？',
+		'ACT02a_nature_easy_008_op1': 'シロカニ',
+		'ACT02a_nature_easy_008_op2': 'ヤヤンカニ',
+		'ACT02a_nature_easy_008_op3': 'コンカニ',
+		
+		'ACT02a_nature_easy_009_quiz': '「てつ」は？',
+		'ACT02a_nature_easy_009_op1': 'ヤヤンカニ',
+		'ACT02a_nature_easy_009_op2': 'トイ',
+		'ACT02a_nature_easy_009_op3': 'スマ',
+		
+		'ACT02a_nature_easy_010_quiz': '「あらし」は？',
+		'ACT02a_nature_easy_010_op1': 'ルヤンペ',
+		'ACT02a_nature_easy_010_op2': 'カムイフㇺ',
+		'ACT02a_nature_easy_010_op3': 'シルフイ',
+		
+		'ACT02a_nature_easy_011_quiz': '「そら」は？',
+		'ACT02a_nature_easy_011_op1': 'ニㇱ',
+		'ACT02a_nature_easy_011_op2': 'ラヨチ',
+		'ACT02a_nature_easy_011_op3': 'ノチウ',
+		
+		'ACT02a_nature_easy_012_quiz': '「たいよう」は？',
+		'ACT02a_nature_easy_012_op1': 'チュㇷ゚',
+		'ACT02a_nature_easy_012_op2': 'ニㇱクㇽ',
+		'ACT02a_nature_easy_012_op3': 'レラ',
+		
+		'ACT02a_nature_easy_013_quiz': '「ほし」は？',
+		'ACT02a_nature_easy_013_op1': 'ノチウ',
+		'ACT02a_nature_easy_013_op2': 'クンネシㇼ',
+		'ACT02a_nature_easy_013_op3': 'クンネチュㇷ゚',
+		
+		'ACT02a_nature_easy_014_quiz': '「あめ」は？',
+		'ACT02a_nature_easy_014_op1': 'アㇷ゚ト',
+		'ACT02a_nature_easy_014_op2': 'レラ',
+		'ACT02a_nature_easy_014_op3': 'カムイフㇺ',
+		
+		'ACT02a_nature_easy_015_quiz': '「かぜ」は？',
+		'ACT02a_nature_easy_015_op1': 'レラ',
+		'ACT02a_nature_easy_015_op2': 'ルヤンペ',
+		'ACT02a_nature_easy_015_op3': 'ウラㇻ',
+		
+		'ACT02a_nature_easy_016_quiz': '「かみなり」は？',
+		'ACT02a_nature_easy_016_op1': 'カムイフㇺ',
+		'ACT02a_nature_easy_016_op2': 'ウパㇱ',
+		'ACT02a_nature_easy_016_op3': 'アㇷ゚ト',
+		
+		'ACT02a_nature_easy_017_quiz': '「あめ」は？',
+		'ACT02a_nature_easy_017_op1': 'アㇷ゚ト',
+		'ACT02a_nature_easy_017_op2': 'ウパㇱ',
+		'ACT02a_nature_easy_017_op3': 'ウプン',
+		
+		'ACT02a_nature_easy_018_quiz': '「くも」は？',
+		'ACT02a_nature_easy_018_op1': 'ニㇱクㇽ',
+		'ACT02a_nature_easy_018_op2': 'クㇽ',
+		'ACT02a_nature_easy_018_op3': 'ニㇱ',
+		
+		'ACT02a_nature_hard_000_quiz': '「そとが あつい」は？',
+		'ACT02a_nature_hard_000_op1': 'シㇼセセㇰ',
+		'ACT02a_nature_hard_000_op2': 'シㇼメマン',
+		'ACT02a_nature_hard_000_op3': 'シㇼポㇷ゚ケ',
+		
+		'ACT02a_nature_hard_001_quiz': '「そとが あかるい」は？',
+		'ACT02a_nature_hard_001_op1': 'シㇼペケㇾ',
+		'ACT02a_nature_hard_001_op2': 'シㇼウェン',
+		'ACT02a_nature_hard_001_op3': 'シㇼクンネ',
+		
+		'ACT02a_nature_hard_002_quiz': '「そとがくらい」は？',
+		'ACT02a_nature_hard_002_op1': 'シㇼクンネ',
+		'ACT02a_nature_hard_002_op2': 'シㇼピㇼカ',
+		'ACT02a_nature_hard_002_op3': 'シㇼナㇺ',
+		
+		'ACT02a_nature_hard_003_quiz': '「はたけ」は？',
+		'ACT02a_nature_hard_003_op1': 'トイ',
+		'ACT02a_nature_hard_003_op2': 'ピラ',
+		'ACT02a_nature_hard_003_op3': 'オタニコㇿ',
+		
+		'ACT02a_nature_hard_004_quiz': '「ひくいきのはやし」は？',
+		'ACT02a_nature_hard_004_op1': 'ケナㇱ',
+		'ACT02a_nature_hard_004_op2': 'ムンサㇻ',
+		'ACT02a_nature_hard_004_op3': 'ヌㇷ゚',
+		
+		'ACT02a_nature_hard_005_quiz': '「きり」は？',
+		'ACT02a_nature_hard_005_op1': 'ウラㇻ',
+		'ACT02a_nature_hard_005_op2': 'ニㇱクㇽ',
+		'ACT02a_nature_hard_005_op3': 'ヘチャカ',
+		
+		'ACT02a_nature_hard_006_quiz': '「あられ」は？',
+		'ACT02a_nature_hard_006_op1': 'カウカウ',
+		'ACT02a_nature_hard_006_op2': 'クルッペ',
+		'ACT02a_nature_hard_006_op3': 'ペソㇱ',
+		
+		'ACT02a_nature_hard_007_quiz': '「ガラス」は？',
+		'ACT02a_nature_hard_007_op1': 'ピントロ',
+		'ACT02a_nature_hard_007_op2': 'ヌンペネトイ',
+		'ACT02a_nature_hard_007_op3': 'オタ',
+		
+		'ACT02a_nature_hard_008_quiz': 'みては いけないものは？',
+		'ACT02a_nature_hard_008_op1': 'ラヨチ',
+		'ACT02a_nature_hard_008_op2': 'チュㇷ゚ライ',
+		'ACT02a_nature_hard_008_op3': 'ウェンタラㇷ゚',
+		
+		'ACT02a_nature_hard_009_quiz': '「はま」は？',
+		'ACT02a_nature_hard_009_op1': 'ピㇱ',
+		'ACT02a_nature_hard_009_op2': 'アトゥイサㇺ',
+		'ACT02a_nature_hard_009_op3': 'チワソロ',
+		
+		'ACT02a_nature_hard_010_quiz': '「みなと」は？',
+		'ACT02a_nature_hard_010_op1': 'トマリ',
+		'ACT02a_nature_hard_010_op2': 'モイ',
+		'ACT02a_nature_hard_010_op3': 'マサㇻ',
+		
+		'ACT02a_nature_hard_011_quiz': '「なみ」は？',
+		'ACT02a_nature_hard_011_op1': 'コイ',
+		'ACT02a_nature_hard_011_op2': 'オタニコㇿ',
+		'ACT02a_nature_hard_011_op3': 'シラㇻ',
+		
+		'ACT02a_nature_hard_012_quiz': '「おがわ」は？',
+		'ACT02a_nature_hard_012_op1': 'ボンペッ',
+		'ACT02a_nature_hard_012_op2': 'ペナケ',
+		'ACT02a_nature_hard_012_op3': 'パナケ',
+		
+		'ACT02a_nature_hard_013_quiz': '「さわ」は？',
+		'ACT02a_nature_hard_013_op1': 'ナイ',
+		'ACT02a_nature_hard_013_op2': 'ペッパ',
+		'ACT02a_nature_hard_013_op3': 'メㇺ',
+		
+		'ACT02a_nature_hard_014_quiz': '「ゆき」は？',
+		'ACT02a_nature_hard_014_op1': 'ウパㇱ',
+		'ACT02a_nature_hard_014_op2': 'クルッペ',
+		'ACT02a_nature_hard_014_op3': 'コンル',
+		
+		'ACT02a_nature_hard_015_quiz': '「こおり」は？',
+		'ACT02a_nature_hard_015_op1': 'コンル',
+		'ACT02a_nature_hard_015_op2': 'ノキコンル',
+		'ACT02a_nature_hard_015_op3': 'クルッペ',
+		
+		'ACT02a_nature_hard_016_quiz': '「りゅうひょう」は？',
+		'ACT02a_nature_hard_016_op1': 'アプ',
+		'ACT02a_nature_hard_016_op2': 'ウペペワッカ',
+		'ACT02a_nature_hard_016_op3': 'ウプン',
+		
+		'ACT02a_nature_hard_017_quiz': '「ほらあな」は？',
+		'ACT02a_nature_hard_017_op1': 'ポル',
+		'ACT02a_nature_hard_017_op2': 'パラコッ',
+		'ACT02a_nature_hard_017_op3': 'ピラ',
+		
+		'ACT02a_nature_hard_018_quiz': '「はらっぱ」は？',
+		'ACT02a_nature_hard_018_op1': 'ムンサㇻ',
+		'ACT02a_nature_hard_018_op2': 'トㇱカ',
+		'ACT02a_nature_hard_018_op3': 'ニタイ',
+		
+		'ACT02a_nature_hard_019_quiz': '「まんげつ」は？',
+		'ACT02a_nature_hard_019_op1': 'シカリチュㇷ゚',
+		'ACT02a_nature_hard_019_op2': 'ノチウ',
+		'ACT02a_nature_hard_019_op3': 'トカㇷ゚チュㇷ゚',
+		
+		'ACT02a_nature_hard_020_quiz': '「あまぐも」は？',
+		'ACT02a_nature_hard_020_op1': 'アㇷ゚トニㇱクㇽ',
+		'ACT02a_nature_hard_020_op2': 'ウラㇻ',
+		'ACT02a_nature_hard_020_op3': 'イメル',
+		
+		'ACT02a_nature_hard_021_quiz': '「みかげつ」は？',
+		'ACT02a_nature_hard_021_op1': 'アシッチュㇷ゚',
+		'ACT02a_nature_hard_021_op2': 'チュㇷ゚チセ',
+		'ACT02a_nature_hard_021_op3': 'ペッノカ',
+		
+		'ACT02a_nature_hard_022_quiz': '「いなびかり」は？',
+		'ACT02a_nature_hard_022_op1': 'イメル',
+		'ACT02a_nature_hard_022_op2': 'シラㇻペㇱ',
+		'ACT02a_nature_hard_022_op3': 'レラルイ',
+		
+		'ACT02a_nature_hard_023_quiz': '「やまかじ」は？',
+		'ACT02a_nature_hard_023_op1': 'シルフイ',
+		'ACT02a_nature_hard_023_op2': 'シㇼシモイェ',
+		'ACT02a_nature_hard_023_op3': 'オレプンペ',
+		
+		'ACT02a_plants_easy_000_quiz': '「くるみ」は？',
+		'ACT02a_plants_easy_000_op1': 'ニヌㇺ',
+		'ACT02a_plants_easy_000_op2': 'キミ',
+		'ACT02a_plants_easy_000_op3': 'ムンキ',
+		
+		'ACT02a_plants_easy_001_quiz': '「クリ」は？',
+		'ACT02a_plants_easy_001_op1': 'ヤㇺ',
+		'ACT02a_plants_easy_001_op2': 'ペカンペ',
+		'ACT02a_plants_easy_001_op3': 'トゥレㇷ゚',
+		
+		'ACT02a_plants_easy_002_quiz': '「やまぶどう」は？',
+		'ACT02a_plants_easy_002_op1': 'ハッ',
+		'ACT02a_plants_easy_002_op2': 'マウ',
+		'ACT02a_plants_easy_002_op3': 'クッチ',
+		
+		'ACT02a_plants_easy_003_quiz': '「キハダのみ」は？',
+		'ACT02a_plants_easy_003_op1': 'シケㇾペ',
+		'ACT02a_plants_easy_003_op2': 'モマ',
+		'ACT02a_plants_easy_003_op3': 'ニヌㇺ',
+		
+		'ACT02a_plants_easy_004_quiz': '「はな」は？',
+		'ACT02a_plants_easy_004_op1': 'ノンノ',
+		'ACT02a_plants_easy_004_op2': 'エプイケ',
+		'ACT02a_plants_easy_004_op3': 'ケニ',
+		
+		'ACT02a_plants_easy_005_quiz': '「たね」は？',
+		'ACT02a_plants_easy_005_op1': 'ピイェ',
+		'ACT02a_plants_easy_005_op2': 'イペ',
+		'ACT02a_plants_easy_005_op3': 'ノンノ',
+		
+		'ACT02a_plants_easy_006_quiz': '「ふき」は？',
+		'ACT02a_plants_easy_006_op1': 'コㇿコニ',
+		'ACT02a_plants_easy_006_op2': 'ピットㇰ',
+		'ACT02a_plants_easy_006_op3': 'ソㇿマ',
+		
+		'ACT02a_plants_easy_007_quiz': '「とうもろこし」は？',
+		'ACT02a_plants_easy_007_op1': 'カンポチャ',
+		'ACT02a_plants_easy_007_op2': 'キミ',
+		'ACT02a_plants_easy_007_op3': 'アントゥキ',
+		
+		'ACT02a_plants_easy_008_quiz': '「やなぎ」は？',
+		'ACT02a_plants_easy_008_op1': 'スス',
+		'ACT02a_plants_easy_008_op2': 'ランコ',
+		'ACT02a_plants_easy_008_op3': 'スンク',
+		
+		'ACT02a_plants_easy_009_quiz': '「いも」は？',
+		'ACT02a_plants_easy_009_op1': 'コソイミ',
+		'ACT02a_plants_easy_009_op2': 'アハ',
+		'ACT02a_plants_easy_009_op3': 'アマㇺ',
+		
+		'ACT02a_plants_easy_010_quiz': '「あし」は？',
+		'ACT02a_plants_easy_010_op1': 'サㇽキ',
+		'ACT02a_plants_easy_010_op2': 'アッニ',
+		'ACT02a_plants_easy_010_op3': 'スス',
+		
+		'ACT02a_plants_easy_011_quiz': '「 ざっそう」は？',
+		'ACT02a_plants_easy_011_op1': 'ムン',
+		'ACT02a_plants_easy_011_op2': 'フッタッ',
+		'ACT02a_plants_easy_011_op3': 'トㇷ゚',
+		
+		'ACT02a_plants_easy_012_quiz': 'きもの をつくれるのは？',
+		'ACT02a_plants_easy_012_op1': 'アッニ',
+		'ACT02a_plants_easy_012_op2': 'スス',
+		'ACT02a_plants_easy_012_op3': 'ネㇱコ',
+		
+		'ACT02a_plants_easy_013_quiz': '「ニリンソウ」は？',
+		'ACT02a_plants_easy_013_op1': 'プクサキナ',
+		'ACT02a_plants_easy_013_op2': 'スㇽク',
+		'ACT02a_plants_easy_013_op3': 'プクサ',
+		
+		'ACT02a_plants_easy_014_quiz': '「ヒシ」は？',
+		'ACT02a_plants_easy_014_op1': 'ペカンペ',
+		'ACT02a_plants_easy_014_op2': 'ニセウ',
+		'ACT02a_plants_easy_014_op3': 'アハ',
+		
+		'ACT02a_plants_hard_000_quiz': '「やまぶどう」は？',
+		'ACT02a_plants_hard_000_op1': 'ハッ',
+		'ACT02a_plants_hard_000_op2': 'エマウリ',
+		'ACT02a_plants_hard_000_op3': 'クッチ',
+		
+		'ACT02a_plants_hard_001_quiz': '「よもぎ」は？',
+		'ACT02a_plants_hard_001_op1': 'ノヤ',
+		'ACT02a_plants_hard_001_op2': 'エント',
+		'ACT02a_plants_hard_001_op3': 'クッタㇻ',
+		
+		'ACT02a_plants_hard_002_quiz': '「ひえ」は？',
+		'ACT02a_plants_hard_002_op1': 'ピヤパ',
+		'ACT02a_plants_hard_002_op2': 'ムンチロ',
+		'ACT02a_plants_hard_002_op3': 'ムンキ',
+		
+		'ACT02a_plants_hard_003_quiz': '「にんじん」は？',
+		'ACT02a_plants_hard_003_op1': 'フレアタネ',
+		'ACT02a_plants_hard_003_op2': 'ムンチロ',
+		'ACT02a_plants_hard_003_op3': 'カルㇱ',
+		
+		'ACT02a_plants_hard_004_quiz': 'ゆみ をつくれるのは？',
+		'ACT02a_plants_hard_004_op1': 'クネニ',
+		'ACT02a_plants_hard_004_op2': 'ケネ',
+		'ACT02a_plants_hard_004_op3': 'ヤイニ',
+		
+		'ACT02a_plants_hard_005_quiz': 'イナウ をつくれるのは？',
+		'ACT02a_plants_hard_005_op1': 'スス',
+		'ACT02a_plants_hard_005_op2': 'カリンパニ',
+		'ACT02a_plants_hard_005_op3': 'シケㇾペニ',
+		
+		'ACT02a_plants_hard_006_quiz': '「トリカブト」は？',
+		'ACT02a_plants_hard_006_op1': 'スㇽク',
+		'ACT02a_plants_hard_006_op2': 'チマキナ',
+		'ACT02a_plants_hard_006_op3': 'プクサキナ',
+		
+		'ACT02a_plants_hard_007_quiz': '「どんぐり」は？',
+		'ACT02a_plants_hard_007_op1': 'ニセウ',
+		'ACT02a_plants_hard_007_op2': 'イケマ',
+		'ACT02a_plants_hard_007_op3': 'プㇱニ',
+		
+		'ACT02a_plants_hard_008_quiz': '「すもも」は？',
+		'ACT02a_plants_hard_008_op1': 'モマ',
+		'ACT02a_plants_hard_008_op2': 'アエッポ',
+		'ACT02a_plants_hard_008_op3': 'エマウリ',
+		
+		'ACT02a_plants_hard_009_quiz': '「こけ」は？',
+		'ACT02a_plants_hard_009_op1': 'シンルㇱ',
+		'ACT02a_plants_hard_009_op2': 'ハㇱ',
+		'ACT02a_plants_hard_009_op3': 'ピイェ',
+		
+		'ACT02a_plants_hard_010_quiz': '「くさのつゆ」は？',
+		'ACT02a_plants_hard_010_op1': 'キナペ',
+		'ACT02a_plants_hard_010_op2': 'ムン',
+		'ACT02a_plants_hard_010_op3': 'ハㇱ',
+		
+		'ACT02a_plants_hard_011_quiz': '「くさのつる」は？',
+		'ACT02a_plants_hard_011_op1': 'プンカㇻ',
+		'ACT02a_plants_hard_011_op2': 'シンリチ',
+		'ACT02a_plants_hard_011_op3': 'ハム',
+		
+		'ACT02a_plants_hard_012_quiz': '「バイケイソウ」は？',
+		'ACT02a_plants_hard_012_op1': 'シクㇷ゚キナ',
+		'ACT02a_plants_hard_012_op2': 'シプㇱケㇷ゚',
+		'ACT02a_plants_hard_012_op3': 'マカヨ',
+		
+		'ACT02a_plants_hard_013_quiz': '「ヘビノタイマツ」は？',
+		'ACT02a_plants_hard_013_op1': 'ラウラウ',
+		'ACT02a_plants_hard_013_op2': 'ウクㇽキナ',
+		'ACT02a_plants_hard_013_op3': 'クッタㇻ',
+		
+		'ACT02a_plants_hard_014_quiz': '「えだ」は？',
+		'ACT02a_plants_hard_014_op1': 'ニテㇰ',
+		'ACT02a_plants_hard_014_op2': 'ニホㇺ',
+		'ACT02a_plants_hard_014_op3': 'ムンネトパ',
+		
+		'ACT02a_plants_hard_015_quiz': '「トゲ」は？',
+		'ACT02a_plants_hard_015_op1': 'アイェ',
+		'ACT02a_plants_hard_015_op2': 'ムンネトパ',
+		'ACT02a_plants_hard_015_op3': 'ニシンリッ',
+		
+		'ACT02a_plants_hard_016_quiz': '「つぼみ」は？',
+		'ACT02a_plants_hard_016_op1': 'エプイ',
+		'ACT02a_plants_hard_016_op2': 'ピイェ',
+		'ACT02a_plants_hard_016_op3': 'ムンネトパ',
+		
+		'ACT02a_plants_hard_017_quiz': '「きのめ」は？',
+		'ACT02a_plants_hard_017_op1': 'ケニ',
+		'ACT02a_plants_hard_017_op2': 'アイェ',
+		'ACT02a_plants_hard_017_op3': 'ニテㇰ',
+		
+		'ACT02a_plants_hard_018_quiz': '「きのかわ」は？',
+		'ACT02a_plants_hard_018_op1': 'ニカㇷ゚',
+		'ACT02a_plants_hard_018_op2': 'ニトㇺ',
+		'ACT02a_plants_hard_018_op3': 'ケニ',
+		
+		'ACT02a_plants_hard_019_quiz': '「こっぱ」は？',
+		'ACT02a_plants_hard_019_op1': 'ニラㇱ',
+		'ACT02a_plants_hard_019_op2': 'ニウイペ',
+		'ACT02a_plants_hard_019_op3': 'ニトゥマㇺ',
+		
+		'ACT02a_plants_hard_020_quiz': '「きりかぶ」は？',
+		'ACT02a_plants_hard_020_op1': 'ニスッパ',
+		'ACT02a_plants_hard_020_op2': 'ニコㇺ',
+		'ACT02a_plants_hard_020_op3': 'ニエプイ',
+		
+		'ACT02a_plants_hard_021_quiz': '「ハルニレ」は？',
+		'ACT02a_plants_hard_021_op1': 'チキサニ',
+		'ACT02a_plants_hard_021_op2': 'スンク',
+		'ACT02a_plants_hard_021_op3': 'トㇷ゚',
+		
+		'ACT02a_plants_hard_022_quiz': '「カシワ」は？',
+		'ACT02a_plants_hard_022_op1': 'トゥンニ',
+		'ACT02a_plants_hard_022_op2': 'ランコ',
+		'ACT02a_plants_hard_022_op3': 'フㇷ゚',
+		
+		'ACT02a_plants_hard_023_quiz': '「トドマツ」は？',
+		'ACT02a_plants_hard_023_op1': 'フㇷ゚',
+		'ACT02a_plants_hard_023_op2': 'ニペㇱ',
+		'ACT02a_plants_hard_023_op3': 'トペンニ',
+		
+		'ACT02a_plants_hard_024_quiz': '「オオウバユリ」は？',
+		'ACT02a_plants_hard_024_op1': 'トゥレㇷ゚',
+		'ACT02a_plants_hard_024_op2': 'プクサ',
+		'ACT02a_plants_hard_024_op3': 'ピットㇰ',
+		
+		'ACT02a_time_easy_000_quiz': '「あさ」は？',
+		'ACT02a_time_easy_000_op1': 'クンネイワ',
+		'ACT02a_time_easy_000_op2': 'トカㇷ゚',
+		'ACT02a_time_easy_000_op3': 'オヌマン',
+		
+		'ACT02a_time_easy_001_quiz': '「ひる」は？',
+		'ACT02a_time_easy_001_op1': 'トカㇷ゚',
+		'ACT02a_time_easy_001_op2': 'クンネイワ',
+		'ACT02a_time_easy_001_op3': 'アンチカㇻ',
+		
+		'ACT02a_time_easy_002_quiz': '「よる」は？',
+		'ACT02a_time_easy_002_op1': 'アンチカㇻ',
+		'ACT02a_time_easy_002_op2': 'オヌマン',
+		'ACT02a_time_easy_002_op3': 'トカㇷ゚',
+		
+		'ACT02a_time_easy_003_quiz': '「きょう」は？',
+		'ACT02a_time_easy_003_op1': 'タント',
+		'ACT02a_time_easy_003_op2': 'ヌマン',
+		'ACT02a_time_easy_003_op3': 'ニサッタ',
+		
+		'ACT02a_time_easy_004_quiz': '「きのう」は？',
+		'ACT02a_time_easy_004_op1': 'ヌマン',
+		'ACT02a_time_easy_004_op2': 'ニサッタ',
+		'ACT02a_time_easy_004_op3': 'タント',
+		
+		'ACT02a_time_easy_005_quiz': '「あした」は？',
+		'ACT02a_time_easy_005_op1': 'ニサッタ',
+		'ACT02a_time_easy_005_op2': 'タント',
+		'ACT02a_time_easy_005_op3': 'オヤシㇺ',
+		
+		'ACT02a_time_easy_006_quiz': '「あさって」は？',
+		'ACT02a_time_easy_006_op1': 'オヤシㇺ',
+		'ACT02a_time_easy_006_op2': 'ホㇱカヌマン',
+		'ACT02a_time_easy_006_op3': 'ニサッタ',
+		
+		'ACT02a_time_easy_007_quiz': '「まいにち」は？',
+		'ACT02a_time_easy_007_op1': 'ケㇱト',
+		'ACT02a_time_easy_007_op2': 'クンネイワピㇱノ',
+		'ACT02a_time_easy_007_op3': 'タント',
+		
+		'ACT02a_time_easy_008_quiz': '「ことし」は？',
+		'ACT02a_time_easy_008_op1': 'タンパ',
+		'ACT02a_time_easy_008_op2': 'タント',
+		'ACT02a_time_easy_008_op3': 'タンチュㇷ゚',
+		
+		'ACT02a_time_easy_009_quiz': '「こんげつ」は？',
+		'ACT02a_time_easy_009_op1': 'タンチュㇷ゚',
+		'ACT02a_time_easy_009_op2': 'チュㇷ゚ピㇱノ',
+		'ACT02a_time_easy_009_op3': 'ケㇱト',
+		
+		'ACT02a_time_easy_010_quiz': '「まいとし」は？',
+		'ACT02a_time_easy_010_op1': 'ケㇱパ',
+		'ACT02a_time_easy_010_op2': 'ケスクラン',
+		'ACT02a_time_easy_010_op3': 'クンネイワピㇱノ',
+		
+		'ACT02a_time_easy_011_quiz': '「とし」は？',
+		'ACT02a_time_easy_011_op1': 'パ',
+		'ACT02a_time_easy_011_op2': 'オヤパ',
+		'ACT02a_time_easy_011_op3': 'タンパ',
+		
+		'ACT02a_time_easy_012_quiz': '「つき」は？',
+		'ACT02a_time_easy_012_op1': 'チュㇷ゚',
+		'ACT02a_time_easy_012_op2': 'ト',
+		'ACT02a_time_easy_012_op3': 'パ',
+		
+		'ACT02a_time_easy_013_quiz': '「ひにち」は？',
+		'ACT02a_time_easy_013_op1': 'ト',
+		'ACT02a_time_easy_013_op2': 'パ',
+		'ACT02a_time_easy_013_op3': 'チュㇷ゚',
+		
+		'ACT02a_time_easy_014_quiz': '「いま」は？',
+		'ACT02a_time_easy_014_op1': 'タネ',
+		'ACT02a_time_easy_014_op2': 'エシㇼ',
+		'ACT02a_time_easy_014_op3': 'ナニ',
+		
+		'ACT02a_time_easy_015_quiz': '「むかし」は？',
+		'ACT02a_time_easy_015_op1': 'テエタ',
+		'ACT02a_time_easy_015_op2': 'タネ',
+		'ACT02a_time_easy_015_op3': 'オッテエタ',
+		
+		'ACT02a_time_easy_016_quiz': '「ふゆ」は？',
+		'ACT02a_time_easy_016_op1': 'マタ',
+		'ACT02a_time_easy_016_op2': 'サㇰ',
+		'ACT02a_time_easy_016_op3': 'パイカㇻ',
+		
+		'ACT02a_time_easy_017_quiz': '「はる」は？',
+		'ACT02a_time_easy_017_op1': 'パイカㇻ',
+		'ACT02a_time_easy_017_op2': 'マタ',
+		'ACT02a_time_easy_017_op3': 'チュㇰ',
+		
+		'ACT02a_time_easy_018_quiz': '「なつ」は？',
+		'ACT02a_time_easy_018_op1': 'サㇰ',
+		'ACT02a_time_easy_018_op2': 'チュㇰ',
+		'ACT02a_time_easy_018_op3': 'マタ',
+		
+		'ACT02a_time_easy_019_quiz': '「あき」は？',
+		'ACT02a_time_easy_019_op1': 'チュㇰ',
+		'ACT02a_time_easy_019_op2': 'サㇰ',
+		'ACT02a_time_easy_019_op3': 'パイカㇻ',
+		
+		'ACT02a_time_hard_000_quiz': '「きょねんのなつ」は？',
+		'ACT02a_time_hard_000_op1': 'サㇰネ',
+		'ACT02a_time_hard_000_op2': 'パイカㇻ',
+		'ACT02a_time_hard_000_op3': 'マタネ',
+		
+		'ACT02a_time_hard_001_quiz': '「おおむかし」は？',
+		'ACT02a_time_hard_001_op1': 'オッテエタ',
+		'ACT02a_time_hard_001_op2': 'テエタ',
+		'ACT02a_time_hard_001_op3': 'タネ',
+		
+		'ACT02a_time_hard_002_quiz': '「いぜん」は？',
+		'ACT02a_time_hard_002_op1': 'エトㇰ',
+		'ACT02a_time_hard_002_op2': 'エアシㇼ',
+		'ACT02a_time_hard_002_op3': 'コッポキ',
+		
+		'ACT02a_time_hard_003_quiz': '「ながいあいだ」は？',
+		'ACT02a_time_hard_003_op1': 'オホンノ',
+		'ACT02a_time_hard_003_op2': 'タネ',
+		'ACT02a_time_hard_003_op3': 'イルカ',
+		
+		'ACT02a_time_hard_004_quiz': '「みじかいあいだ」は？',
+		'ACT02a_time_hard_004_op1': 'イルカ',
+		'ACT02a_time_hard_004_op2': 'オホンノ',
+		'ACT02a_time_hard_004_op3': 'セタㇰノ',
+		
+		'ACT02a_time_hard_005_quiz': '「いつも」は？',
+		'ACT02a_time_hard_005_op1': 'ランマ',
+		'ACT02a_time_hard_005_op2': 'ウカットゥイマノ',
+		'ACT02a_time_hard_005_op3': 'フㇺネフㇺネ',
+		
+		'ACT02a_time_hard_006_quiz': '「さいしょに」は？',
+		'ACT02a_time_hard_006_op1': 'ホㇱキノ',
+		'ACT02a_time_hard_006_op2': 'アッパケ',
+		'ACT02a_time_hard_006_op3': 'タネ',
+		
+		'ACT02a_time_hard_007_quiz': '「さいごに」は？',
+		'ACT02a_time_hard_007_op1': 'イヨㇱノ',
+		'ACT02a_time_hard_007_op2': 'ホㇱキノ',
+		'ACT02a_time_hard_007_op3': 'ランマ',
+		
+		'ACT02a_time_hard_008_quiz': '「ゆうがた」は？',
+		'ACT02a_time_hard_008_op1': 'オヌマン',
+		'ACT02a_time_hard_008_op2': 'アンチカㇻ',
+		'ACT02a_time_hard_008_op3': 'アンノㇱキ',
+		
+		'ACT02a_time_hard_009_quiz': '「あけがた」は？',
+		'ACT02a_time_hard_009_op1': 'ニサッ',
+		'ACT02a_time_hard_009_op2': 'アンノㇱキ',
+		'ACT02a_time_hard_009_op3': 'アンケㇱ',
+		
+		'ACT02a_time_hard_010_quiz': '「しょうご」は？',
+		'ACT02a_time_hard_010_op1': 'トノㇱキ',
+		'ACT02a_time_hard_010_op2': 'トカㇷ゚エトコ',
+		'ACT02a_time_hard_010_op3': 'トケㇱ',
+		
+		'ACT02a_time_hard_011_quiz': '「こんど」は？',
+		'ACT02a_time_hard_011_op1': 'タンポタ',
+		'ACT02a_time_hard_011_op2': 'スイ',
+		'ACT02a_time_hard_011_op3': 'オホンノ',
+		
+		'ACT02a_time_hard_012_quiz': '「はじめに」は？',
+		'ACT02a_time_hard_012_op1': 'アッパケタ',
+		'ACT02a_time_hard_012_op2': 'オトゥタヌ',
+		'ACT02a_time_hard_012_op3': 'オカケ',
+		
+		'ACT02a_property_easy_000_quiz': '「ながい」は？',
+		'ACT02a_property_easy_000_op1': 'タンネ',
+		'ACT02a_property_easy_000_op2': 'ルウェ',
+		'ACT02a_property_easy_000_op3': 'タㇰネ',
+		
+		'ACT02a_property_easy_001_quiz': '「ふかい」は？',
+		'ACT02a_property_easy_001_op1': 'オオホ',
+		'ACT02a_property_easy_001_op2': 'イロンネ',
+		'ACT02a_property_easy_001_op3': 'オハㇰ',
+		
+		'ACT02a_property_easy_002_quiz': '「ほそい」は？',
+		'ACT02a_property_easy_002_op1': 'アネ',
+		'ACT02a_property_easy_002_op2': 'カパㇻ',
+		'ACT02a_property_easy_002_op3': 'セㇷ゚',
+		
+		'ACT02a_property_easy_003_quiz': '「ぶあつい」は？',
+		'ACT02a_property_easy_003_op1': 'イロンネ',
+		'ACT02a_property_easy_003_op2': 'ルウェ',
+		'ACT02a_property_easy_003_op3': 'カパㇻ',
+		
+		'ACT02a_property_easy_004_quiz': '「やわらかい」は？',
+		'ACT02a_property_easy_004_op1': 'リテン',
+		'ACT02a_property_easy_004_op2': 'ノカン',
+		'ACT02a_property_easy_004_op3': 'ニㇱテ',
+		
+		'ACT02a_property_easy_005_quiz': '「たかい」は？',
+		'ACT02a_property_easy_005_op1': 'リ',
+		'ACT02a_property_easy_005_op2': 'タンネ',
+		'ACT02a_property_easy_005_op3': 'ラㇺ',
+		
+		'ACT02a_property_easy_006_quiz': '「ちからがある」は？',
+		'ACT02a_property_easy_006_op1': 'トゥㇺコㇿ',
+		'ACT02a_property_easy_006_op2': 'トゥㇺサㇰ',
+		'ACT02a_property_easy_006_op3': 'ポロ',
+		
+		'ACT02a_property_easy_007_quiz': '「ひくい」は？',
+		'ACT02a_property_easy_007_op1': 'ラㇺ',
+		'ACT02a_property_easy_007_op2': 'タㇰネ',
+		'ACT02a_property_easy_007_op3': 'リ',
+		
+		'ACT02a_property_easy_008_quiz': '「ほそい」は？',
+		'ACT02a_property_easy_008_op1': 'アネ',
+		'ACT02a_property_easy_008_op2': 'コㇱネ',
+		'ACT02a_property_easy_008_op3': 'ルウェ',
+		
+		'ACT02a_property_easy_009_quiz': '「おおきい」は？',
+		'ACT02a_property_easy_009_op1': 'ポロ',
+		'ACT02a_property_easy_009_op2': 'タㇰネ',
+		'ACT02a_property_easy_009_op3': 'ポン',
+		
+		'ACT02a_property_easy_010_quiz': '「おそい」は？',
+		'ACT02a_property_easy_010_op1': 'モイレ',
+		'ACT02a_property_easy_010_op2': 'トゥナㇱ',
+		'ACT02a_property_easy_010_op3': 'パセ',
+		
+		'ACT02a_property_easy_011_quiz': '「おもい」は？',
+		'ACT02a_property_easy_011_op1': 'パセ',
+		'ACT02a_property_easy_011_op2': 'フッネ',
+		'ACT02a_property_easy_011_op3': 'コㇱネ',
+		
+		'ACT02a_property_easy_012_quiz': '「ある」は？',
+		'ACT02a_property_easy_012_op1': 'アン',
+		'ACT02a_property_easy_012_op2': 'イサㇺ',
+		'ACT02a_property_easy_012_op3': 'サㇰ',
+		
+		'ACT02a_property_easy_013_quiz': '「おおい（ひとなど）」は？',
+		'ACT02a_property_easy_013_op1': 'インネ',
+		'ACT02a_property_easy_013_op2': 'サㇰ',
+		'ACT02a_property_easy_013_op3': 'モヨ',
+		
+		'ACT02a_property_easy_014_quiz': '「あまった」は？',
+		'ACT02a_property_easy_014_op1': 'イカㇱマ',
+		'ACT02a_property_easy_014_op2': 'シプイネ',
+		'ACT02a_property_easy_014_op3': 'ウワッテ',
+		
+		'ACT02a_property_easy_015_quiz': '「よい」は？',
+		'ACT02a_property_easy_015_op1': 'ピㇼカ',
+		'ACT02a_property_easy_015_op2': 'ピㇼカレ',
+		'ACT02a_property_easy_015_op3': 'ウェン',
+		
+		'ACT02a_property_easy_016_quiz': '「あかい」は？',
+		'ACT02a_property_easy_016_op1': 'フレ',
+		'ACT02a_property_easy_016_op2': 'シウニン',
+		'ACT02a_property_easy_016_op3': 'クンネ',
+		
+		'ACT02a_property_easy_017_quiz': '「あおい」は？',
+		'ACT02a_property_easy_017_op1': 'シウニン',
+		'ACT02a_property_easy_017_op2': 'フレ',
+		'ACT02a_property_easy_017_op3': 'レタㇻ',
+		
+		'ACT02a_property_easy_018_quiz': '「あかい」は？',
+		'ACT02a_property_easy_018_op1': 'レタㇻ',
+		'ACT02a_property_easy_018_op2': 'クンネ',
+		'ACT02a_property_easy_018_op3': 'フレ',
+		
+		'ACT02a_property_easy_019_quiz': '「ひろい」は？',
+		'ACT02a_property_easy_019_op1': 'セㇷ゚',
+		'ACT02a_property_easy_019_op2': 'フッネ',
+		'ACT02a_property_easy_019_op3': 'トゥナㇱ',
+		
+		'ACT02a_property_easy_020_quiz': '「はやい」は？',
+		'ACT02a_property_easy_020_op1': 'トゥナㇱ',
+		'ACT02a_property_easy_020_op2': 'モイレ',
+		'ACT02a_property_easy_020_op3': 'タンネ',
+		
+		'ACT02a_property_easy_021_quiz': '「ちいさい」は？',
+		'ACT02a_property_easy_021_op1': 'ポン',
+		'ACT02a_property_easy_021_op2': 'ポロ',
+		'ACT02a_property_easy_021_op3': 'パセ',
+		
+		'ACT02a_property_easy_022_quiz': '「かたい」は？',
+		'ACT02a_property_easy_022_op1': 'ニㇱテ',
+		'ACT02a_property_easy_022_op2': 'ピㇼカ',
+		'ACT02a_property_easy_022_op3': 'リテン',
+		
+		'ACT02a_property_easy_023_quiz': '「わるい」は？',
+		'ACT02a_property_easy_023_op1': 'ウェン',
+		'ACT02a_property_easy_023_op2': 'ポロ',
+		'ACT02a_property_easy_023_op3': 'ピㇼカ',
+		
+		'ACT02a_property_easy_024_quiz': '「げんきだ」は？',
+		'ACT02a_property_easy_024_op1': 'イワンケ',
+		'ACT02a_property_easy_024_op2': 'トゥマㇱヌ',
+		'ACT02a_property_easy_024_op3': 'タスㇺ',
+		
+		'ACT02a_property_easy_025_quiz': '「としをとる」は？',
+		'ACT02a_property_easy_025_op1': 'オンネ',
+		'ACT02a_property_easy_025_op2': 'スクㇷ゚',
+		'ACT02a_property_easy_025_op3': 'ヘカトゥ',
+		
+		'ACT02a_property_easy_026_quiz': '「イナウ」は？',
+		'ACT02a_property_easy_026_op1': 'イナウ',
+		'ACT02a_property_easy_026_op2': 'シントコ',
+		'ACT02a_property_easy_026_op3': 'マンプリ',
+		
+		'ACT02a_property_easy_027_quiz': '「こおる」は？',
+		'ACT02a_property_easy_027_op1': 'ルプㇱ',
+		'ACT02a_property_easy_027_op2': 'ルレ',
+		'ACT02a_property_easy_027_op3': 'ル',
+		
+		'ACT02a_property_easy_028_quiz': '「がんばって」は？',
+		'ACT02a_property_easy_028_op1': 'アリキキノ',
+		'ACT02a_property_easy_028_op2': 'ルイノ',
+		'ACT02a_property_easy_028_op3': 'ポンノ',
+		
+		'ACT02a_property_easy_029_quiz': '「おさない」は？',
+		'ACT02a_property_easy_029_op1': 'ノカン',
+		'ACT02a_property_easy_029_op2': 'ライ',
+		'ACT02a_property_easy_029_op3': 'スクㇷ゚',
+		
+		'ACT02a_property_hard_000_quiz': '「ほのお」は？',
+		'ACT02a_property_hard_000_op1': 'ホカ',
+		'ACT02a_property_hard_000_op2': 'スプヤ',
+		'ACT02a_property_hard_000_op3': 'チクニ',
+		
+		'ACT02a_property_hard_001_quiz': '「ろ」は？',
+		'ACT02a_property_hard_001_op1': 'アペソコッ',
+		'ACT02a_property_hard_001_op2': 'パㇱ',
+		'ACT02a_property_hard_001_op3': 'ホカ',
+		
+		'ACT02a_property_hard_002_quiz': '「けむり」は？',
+		'ACT02a_property_hard_002_op1': 'スプヤ',
+		'ACT02a_property_hard_002_op2': 'ウパㇻ',
+		'ACT02a_property_hard_002_op3': 'ウイナ',
+		
+		'ACT02a_property_hard_003_quiz': '「かんたん」は？',
+		'ACT02a_property_hard_003_op1': 'イサイカ',
+		'ACT02a_property_hard_003_op2': 'ホカンパ',
+		'ACT02a_property_hard_003_op3': 'パセ',
+		
+		'ACT02a_property_hard_004_quiz': '「たいせつな」は？',
+		'ACT02a_property_hard_004_op1': 'エヤㇺ',
+		'ACT02a_property_hard_004_op2': 'サウヌ',
+		'ACT02a_property_hard_004_op3': 'ヤヤン',
+		
+		'ACT02a_property_hard_005_quiz': '「ふつうの」は？',
+		'ACT02a_property_hard_005_op1': 'ヤヤン',
+		'ACT02a_property_hard_005_op2': 'ホカンパ',
+		'ACT02a_property_hard_005_op3': 'エヤㇺ',
+		
+		'ACT02a_property_hard_006_quiz': '「ゆっくりと」は？',
+		'ACT02a_property_hard_006_op1': 'ラッチノ',
+		'ACT02a_property_hard_006_op2': 'トゥナㇱノ',
+		'ACT02a_property_hard_006_op3': 'ハウケノ',
+		
+		'ACT02a_property_hard_007_quiz': '「きれいに」は？',
+		'ACT02a_property_hard_007_op1': 'ピㇼカノ',
+		'ACT02a_property_hard_007_op2': 'ニサㇷ゚ノ',
+		'ACT02a_property_hard_007_op3': 'シノ',
+		
+		'ACT02a_property_hard_008_quiz': '「めったにない」は？',
+		'ACT02a_property_hard_008_op1': 'シサㇰ',
+		'ACT02a_property_hard_008_op2': 'ヤヤン',
+		'ACT02a_property_hard_008_op3': 'イサㇺ',
+		
+		'ACT02a_property_hard_009_quiz': '「いろいろな」は？',
+		'ACT02a_property_hard_009_op1': 'ウサ',
+		'ACT02a_property_hard_009_op2': 'ポロンノ',
+		'ACT02a_property_hard_009_op3': 'シサㇰ',
+		
+		'ACT02a_property_hard_010_quiz': '「しずむ」は？',
+		'ACT02a_property_hard_010_op1': 'レン',
+		'ACT02a_property_hard_010_op2': 'モㇺ',
+		'ACT02a_property_hard_010_op3': 'ペカンケ',
+		
+		'ACT02a_property_hard_011_quiz': '「つめたい」は？',
+		'ACT02a_property_hard_011_op1': 'ナㇺ',
+		'ACT02a_property_hard_011_op2': 'ヌㇷ゚キ',
+		'ACT02a_property_hard_011_op3': 'ペケㇾ',
+		
+		'ACT02a_property_hard_012_quiz': '「あつい」は？',
+		'ACT02a_property_hard_012_op1': 'セセㇰ',
+		'ACT02a_property_hard_012_op2': 'ナㇺ',
+		'ACT02a_property_hard_012_op3': 'ポッケ',
+		
+		'ACT02a_property_hard_013_quiz': '「むすぶ」は？',
+		'ACT02a_property_hard_013_op1': 'シナ',
+		'ACT02a_property_hard_013_op2': 'コカリ',
+		'ACT02a_property_hard_013_op3': 'ピタ',
+		
+		'ACT02a_property_hard_014_quiz': '「かぶせる」は？',
+		'ACT02a_property_hard_014_op1': 'カムレ',
+		'ACT02a_property_hard_014_op2': 'ピラサ',
+		'ACT02a_property_hard_014_op3': 'ウセアリ',
+		
+		'ACT02a_property_hard_015_quiz': '「つく」は？',
+		'ACT02a_property_hard_015_op1': 'ウシ',
+		'ACT02a_property_hard_015_op2': 'コタチ',
+		'ACT02a_property_hard_015_op3': 'コトゥッカ',
+		
+		'ACT02a_property_hard_016_quiz': '「ひからびた」は？',
+		'ACT02a_property_hard_016_op1': 'パトゥワレ',
+		'ACT02a_property_hard_016_op2': 'スㇺ',
+		'ACT02a_property_hard_016_op3': 'ペトゥワレ',
+		
+		'ACT02a_property_hard_017_quiz': '「みのった」は？',
+		'ACT02a_property_hard_017_op1': 'イペオ',
+		'ACT02a_property_hard_017_op2': 'チ',
+		'ACT02a_property_hard_017_op3': 'プㇱ',
+		
+		'ACT02a_property_hard_018_quiz': '「かびた」は？',
+		'ACT02a_property_hard_018_op1': 'クミウㇱ',
+		'ACT02a_property_hard_018_op2': 'ムニン',
+		'ACT02a_property_hard_018_op3': 'スㇺ',
+		
+		'ACT02a_property_hard_019_quiz': '「すべすべした」は？',
+		'ACT02a_property_hard_019_op1': 'ララㇰ',
+		'ACT02a_property_hard_019_op2': 'プㇱレ',
+		'ACT02a_property_hard_019_op3': 'トㇰナタラ',
+		
+		'ACT02a_property_hard_020_quiz': '「ピカピカした」は？',
+		'ACT02a_property_hard_020_op1': 'テウニンテウニン',
+		'ACT02a_property_hard_020_op2': 'アイネアイネ',
+		'ACT02a_property_hard_020_op3': 'ラッネラッネ',
+		
+		'ACT02a_property_hard_021_quiz': '「ふわふわした」は？',
+		'ACT02a_property_hard_021_op1': 'プㇱレ',
+		'ACT02a_property_hard_021_op2': 'シラシラㇰ',
+		'ACT02a_property_hard_021_op3': 'プㇽプㇽケ',
+		
+		'ACT02a_property_hard_022_quiz': '「たましい」は？',
+		'ACT02a_property_hard_022_op1': 'ラマッ',
+		'ACT02a_property_hard_022_op2': 'ケウトゥㇺ',
+		'ACT02a_property_hard_022_op3': 'フミ',
+		
+		'ACT02a_property_hard_023_quiz': '「かんじ」は？',
+		'ACT02a_property_hard_023_op1': 'フミ',
+		'ACT02a_property_hard_023_op2': 'イレンカ',
+		'ACT02a_property_hard_023_op3': 'プリ',
+		
+		'ACT02a_property_hard_024_quiz': '「やりかた」は？',
+		'ACT02a_property_hard_024_op1': 'プリ',
+		'ACT02a_property_hard_024_op2': 'キロㇿ',
+		'ACT02a_property_hard_024_op3': 'ウェンタㇻㇷ゚',
+		
+		'ACT02a_property_hard_025_quiz': '「おばけ」は？',
+		'ACT02a_property_hard_025_op1': 'カメアシ',
+		'ACT02a_property_hard_025_op2': 'コシンプ',
+		'ACT02a_property_hard_025_op3': 'ニッネカムイ',
+		
+		'ACT02a_property_hard_026_quiz': '「さかなのむれ」は？',
+		'ACT02a_property_hard_026_op1': 'チェㇷ゚ルㇷ゚',
+		'ACT02a_property_hard_026_op2': 'ユㇰトパ',
+		'ACT02a_property_hard_026_op3': 'チカㇷ゚サイ',
+		
+		'ACT02a_property_hard_027_quiz': '「シカのむれ」は？',
+		'ACT02a_property_hard_027_op1': 'ユㇰトパ',
+		'ACT02a_property_hard_027_op2': 'コンプタㇰマ',
+		'ACT02a_property_hard_027_op3': 'ニイキㇼ',
+		
+		'ACT02a_property_hard_028_quiz': '「おおぜいのひと」は？',
+		'ACT02a_property_hard_028_op1': 'インネウタㇻ',
+		'ACT02a_property_hard_028_op2': 'ポロマチヤ',
+		'ACT02a_property_hard_028_op3': 'アイヌイキㇼ',
+		
+		'ACT02a_property_hard_029_quiz': '「ちかくない」は？',
+		'ACT02a_property_hard_029_op1': 'ハンケコ',
+		'ACT02a_property_hard_029_op2': 'ウェンコ',
+		'ACT02a_property_hard_029_op3': 'トゥイマコ',
+		
+		'ACT02a_property_hard_030_quiz': '「みじかいじかんではない」は？',
+		'ACT02a_property_hard_030_op1': 'セタッコ',
+		'ACT02a_property_hard_030_op2': 'オホㇿコ',
+		'ACT02a_property_hard_030_op3': 'フッネコ',
+		
+		'ACT02a_property_hard_031_quiz': '「わるくない」は？',
+		'ACT02a_property_hard_031_op1': 'ウェンコ',
+		'ACT02a_property_hard_031_op2': 'イサイカコ',
+		'ACT02a_property_hard_031_op3': 'ポンコ',
+		
+		'ACT02a_food_easy_000_quiz': '「みず」は？',
+		'ACT02a_food_easy_000_op1': 'ワッカ',
+		'ACT02a_food_easy_000_op2': 'トノト',
+		'ACT02a_food_easy_000_op3': 'ウセイ',
+		
+		'ACT02a_food_easy_001_quiz': '「おさけ」は？',
+		'ACT02a_food_easy_001_op1': 'トノト',
+		'ACT02a_food_easy_001_op2': 'ニハㇺウセイ',
+		'ACT02a_food_easy_001_op3': 'ワッカ',
+		
+		'ACT02a_food_easy_002_quiz': '「おゆ」は？',
+		'ACT02a_food_easy_002_op1': 'ウセイ',
+		'ACT02a_food_easy_002_op2': 'ワッカ',
+		'ACT02a_food_easy_002_op3': 'コンル',
+		
+		'ACT02a_food_easy_003_quiz': '「あぶら」は？',
+		'ACT02a_food_easy_003_op1': 'スㇺ',
+		'ACT02a_food_easy_003_op2': 'ペコトペ',
+		'ACT02a_food_easy_003_op3': 'ルㇽ',
+		
+		'ACT02a_food_easy_004_quiz': '「しお」は？',
+		'ACT02a_food_easy_004_op1': 'シッポ',
+		'ACT02a_food_easy_004_op2': 'スㇺ',
+		'ACT02a_food_easy_004_op3': 'ワッカ',
+		
+		'ACT02a_food_easy_005_quiz': '「みそ」は？',
+		'ACT02a_food_easy_005_op1': 'ミソ',
+		'ACT02a_food_easy_005_op2': 'シッポ',
+		'ACT02a_food_easy_005_op3': 'スㇺ',
+		
+		'ACT02a_food_easy_006_quiz': '「こんぶ」は？',
+		'ACT02a_food_easy_006_op1': 'コンプ',
+		'ACT02a_food_easy_006_op2': 'サト',
+		'ACT02a_food_easy_006_op3': 'シッポ',
+		
+		'ACT02a_food_easy_007_quiz': '「おいしい」は？',
+		'ACT02a_food_easy_007_op1': 'ケラアン',
+		'ACT02a_food_easy_007_op2': 'トペン',
+		'ACT02a_food_easy_007_op3': 'スッカケ',
+		
+		'ACT02a_food_easy_008_quiz': '「しょっぱい」は？',
+		'ACT02a_food_easy_008_op1': 'ルンヌ',
+		'ACT02a_food_easy_008_op2': 'シウ',
+		'ACT02a_food_easy_008_op3': 'トペン',
+		
+		'ACT02a_food_easy_009_quiz': '「まずい」は？',
+		'ACT02a_food_easy_009_op1': 'ケラウェン',
+		'ACT02a_food_easy_009_op2': 'ケラアン',
+		'ACT02a_food_easy_009_op3': 'ケラサㇰ',
+		
+		'ACT02a_food_easy_010_quiz': '「あまい」は？',
+		'ACT02a_food_easy_010_op1': 'トペン',
+		'ACT02a_food_easy_010_op2': 'パㇻカㇻ',
+		'ACT02a_food_easy_010_op3': 'シウ',
+		
+		'ACT02a_food_easy_011_quiz': '「おこめ」は？',
+		'ACT02a_food_easy_011_op1': 'シアマㇺ',
+		'ACT02a_food_easy_011_op2': 'ノㇰ',
+		'ACT02a_food_easy_011_op3': 'トヨルンペ',
+		
+		'ACT02a_food_easy_012_quiz': '「さんさい」は？',
+		'ACT02a_food_easy_012_op1': 'キナ',
+		'ACT02a_food_easy_012_op2': 'カルㇱ',
+		'ACT02a_food_easy_012_op3': 'アマㇺ',
+		
+		'ACT02a_food_hard_000_quiz': '「おしる」は？',
+		'ACT02a_food_hard_000_op1': 'オハウ',
+		'ACT02a_food_hard_000_op2': 'サヨ',
+		'ACT02a_food_hard_000_op3': 'カイコ',
+		
+		'ACT02a_food_hard_001_quiz': '「まぜに」は？',
+		'ACT02a_food_hard_001_op1': 'ラタㇱケㇷ゚',
+		'ACT02a_food_hard_001_op2': 'スケㇷ゚',
+		'ACT02a_food_hard_001_op3': 'シト',
+		
+		'ACT02a_food_hard_002_quiz': '「どうぶつのにく」は？',
+		'ACT02a_food_hard_002_op1': 'カㇺ',
+		'ACT02a_food_hard_002_op2': 'ミㇺ',
+		'ACT02a_food_hard_002_op3': 'スㇺ',
+		
+		'ACT02a_food_hard_003_quiz': '「おかし」は？',
+		'ACT02a_food_hard_003_op1': 'トペンペ',
+		'ACT02a_food_hard_003_op2': 'ニカオㇷ゚',
+		'ACT02a_food_hard_003_op3': 'ソヤトペ',
+		
+		'ACT02a_food_hard_004_quiz': '「タバコ」は？',
+		'ACT02a_food_hard_004_op1': 'タンパク',
+		'ACT02a_food_hard_004_op2': 'イルㇷ゚',
+		'ACT02a_food_hard_004_op3': 'クスリ',
+		
+		'ACT02a_food_hard_005_quiz': '「だんご」は？',
+		'ACT02a_food_hard_005_op1': 'シト',
+		'ACT02a_food_hard_005_op2': 'ペネイモ',
+		'ACT02a_food_hard_005_op3': 'コ',
+		
+		'ACT02a_food_hard_006_quiz': '「たたきりょうり」は？',
+		'ACT02a_food_hard_006_op1': 'チタタㇷ゚',
+		'ACT02a_food_hard_006_op2': 'オハウ',
+		'ACT02a_food_hard_006_op3': 'チマカㇺ',
+		
+		'ACT02a_food_hard_007_quiz': '「さかなのたまご」は？',
+		'ACT02a_food_hard_007_op1': 'チポㇿ',
+		'ACT02a_food_hard_007_op2': 'キㇼプ',
+		'ACT02a_food_hard_007_op3': 'ノㇰ',
+		
+		'ACT02a_food_hard_008_quiz': '「やいたにく」は？',
+		'ACT02a_food_hard_008_op1': 'チマカㇺ',
+		'ACT02a_food_hard_008_op2': 'ルイペ',
+		'ACT02a_food_hard_008_op3': 'ラタㇱケㇷ゚',
+		
+		'ACT02a_food_hard_009_quiz': '「しぜんのめぐみ」は？',
+		'ACT02a_food_hard_009_op1': 'ハル',
+		'ACT02a_food_hard_009_op2': 'サッカㇺ',
+		'ACT02a_food_hard_009_op3': 'サッチェㇷ゚',
+		
+		'ACT02a_tool_easy_000_quiz': '「ちゃわん」は？',
+		'ACT02a_tool_easy_000_op1': 'イタンキ',
+		'ACT02a_tool_easy_000_op2': 'ポンニマ',
+		'ACT02a_tool_easy_000_op3': 'セㇷ゚イタンキ',
+		
+		'ACT02a_tool_easy_001_quiz': '「しゃもじ」は？',
+		'ACT02a_tool_easy_001_op1': 'ペラ',
+		'ACT02a_tool_easy_001_op2': 'ピサック',
+		'ACT02a_tool_easy_001_op3': 'パスイ',
+		
+		'ACT02a_tool_easy_002_quiz': '「ひしゃく」は？',
+		'ACT02a_tool_easy_002_op1': 'ピサック',
+		'ACT02a_tool_easy_002_op2': 'ニヤトゥㇱ',
+		'ACT02a_tool_easy_002_op3': 'オンタロ',
+		
+		'ACT02a_tool_easy_003_quiz': '「おぜん」は？',
+		'ACT02a_tool_easy_003_op1': 'オッチケ',
+		'ACT02a_tool_easy_003_op2': 'セㇷ゚イタンキ',
+		'ACT02a_tool_easy_003_op3': 'ポンニマ',
+		
+		'ACT02a_tool_easy_004_quiz': '「おたま」は？',
+		'ACT02a_tool_easy_004_op1': 'カスㇷ゚',
+		'ACT02a_tool_easy_004_op2': 'イチャリ',
+		'ACT02a_tool_easy_004_op3': 'ス',
+		
+		'ACT02a_tool_easy_005_quiz': '「おはし」は？',
+		'ACT02a_tool_easy_005_op1': 'パスイ',
+		'ACT02a_tool_easy_005_op2': 'パラパスイ',
+		'ACT02a_tool_easy_005_op3': 'イタンキ',
+		
+		'ACT02a_tool_easy_006_quiz': '「ざる」は？',
+		'ACT02a_tool_easy_006_op1': 'イチャリ',
+		'ACT02a_tool_easy_006_op2': 'ホイチョ',
+		'ACT02a_tool_easy_006_op3': 'ニマ',
+		
+		'ACT02a_tool_easy_007_quiz': '「こがたな」は？',
+		'ACT02a_tool_easy_007_op1': 'マキリ',
+		'ACT02a_tool_easy_007_op2': 'エムㇱ',
+		'ACT02a_tool_easy_007_op3': 'クㇷ゚カ',
+		
+		'ACT02a_tool_easy_008_quiz': '「ゆみ」は？',
+		'ACT02a_tool_easy_008_op1': 'ク',
+		'ACT02a_tool_easy_008_op2': 'イカヨㇷ゚',
+		'ACT02a_tool_easy_008_op3': 'アイ',
+		
+		'ACT02a_tool_easy_009_quiz': '「やり」は？',
+		'ACT02a_tool_easy_009_op1': 'オㇷ゚',
+		'ACT02a_tool_easy_009_op2': 'ハヨㇰペ',
+		'ACT02a_tool_easy_009_op3': 'ク',
+		
+		'ACT02a_tool_easy_010_quiz': '「はり」は？',
+		'ACT02a_tool_easy_010_op1': 'ケㇺ',
+		'ACT02a_tool_easy_010_op2': 'カ',
+		'ACT02a_tool_easy_010_op3': 'シカイ',
+		
+		'ACT02a_tool_easy_011_quiz': '「ふね」は？',
+		'ACT02a_tool_easy_011_op1': 'チㇷ゚',
+		'ACT02a_tool_easy_011_op2': 'チセ',
+		'ACT02a_tool_easy_011_op3': 'ペンチャイ',
+		
+		'ACT02a_tool_easy_012_quiz': '「あみ」は？',
+		'ACT02a_tool_easy_012_op1': 'ヤ',
+		'ACT02a_tool_easy_012_op2': 'トゥㇱ',
+		'ACT02a_tool_easy_012_op3': 'マレㇰ',
+		
+		'ACT02a_tool_easy_013_quiz': 'いのりにつかうどうぐは？',
+		'ACT02a_tool_easy_013_op1': 'イクパスイ',
+		'ACT02a_tool_easy_013_op2': 'アペパスイ',
+		'ACT02a_tool_easy_013_op3': 'パラパスイ',
+		
+		'ACT02a_tool_easy_014_quiz': '「さかずき」は？',
+		'ACT02a_tool_easy_014_op1': 'トゥキ',
+		'ACT02a_tool_easy_014_op2': 'イクパスイ',
+		'ACT02a_tool_easy_014_op3': 'イナウ',
+		
+		'ACT02a_tool_easy_015_quiz': '「てがみ・かみ」は？',
+		'ACT02a_tool_easy_015_op1': 'カンピ',
+		'ACT02a_tool_easy_015_op2': 'ノカハ',
+		'ACT02a_tool_easy_015_op3': 'カンピソㇱ',
+		
+		'ACT02a_tool_easy_016_quiz': '「はちまき」は？',
+		'ACT02a_tool_easy_016_op1': 'マタンプㇱ',
+		'ACT02a_tool_easy_016_op2': 'テクンペ',
+		'ACT02a_tool_easy_016_op3': 'ホㇱ',
+		
+		'ACT02a_tool_easy_017_quiz': '「くし」は？',
+		'ACT02a_tool_easy_017_op1': 'キライ',
+		'ACT02a_tool_easy_017_op2': 'テクンカニ',
+		'ACT02a_tool_easy_017_op3': 'エンピワ',
+		
+		'ACT02a_tool_easy_018_quiz': '「ぬののくびかざり」は？',
+		'ACT02a_tool_easy_018_op1': 'レクトゥンペ',
+		'ACT02a_tool_easy_018_op2': 'マタンプㇱ',
+		'ACT02a_tool_easy_018_op3': 'ニンカリ',
+		
+		'ACT02a_tool_easy_019_quiz': '「みみかざり」は？',
+		'ACT02a_tool_easy_019_op1': 'ニンカリ',
+		'ACT02a_tool_easy_019_op2': 'タマサイ',
+		'ACT02a_tool_easy_019_op3': 'モウㇽ',
+		
+		'ACT02a_tool_easy_020_quiz': '「アイヌのくびかざり」は？',
+		'ACT02a_tool_easy_020_op1': 'タマサイ',
+		'ACT02a_tool_easy_020_op2': 'ニンカリ',
+		'ACT02a_tool_easy_020_op3': 'レクトゥンペ',
+		
+		'ACT02a_tool_easy_021_quiz': '「きもの」は？',
+		'ACT02a_tool_easy_021_op1': 'アミㇷ゚',
+		'ACT02a_tool_easy_021_op2': 'ウㇱペ',
+		'ACT02a_tool_easy_021_op3': 'コンチ',
+		
+		'ACT02a_tool_easy_022_quiz': '「なわ」は？',
+		'ACT02a_tool_easy_022_op1': 'ハㇻキカ',
+		'ACT02a_tool_easy_022_op2': 'アッ',
+		'ACT02a_tool_easy_022_op3': 'トゥㇱ',
+		
+		'ACT02a_tool_hard_000_quiz': '「カマ」は？',
+		'ACT02a_tool_hard_000_op1': 'イヨㇰペ',
+		'ACT02a_tool_hard_000_op2': 'ムカㇻ',
+		'ACT02a_tool_hard_000_op3': 'ハンピロ',
+		
+		'ACT02a_tool_hard_001_quiz': 'つちをほるどうぐは？',
+		'ACT02a_tool_hard_001_op1': 'シッタㇷ゚',
+		'ACT02a_tool_hard_001_op2': 'エキㇺネクワ',
+		'ACT02a_tool_hard_001_op3': 'チンル',
+		
+		'ACT02a_tool_hard_002_quiz': '「やかん」は？',
+		'ACT02a_tool_hard_002_op1': 'ウセイカㇻペ',
+		'ACT02a_tool_hard_002_op2': 'ス',
+		'ACT02a_tool_hard_002_op3': 'ホイチョ',
+		
+		'ACT02a_tool_hard_003_quiz': '「ひをつけるいし」は？',
+		'ACT02a_tool_hard_003_op1': 'ピウチ',
+		'ACT02a_tool_hard_003_op2': 'ルイ',
+		'ACT02a_tool_hard_003_op3': 'ピッ',
+		
+		'ACT02a_tool_hard_004_quiz': '「まき」は？',
+		'ACT02a_tool_hard_004_op1': 'アペニ',
+		'ACT02a_tool_hard_004_op2': 'スネ',
+		'ACT02a_tool_hard_004_op3': 'ハㇱ',
+		
+		'ACT02a_tool_hard_005_quiz': '「はさみ」は？',
+		'ACT02a_tool_hard_005_op1': 'サランペチャマキリ',
+		'ACT02a_tool_hard_005_op2': 'メノコマキリ',
+		'ACT02a_tool_hard_005_op3': 'マキリ',
+		
+		'ACT02a_tool_hard_006_quiz': '「まないた」は？',
+		'ACT02a_tool_hard_006_op1': 'メノコイタ',
+		'ACT02a_tool_hard_006_op2': 'ス',
+		'ACT02a_tool_hard_006_op3': 'チオイペㇷ゚',
+		
+		'ACT02a_tool_hard_007_quiz': '「うす」は？',
+		'ACT02a_tool_hard_007_op1': 'ニス',
+		'ACT02a_tool_hard_007_op2': 'イウタニ',
+		'ACT02a_tool_hard_007_op3': 'トマ',
+		
+		'ACT02a_tool_hard_008_quiz': '「おもちゃ」は？',
+		'ACT02a_tool_hard_008_op1': 'アエシノッペ',
+		'ACT02a_tool_hard_008_op2': 'マッスウォㇷ゚',
+		'ACT02a_tool_hard_008_op3': 'イノカ',
+		
+		'ACT02a_tool_hard_009_quiz': '「うわぎ」は？',
+		'ACT02a_tool_hard_009_op1': 'イカクㇱテㇷ゚',
+		'ACT02a_tool_hard_009_op2': 'ケㇾ',
+		'ACT02a_tool_hard_009_op3': 'オモンペ',
+		
+		'ACT02a_tool_hard_010_quiz': '「おむつ」は？',
+		'ACT02a_tool_hard_010_op1': 'ヤㇻペ',
+		'ACT02a_tool_hard_010_op2': 'モウㇽ',
+		'ACT02a_tool_hard_010_op3': 'テパ',
+		
+		'ACT02a_tool_hard_011_quiz': '「きもののしたにきるもの」は？',
+		'ACT02a_tool_hard_011_op1': 'モウㇽ',
+		'ACT02a_tool_hard_011_op2': 'イカクㇱテㇷ゚',
+		'ACT02a_tool_hard_011_op3': 'ホッケナカイリ',
+		
+		'ACT02a_tool_hard_012_quiz': '「くつ」は？',
+		'ACT02a_tool_hard_012_op1': 'ケㇾ',
+		'ACT02a_tool_hard_012_op2': 'ウレウンケㇾ',
+		'ACT02a_tool_hard_012_op3': 'ピラッカ',
+		
+		'ACT02a_tool_hard_013_quiz': '「ろぶちをたたくぼう」は？',
+		'ACT02a_tool_hard_013_op1': 'レㇷ゚ニ',
+		'ACT02a_tool_hard_013_op2': 'サパンペ',
+		'ACT02a_tool_hard_013_op3': 'シントコ',
+		
+		'ACT02a_tool_hard_014_quiz': '「おまつりのござ」は？',
+		'ACT02a_tool_hard_014_op1': 'チタㇻペ',
+		'ACT02a_tool_hard_014_op2': 'イナウル',
+		'ACT02a_tool_hard_014_op3': 'チロシ',
+		
+		'ACT02a_tool_hard_015_quiz': '「はしご」は？',
+		'ACT02a_tool_hard_015_op1': 'ニカㇻ',
+		'ACT02a_tool_hard_015_op2': 'クマ',
+		'ACT02a_tool_hard_015_op3': 'サン',
+		
+		'ACT02a_tool_hard_016_quiz': '「いとまきぼう」は？',
+		'ACT02a_tool_hard_016_op1': 'カニッ',
+		'ACT02a_tool_hard_016_op2': 'ヌイト',
+		'ACT02a_tool_hard_016_op3': 'カ',
+		
+		'ACT02a_tool_hard_017_quiz': '「おかね」は？',
+		'ACT02a_tool_hard_017_op1': 'イチェン',
+		'ACT02a_tool_hard_017_op2': 'カニ',
+		'ACT02a_tool_hard_017_op3': 'イコㇿ',
+		
+		'ACT02a_tool_hard_018_quiz': '「せおいぶくろ」は？',
+		'ACT02a_tool_hard_018_op1': 'サラニㇷ゚',
+		'ACT02a_tool_hard_018_op2': 'クワ',
+		'ACT02a_tool_hard_018_op3': 'タㇻ',
+		
+		'ACT02a_tool_hard_019_quiz': '「しかけあみ」は？',
+		'ACT02a_tool_hard_019_op1': 'アㇰペ',
+		'ACT02a_tool_hard_019_op2': 'タシロ',
+		'ACT02a_tool_hard_019_op3': 'アㇷ゚トキクンペ',
+		
+		'ACT02a_places_easy_000_quiz': '「にわ」は？',
+		'ACT02a_places_easy_000_op1': 'ミンタㇻ',
+		'ACT02a_places_easy_000_op2': 'アシンル',
+		'ACT02a_places_easy_000_op3': 'チセ',
+		
+		'ACT02a_places_easy_001_quiz': '「へや」は？',
+		'ACT02a_places_easy_001_op1': 'トゥンプ',
+		'ACT02a_places_easy_001_op2': 'プライ',
+		'ACT02a_places_easy_001_op3': 'アパ',
+		
+		'ACT02a_places_easy_002_quiz': '「みち」は？',
+		'ACT02a_places_easy_002_op1': 'ル',
+		'ACT02a_places_easy_002_op2': 'パラル',
+		'ACT02a_places_easy_002_op3': 'コタン',
+		
+		'ACT02a_places_easy_003_quiz': '「むら」は？',
+		'ACT02a_places_easy_003_op1': 'コタン',
+		'ACT02a_places_easy_003_op2': 'ケンル',
+		'ACT02a_places_easy_003_op3': 'マチヤ',
+		
+		'ACT02a_places_easy_004_quiz': '「はし」は？',
+		'ACT02a_places_easy_004_op1': 'ルイカ',
+		'ACT02a_places_easy_004_op2': 'マチヤ',
+		'ACT02a_places_easy_004_op3': 'ル',
+		
+		'ACT02a_places_easy_005_quiz': '「たてもの」は？',
+		'ACT02a_places_easy_005_op1': 'ケンル',
+		'ACT02a_places_easy_005_op2': 'テサパ',
+		'ACT02a_places_easy_005_op3': 'シミンタㇻ',
+		
+		'ACT02a_places_easy_006_quiz': '「だいち」は？',
+		'ACT02a_places_easy_006_op1': 'モシㇼ',
+		'ACT02a_places_easy_006_op2': 'レプンモシㇼ',
+		'ACT02a_places_easy_006_op3': 'ヤウンモシㇼ',
+		
+		'ACT02a_places_hard_000_quiz': '「へや」は？',
+		'ACT02a_places_hard_000_op1': 'トゥンプ',
+		'ACT02a_places_hard_000_op2': 'モセㇺ',
+		'ACT02a_places_hard_000_op3': 'トンプリ',
+		
+		'ACT02a_places_hard_001_quiz': '「かきね」は？',
+		'ACT02a_places_hard_001_op1': 'チャシ',
+		'ACT02a_places_hard_001_op2': 'シンプイ',
+		'ACT02a_places_hard_001_op3': 'スケウシ',
+		
+		'ACT02a_places_hard_002_quiz': '「ばいてん」は？',
+		'ACT02a_places_hard_002_op1': 'イホクシ',
+		'ACT02a_places_hard_002_op2': 'カッコ',
+		'ACT02a_places_hard_002_op3': 'オタㇺ',
+		
+		'ACT02a_places_hard_003_quiz': '「やどや」は？',
+		'ACT02a_places_hard_003_op1': 'レウシチセ',
+		'ACT02a_places_hard_003_op2': 'サパカㇻチセ',
+		'ACT02a_places_hard_003_op3': 'イサチセ',
+		
+		'ACT02a_places_hard_004_quiz': '「こうざ」は？',
+		'ACT02a_places_hard_004_op1': 'カンピヌイェウシ',
+		'ACT02a_places_hard_004_op2': 'カッコ',
+		'ACT02a_places_hard_004_op3': 'テサパ',
+		
+		'ACT02a_places_hard_005_quiz': '「やね」は？',
+		'ACT02a_places_hard_005_op1': 'チセキタイ',
+		'ACT02a_places_hard_005_op2': 'チセコトㇿ',
+		'ACT02a_places_hard_005_op3': 'チセトゥマㇺ',
+		
+		'ACT02a_places_hard_006_quiz': '「まど」は？',
+		'ACT02a_places_hard_006_op1': 'プライ',
+		'ACT02a_places_hard_006_op2': 'プヤロロッペ',
+		'ACT02a_places_hard_006_op3': 'アパ',
+		
+		'ACT02a_places_hard_007_quiz': '「はしら」は？',
+		'ACT02a_places_hard_007_op1': 'イクㇱペ',
+		'ACT02a_places_hard_007_op2': 'チセトゥマㇺ',
+		'ACT02a_places_hard_007_op3': 'ソ',
+		
+		'ACT02a_places_hard_008_quiz': '「ふね」は？',
+		'ACT02a_places_hard_008_op1': 'チㇷ゚',
+		'ACT02a_places_hard_008_op2': 'チセ',
+		'ACT02a_places_hard_008_op3': 'プ',
+		
+		'ACT02a_places_hard_009_quiz': '「ゆか」は？',
+		'ACT02a_places_hard_009_op1': 'ソ',
+		'ACT02a_places_hard_009_op2': 'トンチカマニ',
+		'ACT02a_places_hard_009_op3': 'チセコトㇿ',
+		
+		'ACT02a_human_easy_000_quiz': '「おにいさん」は？',
+		'ACT02a_human_easy_000_op1': 'ユポ',
+		'ACT02a_human_easy_000_op2': 'ポ',
+		'ACT02a_human_easy_000_op3': 'マッネポ',
+		
+		'ACT02a_human_easy_001_quiz': '「 おかあさん」は？',
+		'ACT02a_human_easy_001_op1': 'ハポ',
+		'ACT02a_human_easy_001_op2': 'サポ',
+		'ACT02a_human_easy_001_op3': 'ユポ',
+		
+		'ACT02a_human_easy_002_quiz': '「あかちゃん」は？',
+		'ACT02a_human_easy_002_op1': 'アヤイ',
+		'ACT02a_human_easy_002_op2': 'ミッポ',
+		'ACT02a_human_easy_002_op3': 'ハポ',
+		
+		'ACT02a_human_easy_003_quiz': '「おじさん」は？',
+		'ACT02a_human_easy_003_op1': 'アチャポ',
+		'ACT02a_human_easy_003_op2': 'ウナㇻペ',
+		'ACT02a_human_easy_003_op3': 'カㇻク',
+		
+		'ACT02a_human_easy_004_quiz': '「おとうさん」は？',
+		'ACT02a_human_easy_004_op1': 'ミチ',
+		'ACT02a_human_easy_004_op2': 'エカシ',
+		'ACT02a_human_easy_004_op3': 'アチャポ',
+		
+		'ACT02a_human_easy_005_quiz': '「ふうふ」は？',
+		'ACT02a_human_easy_005_op1': 'ウㇺレㇰ',
+		'ACT02a_human_easy_005_op2': 'エシコㇷ゚',
+		'ACT02a_human_easy_005_op3': 'ウタサイㇼワキ',
+		
+		'ACT02a_human_easy_006_quiz': '「せいねん」は？',
+		'ACT02a_human_easy_006_op1': 'オッカイポ',
+		'ACT02a_human_easy_006_op2': 'ヘカチ',
+		'ACT02a_human_easy_006_op3': 'チャチャ',
+		
+		'ACT02a_human_easy_007_quiz': '「ひと」は？',
+		'ACT02a_human_easy_007_op1': 'アイヌ',
+		'ACT02a_human_easy_007_op2': 'オッカヨ',
+		'ACT02a_human_easy_007_op3': 'メノコ',
+		
+		'ACT02a_human_easy_008_quiz': '「おとこのこ」は？',
+		'ACT02a_human_easy_008_op1': 'ヘカチ',
+		'ACT02a_human_easy_008_op2': 'アイヌ',
+		'ACT02a_human_easy_008_op3': 'チャチャ',
+		
+		'ACT02a_human_easy_009_quiz': '「おとうと」は？',
+		'ACT02a_human_easy_009_op1': 'アキ',
+		'ACT02a_human_easy_009_op2': 'ミチ',
+		'ACT02a_human_easy_009_op3': 'ユポ',
+		
+		'ACT02a_human_easy_010_quiz': '「りっぱなひと」は？',
+		'ACT02a_human_easy_010_op1': 'ニㇱパ',
+		'ACT02a_human_easy_010_op2': 'ウェンクㇽ',
+		'ACT02a_human_easy_010_op3': 'カッケマッ',
+		
+		'ACT02a_human_easy_011_quiz': '「しんせき」は？',
+		'ACT02a_human_easy_011_op1': 'ウタリ',
+		'ACT02a_human_easy_011_op2': 'イㇼワキ',
+		'ACT02a_human_easy_011_op3': 'ニㇱパ',
+		
+		'ACT02a_human_easy_012_quiz': '「おねえさん」は？',
+		'ACT02a_human_easy_012_op1': 'サポ',
+		'ACT02a_human_easy_012_op2': 'ポイソン',
+		'ACT02a_human_easy_012_op3': 'フチ',
+		
+		'ACT02a_human_easy_013_quiz': '「おんなのこ」は？',
+		'ACT02a_human_easy_013_op1': 'マッカチ',
+		'ACT02a_human_easy_013_op2': 'マチ',
+		'ACT02a_human_easy_013_op3': 'メノコ',
+		
+		'ACT02a_human_easy_014_quiz': '「おばあさん」は？',
+		'ACT02a_human_easy_014_op1': 'フチ',
+		'ACT02a_human_easy_014_op2': 'エカシ',
+		'ACT02a_human_easy_014_op3': 'ハポ',
+		
+		'ACT02a_human_easy_015_quiz': '「こどもたち」は？',
+		'ACT02a_human_easy_015_op1': 'ヘカッタㇻ',
+		'ACT02a_human_easy_015_op2': 'オッカヨウタㇻ',
+		'ACT02a_human_easy_015_op3': 'メノコウタㇻ',
+		
+		'ACT02a_human_easy_016_quiz': '「おじいさん」は？',
+		'ACT02a_human_easy_016_op1': 'エカシ',
+		'ACT02a_human_easy_016_op2': 'ポイソン',
+		'ACT02a_human_easy_016_op3': 'アキ',
+		
+		'ACT02a_human_easy_017_quiz': '「おとこのこ」は？',
+		'ACT02a_human_easy_017_op1': 'ヘカチ',
+		'ACT02a_human_easy_017_op2': 'ミチ',
+		'ACT02a_human_easy_017_op3': 'ユポ',
+		
+		'ACT02a_human_easy_018_quiz': '「わたしたちみんな」は？',
+		'ACT02a_human_easy_018_op1': 'チオカイ',
+		'ACT02a_human_easy_018_op2': 'アオカイ',
+		'ACT02a_human_easy_018_op3': 'クアニ',
+		
+		'ACT02a_human_easy_019_quiz': '「おまえ」は？',
+		'ACT02a_human_easy_019_op1': 'エアニ',
+		'ACT02a_human_easy_019_op2': 'クアニ',
+		'ACT02a_human_easy_019_op3': 'エチオカイ',
+		
+		'ACT02a_human_hard_000_quiz': '「きょうだい」は？',
+		'ACT02a_human_hard_000_op1': 'イㇼワキ',
+		'ACT02a_human_hard_000_op2': 'ウㇺレㇰ',
+		'ACT02a_human_hard_000_op3': 'チセコㇿウタㇻ',
+		
+		'ACT02a_human_hard_001_quiz': '「けっこんをやくそくした」は？',
+		'ACT02a_human_hard_001_op1': 'アウコレㇱパ',
+		'ACT02a_human_hard_001_op2': 'メノコ',
+		'ACT02a_human_hard_001_op3': 'オッカヨ',
+		
+		'ACT02a_human_hard_002_quiz': '「せんぞ」は？',
+		'ACT02a_human_hard_002_op1': 'シンリチ',
+		'ACT02a_human_hard_002_op2': 'サンテㇰ',
+		'ACT02a_human_hard_002_op3': 'エシコㇷ゚',
+		
+		'ACT02a_human_hard_003_quiz': '「おや」は？',
+		'ACT02a_human_hard_003_op1': 'エシコㇷ゚',
+		'ACT02a_human_hard_003_op2': 'ポ',
+		'ACT02a_human_hard_003_op3': 'ミッポ',
+		
+		'ACT02a_human_hard_004_quiz': '「かぞく」は？',
+		'ACT02a_human_hard_004_op1': 'チセコㇿウタㇻ',
+		'ACT02a_human_hard_004_op2': 'シウェネクㇽ',
+		'ACT02a_human_hard_004_op3': 'アヌン',
+		
+		'ACT02a_human_hard_005_quiz': '「おとな」は？',
+		'ACT02a_human_hard_005_op1': 'ポロクㇽ',
+		'ACT02a_human_hard_005_op2': 'オンネクㇽ',
+		'ACT02a_human_hard_005_op3': 'ノカンクㇽ',
+		
+		'ACT02a_human_hard_006_quiz': '「としより」は？',
+		'ACT02a_human_hard_006_op1': 'オンネクㇽ',
+		'ACT02a_human_hard_006_op2': 'レプンクㇽ',
+		'ACT02a_human_hard_006_op3': 'ウウォンネレクㇽ',
+		
+		'ACT02a_human_hard_007_quiz': '「おとこたち」は？',
+		'ACT02a_human_hard_007_op1': 'オッカヨウタㇻ',
+		'ACT02a_human_hard_007_op2': 'メノコウタㇻ',
+		'ACT02a_human_hard_007_op3': 'ヘカッタㇻ',
+		
+		'ACT02a_human_hard_008_quiz': '「カムイたち」は？',
+		'ACT02a_human_hard_008_op1': 'カムイウタㇻ',
+		'ACT02a_human_hard_008_op2': 'アウンウタㇻ',
+		'ACT02a_human_hard_008_op3': 'シサㇺウタㇻ',
+		
+		'ACT02a_human_hard_009_quiz': '「いとこ」は？',
+		'ACT02a_human_hard_009_op1': 'ウタサイㇼワキ',
+		'ACT02a_human_hard_009_op2': 'シウトミチ',
+		'ACT02a_human_hard_009_op3': 'マッカㇻク',
+		
+		'ACT02a_human_hard_010_quiz': '「おやこ」は？',
+		'ACT02a_human_hard_010_op1': 'ウポコㇿウタㇻ',
+		'ACT02a_human_hard_010_op2': 'イㇼワキ',
+		'ACT02a_human_hard_010_op3': 'アウンチセ',
+		
+		'ACT02a_human_hard_011_quiz': '「しゅうとめ」は？',
+		'ACT02a_human_hard_011_op1': 'シウトハボ',
+		'ACT02a_human_hard_011_op2': 'シウトミチ',
+		'ACT02a_human_hard_011_op3': 'ココウェ',
+		
+		'ACT02a_human_hard_012_quiz': '「みなしご」は？',
+		'ACT02a_human_hard_012_op1': 'ハポサㇰペ',
+		'ACT02a_human_hard_012_op2': 'イヨシハポ',
+		'ACT02a_human_hard_012_op3': 'ハポ',
+		
+		'ACT02a_human_hard_013_quiz': '「どくしん」は？',
+		'ACT02a_human_hard_013_op1': 'チセサㇰ',
+		'ACT02a_human_hard_013_op2': 'チセコㇿクㇽ',
+		'ACT02a_human_hard_013_op3': 'チセコㇿウタㇻ',
+		
+		'ACT02a_human_hard_014_quiz': '「おきゃくさん」は？',
+		'ACT02a_human_hard_014_op1': 'シウェネクㇽ',
+		'ACT02a_human_hard_014_op2': 'ウタリ',
+		'ACT02a_human_hard_014_op3': 'ウウォンネレクㇽ',
+		
+		'ACT02a_human_hard_015_quiz': '「およめさん」は？',
+		'ACT02a_human_hard_015_op1': 'コㇱマチ',
+		'ACT02a_human_hard_015_op2': 'サポ',
+		'ACT02a_human_hard_015_op3': 'マタキ',
+		
+		'ACT02a_human_hard_016_quiz': '「おんなきょうだい」は？',
+		'ACT02a_human_hard_016_op1': 'マチリワㇰ',
+		'ACT02a_human_hard_016_op2': 'マッネポ',
+		'ACT02a_human_hard_016_op3': 'マチ',
+		
+		'ACT02a_human_hard_017_quiz': '「おむこさん」は？',
+		'ACT02a_human_hard_017_op1': 'ココウェ',
+		'ACT02a_human_hard_017_op2': 'ボンマチ',
+		'ACT02a_human_hard_017_op3': 'コㇱマチ',
+		
+		'ACT02a_human_hard_018_quiz': '「せんせい」は？',
+		'ACT02a_human_hard_018_op1': 'イパカㇱヌクㇽ',
+		'ACT02a_human_hard_018_op2': 'アパカㇱヌㇷ゚',
+		'ACT02a_human_hard_018_op3': 'カンピヌイェウシ',
+		
+		'ACT02a_human_hard_019_quiz': '「いしゃ」は？',
+		'ACT02a_human_hard_019_op1': 'イサチセクㇽ',
+		'ACT02a_human_hard_019_op2': 'ウセクㇽ',
+		'ACT02a_human_hard_019_op3': 'タスㇺクㇽ',
+		
+		'ACT02a_human_hard_020_quiz': '「おまえたち」は？',
+		'ACT02a_human_hard_020_op1': 'エチオカイ',
+		'ACT02a_human_hard_020_op2': 'アオカイ',
+		'ACT02a_human_hard_020_op3': 'チオカイ',
+		
+		'ACT02a_human_hard_021_quiz': '「あのひとたち」は？',
+		'ACT02a_human_hard_021_op1': 'トアンクㇽウタㇻ',
+		'ACT02a_human_hard_021_op2': 'タアンクㇽ',
+		'ACT02a_human_hard_021_op3': 'トアンクㇽ',
+		
+		'ACT02a_human_hard_022_quiz': '「ともだち」は？',
+		'ACT02a_human_hard_022_op1': 'トクイェ',
+		'ACT02a_human_hard_022_op2': 'アヌン',
+		'ACT02a_human_hard_022_op3': 'トゥレシ',
+		
+		'ACT02a_human_hard_023_quiz': '「ふつうのひと」は？',
+		'ACT02a_human_hard_023_op1': 'ウセクㇽ',
+		'ACT02a_human_hard_023_op2': 'レプンクㇽ',
+		'ACT02a_human_hard_023_op3': 'イコイキㇷ゚',
+		
+		'ACT02a_human_hard_024_quiz': '「わかいひと」は？',
+		'ACT02a_human_hard_024_op1': 'ペウレクㇽ',
+		'ACT02a_human_hard_024_op2': 'ノカンクㇽ',
+		'ACT02a_human_hard_024_op3': 'オンネクㇽ',
 
-		'ACT02a_002_quiz': 'この中で人を表す言葉はどれでしょう？',
-		'ACT02a_002_op1': 'マッカチ',
-		'ACT02a_002_op2': 'キキㇼ',
-		'ACT02a_002_op3': 'チェㇷ゚',
+		'ACT02_end': 'エサマンは　いっぱい　れんしゅうして　かしこくなった！！',
+		'ACT02_end_next': 'はっぴょうけっか',
 
-		'ACT02a_003_quiz': 'キサラ タンネ ワ レタㇻペ ネㇷ゚タ アン？<br>耳が長くて白いもの何？',
-		'ACT02a_003_op1': 'イセポ',
-		'ACT02a_003_op2': 'ユㇰ',
-		'ACT02a_003_op3': 'ウパㇱ',
+		'ACT02_result_A_top': `エサマン！おまえのレベルは さいこう… だ<br> すごいカワウソ   といってよいだろう！  よくやった！！`,
+		'ACT02_result_A_comment': 'ゆめじゃないのかな',
+		'ACT02_result_A_bottom': `エサマンは　ぶきを　いっぱいもらって　また　たびにでた`,
 
-		'ACT02a_004_quiz': 'クマはどこに住んでいますか？',
-		'ACT02a_004_op1': 'ヌプリ',
-		'ACT02a_004_op2': 'アトゥイ',
-		'ACT02a_004_op3': 'チセ',
+		'ACT02_result_B_top': `エサマン！おまえのレベルは３…だ<br>よく　がんばっているようだな！！ じしんをもて！！`,
+		'ACT02_result_B_comment': 'さかながいいのになー',
+		'ACT02_result_B_bottom': `エサマンは　つかうどうぐを　もらって　また　たびにでた`,
 
-		'ACT02a_005_quiz': '奈良家のペットはな～んだ',
-		'ACT02a_005_op1': 'チャペ',
-		'ACT02a_005_op2': 'キムンカムイ',
-		'ACT02a_005_op3': 'セタ',
-
-		'ACT02a_006_quiz': 'くじらが住んでいる所はどこでしょう？',
-		'ACT02a_006_op1': 'アトゥイ',
-		'ACT02a_006_op2': 'ペッ',
-		'ACT02a_006_op3': 'ヌプリ',
-
-		'ACT02a_007_quiz': '時間、電気、星と同じ仲間は？',
-		'ACT02a_007_op1': 'ペッ',
-		'ACT02a_007_op2': 'アペ',
-		'ACT02a_007_op3': 'スマ',
-
-		'ACT02a_008_quiz': 'ユキオさんの子供は何人いますか？',
-		'ACT02a_008_op1': 'トゥン',
-		'ACT02a_008_op2': 'シネン',
-		'ACT02a_008_op3': 'イネン',
-
-		'ACT02a_009_quiz': 'アイヌ語上級講座を受講している「奈良」というみょう字は何人いる？',
-		'ACT02a_009_op1': 'レン',
-		'ACT02a_009_op2': 'シネン',
-		'ACT02a_009_op3': 'ワニウ',
-
-		'ACT02a_010_quiz': 'ドリカムの♪晴れたらいいねに出てくる木の実はな～んだ？',
-		'ACT02a_010_op1': 'クッチ',
-		'ACT02a_010_op2': 'クネニ',
-		'ACT02a_010_op3': 'シケㇾペ',
-
-		'ACT02a_011_quiz': '日本語語源の言葉は？',
-		'ACT02a_011_op1': 'イチェン',
-		'ACT02a_011_op2': 'シキナ',
-		'ACT02a_011_op3': 'シケ',
-
-		'ACT02a_000_quiz': '赤ちゃんはどの言葉ですか？',
-		'ACT02a_000_op1': 'アヤイ',
-		'ACT02a_000_op2': 'ミチ',
-		'ACT02a_000_op3': 'ハポ',
-	
-		'ACT02_end': 'エサマン シアリキキ ヤイラムㇱカ オケレ クス サパ ピㇼカレ!',
-		'ACT02_end_next': 'カムイウタㇻ イェ ㇷ゚ アヌ',
-
-		'ACT02_result_A_top': `エサマン キロㇿ アナㇰネ “イヨッタ-ピㇼカ“!<br>シノ エサマン エ＝ネ ルウェ ネ。イランマカカ アン!`,
-		'ACT02_result_A_comment': '夢じゃないのかな',
-		'ACT02_result_A_bottom': `エサマン オピッタ エイキㇷ゚ エウンケライ ヒネ アシンノ オマナン`,
-
-		'ACT02_result_B_top': `Esaman!おまえのレベルは3…だ<br>努力の成果が出ているぞ!自らを誉めたたえよ!!`,
-		'ACT02_result_B_comment': '魚がいいのになー',
-		'ACT02_result_B_bottom': `Esamanは必要な道具をもらってふたたび旅に出た`,
-
-		'ACT02_result_C_top': `Esaman!おまえのレベルは2… だ<br>所詮はカワウソだからな!よい よい!!<br>自分の運命に忠実であればよいのだ…`,
+		'ACT02_result_C_top': `エサマン！おまえのレベルは２… だ<br>ただの　カワウソだからな！　よい よい！！<br>いつものように　やっていけば いいさ…`,
 		'ACT02_result_C_comment': 'やったぜ!',
-		'ACT02_result_C_bottom': `Esamanはほとんど何も持たずにふたたび旅に出た`,
+		'ACT02_result_C_bottom': `エサマンは　なにも　もたないで　また　たびにでた`,
 
-		'ACT02_result_D_top': `エサマン!おまえのレベルは1だ…<br>何もかも忘れてしまうとは!哀れなやつ…<br>カムイウタㇻはいつでもおまえを見守っているぞ!!`,
+		'ACT02_result_D_top': `エサマン!おまえのレベルは1だ…<br>なにもかも　わすれてしまう！  あわれなやつ…<br>カムイウタㇻは　いつでも　おまえを　まもっているぞ！！`,
 		'ACT02_result_D_comment': 'そうなの?',
-		'ACT02_result_D_bottom': `エサマンは持ってきた刀も忘れてふたたび旅に出た`,
+		'ACT02_result_D_bottom': `エサマンは　かたなも　わすれて　また　たびにでた`,
 
 		'ACT02_result_again': `もういちど`,
 		'ACT02_result_done': 'おわり',
@@ -11840,7 +14793,7 @@ export const commands = {
 		'save_a':'はい、やすみます',
 
 		'poknamosir': 'ポㇰナモシㇼ',
-		'tentative': '進めないので、穴の外に出る',
+		'tentative': 'すすめないので、あなのそとにでる',
 
 		'ACT03_01': `エサマンが村に着く頃にはすっかり夜になっていた<br>
 					この村で勇敢だった者はシヨキナに<br>
@@ -14240,14 +17193,14 @@ export const commands = {
 
 		'ACT01a_08': '木',
 		'ACT01a_08_left': 'ランコの木が立っていて長いはしごがかかっている',
-		'ACT01a_08_right': '登ってみようかな',
+		'ACT01a_08_right': 'ク=ヘメス ソ',
 		'ACT01a_08a': '木の枝のうえ',
 
 		'ACT01a_09': '木の枝のうえ',
 		'ACT01a_09_left': '梢のてっぺんまで行ったら友達がいた',
 
 		'paskur': 'なにを聞きますか？',
-		'paskur_left': '長いこと会ってなかったね',
+		'paskur_left': 'オホンノ　ソモ　ウヌカㇻ=アン　ナ',
 		'paskur_a' : 'シヨキナ知ってる？',
 		'paskur_b' : 'カムイウタㇻ 見なかった？',
 
@@ -14368,24 +17321,30 @@ export const commands = {
 						おまえが行け、エサマン!たっぷり魚のごほうびをやろう`,
 		'ACT01_epilogue_bottom':'ほんとうですか!',
 	
-		'ACT02_end': 'エサマンはすべての修行を終えてかしこくなった!!',
-		'ACT02_end_next': '結果発表',
+		'ACT02_end': 'エサマン シアリキキ ヤイラムㇱカ オケレ クス サパ ピㇼカレ!',
+		'ACT02_end_next': 'カムイウタㇻ イェ ㇷ゚ アヌ',
 
-		'ACT02_result_A_top': `エサマン!おまえのレベルは 最高… だ<br>立派な賢者と言ってよいだろう!すごいぞ!!`,
-		'ACT02_result_A_comment': '夢じゃないのかな',
-		'ACT02_result_A_bottom': `エサマンはすべての武器をもらってふたたび旅に出た`,
+		'ACT02_result_A_top': `エサマン キロㇿ アナㇰネ “イヨッタ-ピㇼカ“!<br>
+								シノ エサマン エ＝ネ ルウェ ネ。イランマカカ アン!`,
+		'ACT02_result_A_comment': 'オハインカㇻ ソモ ネ',
+		'ACT02_result_A_bottom': `エサマン オピッタ エイキㇷ゚ エウンケライ ヒネ アシンノ オマナン`,
 
-		'ACT02_result_B_top': `エサマン!おまえのレベルは3…だ<br>努力の成果が出ているぞ!自らを誉めたたえよ!!`,
-		'ACT02_result_B_comment': '魚がいいのになー',
-		'ACT02_result_B_bottom': `エサマンは必要な道具をもらってふたたび旅に出た`,
+		'ACT02_result_B_top': `エサマン キロㇿ アナㇰネ “レ – キロㇿアン“<br>
+								ウウェエパㇰタ エ＝ピㇼカ ノイネ シラン ヤイヌカンヌカㇻ ヤン!!`,
+		'ACT02_result_B_comment': 'チェㇷ゚ エン=コレ',
+		'ACT02_result_B_bottom': `エサマン アエイシラㇺネ エイキㇷ゚ エウンケライ ヒネ アシンノ オマナン`,
 
-		'ACT02_result_C_top': `エサマン!おまえのレベルは2…だ<br>所詮はカワウソだからな!よい よい!!<br>自分の運命に忠実であればよいのだ…`,
-		'ACT02_result_C_comment': 'やったぜ!',
-		'ACT02_result_C_bottom': `エサマンはほとんど何も持たずにふたたび旅に出た`,
+		'ACT02_result_C_top': `エサマン キロㇿ アナㇰネ “トゥ – キロㇿアン“<br>
+								エアニ アナㇰネ ヤヤン エサマン!! ヤイシニレ!!<br>
+								アンコラチ シㇰヌ ワ アン ヤッカ ピㇼカ`,
+		'ACT02_result_C_comment': 'オノンノ!',
+		'ACT02_result_C_bottom': `エサマン エイキㇷ゚ サㇰ ヒネ アシンノ オマナン`,
 
-		'ACT02_result_D_top': `エサマン!おまえのレベルは1だ…<br>何もかも忘れてしまうとは!哀れなやつ…<br>カムイウタㇻはいつでもおまえを見守っているぞ!!`,
-		'ACT02_result_D_comment': 'そうなの?',
-		'ACT02_result_D_bottom': `エサマンは持ってきた刀も忘れてふたたび旅に出た`,
+		'ACT02_result_D_top': `エサマン キロㇿ アナㇰネ “シネ－キロㇿアン“<br>
+								ネㇷ゚ ネ ヤッカ エ＝オイラ ワ オケレ イヌヌカㇱキ<br>
+								ランマ カ チオカイ エチ=コプンキネ クス イテキ オイラ`,
+		'ACT02_result_D_comment': 'ソンノ ヘ?',
+		'ACT02_result_D_bottom': `エサマン マキリ カ オイラ ヒネ アシンノ オマナン`,
 
 		'ACT03_04': `エサマンが村に着く頃にはすっかり日が暮れていた<br>
 					この村で勇敢だった者はシヨキナに<br>

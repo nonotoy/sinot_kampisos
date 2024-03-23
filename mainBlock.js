@@ -442,6 +442,7 @@ window.checkAnswer = function(sectionId, optionId) {
         randomQuizzes_ACT03_10;
                       
     const section = quizArray.find(quiz => quiz.id === sectionId);
+    console.log(section);
     const option = section.options.find(option => option.id === optionId);
     const answer = option.answer;
 
@@ -548,11 +549,13 @@ function displayImage(imagePath, nextSectionId, backgroundColor) {
 // 完了' クイズ終了後に正解数に基づいてセクションを表示する関数
 window.displayACT02SectionBasedOnCorrectCount = function() {
     const sectionMap = {
-        4: 'ACT02_result_A', // 4以上の場合は'A'
-        3: 'ACT02_result_B',
-        2: 'ACT02_result_C',
+      3: 'ACT02_result_B',
+      2: 'ACT02_result_C',
+      1: 'ACT02_result_D',
+      0: 'ACT02_result_D',
     };
-    const section = sectionMap[correctCountACT02] || 'ACT02_result_D'; // マップにない場合はデフォルトで'D'
+  
+    const section = sectionMap[correctCountACT02] || 'ACT02_result_A';
     showSection(section);
 };
 
@@ -775,7 +778,7 @@ function createButtonHTML(section) {
         let buttonsHTML_atrandom = '';
 
         for (const option of section.options) {
-            if ((section.id === 'ACT02_genre_easy' && option.id === 'option1-4') || (section.id === 'ACT02_genre_hard' && option.id === 'option4-2') || (option.id === 'option4-4') ) {
+            if ((section.id === 'ACT02_genre_easy' && option.id === 'option1-4') || (section.id === 'ACT02_genre_hard' && option.id === 'option4-2') || (option.id === 'option4-1') || (option.id === 'option4-4') ) {
                 buttonsHTML_tmp += `
                     <div class="${option.id}">
                         <button disabled id="${option.id}" class="section-switch grid_button" onclick="showSection('${option.nextSection}')">
