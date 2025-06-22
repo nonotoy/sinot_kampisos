@@ -57,7 +57,7 @@ function updateDimensions() {
 // ランダムなクイズを生成
 const randomQuizzes_ACT02_action_easy = generateRandomQuizzes('ACT02a_action_easy', 58, 5, 3)
 const randomQuizzes_ACT02_action_hard = generateRandomQuizzes('ACT02a_action_hard', 63, 5, 3)
-const randomQuizzes_ACT02_advanced_easy = generateRandomQuizzes('ACT02a_advanced_easy', 12, 5, 3)
+//const randomQuizzes_ACT02_advanced_easy = generateRandomQuizzes('ACT02a_advanced_easy', 12, 5, 3)
 //const randomQuizzes_ACT02_advanced_hard = generateRandomQuizzes('ACT02a_advanced_hard', 3, 5, 3)
 const randomQuizzes_ACT02_animals_easy = generateRandomQuizzes('ACT02a_animals_easy', 24, 5, 3)
 const randomQuizzes_ACT02_animals_hard = generateRandomQuizzes('ACT02a_animals_hard', 27, 5, 3)
@@ -395,7 +395,7 @@ function generateAndUpdateRandomQuizzes() {
     updateQuizSections('ACT02_genre_easy', randomQuizzes_ACT02_number_easy[0].id, 'option3-4');
     updateQuizSections('ACT02_genre_easy', randomQuizzes_ACT02_places_easy[0].id, 'option4-1');
     updateQuizSections('ACT02_genre_easy', randomQuizzes_ACT02_beginner_easy[0].id, 'option4-2');
-    // updateQuizSections('ACT02_genre_easy', randomQuizzes_ACT02_advanced_easy[0].id, 'option4-3');
+    //updateQuizSections('ACT02_genre_easy', randomQuizzes_ACT02_advanced_easy[0].id, 'option4-3');
     // updateQuizSections('ACT02_genre_easy', randomQuizzes_ACT02[0].id, 'at_random');
 
     updateQuizSections('ACT02_genre_hard', randomQuizzes_ACT02_animals_hard[0].id, 'option1-1');
