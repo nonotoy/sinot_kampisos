@@ -8,16 +8,16 @@ export const commands_ = {
 		'kana': `ヌプㇽ・ペッ<br>登別の伝承`,
 	},
 	'opt_1a': {
-		'roman': '冒険する (ACT01)',
-		'kana': '冒険する (ACT01)',
+		'roman': '冒険する',
+		'kana': '冒険する',
 	},
 	'opt_1b': {
-		'roman': '図書館 (ACT02)',
-		'kana': '図書館 (ACT02)',
+		'roman': '図書館',
+		'kana': '図書館',
 	},
 	'opt_1c': {
-		'roman': '開発用 / ACT03',
-		'kana': '開発用 / ACT03',
+		'roman': '開発用',
+		'kana': '開発用',
 	},
 };
 
@@ -31,9 +31,9 @@ export const commands = {
 
 		'0_home': `Humpesapaの<br>ものがたり`,
 		'0_sub': `Nupurpet<br>登別の伝承`,
-		'opt_1a': '冒険する (ACT01)',
-		'opt_1b': '図書館 (ACT02)',
-		'opt_1c': '最終対決 (ACT03)',
+		'opt_1a': '冒険する',
+		'opt_1b': '図書館',
+		'opt_1c': '最終対決',
 		'opt_1d': '開発用 / Level',
 
 		'1-1_prologue1': `
@@ -5651,10 +5651,10 @@ export const commands = {
 
 		'0_home': `フンペサパの<br>ものがたり`,
 		'0_sub': `ヌプㇽ・ペッ<br>登別の伝承`,
-		'opt_1a': '冒険する (ACT01)',
-		'opt_1b': '図書館 (ACT02)',
-		'opt_1c': '最終対決 (ACT03)',
-		'opt_1d': '開発用 / ACT02-Asir',
+		'opt_1a': '冒険する',
+		'opt_1b': '図書館',
+		'opt_1c': '最終対決',
+		'opt_1d': '開発用',
 
 		'1-1_prologue1': `
 						昔、太平洋の海中に、シヨキナという鯨（フンペ）に似た巨大な怪物が住んでいた。<br>
@@ -11521,7 +11521,7 @@ export const commands = {
 		'opt_1a': 'ぼうけんする',
 		'opt_1b': 'としょかん',
 		'opt_1c': 'せってい',
-		'opt_1d': '開発用 / ACT02-Asir',
+		'opt_1d': '開発用',
 
 		'1-1_prologue1': `
 			【のぼりべつのおはなし】 フンペサパ くじらの・あたま<br>
