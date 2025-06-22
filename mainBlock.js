@@ -462,7 +462,7 @@ window.checkAnswer = function(sectionId, optionId) {
         //sectionId.startsWith('ACT02a') ? randomQuizzes_ACT02 :
         sectionId.startsWith('ACT02a_action_easy') ? randomQuizzes_ACT02_action_easy :
         sectionId.startsWith('ACT02a_action_hard') ? randomQuizzes_ACT02_action_hard :
-        sectionId.startsWith('ACT02a_advanced_easy') ? randomQuizzes_ACT02_advanced_easy :
+        //sectionId.startsWith('ACT02a_advanced_easy') ? randomQuizzes_ACT02_advanced_easy :
         //sectionId.startsWith('ACT02a_advanced_hard') ? randomQuizzes_ACT02_advanced_hard :
         sectionId.startsWith('ACT02a_animals_easy') ? randomQuizzes_ACT02_animals_easy :
         sectionId.startsWith('ACT02a_animals_hard') ? randomQuizzes_ACT02_animals_hard :
