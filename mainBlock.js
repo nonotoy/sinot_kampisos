@@ -422,7 +422,7 @@ function generateAndUpdateRandomQuizzes() {
     // renderQuizzes(randomQuizzes_ACT02);
     renderQuizzes(randomQuizzes_ACT02_action_easy);
     renderQuizzes(randomQuizzes_ACT02_action_hard);
-    renderQuizzes(randomQuizzes_ACT02_advanced_easy);
+    //renderQuizzes(randomQuizzes_ACT02_advanced_easy);
     //renderQuizzes(randomQuizzes_ACT02_advanced_hard);
     renderQuizzes(randomQuizzes_ACT02_animals_easy);
     renderQuizzes(randomQuizzes_ACT02_animals_hard);
