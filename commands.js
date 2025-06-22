@@ -3062,7 +3062,7 @@ export const commands = {
 		'ACT02a_beginner_hard_003_op3': 'ニサッタ',
 		
 		'ACT02a_beginner_hard_004_quiz': 'アイヌ語で「海」はなんでしょうか。',
-		'ACT02a_beginner_hard_004_op1': 'アト゜イ',
+		'ACT02a_beginner_hard_004_op1': 'アト゚イ',
 		'ACT02a_beginner_hard_004_op2': 'ペッ',
 		'ACT02a_beginner_hard_004_op3': 'フチ',
 		'ACT02a_beginner_hard_004_op4': 'ヌプリ',
@@ -3086,16 +3086,16 @@ export const commands = {
 		'ACT02a_beginner_hard_008_op3': 'チュㇷ゚',
 		
 		'ACT02a_beginner_hard_009_quiz': '「モモンガ」はなんというでしょう',
-		'ACT02a_beginner_hard_009_op1': 'アッ（あっ）',
-		'ACT02a_beginner_hard_009_op2': 'ア（あ）',
-		'ACT02a_beginner_hard_009_op3': 'アㇱ（あし）',
+		'ACT02a_beginner_hard_009_op1': 'アッ',
+		'ACT02a_beginner_hard_009_op2': 'ア',
+		'ACT02a_beginner_hard_009_op3': 'アㇱ',
 		
 		'ACT02a_beginner_hard_010_quiz': 'アイヌの物語りで月に行ったのは誰でしょう',
 		'ACT02a_beginner_hard_010_op1': 'なまけた少年',
 		'ACT02a_beginner_hard_010_op2': 'ウサギ',
 		'ACT02a_beginner_hard_010_op3': 'おばあちゃん',
 		
-		'ACT02a_beginner_hard_011_quiz': 'アト゜イ（海）の生き物は？',
+		'ACT02a_beginner_hard_011_quiz': 'アト゚イ（海）の生き物は？',
 		'ACT02a_beginner_hard_011_op1': 'フンペ',
 		'ACT02a_beginner_hard_011_op2': 'チャペ',
 		'ACT02a_beginner_hard_011_op3': 'チュㇷ゚',
@@ -8678,9 +8678,9 @@ export const commands = {
 		'ACT02a_beginner_easy_001_op2': 'ヨモギ',
 		
 		'ACT02a_beginner_easy_002_quiz': '「こんにちは」はなんて言うでしょう。',
-		'ACT02a_beginner_easy_002_op1': 'イヤイライケレ',
-		'ACT02a_beginner_easy_002_op2': 'イランカラプテ',
-		'ACT02a_beginner_easy_002_op3': 'イランカラㇷ゚テ',
+		'ACT02a_beginner_easy_002_op1': 'イランカラㇷ゚テ',
+		'ACT02a_beginner_easy_002_op2': 'イヤイライケレ',
+		'ACT02a_beginner_easy_002_op3': 'イランカラプテ',
 		
 		'ACT02a_beginner_easy_003_quiz': 'おかしはどれでしょう',
 		'ACT02a_beginner_easy_003_op1': 'トペンペ',
@@ -8730,7 +8730,7 @@ export const commands = {
 		'ACT02a_beginner_hard_003_op3': 'ニサッタ',
 		
 		'ACT02a_beginner_hard_004_quiz': 'アイヌ語で「海」はなんでしょうか。',
-		'ACT02a_beginner_hard_004_op1': 'アト゜イ',
+		'ACT02a_beginner_hard_004_op1': 'アト゚イ',
 		'ACT02a_beginner_hard_004_op2': 'ペッ',
 		'ACT02a_beginner_hard_004_op3': 'フチ',
 		'ACT02a_beginner_hard_004_op4': 'ヌプリ',
@@ -8763,7 +8763,7 @@ export const commands = {
 		'ACT02a_beginner_hard_010_op2': 'ウサギ',
 		'ACT02a_beginner_hard_010_op3': 'おばあちゃん',
 		
-		'ACT02a_beginner_hard_011_quiz': 'アト゜イ（海）の生き物は？',
+		'ACT02a_beginner_hard_011_quiz': 'アト゚イ（海）の生き物は？',
 		'ACT02a_beginner_hard_011_op1': 'フンペ',
 		'ACT02a_beginner_hard_011_op2': 'チャペ',
 		'ACT02a_beginner_hard_011_op3': 'チュㇷ゚',
@@ -14768,7 +14768,7 @@ export const commands = {
 		'ACT02a_human_hard_024_op3': 'オンネクㇽ',
 
 		'ACT02_end': 'エサマンは　いっぱい　れんしゅうして　かしこくなった！！',
-		'ACT02_end_next': 'はっぴょうけっか',
+		'ACT02_end_next': 'けっかはっぴょう',
 
 		'ACT02_result_A_top': `エサマン！おまえのレベルは さいこう… だ<br> すごいカワウソ   といってよいだろう！  よくやった！！`,
 		'ACT02_result_A_comment': 'ゆめじゃないのかな',

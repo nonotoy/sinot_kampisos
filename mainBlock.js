@@ -17,6 +17,43 @@ var mainBlockWidth = 0;
 // 文字表記_初期値
 let char_type = 'kana';
 
+// === 修正: デバウンス関数を追加 ===
+function debounce(func, wait) {
+    let timeout;
+    return function executedFunction(...args) {
+        const later = () => {
+            clearTimeout(timeout);
+            func(...args);
+        };
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+    };
+}
+
+// === 修正: 画面サイズ取得の改善 ===
+function updateDimensions() {
+    var myDiv = document.getElementById('mainBlock');
+    if (myDiv) {
+        const rect = myDiv.getBoundingClientRect();
+        mainBlockHeight = rect.height;
+        mainBlockWidth = rect.width;
+        
+        // より正確な画面サイズを取得
+        const element = document.querySelector('.quiz_options_height');
+        if (element) {
+            const elementRect = element.getBoundingClientRect();
+            mainBlockHeight = Math.max(mainBlockHeight, elementRect.height);
+            mainBlockWidth = Math.max(mainBlockWidth, elementRect.width);
+        }
+    }
+    
+    // === 修正: 現在表示中のセクションのレイアウトを再計算 ===
+    const currentSection = document.querySelector('.section:not([style*="display: none"])');
+    if (currentSection && currentSection.id.includes('ACT03_10')) {
+        randomizeButtons(currentSection);
+    }
+}
+
 // ランダムなクイズを生成
 const randomQuizzes_ACT02_action_easy = generateRandomQuizzes('ACT02a_action_easy', 58, 5, 3)
 const randomQuizzes_ACT02_action_hard = generateRandomQuizzes('ACT02a_action_hard', 63, 5, 3)
@@ -73,9 +110,9 @@ window.showSection = function(sectionId) {
                 // Get the bounding rectangle of the element
                 const rect = element.getBoundingClientRect();
 
-                // Get the x and y coordinates
-                mainBlockHeight = rect.top;
-                mainBlockWidth = rect.left;
+                // === 修正: より正確な座標取得 ===
+                mainBlockHeight = Math.max(rect.height, window.innerHeight * 0.65);
+                mainBlockWidth = Math.max(rect.width, window.innerWidth * 0.85);
             }
 
             // 背景色を設定
@@ -199,6 +236,12 @@ function updateQuizSections(sectionId, firstQuizId, optionId) {
 }
 
 function randomizeButtons(sectionElement) {
+    // === 修正: レスポンシブ対応のためのエラーハンドリング追加 ===
+    if (!sectionElement) {
+        console.error('Section element not found for randomization');
+        return;
+    }
+
     // 一時的にセクションのvisibilityをvisibleに設定
     const originalVisibility = sectionElement.style.visibility;
     sectionElement.style.visibility = 'visible';
@@ -210,22 +253,26 @@ function randomizeButtons(sectionElement) {
         return;
     }
 
-    // targetContainerの座標とサイズを取得
+    // === 修正: より正確なコンテナサイズ取得 ===
     const containerRect = targetContainer.getBoundingClientRect();
+    const actualMainBlockHeight = containerRect.height || mainBlockHeight;
+    const actualMainBlockWidth = containerRect.width || mainBlockWidth;
 
     const buttons = sectionElement.querySelectorAll('button');
 
-    // console.log('containerRect.left',containerRect.left)
-
     buttons.forEach(button => {
 
-        // ボタンのサイズ（ここでは仮の値を使用）
-        const buttonWidth = 30; // 仮の値
-        const buttonHeight = 50; // 仮の値
+        // === 修正: ボタンサイズを動的に取得 ===
+        const buttonRect = button.getBoundingClientRect();
+        const buttonWidth = Math.max(buttonRect.width, 120); // 最小幅を保証
+        const buttonHeight = Math.max(buttonRect.height, 50); // 最小高さを保証
 
-        // targetContainerのサイズに基づいてランダムな位置を生成
-        const x = Math.random() * (mainBlockWidth - buttonWidth);
-        const y = Math.random() * (mainBlockHeight *10 - buttonHeight); //突然正しく取れなくなった。何が起きた？
+        // === 修正: より安全な位置計算 ===
+        const maxX = Math.max(actualMainBlockWidth - buttonWidth, 0);
+        const maxY = Math.max(actualMainBlockHeight - buttonHeight, 0);
+        
+        const x = Math.random() * maxX;
+        const y = Math.random() * maxY;
 
         // ボタンにスタイルを適用
         button.style.position = 'absolute';
@@ -324,7 +371,10 @@ function renderQuizzes(quizzes) {
         mainBlock.appendChild(sectionElement);
 
         if (quiz.id.includes('ACT03_10')) {
-            randomizeButtons(sectionElement);
+            // === 修正: レスポンシブ対応のための遅延実行 ===
+            setTimeout(() => {
+                randomizeButtons(sectionElement);
+            }, 100);
         }
     });
 }
@@ -363,7 +413,7 @@ function generateAndUpdateRandomQuizzes() {
     updateQuizSections('ACT02_genre_hard', randomQuizzes_ACT02_places_hard[0].id, 'option4-1');
     updateQuizSections('ACT02_genre_hard', randomQuizzes_ACT02_beginner_hard[0].id, 'option4-2');
     //updateQuizSections('ACT02_genre_hard', randomQuizzes_ACT02_advanced_hard[0].id, 'option4-3');
-    // updateQuizSections('ACT02_genre_hard', randomQuizzes_ACT02[0].id, 'at_random');
+    //updateQuizSections('ACT02_genre_hard', randomQuizzes_ACT02[0].id, 'at_random');
 
     updateQuizSections('ACT03_09', randomQuizzes_ACT03_09[0].id, 'option2');
     updateQuizSections('ACT03_10', randomQuizzes_ACT03_10[0].id, 'option1');
@@ -904,18 +954,12 @@ function updateAllTextContents(lang) {
 // 確認 - 毎回Home画面に戻った時にクイズを生成し直すのであれば、EventListenerの登録を変更
 document.addEventListener('DOMContentLoaded', () => {
 
-    var myDiv = document.getElementById('mainBlock');
-    if (myDiv) { // myDivが存在するか確認
-        mainBlockHeight = myDiv.offsetHeight;
-        mainBlockWidth = myDiv.offsetWidth;
-    }
+    // === 修正: より堅牢なDOMContentLoaded処理 ===
+    updateDimensions();
     
-    window.addEventListener('resize', function() {
-        if (myDiv) { // myDivが存在するか確認
-            mainBlockHeight = myDiv.offsetHeight;
-            mainBlockWidth = myDiv.offsetWidth;
-        }
-    });
+    // === 修正: デバウンス付きリサイズイベント ===
+    const debouncedUpdateDimensions = debounce(updateDimensions, 250);
+    window.addEventListener('resize', debouncedUpdateDimensions);
 
     setupLanguageChangeListeners();
     generateAndUpdateRandomQuizzes();
