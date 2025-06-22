@@ -581,7 +581,7 @@ export const sections = [
 				{ id: 'option1-3', nextSection: '', descKey: 'ACT02_genre_1-3'},
 				{ id: 'option2-3', nextSection: '', descKey: 'ACT02_genre_2-3'}, 
 				{ id: 'option3-3', nextSection: '', descKey: 'ACT02_genre_3-3'}, 	
-				{ id: 'option4-3', nextSection: '', descKey: 'ACT02_genre_4-3'},
+				//{ id: 'option4-3', nextSection: '', descKey: 'ACT02_genre_4-3'},
 
 				{ id: 'option1-4', nextSection: '', descKey: 'ACT02_genre_1-4'}, 
 				{ id: 'option2-4', nextSection: '', descKey: 'ACT02_genre_2-4'},
@@ -612,7 +612,7 @@ export const sections = [
 				{ id: 'option1-3', nextSection: '', descKey: 'ACT02_genre_1-3'},
 				{ id: 'option2-3', nextSection: '', descKey: 'ACT02_genre_2-3'}, 
 				{ id: 'option3-3', nextSection: '', descKey: 'ACT02_genre_3-3'}, 	
-				{ id: 'option4-3', nextSection: '', descKey: 'ACT02_genre_4-3'},
+				//{ id: 'option4-3', nextSection: '', descKey: 'ACT02_genre_4-3'},
 
 				{ id: 'option1-4', nextSection: '', descKey: 'ACT02_genre_1-4'}, 
 				{ id: 'option2-4', nextSection: '', descKey: 'ACT02_genre_2-4'},
